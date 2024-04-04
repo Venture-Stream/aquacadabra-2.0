@@ -1,0 +1,38 @@
+{
+  "name": "aquacadabra-2.0",
+  "version": "1.0.0",
+  "description": "aquacadabra 2.0 shopify build",
+  "main": "index.js",
+  "scripts": {
+    "dev": "run-p -sr shopify:dev build:css build:scripts",
+    "check": "shopify theme check --category performance --category liquid --category json",
+    "build:css": "tailwind build -i src/styles/core-tailwind.css -o assets/global-tailwind.css --watch",
+    "build:scripts": "npx webpack",
+    "shopify:dev": "shopify theme dev",
+    "pull": "shopify theme pull --store aquacadabrastore.myshopify.com",
+    "deploy": "shopify theme push --store aquacadabrastore.myshopify.com",
+    "sync": "shopify theme pull --development"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Venture-Stream/aquacadabra-2.0.git"
+  },
+  "author": "Sam Derbyshire VS",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Venture-Stream/aquacadabra-2.0/issues"
+  },
+  "homepage": "https://github.com/Venture-Stream/aquacadabra-2.0#readme",
+  "devDependencies": {
+    "@webpack-cli/generators": "^3.0.7",
+    "prettier": "^3.0.0",
+    "webpack": "^5.89.0",
+    "webpack-cli": "^5.1.4"
+  },
+  "dependencies": {
+    "npm-run-all": "^4.1.5",
+    "react": "^18.2.0",
+    "read-smore": "^2.5.1",
+    "tailwindcss": "^3.3.5"
+  }
+}
