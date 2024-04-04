@@ -1,4 +1,4 @@
-#Aquacadabra 2.0
+# Aquacadabra 2.0
 This is a re-design of Aquacadabra, based on Shopify's Dawn. The node version can be found in the .nvmrc file.
 
 # Dawn
