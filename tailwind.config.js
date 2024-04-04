@@ -17,7 +17,7 @@ module.exports = {
   },
   theme: {
     fontFamily: {
-      'inter': ["inter", 'sans-serif'],
+      'inter': ["Inter", 'sans-serif'],
     },
     screens: {
       sm: '480px',
