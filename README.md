@@ -1,3 +1,6 @@
+# Aquacadabra 2.0
+This is a re-design of Aquacadabra, based on Shopify's Dawn. The node version can be found in the .nvmrc file.
+
 # Dawn
 
 [![Build status](https://github.com/shopify/dawn/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/Shopify/dawn/actions/workflows/ci.yml?query=branch%3Amain)
