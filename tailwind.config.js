@@ -17,7 +17,7 @@ module.exports = {
   },
   theme: {
     fontFamily: {
-      'acumin': ["acumin-pro", 'sans-serif'],
+      'inter': ["inter", 'sans-serif'],
     },
     screens: {
       sm: '480px',

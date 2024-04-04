@@ -250,8 +250,22 @@
         }
       }
     {% endstyle %}
+    {% # theme-check-disable %}
 
-    {{ 'base.css' | asset_url | stylesheet_tag }}
+    <link
+      rel="preload"
+      href="{{ 'base.css' | asset_url }}"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    >
+    <noscript><link rel="stylesheet" href="{{ 'base.css' | asset_url }}"></noscript>
+    <link
+      rel="preload"
+      href="{{ 'global-tailwind.css' | asset_url }}"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    >
+    <noscript><link rel="stylesheet" href="{{ 'global-tailwind.css' | asset_url }}"></noscript>
 
     {%- unless settings.type_body_font.system? -%}
       {% comment %}theme-check-disable AssetPreload{% endcomment %}
