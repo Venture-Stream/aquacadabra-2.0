@@ -26,6 +26,11 @@
         "enable_language_selector": false
       }
     },
+    "countdown-header": {
+      "type": "countdown-header",
+      "settings": {
+      }
+    },
     "header": {
       "type": "header",
       "settings": {
@@ -47,6 +52,7 @@
   },
   "order": [
     "announcement-bar",
+    "countdown-header",
     "header"
   ]
 }

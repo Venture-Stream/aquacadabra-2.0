@@ -1,0 +1,48 @@
+<div class="bg-brand-blue text-white border-b border-[#0A2E71]">
+  <div class="page-width flex items-center justify-center md:justify-between">
+    <div class="hidden md:block">
+      {%- if section.settings.left_text != blank-%}
+        <span class="text-1.3">{{ section.settings.left_text }}</span>
+      {%- endif -%}
+    </div>
+    <div>
+      {% render 'countdown-timer',
+        cart_timer: false,
+        enable_timer: settings.enable_timer,
+        banner_text: settings.banner_text,
+        right_text: settings.right_text,
+        cut_off_time: settings.cut_off_time
+      %}
+    </div>
+    <div class="hidden md:flex items-center">
+      {%- if shop.customer_accounts_enabled -%}
+        <a href="{%- if customer -%}{{ routes.account_url }}{%- else -%}{{ routes.account_login_url }}{%- endif -%}" class="text-white text-1.3 no-underline">
+          <span>
+            {%- liquid
+              if customer
+                echo 'customer.account_fallback' | t
+              else
+                echo 'customer.log_in' | t
+              endif
+            -%}
+          </span>
+        </a>
+      {%- endif -%}
+      <a href="tel:01322520989" class="text-white text-1.3 no-underline ml-8">Call 01322 520 989</a>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Countdown Header",
+  "settings": [
+    {
+      "type": "inline_richtext",
+      "id": "left_text",
+      "label": "Left-hand text",
+      "default": "<strong>Free UK Delivery</strong> on all orders"
+    }
+  ]
+}
+{% endschema %}

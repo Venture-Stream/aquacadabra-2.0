@@ -1,11 +1,15 @@
 {
   "current": {
+    "enable_timer": true,
+    "cut_off_time": "2200",
+    "banner_text": "Order within",
+    "right_text": "for same day dispatch",
     "logo_width": 90,
     "type_header_font": "assistant_n4",
     "heading_scale": 100,
     "type_body_font": "assistant_n4",
     "body_scale": 100,
-    "page_width": 1200,
+    "page_width": 1600,
     "spacing_sections": 0,
     "spacing_grid_horizontal": 8,
     "spacing_grid_vertical": 8,
@@ -146,7 +150,7 @@
           "background_gradient": "",
           "text": "#000000",
           "button": "#000000",
-          "button_label": "#fff",
+          "button_label": "#ffffff",
           "secondary_button_label": "#000000",
           "shadow": "#000000"
         }
@@ -157,7 +161,7 @@
           "background_gradient": "",
           "text": "#ffffff",
           "button": "#ff9016",
-          "button_label": "#fff",
+          "button_label": "#ffffff",
           "secondary_button_label": "#ffffff",
           "shadow": "#000000"
         }
