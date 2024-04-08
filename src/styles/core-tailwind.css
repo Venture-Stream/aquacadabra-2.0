@@ -11,33 +11,33 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  @apply font-medium;
+  @apply font-semibold;
   @apply text-black;
 }
 
-/* h1,
+h1,
 .h1 {
-  @apply text-[min(max(32px,5vw),48px)];
-} */
+  @apply text-[min(max(32px,5vw),28px)];
+}
 
 h2,
 .h2 {
-  @apply text-[min(max(25px,4vw),40px)];
+  @apply text-[min(max(25px,4vw),24px)];
 }
 
 h3,
 .h3 {
-  @apply text-[min(max(22px,3vw),32px)];
+  @apply text-[min(max(22px,3vw),20px)];
 }
 
 h4,
 .h4 {
-  @apply text-[min(max(20px,2vw),24px)];
+  @apply text-[min(max(20px,2vw),18px)];
 }
 
 h5,
 .h5 {
-  @apply text-[min(max(18px,1vw),20px)];
+  @apply text-[min(max(18px,1vw),16px)];
 }
 
 h6,
@@ -51,7 +51,6 @@ small {
 
 .field label {
   @apply text-1.6 text-black mb-4;
-
 }
 
 input {
