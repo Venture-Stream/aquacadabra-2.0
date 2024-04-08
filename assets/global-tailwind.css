@@ -38,12 +38,40 @@
   position: fixed
 }
 
+.absolute{
+  position: absolute
+}
+
+.relative{
+  position: relative
+}
+
 .sticky{
   position: sticky
 }
 
+.right-0{
+  right: 0px
+}
+
+.top-0{
+  top: 0px
+}
+
+.right-8{
+  right: 2rem
+}
+
+.top-4{
+  top: 1rem
+}
+
 .isolate{
   isolation: isolate
+}
+
+.z-2{
+  z-index: 2
 }
 
 .block{
@@ -75,6 +103,16 @@
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))
 }
 
+.cursor-pointer{
+  cursor: pointer
+}
+
+.appearance-none{
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none
+}
+
 .grid-cols-1{
   grid-template-columns: repeat(1, minmax(0, 1fr))
 }
@@ -97,8 +135,16 @@
   white-space: nowrap
 }
 
+.border-0{
+  border-width: 0px
+}
+
 .border-b{
   border-bottom-width: 1px
+}
+
+.bg-transparent{
+  background-color: transparent
 }
 
 .py-8{
@@ -122,6 +168,17 @@
   --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)
+}
+
+.shadow-none{
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)
+}
+
+.outline-none{
+  outline: 2px solid transparent;
+  outline-offset: 2px
 }
 
 .outline{
