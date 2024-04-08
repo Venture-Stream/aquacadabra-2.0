@@ -66,6 +66,10 @@
   display: none
 }
 
+.w-1\/2{
+  width: 50%
+}
+
 .rotate-180{
   --tw-rotate: 180deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))
@@ -75,14 +79,35 @@
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))
 }
 
+.grid-cols-1{
+  grid-template-columns: repeat(1, minmax(0, 1fr))
+}
+
+.grid-cols-2{
+  grid-template-columns: repeat(2, minmax(0, 1fr))
+}
+
 .flex-wrap{
   flex-wrap: wrap
+}
+
+.gap-8{
+  gap: 2rem
 }
 
 .truncate{
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap
+}
+
+.border-b{
+  border-bottom-width: 1px
+}
+
+.py-8{
+  padding-top: 2rem;
+  padding-bottom: 2rem
 }
 
 .uppercase{
@@ -173,5 +198,19 @@ input{
   &[aria-invalid="true"]{
     --tw-border-opacity: 1 !important;
     border-color: rgb(201 85 37 / var(--tw-border-opacity)) !important
+  }
+}
+
+@media (min-width: 768px){
+  .md\:grid-cols-2{
+    grid-template-columns: repeat(2, minmax(0, 1fr))
+  }
+
+  .md\:grid-cols-3{
+    grid-template-columns: repeat(3, minmax(0, 1fr))
+  }
+
+  .md\:grid-cols-4{
+    grid-template-columns: repeat(4, minmax(0, 1fr))
   }
 }
