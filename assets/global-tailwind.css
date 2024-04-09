@@ -38,12 +38,36 @@
   position: fixed
 }
 
+.absolute{
+  position: absolute
+}
+
+.relative{
+  position: relative
+}
+
 .sticky{
   position: sticky
 }
 
+.right-8{
+  right: 2rem
+}
+
+.top-4{
+  top: 1rem
+}
+
 .isolate{
   isolation: isolate
+}
+
+.z-2{
+  z-index: 2
+}
+
+.ml-8{
+  margin-left: 2rem
 }
 
 .block{
@@ -75,6 +99,10 @@
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))
 }
 
+.cursor-pointer{
+  cursor: pointer
+}
+
 .grid-cols-1{
   grid-template-columns: repeat(1, minmax(0, 1fr))
 }
@@ -87,6 +115,14 @@
   flex-wrap: wrap
 }
 
+.items-center{
+  align-items: center
+}
+
+.justify-center{
+  justify-content: center
+}
+
 .gap-8{
   gap: 2rem
 }
@@ -97,13 +133,35 @@
   white-space: nowrap
 }
 
+.border-0{
+  border-width: 0px
+}
+
 .border-b{
   border-bottom-width: 1px
+}
+
+.border-\[\#0A2E71\]{
+  --tw-border-opacity: 1;
+  border-color: rgb(10 46 113 / var(--tw-border-opacity))
+}
+
+.bg-brand-blue{
+  --tw-bg-opacity: 1;
+  background-color: rgb(21 57 123 / var(--tw-bg-opacity))
+}
+
+.bg-transparent{
+  background-color: transparent
 }
 
 .py-8{
   padding-top: 2rem;
   padding-bottom: 2rem
+}
+
+.text-1\.3{
+  font-size: 13px
 }
 
 .uppercase{
@@ -118,10 +176,30 @@
   font-style: italic
 }
 
+.text-white{
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity))
+}
+
+.no-underline{
+  text-decoration-line: none
+}
+
 .shadow{
   --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)
+}
+
+.shadow-none{
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)
+}
+
+.outline-none{
+  outline: 2px solid transparent;
+  outline-offset: 2px
 }
 
 .outline{
@@ -197,7 +275,96 @@ input{
   }
 }
 
+/* Countdown Timer */
+
+.countdown-banner{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-size: 13px;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity))
+}
+
+.countdown-banner .time{
+  margin-left: 1rem;
+  font-size: 12px;
+  font-weight: 600;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity))
+}
+
+.countdown-banner .time span{
+  margin-right: 0.5rem;
+  border-radius: 0.25rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  padding: 0.5rem;
+  --tw-text-opacity: 1;
+  color: rgb(21 57 123 / var(--tw-text-opacity))
+}
+
+.countdown-banner .cart-span{
+  margin-top: 1rem;
+  display: block;
+  flex-basis: 100%;
+  text-align: center
+}
+
+.countdown-banner strong{
+  margin-right: 0.25rem
+}
+
+.countdown-banner.cart-timer{
+  flex-wrap: wrap;
+  align-items: center;
+  border-radius: 0.5rem;
+  padding: 4rem
+}
+
+@media screen and (min-width: 768px) {
+  .countdown-banner.cart-timer{
+    font-size: 13px
+  }
+}
+
+.countdown-banner.cart-timer .time{
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem
+}
+
+.countdown-banner.cart-timer .time span{
+  margin-right: 0.25rem;
+  border-radius: 0.25rem;
+  border-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity));
+  background-color: transparent;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity))
+}
+
+@media screen and (min-width: 768px) {
+  .countdown-banner.cart-timer .time{
+    margin-left: 0.5rem
+  }
+}
+
 @media (min-width: 768px){
+  .md\:block{
+    display: block
+  }
+
+  .md\:flex{
+    display: flex
+  }
+
   .md\:grid-cols-2{
     grid-template-columns: repeat(2, minmax(0, 1fr))
   }
@@ -209,4 +376,8 @@ input{
   .md\:grid-cols-4{
     grid-template-columns: repeat(4, minmax(0, 1fr))
   }
-}
+
+  .md\:justify-between{
+    justify-content: space-between
+  }
+}  
