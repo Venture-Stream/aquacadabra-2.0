@@ -1359,3 +1359,35 @@ class AccountIcon extends HTMLElement {
 }
 
 customElements.define('account-icon', AccountIcon);
+
+class UspSlider extends HTMLElement {
+  constructor() {
+    super();
+  }
+}
+window.UspSlider = {
+  loadUspSlider(selector) {
+    document.querySelectorAll(selector).forEach(function(el) {
+        window.UspSlider.rotaterator(el, 3500);
+    });
+  },
+
+  rotaterator(el,speed) {
+    if (el.classList.contains('rotaterator-active')) {
+        return;
+    }
+    el.classList.add('rotaterator-active');
+    var current = el.firstElementChild.classList;
+    current.remove('hidden','opacity-0');
+    current.add('opacity-100','block');
+    setInterval(function() {
+        var first = el.firstElementChild;
+        first.classList.remove('opacity-100','block');
+        first.classList.add('hidden','opacity-0');
+        first.parentNode.appendChild(first);
+        var next = el.firstElementChild;
+        next.classList.remove('hidden','opacity-0');
+        next.classList.add('opacity-100','block');
+    }, speed);
+  }
+};

@@ -48,11 +48,15 @@
         "padding_top": 20,
         "padding_bottom": 20
       }
+    },
+    "usp": {
+      "type": "usp"
     }
   },
   "order": [
     "announcement-bar",
     "countdown-header",
-    "header"
+    "header",
+    "usp"
   ]
 }
