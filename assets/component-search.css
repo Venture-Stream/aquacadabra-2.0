@@ -2,10 +2,10 @@
   padding-right: 9.8rem;
 }
 
-.search__button {
+/* .search__button {
   right: var(--inputs-border-width);
   top: var(--inputs-border-width);
-}
+} */
 
 .reset__button {
   right: calc(var(--inputs-border-width) + 4.4rem);
@@ -42,11 +42,11 @@
   z-index: 4;
 }
 
-.search__button:not(:focus-visible):not(.focused),
+/* .search__button:not(:focus-visible):not(.focused),
 .reset__button:not(:focus-visible):not(.focused) {
   box-shadow: inherit;
   background-color: inherit;
-}
+} */
 
 .search__button:hover .icon,
 .reset__button:hover .icon {

@@ -152,10 +152,6 @@
       if section.settings.menu != blank
         render 'header-drawer'
       endif
-
-      if section.settings.logo_position == 'top-center' or section.settings.menu == blank
-        render 'header-search', input_id: 'Search-In-Modal-1'
-      endif
     -%}
 
     {%- if section.settings.logo_position != 'middle-center' -%}
@@ -188,15 +184,7 @@
       {%- endif -%}
     {%- endif -%}
 
-    {%- liquid
-      if section.settings.menu != blank
-        if section.settings.menu_type_desktop == 'dropdown'
-          render 'header-dropdown-menu'
-        elsif section.settings.menu_type_desktop != 'drawer'
-          render 'header-mega-menu'
-        endif
-      endif
-    %}
+    {% render 'header-search', input_id: 'Search-In-Modal', classes: 'hidden lg:flex' %}
 
     {%- if section.settings.logo_position == 'middle-center' -%}
       {%- if request.page_type == 'index' -%}
@@ -252,7 +240,6 @@
           </localization-form>
         {%- endif -%}
       </div>
-      {% render 'header-search', input_id: 'Search-In-Modal' %}
 
       {%- for block in section.blocks -%}
         {%- case block.type -%}
@@ -261,14 +248,10 @@
         {%- endcase -%}
       {%- endfor -%}
 
-      <a href="{{ routes.cart_url }}" class="header__icon header__icon--cart link focus-inset" id="cart-icon-bubble">
-        {%- liquid
-          if cart == empty
-            render 'icon-cart-empty'
-          else
-            render 'icon-cart'
-          endif
-        -%}
+      <a href="{{ routes.cart_url }}" class="no-underline text-black header__icon--cart focus-inset flex flex-row items-center bg-brand-orange p-4 md:py-4 md:px-6 rounded-lg" id="cart-icon-bubble">
+        <div class="icon-cart__container">
+          {%- render 'icon-cart' -%}
+        </div>
         <span class="visually-hidden">{{ 'templates.cart.cart' | t }}</span>
         {%- if cart != empty -%}
           <div class="cart-count-bubble">
@@ -278,9 +261,13 @@
             <span class="visually-hidden">{{ 'sections.header.cart_count' | t: count: cart.item_count }}</span>
           </div>
         {%- endif -%}
+        <div class="hidden md:block border-l border-black ml-8 mr-4">
+          <p class="text-1.2 text-brand-light-blue font-normal my-0">{{ cart.original_total_price  | money_without_trailing_zeros }}</p>
+        </div>
       </a>
     </div>
   </header>
+  {% render 'megamenu', blocks: section.blocks %}
 </{% if section.settings.sticky_header_type != 'none' %}sticky-header{% else %}div{% endif %}>
 
 {%- if settings.cart_type == "notification" -%}
