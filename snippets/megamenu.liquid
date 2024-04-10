@@ -1,0 +1,375 @@
+<mega-menu>
+  <div class="relative border-t border-[#F2F2F2]">
+    <div class="items-center justify-center hidden pt-4 bg-white lg:flex">
+      <div class="flex justify-between h-full">
+        {%- for block in blocks -%}
+          {%- if block.settings.item_link != blank -%}
+            <a
+              href="{{ block.settings.item_link }}"
+              class="p-4 flex items-center leading-[1.2] pb-8 text-1.6 text-offblack transition-all"
+              data-index="{{ block.settings.title | handleize }}"
+            >
+              {{ block.settings.title | escape }}
+              {% if block.settings.col_1_img != blank or block.settings.col_linklist_1 != blank -%}
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="11.414"
+                  height="7.121"
+                  viewBox="0 0 11.414 7.121"
+                  class="ml-2"
+                >
+                  <path id="select" d="M-5727.516,5639.633l5,5,5-5" transform="translate(5728.223 -5638.926)" fill="none" stroke="currentColor" stroke-width="2"/>
+                </svg>
+              {% endif %}
+            </a>
+          {%- else -%}
+            <span
+              class="p-4 flex items-center leading-[1.2] pb-8 text-1.6 text-offblack transition-all"
+              data-index="{{ block.settings.title | handleize }}"
+            >
+              {{ block.settings.title | escape }}
+              {% if block.settings.col_1_img != blank or block.settings.col_linklist_1 != blank -%}
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="11.414"
+                  height="7.121"
+                  viewBox="0 0 11.414 7.121"
+                  class="ml-2"
+                >
+                  <path id="select" d="M-5727.516,5639.633l5,5,5-5" transform="translate(5728.223 -5638.926)" fill="none" stroke="currentColor" stroke-width="2"/>
+                </svg>
+              {% endif %}
+            </span>
+          {%- endif -%}
+        {%- endfor -%}
+      </div>
+    </div>
+
+    {%- for block in blocks -%}
+      <div
+        class="
+          hidden menu-item bg-white shadow-sm absolute top-full w-full backdrop-blur-3xl bg-white/70 backdrop-saturate-200 left-0 right-0 z-3 transition-all duration-100 ease-in-out
+            {% if block.settings.col_1_img or block.settings.col_linklist_1 != blank -%}
+              py-16
+            {% else %}
+              py-0
+          {%- endif -%}
+        "
+        data-sub-menu
+        data-sub-{{ block.settings.title | handleize }}
+        data-main="{{ block.settings.title | handleize }}"
+      >
+        <div class="grid grid-cols-6 gap-8 mx-auto page-width">
+          <div class="relative col-1">
+            {%- if block.settings.col_1_img == blank -%}
+              {%- if block.settings.col_linklist_1 != blank -%}
+                {%- for link in linklists[block.settings.col_linklist_1].links -%}
+                  <div class="flex flex-col mb-4">
+                    <a
+                      class="
+                        text-base text-black flex items-center
+                        {% if link.links != blank -%}
+                          font-semibold pb-8
+                        {%- else -%}
+                          font-semibold pb-4
+                        {%- endif -%}
+                      "
+                      href="{{ link.url }}"
+                    >
+                      {{- link.title | escape -}}
+                    </a>
+                    {% if link.links != blank %}
+                      {% for sublink in link.links %}
+                        <a class="pb-4 text-base font-light text-black" href="{{ sublink.url }}">
+                          {{- sublink.title | escape -}}
+                        </a>
+                      {% endfor %}
+                    {% endif %}
+                  </div>
+                {%- endfor -%}
+              {%- endif -%}
+            {%- else -%}
+              {% if block.settings.col_1_link != blank %}
+                <a href="{{ block.settings.col_1_link }}">
+              {% else %}
+                <div>
+              {% endif %}
+              <img
+                src="{{ block.settings.col_1_img | image_url: width: 500 }}"
+                alt="{{ block.settings.col_1_img.alt }}"
+                width="auto"
+                height="auto"
+                loading="lazy"
+              >
+              <div class="my-4 font-medium text-center">
+                {{ block.settings.col_1_img_text }}
+              </div>
+              {% if block.settings.col_1_link != blank %}
+                </a>
+              {% else %}
+                </div>
+              {% endif %}
+            {%- endif -%}
+          </div>
+          <div class="relative col-2">
+            {%- if block.settings.col_2_img == blank -%}
+              {%- if block.settings.col_linklist_2 != blank -%}
+                {%- for link in linklists[block.settings.col_linklist_2].links -%}
+                  <div class="flex flex-col mb-4">
+                    <a
+                      class="
+                        text-base text-black flex items-center
+                        {% if link.links != blank -%}
+                          font-semibold pb-8
+                        {%- else -%}
+                          font-semibold pb-4
+                        {%- endif -%}
+                      "
+                      href="{{ link.url }}"
+                    >
+                      {{- link.title | escape -}}
+                    </a>
+                    {% if link.links != blank %}
+                      {% for sublink in link.links %}
+                        <a class="pb-4 text-base font-light text-black" href="{{ sublink.url }}">
+                          {{- sublink.title | escape -}}
+                        </a>
+                      {% endfor %}
+                    {% endif %}
+                  </div>
+                {%- endfor -%}
+              {%- endif -%}
+            {%- else -%}
+              {% if block.settings.col_2_link != blank %}
+                <a href="{{ block.settings.col_2_link }}">
+              {% else %}
+                <div>
+              {% endif %}
+              <img
+                src="{{ block.settings.col_2_img | image_url: width: 500 }}"
+                alt="{{ block.settings.col_2_img.alt }}"
+                width="auto"
+                height="auto"
+                loading="lazy"
+              >
+              <div class="my-4 font-medium text-center">
+                {{ block.settings.col_2_img_text }}
+              </div>
+              {% if block.settings.col_2_link != blank %}
+                </a>
+              {% else %}
+                </div>
+              {% endif %}
+            {%- endif -%}
+          </div>
+          <div class="relative col-3">
+            {%- if block.settings.col_3_img == blank -%}
+              {%- if block.settings.col_linklist_3 != blank -%}
+                {%- for link in linklists[block.settings.col_linklist_3].links -%}
+                  <div class="flex flex-col mb-4">
+                    <a
+                      class="
+                        text-base text-black flex items-center
+                        {% if link.links != blank -%}
+                          font-semibold pb-8
+                        {%- else -%}
+                          font-semibold pb-4
+                        {%- endif -%}
+                      "
+                      href="{{ link.url }}"
+                    >
+                      {{- link.title | escape -}}
+                    </a>
+                    {% if link.links != blank %}
+                      {% for sublink in link.links %}
+                        <a class="pb-4 text-base font-light text-black" href="{{ sublink.url }}">
+                          {{- sublink.title | escape -}}
+                        </a>
+                      {% endfor %}
+                    {% endif %}
+                  </div>
+                {%- endfor -%}
+              {%- endif -%}
+            {%- else -%}
+              {% if block.settings.col_3_link != blank %}
+                <a href="{{ block.settings.col_3_link }}">
+              {% else %}
+                <div>
+              {% endif %}
+              <img
+                src="{{ block.settings.col_3_img | image_url: width: 500 }}"
+                alt="{{ block.settings.col_3_img.alt }}"
+                width="auto"
+                height="auto"
+                loading="lazy"
+              >
+              <div class="my-4 font-medium text-center">
+                {{ block.settings.col_3_img_text }}
+              </div>
+              {% if block.settings.col_3_link != blank %}
+                </a>
+              {% else %}
+                </div>
+              {% endif %}
+            {%- endif -%}
+          </div>
+          <div class="relative col-4">
+            {%- if block.settings.col_4_img == blank -%}
+              {%- if block.settings.col_linklist_4 != blank -%}
+                {%- for link in linklists[block.settings.col_linklist_4].links -%}
+                  <div class="flex flex-col mb-4">
+                    <a
+                      class="
+                        text-base text-black flex items-center
+                        {% if link.links != blank -%}
+                          font-semibold pb-8
+                        {%- else -%}
+                          font-semibold pb-4
+                        {%- endif -%}
+                      "
+                      href="{{ link.url }}"
+                    >
+                      {{- link.title | escape -}}
+                    </a>
+                    {% if link.links != blank %}
+                      {% for sublink in link.links %}
+                        <a class="pb-4 text-base font-light text-black" href="{{ sublink.url }}">
+                          {{- sublink.title | escape -}}
+                        </a>
+                      {% endfor %}
+                    {% endif %}
+                  </div>
+                {%- endfor -%}
+              {%- endif -%}
+            {%- else -%}
+              {% if block.settings.col_4_link != blank %}
+                <a href="{{ block.settings.col_4_link }}">
+              {% else %}
+                <div>
+              {% endif %}
+              <img
+                src="{{ block.settings.col_4_img | image_url: width: 500 }}"
+                alt="{{ block.settings.col_4_img.alt }}"
+                width="auto"
+                height="auto"
+                loading="lazy"
+              >
+              <div class="my-4 font-medium text-center">
+                {{ block.settings.col_4_img_text }}
+              </div>
+              {% if block.settings.col_4_link != blank %}
+                </a>
+              {% else %}
+                </div>
+              {% endif %}
+            {%- endif -%}
+          </div>
+          <div class="relative col-5">
+            {%- if block.settings.col_5_img == blank -%}
+              {%- if block.settings.col_linklist_5 != blank -%}
+                {%- for link in linklists[block.settings.col_linklist_5].links -%}
+                  <div class="flex flex-col mb-4">
+                    <a
+                      class="
+                        text-base text-black flex items-center
+                        {% if link.links != blank -%}
+                          font-semibold pb-8
+                        {%- else -%}
+                          font-semibold pb-4
+                        {%- endif -%}
+                      "
+                      href="{{ link.url }}"
+                    >
+                      {{- link.title | escape -}}
+                    </a>
+                    {% if link.links != blank %}
+                      {% for sublink in link.links %}
+                        <a class="pb-4 text-base font-light text-black" href="{{ sublink.url }}">
+                          {{- sublink.title | escape -}}
+                        </a>
+                      {% endfor %}
+                    {% endif %}
+                  </div>
+                {%- endfor -%}
+              {%- endif -%}
+            {%- else -%}
+              {% if block.settings.col_5_link != blank %}
+                <a href="{{ block.settings.col_5_link }}">
+              {% else %}
+                <div>
+              {% endif %}
+              <img
+                src="{{ block.settings.col_5_img | image_url: width: 500 }}"
+                alt="{{ block.settings.col_5_img.alt }}"
+                width="auto"
+                height="auto"
+                loading="lazy"
+              >
+              <div class="my-4 font-medium text-center">
+                {{ block.settings.col_5_img_text }}
+              </div>
+              {% if block.settings.col_5_link != blank %}
+                </a>
+              {% else %}
+                </div>
+              {% endif %}
+            {%- endif -%}
+          </div>
+          <div class="relative col-6">
+            {%- if block.settings.col_6_img == blank -%}
+              {%- if block.settings.col_linklist_6 != blank -%}
+                {%- for link in linklists[block.settings.col_linklist_6].links -%}
+                  <div class="flex flex-col mb-4">
+                    <a
+                      class="
+                        text-base text-black flex items-center
+                        {% if link.links != blank -%}
+                          font-semibold pb-8
+                        {%- else -%}
+                          font-semibold pb-4
+                        {%- endif -%}
+                      "
+                      href="{{ link.url }}"
+                    >
+                      {{- link.title | escape -}}
+                    </a>
+                    {% if link.links != blank %}
+                      {% for sublink in link.links %}
+                        <a class="pb-4 text-base font-light text-black" href="{{ sublink.url }}">
+                          {{- sublink.title | escape -}}
+                        </a>
+                      {% endfor %}
+                    {% endif %}
+                  </div>
+                {%- endfor -%}
+              {%- endif -%}
+            {%- else -%}
+              {% if block.settings.col_6_link != blank %}
+                <a href="{{ block.settings.col_6_link }}">
+              {% else %}
+                <div>
+              {% endif %}
+              <img
+                src="{{ block.settings.col_6_img | image_url: width: 500 }}"
+                alt="{{ block.settings.col_6_img.alt }}"
+                width="auto"
+                height="auto"
+                loading="lazy"
+              >
+              <div class="my-4 font-medium text-center">
+                {{ block.settings.col_6_img_text }}
+              </div>
+              {% if block.settings.col_6_link != blank %}
+                </a>
+              {% else %}
+                </div>
+              {% endif %}
+            {%- endif -%}
+          </div>
+        </div>
+      </div>
+    {%- endfor -%}
+  </div>
+</mega-menu>
+
+<script type="text/javascript" src="{{ 'megamenu.min.js' | asset_url }}" defer="defer"></script>
