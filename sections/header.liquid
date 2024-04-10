@@ -217,30 +217,6 @@
     {%- endif -%}
 
     <div class="header__icons{% if section.settings.enable_country_selector or section.settings.enable_language_selector %} header__icons--localization header-localization{% endif %}">
-      <div class="desktop-localization-wrapper">
-        {%- if section.settings.enable_country_selector and localization.available_countries.size > 1 -%}
-          <localization-form class="small-hide medium-hide" data-prevent-hide>
-            {%- form 'localization', id: 'HeaderCountryForm', class: 'localization-form' -%}
-              <div>
-                <h2 class="visually-hidden" id="HeaderCountryLabel">{{ 'localization.country_label' | t }}</h2>
-                {%- render 'country-localization', localPosition: 'HeaderCountry' -%}
-              </div>
-            {%- endform -%}
-          </localization-form>
-        {% endif %}
-
-        {%- if section.settings.enable_language_selector and localization.available_languages.size > 1 -%}
-          <localization-form class="small-hide medium-hide" data-prevent-hide>
-            {%- form 'localization', id: 'HeaderLanguageForm', class: 'localization-form' -%}
-              <div>
-                <h2 class="visually-hidden" id="HeaderLanguageLabel">{{ 'localization.language_label' | t }}</h2>
-                {%- render 'language-localization', localPosition: 'HeaderLanguage' -%}
-              </div>
-            {%- endform -%}
-          </localization-form>
-        {%- endif -%}
-      </div>
-
       {%- for block in section.blocks -%}
         {%- case block.type -%}
           {%- when '@app' -%}
@@ -248,7 +224,13 @@
         {%- endcase -%}
       {%- endfor -%}
 
-      <a href="{{ routes.cart_url }}" class="no-underline text-black header__icon--cart focus-inset flex flex-row items-center bg-brand-orange p-4 md:py-4 md:px-6 rounded-lg" id="cart-icon-bubble">
+      <a href="/pages/wishlist" class="hidden md:flex p-6 bg-transparent rounded-lg border border-solid border-white times-center justify-center mr-4">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="18" viewBox="0 0 20 18" fill="none">
+          <path d="M17.6284 9.18649C19.4572 7.31331 19.4572 4.27808 17.6284 2.40489C15.7996 0.531703 12.8363 0.531703 11.0075 2.40489C10.5637 2.85944 10.229 3.38364 10 3.94267C9.77095 3.38364 9.43633 2.85944 8.99254 2.40489C7.16373 0.531703 4.20042 0.531703 2.37161 2.40489C0.542797 4.27808 0.542797 7.31331 2.37161 9.18649L10 17L17.6284 9.18649Z" stroke="white" stroke-miterlimit="10"/>
+        </svg>
+      </a>
+
+      <a href="{{ routes.cart_url }}" class="no-underline text-black header__icon--cart focus-inset flex flex-row items-center bg-brand-orange p-4 md:p-6 rounded-lg" id="cart-icon-bubble">
         <div class="icon-cart__container">
           {%- render 'icon-cart' -%}
         </div>
