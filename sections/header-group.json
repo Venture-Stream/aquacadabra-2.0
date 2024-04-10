@@ -29,6 +29,7 @@
     "countdown-header": {
       "type": "countdown-header",
       "settings": {
+        "left_text": "<strong>Free UK Delivery<\/strong> on all orders"
       }
     },
     "header": {
@@ -38,7 +39,7 @@
         "menu": "main-menu",
         "menu_type_desktop": "dropdown",
         "sticky_header_type": "on-scroll-up",
-        "show_line_separator": true,
+        "show_line_separator": false,
         "color_scheme": "scheme-3",
         "menu_color_scheme": "",
         "enable_country_selector": true,
@@ -50,7 +51,57 @@
       }
     },
     "usp": {
-      "type": "usp"
+      "type": "usp",
+      "blocks": {
+        "column_78w7Gm": {
+          "type": "column",
+          "settings": {
+            "icon": "delivery",
+            "title": "FREE UK DELIVERY",
+            "text": "<p>On all orders<\/p>",
+            "align_items": true,
+            "link": ""
+          }
+        },
+        "column_xDVLBa": {
+          "type": "column",
+          "settings": {
+            "icon": "reward",
+            "title": "EARN REWARD POINTS",
+            "text": "<p>Every time you shop. Register at checkout<\/p>",
+            "align_items": true,
+            "link": ""
+          }
+        },
+        "column_bDNxQr": {
+          "type": "column",
+          "settings": {
+            "icon": "stars",
+            "title": "5 STAR RATED",
+            "text": "<p>By verified customers on Feefo<\/p>",
+            "align_items": true,
+            "link": ""
+          }
+        },
+        "column_8pVXCY": {
+          "type": "column",
+          "settings": {
+            "icon": "finance",
+            "title": "Finance Options",
+            "text": "<p>Choose pay monthly or pay later<\/p>",
+            "align_items": true,
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_78w7Gm",
+        "column_xDVLBa",
+        "column_bDNxQr",
+        "column_8pVXCY"
+      ],
+      "settings": {
+      }
     }
   },
   "order": [
