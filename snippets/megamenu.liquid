@@ -48,7 +48,7 @@
     {%- for block in blocks -%}
       <div
         class="
-          hidden menu-item bg-white shadow-sm absolute top-full w-full backdrop-blur-3xl bg-white/70 backdrop-saturate-200 left-0 right-0 z-3 transition-all duration-100 ease-in-out
+          hidden menu-item bg-white shadow-sm absolute top-full w-full backdrop-blur-3xl bg-white/98 backdrop-saturate-200 left-0 right-0 z-3 transition-all duration-100 ease-in-out
             {% if block.settings.col_1_img or block.settings.col_linklist_1 != blank -%}
               py-16
             {% else %}
@@ -67,7 +67,7 @@
                   <div class="flex flex-col mb-4">
                     <a
                       class="
-                        text-base text-black flex items-center
+                        text-base text-black flex items-center no-underline
                         {% if link.links != blank -%}
                           font-semibold pb-8
                         {%- else -%}
@@ -80,7 +80,7 @@
                     </a>
                     {% if link.links != blank %}
                       {% for sublink in link.links %}
-                        <a class="pb-4 text-base font-light text-black" href="{{ sublink.url }}">
+                        <a class="pb-4 text-base font-light text-black no-underline" href="{{ sublink.url }}">
                           {{- sublink.title | escape -}}
                         </a>
                       {% endfor %}
@@ -118,7 +118,7 @@
                   <div class="flex flex-col mb-4">
                     <a
                       class="
-                        text-base text-black flex items-center
+                        text-base text-black flex items-center no-underline
                         {% if link.links != blank -%}
                           font-semibold pb-8
                         {%- else -%}
@@ -131,7 +131,7 @@
                     </a>
                     {% if link.links != blank %}
                       {% for sublink in link.links %}
-                        <a class="pb-4 text-base font-light text-black" href="{{ sublink.url }}">
+                        <a class="pb-4 text-base font-light text-black no-underline" href="{{ sublink.url }}">
                           {{- sublink.title | escape -}}
                         </a>
                       {% endfor %}
@@ -169,7 +169,7 @@
                   <div class="flex flex-col mb-4">
                     <a
                       class="
-                        text-base text-black flex items-center
+                        text-base text-black flex items-center no-underline
                         {% if link.links != blank -%}
                           font-semibold pb-8
                         {%- else -%}
@@ -182,7 +182,7 @@
                     </a>
                     {% if link.links != blank %}
                       {% for sublink in link.links %}
-                        <a class="pb-4 text-base font-light text-black" href="{{ sublink.url }}">
+                        <a class="pb-4 text-base font-light text-black no-underline" href="{{ sublink.url }}">
                           {{- sublink.title | escape -}}
                         </a>
                       {% endfor %}
@@ -220,7 +220,7 @@
                   <div class="flex flex-col mb-4">
                     <a
                       class="
-                        text-base text-black flex items-center
+                        text-base text-black flex items-center no-underline
                         {% if link.links != blank -%}
                           font-semibold pb-8
                         {%- else -%}
@@ -233,7 +233,7 @@
                     </a>
                     {% if link.links != blank %}
                       {% for sublink in link.links %}
-                        <a class="pb-4 text-base font-light text-black" href="{{ sublink.url }}">
+                        <a class="pb-4 text-base font-light text-black no-underline" href="{{ sublink.url }}">
                           {{- sublink.title | escape -}}
                         </a>
                       {% endfor %}
@@ -271,7 +271,7 @@
                   <div class="flex flex-col mb-4">
                     <a
                       class="
-                        text-base text-black flex items-center
+                        text-base text-black flex items-center no-underline
                         {% if link.links != blank -%}
                           font-semibold pb-8
                         {%- else -%}
@@ -284,7 +284,7 @@
                     </a>
                     {% if link.links != blank %}
                       {% for sublink in link.links %}
-                        <a class="pb-4 text-base font-light text-black" href="{{ sublink.url }}">
+                        <a class="pb-4 text-base font-light text-black no-underline" href="{{ sublink.url }}">
                           {{- sublink.title | escape -}}
                         </a>
                       {% endfor %}
@@ -322,7 +322,7 @@
                   <div class="flex flex-col mb-4">
                     <a
                       class="
-                        text-base text-black flex items-center
+                        text-base text-black flex items-center no-underline
                         {% if link.links != blank -%}
                           font-semibold pb-8
                         {%- else -%}
@@ -335,7 +335,7 @@
                     </a>
                     {% if link.links != blank %}
                       {% for sublink in link.links %}
-                        <a class="pb-4 text-base font-light text-black" href="{{ sublink.url }}">
+                        <a class="pb-4 text-base font-light text-black no-underline" href="{{ sublink.url }}">
                           {{- sublink.title | escape -}}
                         </a>
                       {% endfor %}

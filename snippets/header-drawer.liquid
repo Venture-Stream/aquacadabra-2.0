@@ -30,7 +30,7 @@
           <form action="{{ routes.search_url }}" method="get" role="search" class="search search-modal__form">
             <div class="field">
               <input
-                class="search__input w-full bg-[#F2F2F2] rounded-xl p-6 pl-20 h-20"
+                class="search__input w-full border-0 bg-[#F2F2F2] rounded-xl p-6 md:pr-28 h-20"
                 id="{{ input_id }}"
                 type="search"
                 name="q"
@@ -60,7 +60,7 @@
                   <use xlink:href="#icon-reset">
                 </svg>
               </button>
-              <button class="search__button field__button" aria-label="{{ 'general.search.search' | t }}">
+              <button class="search__button field__button button button--secondary" aria-label="{{ 'general.search.search' | t }}">
                 <svg class="icon icon-search" aria-hidden="true" focusable="false">
                   <use href="#icon-search">
                 </svg>
@@ -197,15 +197,8 @@
             {%- if shop.customer_accounts_enabled -%}
               <a
                 href="{%- if customer -%}{{ routes.account_url }}{%- else -%}{{ routes.account_login_url }}{%- endif -%}"
-                class="menu-drawer__account link focus-inset h5 medium-hide large-up-hide"
+                class="link focus-inset h5 medium-hide large-up-hide block no-underline mb-4"
               >
-                <account-icon>
-                  {%- if customer and customer.has_avatar? -%}
-                    {{ customer | avatar }}
-                  {%- else -%}
-                    {% render 'icon-account' %}
-                  {%- endif -%}
-                </account-icon>
                 {%- liquid
                   if customer
                     echo 'customer.account_fallback' | t
@@ -215,6 +208,18 @@
                 -%}
               </a>
             {%- endif -%}
+            <a
+              href="/pages/wishlist"
+              class="link focus-inset h5 medium-hide large-up-hide block no-underline mb-4"
+            >
+              My Wishlist
+            </a>
+            <a
+            href="/pages/contact"
+            class="link focus-inset h5 medium-hide large-up-hide block no-underline"
+          >
+            Contact Us
+          </a>
           </div>
         </div>
       </div>

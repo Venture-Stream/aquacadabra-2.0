@@ -15,9 +15,6 @@ class MegaMenu extends HTMLElement {
       item.addEventListener('mouseenter', () => {
         var dataFlag = item.getAttribute('data-main'); 
         var menuItem = document.querySelector('[data-index="' + dataFlag + '"]'); 
-        if (!menuItem.classList.value.includes('bg-[#')) {
-          menuItem.classList.add('bg-white');
-        }
       })
       item.addEventListener('mouseleave', () => {
         this.closeMenus(menuItems, subMenus);
@@ -28,24 +25,18 @@ class MegaMenu extends HTMLElement {
     })
     page.addEventListener('mouseenter', () => {
       this.closeMenus(menuItems, subMenus);
-      menuItems.forEach((item) => {
-        item.classList.remove('bg-white');
-      })
     })
 
   }
 
   revealHeader(item, subMenus, menuItems) {
     this.closeMenus(menuItems, subMenus);
-    item.classList.remove('text-black');
-    item.classList.add('text-brand-blue');
+    item.classList.remove('text-white');
+    item.classList.add('text-brand-orange');
     var arrow = item.querySelector('svg');
     if(arrow) arrow.classList.add('rotate-180');
 
     if(item.matches(':hover')){
-      menuItems.forEach((item) => {
-        item.classList.remove('bg-white');
-      })
       var selector = item.getAttribute('data-index');
       var menuToOpen = document.querySelector('[data-sub-' + selector + ']'); 
       menuToOpen.classList.remove('hidden');
@@ -54,8 +45,8 @@ class MegaMenu extends HTMLElement {
 
   closeMenus(menuItems, subMenus) {
     menuItems.forEach((item) => {
-      item.classList.add('text-black');
-      item.classList.remove('text-brand-blue');
+      item.classList.add('text-white');
+      item.classList.remove('text-brand-orange');
       var arrow = item.querySelector('svg');
       if(arrow) arrow.classList.remove('rotate-180');
     })
