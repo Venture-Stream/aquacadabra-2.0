@@ -11,7 +11,7 @@
   <form action="{{ routes.search_url }}" method="get" role="search" class="search search-modal__form">
     <div class="field">
       <input
-        class="search__input w-full border-0 bg-[#F2F2F2] rounded-xl p-6 h-20"
+        class="search__input w-full border-0 bg-[#F2F2F2] rounded-xl p-6 md:pr-28 h-20"
         id="{{ input_id }}"
         type="search"
         name="q"
@@ -41,7 +41,7 @@
           <use xlink:href="#icon-reset">
         </svg>
       </button>
-      <button class="search__button field__button bg-brand-orange rounded-lg" aria-label="{{ 'general.search.search' | t }}">
+      <button class="search__button field__button button button--secondary" aria-label="{{ 'general.search.search' | t }}">
         <svg class="icon icon-search" aria-hidden="true" focusable="false">
           <use href="#icon-search">
         </svg>

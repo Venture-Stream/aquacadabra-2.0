@@ -1523,7 +1523,6 @@ details[open] > .share-button__fallback {
 
 .field__button {
   align-items: center;
-  background-color: transparent;
   border: 0;
   color: currentColor;
   cursor: pointer;
@@ -1535,7 +1534,7 @@ details[open] > .share-button__fallback {
   position: absolute;
   right: 0;
   top: 0;
-  width: 4.4rem;
+  width: 6.8rem;
 }
 
 .field__button > svg {

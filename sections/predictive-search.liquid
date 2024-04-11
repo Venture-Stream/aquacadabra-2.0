@@ -5,7 +5,7 @@
     | plus: predictive_search.resources.pages.size
     | plus: predictive_search.resources.articles.size
   %}
-  <div id="predictive-search-results" role="listbox">
+  <div id="predictive-search-results" role="listbox" class="color-scheme-1">
     {%- if first_column_results_size > 0 or predictive_search.resources.products.size > 0 -%}
       <div
         id="predictive-search-results-groups-wrapper"
@@ -33,7 +33,7 @@
               role="option"
               aria-selected="false"
             >
-              <a href="{{ query.url }}" class="predictive-search__item link link--text" tabindex="-1">
+              <a href="{{ query.url }}" class="predictive-search__item " tabindex="-1">
                 <div class="predictive-search__item-content predictive-search__item-content--centered">
                   <p
                     class="predictive-search__item-heading predictive-search__item-query-result h5"
@@ -52,7 +52,7 @@
               role="option"
               aria-selected="false"
             >
-              <a href="{{ collection.url }}" class="predictive-search__item link link--text" tabindex="-1">
+              <a href="{{ collection.url }}" class="predictive-search__item " tabindex="-1">
                 <div class="predictive-search__item-content predictive-search__item-content--centered">
                   <p class="predictive-search__item-heading h5">{{ collection.title | escape }}</p>
                 </div>
@@ -83,7 +83,7 @@
               role="option"
               aria-selected="false"
             >
-              <a href="{{ page.url }}" class="predictive-search__item link link--text" tabindex="-1">
+              <a href="{{ page.url }}" class="predictive-search__item" tabindex="-1">
                 <div class="predictive-search__item-content predictive-search__item-content--centered">
                   <p class="predictive-search__item-heading h5">{{ page.title | escape }}</p>
                 </div>
@@ -97,7 +97,7 @@
               role="option"
               aria-selected="false"
             >
-              <a href="{{ article.url }}" class="predictive-search__item link link--text" tabindex="-1">
+              <a href="{{ article.url }}" class="predictive-search__item  " tabindex="-1">
                 <div class="predictive-search__item-content predictive-search__item-content--centered">
                   <p class="predictive-search__item-heading h5">{{ article.title | escape }}</p>
                 </div>
@@ -138,7 +138,7 @@
                 >
                   <a
                     href="{{ product.url }}"
-                    class="predictive-search__item predictive-search__item--link-with-thumbnail link link--text"
+                    class="predictive-search__item predictive-search__item---with-thumbnail  "
                     tabindex="-1"
                   >
                     {%- if product.featured_media != blank -%}
@@ -189,7 +189,7 @@
                   role="option"
                   aria-selected="false"
                 >
-                  <a href="{{ page.url }}" class="predictive-search__item link link--text" tabindex="-1">
+                  <a href="{{ page.url }}" class="predictive-search__item  " tabindex="-1">
                     <div class="predictive-search__item-content predictive-search__item-content--centered">
                       <p class="predictive-search__item-heading h5">{{ page.title | escape }}</p>
                     </div>
@@ -203,7 +203,7 @@
                   role="option"
                   aria-selected="false"
                 >
-                  <a href="{{ article.url }}" class="predictive-search__item link link--text" tabindex="-1">
+                  <a href="{{ article.url }}" class="predictive-search__item  " tabindex="-1">
                     <div class="predictive-search__item-content predictive-search__item-content--centered">
                       <p class="predictive-search__item-heading h5">{{ article.title | escape }}</p>
                     </div>
@@ -223,7 +223,7 @@
 
     <div id="predictive-search-option-search-keywords" class="predictive-search__search-for-button">
       <button
-        class="predictive-search__item predictive-search__item--term link link--text h5 animate-arrow"
+        class="predictive-search__item predictive-search__item--term   h5 animate-arrow"
         tabindex="-1"
         role="option"
         aria-selected="false"
