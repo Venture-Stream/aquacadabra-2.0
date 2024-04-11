@@ -1,12 +1,12 @@
 <mega-menu>
-  <div class="relative border-t border-[#F2F2F2]">
-    <div class="items-center justify-center hidden pt-4 bg-white lg:flex">
+  <div class="color-scheme-3">
+    <div class="items-center justify-center hidden pt-4 lg:flex bg-[#1F4489]">
       <div class="flex justify-between h-full">
         {%- for block in blocks -%}
           {%- if block.settings.item_link != blank -%}
             <a
               href="{{ block.settings.item_link }}"
-              class="p-4 flex items-center leading-[1.2] pb-8 text-1.6 text-offblack transition-all"
+              class="no-underline hover:text-brand-orange p-4 flex items-center leading-[1.2] pb-8 text-1.6 font-semibold transition-all"
               data-index="{{ block.settings.title | handleize }}"
             >
               {{ block.settings.title | escape }}
@@ -24,7 +24,7 @@
             </a>
           {%- else -%}
             <span
-              class="p-4 flex items-center leading-[1.2] pb-8 text-1.6 text-offblack transition-all"
+              class="p-4 flex items-center leading-[1.2] pb-8 text-1.6 font-semibold transition-all hover:text-brand-orange"
               data-index="{{ block.settings.title | handleize }}"
             >
               {{ block.settings.title | escape }}

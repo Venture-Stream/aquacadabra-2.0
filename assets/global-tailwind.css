@@ -248,10 +248,6 @@
   border-left-width: 1px
 }
 
-.border-t{
-  border-top-width: 1px
-}
-
 .border-solid{
   border-style: solid
 }
@@ -259,11 +255,6 @@
 .border-\[\#0A2E71\]{
   --tw-border-opacity: 1;
   border-color: rgb(10 46 113 / var(--tw-border-opacity))
-}
-
-.border-\[\#F2F2F2\]{
-  --tw-border-opacity: 1;
-  border-color: rgb(242 242 242 / var(--tw-border-opacity))
 }
 
 .border-black{
@@ -302,6 +293,11 @@
 
 .bg-white\/70{
   background-color: rgb(255 255 255 / 0.7)
+}
+
+.bg-\[\#1F4489\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(31 68 137 / var(--tw-bg-opacity))
 }
 
 .p-4{
@@ -345,12 +341,12 @@
   padding-bottom: 2rem
 }
 
-.pt-4{
-  padding-top: 1rem
-}
-
 .pl-20{
   padding-left: 5rem
+}
+
+.pt-4{
+  padding-top: 1rem
 }
 
 .text-center{
@@ -417,11 +413,6 @@
 .text-black{
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity))
-}
-
-.text-offblack{
-  --tw-text-opacity: 1;
-  color: rgb(68 68 68 / var(--tw-text-opacity))
 }
 
 .text-white{
@@ -511,6 +502,10 @@ h1, h2, h3, h4, h5, h6{
   font-weight: 600;
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity))
+}
+
+a{
+  color: inherit
 }
 
 h1,
@@ -644,6 +639,11 @@ input{
   .countdown-banner.cart-timer .time{
     margin-left: 0.5rem
   }
+}
+
+.hover\:text-brand-orange:hover{
+  --tw-text-opacity: 1;
+  color: rgb(255 144 22 / var(--tw-text-opacity))
 }
 
 @media (min-width: 768px){
