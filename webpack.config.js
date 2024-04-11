@@ -7,7 +7,8 @@ const isProduction = process.env.NODE_ENV == 'production';
 
 const config = {
   entry: {
-		index: './src/scripts/index.js'
+		index: './src/scripts/index.js',
+		megamenu: './src/scripts/megamenu.js'
   },
   output: {
     filename: '[name].min.js',
