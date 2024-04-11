@@ -100,4 +100,9 @@ input {
   .countdown-banner.cart-timer .time {
     @apply ml-2;
   }
-}  
+}
+
+.section-heading {
+  border-width: 0 0 2px 0; /* no shorthand for border widths */  
+  @apply border-solid border-[#EEEEEE] m-0 mb-8 pb-4 underline underline-offset-[16px] decoration-brand-orange;
+}
