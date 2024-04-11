@@ -1,0 +1,43 @@
+<div class="bg-[#F8F8F8]">
+  <div class="page-width">
+    <div class="
+    max-w-screen-sm lg:max-w-none whitespace-nowrap overflow-hidden overflow-x-auto m-auto text-left
+    py-6 flex items-start justify-evenly md:justify-start">
+      {%- for block in section.blocks -%}
+        <a href="{{ block.settings.url }}" class="text-[#777] hover:text-[#000] transition-colors no-underline text-1.2 mr-8">{{ block.settings.text }}</a>
+      {%- endfor -%}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Header Quicklinks",
+  "settings": [],
+  "blocks": [
+    {
+      "type": "quicklink",
+      "name": "Quicklink",
+      "settings": [
+        {
+          "type": "text",
+          "id": "text",
+          "label": "Text",
+          "default": "Text"
+        },
+        {
+          "type": "url",
+          "id": "url",
+          "label": "URL"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "category": "Header",
+      "name": "Header Quicklinks"
+    }
+  ]
+}
+{% endschema %}

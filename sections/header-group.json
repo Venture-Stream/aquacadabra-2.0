@@ -40,7 +40,7 @@
           "settings": {
             "title": "Aquariums",
             "item_link": "#",
-            "col_linklist_1": "",
+            "col_linklist_1": "aquariums",
             "col_1_link": "",
             "col_1_img_text": "",
             "col_linklist_2": "",
@@ -210,6 +210,47 @@
         "padding_bottom": 20
       }
     },
+    "header_quicklinks_cTMLM6": {
+      "type": "header-quicklinks",
+      "blocks": {
+        "quicklink_jUqKMn": {
+          "type": "quicklink",
+          "settings": {
+            "text": "Popular Now",
+            "url": "shopify:\/\/collections\/most-popular"
+          }
+        },
+        "quicklink_Qpyrw4": {
+          "type": "quicklink",
+          "settings": {
+            "text": "Pond Heaters",
+            "url": "shopify:\/\/collections\/ponds-supplies-pond-accessories"
+          }
+        },
+        "quicklink_FxGMrh": {
+          "type": "quicklink",
+          "settings": {
+            "text": "Algae Remover",
+            "url": "shopify:\/\/products\/api-aqua-essential-water-conditioner"
+          }
+        },
+        "quicklink_gL73Ad": {
+          "type": "quicklink",
+          "settings": {
+            "text": "Aquarium Starter Kit",
+            "url": "shopify:\/\/collections\/aquariums"
+          }
+        }
+      },
+      "block_order": [
+        "quicklink_jUqKMn",
+        "quicklink_Qpyrw4",
+        "quicklink_FxGMrh",
+        "quicklink_gL73Ad"
+      ],
+      "settings": {
+      }
+    },
     "usp": {
       "type": "usp",
       "blocks": {
@@ -268,6 +309,7 @@
     "announcement-bar",
     "countdown-header",
     "header",
+    "header_quicklinks_cTMLM6",
     "usp"
   ]
 }
