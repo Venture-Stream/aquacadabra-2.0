@@ -333,10 +333,6 @@
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-white\/70{
-  background-color: rgb(255 255 255 / 0.7);
-}
-
 .fill-brand-orange{
   fill: #FF9016;
 }
@@ -385,10 +381,6 @@
 
 .pb-8{
   padding-bottom: 2rem;
-}
-
-.pl-20{
-  padding-left: 5rem;
 }
 
 .pr-6{
@@ -469,9 +461,9 @@
   color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
-.text-brand-blue{
+.text-brand-orange{
   --tw-text-opacity: 1;
-  color: rgb(21 57 123 / var(--tw-text-opacity));
+  color: rgb(255 144 22 / var(--tw-text-opacity));
 }
 
 .text-white{
