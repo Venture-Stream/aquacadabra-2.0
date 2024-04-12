@@ -109,10 +109,119 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "logo_blocks_iLGK48": {
+      "type": "logo-blocks",
+      "blocks": {
+        "logo_cqYwXf": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/fluval.svg",
+            "link": ""
+          }
+        },
+        "logo_qzymPd": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/EA-Logo_1.png",
+            "link": ""
+          }
+        },
+        "logo_Npaq3L": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Oase_1.svg",
+            "link": ""
+          }
+        },
+        "logo_DhnAbd": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Layer_1.svg",
+            "link": ""
+          }
+        },
+        "logo_hCq4QP": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Layer_2.svg",
+            "link": ""
+          }
+        },
+        "logo_acNai8": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Layer_3.svg",
+            "link": ""
+          }
+        },
+        "logo_38QDrc": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/api-logo_1.svg",
+            "link": ""
+          }
+        },
+        "logo_DyjqWU": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/easy-life-logo-blue_1.svg",
+            "link": ""
+          }
+        },
+        "logo_GTmB8d": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Layer_4.svg",
+            "link": ""
+          }
+        },
+        "logo_MeMWDd": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Layer_5.svg",
+            "link": ""
+          }
+        },
+        "logo_tRjF4j": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Layer_6.svg",
+            "link": ""
+          }
+        },
+        "logo_hRf4Kj": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Layer_7.svg",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "logo_cqYwXf",
+        "logo_qzymPd",
+        "logo_Npaq3L",
+        "logo_DhnAbd",
+        "logo_hCq4QP",
+        "logo_acNai8",
+        "logo_38QDrc",
+        "logo_DyjqWU",
+        "logo_GTmB8d",
+        "logo_MeMWDd",
+        "logo_tRjF4j",
+        "logo_hRf4Kj"
+      ],
+      "settings": {
+        "padding_top": 52,
+        "padding_bottom": 52,
+        "auto_scroll": true
+      }
     }
   },
   "order": [
     "link_blocks_e9BzjC",
-    "large_feature_blocks_KykRmr"
+    "large_feature_blocks_KykRmr",
+    "logo_blocks_iLGK48"
   ]
 }
