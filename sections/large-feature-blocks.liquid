@@ -1,0 +1,129 @@
+{%- style -%}
+	.section-{{ section.id }}-padding {
+		padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+		padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+	}
+
+	@media screen and (min-width: 750px) {
+		.section-{{ section.id }}-padding {
+			padding-top: {{ section.settings.padding_top }}px;
+			padding-bottom: {{ section.settings.padding_bottom }}px;
+		}
+	}
+{%- endstyle -%}
+  
+  <div class="section-{{ section.id }}-padding page-width">
+		<div class="flex md:flex-row flex-col items-center justify-center gap-12">
+			{% for block in section.blocks %}
+				<div class="md:w-1/3 w-full flex flex-col gap-4 text-center">
+					{% if block.settings.block_image %}
+						<a href="{{ block.settings.column_url }}">
+							<img
+							src="{{ block.settings.block_image | image_url: height: 534, width: 534 }}"
+							alt="{{ block.settings.block_heading | escape }}"
+							width="534"
+							height="534"
+							loading="lazy"
+							class="object-cover w-full h-full"
+							>
+						</a>
+					{% endif %}
+					{% if block.settings.button_text != empty %}
+						<h4>{{ block.settings.block_heading }}</h4>
+					{% endif %}
+					{% if block.settings.block_content != empty %}
+						<div class="rte mb-6">
+							{{ block.settings.block_content }}
+						</div>
+					{% endif %}
+					{% if block.settings.button_text != empty %}
+						<a href="{{ block.settings.column_url }}" class="button button--outline w-max mx-auto">
+							{{ block.settings.button_text }}
+						</a>
+					{% endif %}
+				</div>
+			{% endfor %}
+		</div>
+  </div>
+  
+{% schema %}
+	{
+		"name": "Large Feature Blocks",
+		"settings": [
+			{
+				"type": "header",
+				"content": "t:sections.all.padding.section_padding_heading"
+			},
+			{
+				"type": "range",
+				"id": "padding_top",
+				"min": 0,
+				"max": 100,
+				"step": 4,
+				"unit": "px",
+				"label": "t:sections.all.padding.padding_top",
+				"default": 36
+			},
+			{
+				"type": "range",
+				"id": "padding_bottom",
+				"min": 0,
+				"max": 100,
+				"step": 4,
+				"unit": "px",
+				"label": "t:sections.all.padding.padding_bottom",
+				"default": 36
+			}
+		],
+		"max_blocks": 3,
+		"blocks": [
+			{
+				"type": "column",
+				"name": "Feature Block",
+				"settings": [
+					{
+						"type": "url",
+						"id": "column_url",
+						"label": "Column Link"
+					},
+					{
+						"type": "image_picker",
+						"id": "block_image",
+						"label": "Image"
+					},
+					{
+						"type": "text",
+						"id": "block_heading",
+						"label": "Heading"
+					},
+					{
+						"type": "richtext",
+						"id": "block_content",
+						"label": "Content"
+					},
+					{
+						"type": "text",
+						"id": "button_text",
+						"label": "Button Text"
+					}
+				]
+			}
+		],
+		"presets": [
+			{
+				"name": "Large Feature Blocks",
+				"blocks": [
+					{
+						"type": "column"
+					},
+					{
+						"type": "column"
+					},
+					{
+						"type": "column"
+					}
+				]
+			}
+		]
+	}
+{% endschema %}
