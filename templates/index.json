@@ -1,210 +1,118 @@
 {
   "sections": {
-    "image_banner": {
-      "type": "image-banner",
+    "link_blocks_e9BzjC": {
+      "type": "link-blocks",
       "blocks": {
-        "heading": {
-          "type": "heading",
+        "block_qKhWMa": {
+          "type": "block",
           "settings": {
-            "heading": "Image banner",
-            "heading_size": "h0"
+            "link": "shopify:\/\/collections\/d-d-aquapro-reef",
+            "link_image": "shopify:\/\/shop_images\/tanks.jpg",
+            "link_title": "Aquarium Tanks"
           }
         },
-        "text": {
-          "type": "text",
+        "block_qw4kDE": {
+          "type": "block",
           "settings": {
-            "text": "Give customers details about the banner image(s) or content on the template.",
-            "text_style": "body"
+            "link": "shopify:\/\/collections\/pond-pumps",
+            "link_image": "shopify:\/\/shop_images\/pond_pump.jpg",
+            "link_title": "Pond Pumps"
           }
         },
-        "button": {
-          "type": "buttons",
+        "block_wf7mPK": {
+          "type": "block",
           "settings": {
-            "button_label_1": "Shop all",
-            "button_link_1": "shopify://collections/all",
-            "button_style_secondary_1": true,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
+            "link": "shopify:\/\/collections\/fish-foods-1",
+            "link_image": "shopify:\/\/shop_images\/food.jpg",
+            "link_title": "Fish Food"
+          }
+        },
+        "block_eJdHUz": {
+          "type": "block",
+          "settings": {
+            "link": "shopify:\/\/collections\/all",
+            "link_image": "shopify:\/\/shop_images\/clearwater.jpg",
+            "link_title": "Fish Treatments"
+          }
+        },
+        "block_hrzCRP": {
+          "type": "block",
+          "settings": {
+            "link": "shopify:\/\/collections\/vivariums",
+            "link_image": "shopify:\/\/shop_images\/heat.jpg",
+            "link_title": "Vivarium Lighting"
+          }
+        },
+        "block_c3BjU9": {
+          "type": "block",
+          "settings": {
+            "link": "shopify:\/\/collections\/all",
+            "link_image": "shopify:\/\/shop_images\/Mask_group.jpg",
+            "link_title": "Above Ground Ponds"
           }
         }
       },
       "block_order": [
-        "heading",
-        "text",
-        "button"
+        "block_qKhWMa",
+        "block_qw4kDE",
+        "block_wf7mPK",
+        "block_eJdHUz",
+        "block_hrzCRP",
+        "block_c3BjU9"
       ],
       "settings": {
-        "image_overlay_opacity": 40,
-        "image_height": "large",
-        "desktop_content_position": "bottom-center",
-        "show_text_box": false,
-        "desktop_content_alignment": "center",
-        "color_scheme": "scheme-3",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": false,
-        "show_text_below": false
-      }
-    },
-    "rich_text": {
-      "type": "rich-text",
-      "blocks": {
-        "heading": {
-          "type": "heading",
-          "settings": {
-            "heading": "Talk about your brand",
-            "heading_size": "h1"
-          }
-        },
-        "text": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "heading",
-        "text"
-      ],
-      "settings": {
-        "color_scheme": "scheme-1",
-        "full_width": true,
+        "section_title": "Shop by Category",
         "padding_top": 40,
-        "padding_bottom": 0
+        "padding_bottom": 52
       }
     },
-    "featured_collection": {
-      "type": "featured-collection",
-      "settings": {
-        "title": "Featured products",
-        "heading_size": "h2",
-        "collection": "all",
-        "products_to_show": 8,
-        "columns_desktop": 4,
-        "color_scheme": "scheme-1",
-        "show_view_all": false,
-        "swipe_on_mobile": false,
-        "image_ratio": "adapt",
-        "show_secondary_image": true,
-        "show_vendor": false,
-        "show_rating": false,
-        "columns_mobile": "2",
-        "padding_top": 28,
-        "padding_bottom": 36
-      }
-    },
-    "collage": {
-      "type": "collage",
+    "large_feature_blocks_KykRmr": {
+      "type": "large-feature-blocks",
       "blocks": {
-        "collection-0": {
-          "type": "collection",
+        "column_VYcW4H": {
+          "type": "column",
           "settings": {
-            "collection": ""
+            "column_url": "shopify:\/\/collections\/all",
+            "block_image": "shopify:\/\/shop_images\/mask_group.png",
+            "block_heading": "Above ground ponds",
+            "block_content": "<p>Augue curabitur tristique tempus vulputate cras ac facilisis praesent.<\/p>",
+            "button_text": "Shop Above ground ponds"
           }
         },
-        "product": {
-          "type": "product",
+        "column_Kynqwi": {
+          "type": "column",
           "settings": {
-            "product": "",
-            "second_image": false
+            "column_url": "shopify:\/\/collections\/all",
+            "block_image": "shopify:\/\/shop_images\/pond_plant_kit_small_promo.jpg",
+            "block_heading": "New In",
+            "block_content": "<p>Augue curabitur tristique tempus vulputate cras ac facilisis praesent.<\/p>",
+            "button_text": "Shop all New In"
           }
         },
-        "collection-1": {
-          "type": "collection",
+        "column_QaQKVn": {
+          "type": "column",
           "settings": {
-            "collection": ""
+            "column_url": "shopify:\/\/collections\/all",
+            "block_image": "shopify:\/\/shop_images\/Rectangle_44.png",
+            "block_heading": "Up to 70% off in our Big Sale!",
+            "block_content": "<p>Augue curabitur tristique tempus vulputate cras ac facilisis praesent.<\/p>",
+            "button_text": "Shop the sale"
           }
         }
       },
       "block_order": [
-        "collection-0",
-        "product",
-        "collection-1"
+        "column_VYcW4H",
+        "column_Kynqwi",
+        "column_QaQKVn"
       ],
       "settings": {
-        "heading": "Multimedia collage",
-        "heading_size": "h2",
-        "desktop_layout": "left",
-        "mobile_layout": "collage",
-        "color_scheme": "scheme-1",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "video": {
-      "type": "video",
-      "settings": {
-        "heading": "",
-        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
-        "heading_size": "h1",
-        "description": "",
-        "full_width": false,
-        "color_scheme": "scheme-1",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "multicolumn": {
-      "type": "multicolumn",
-      "blocks": {
-        "column1": {
-          "type": "column",
-          "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column2": {
-          "type": "column",
-          "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column3": {
-          "type": "column",
-          "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "column1",
-        "column2",
-        "column3"
-      ],
-      "settings": {
-        "title": "",
-        "heading_size": "h1",
-        "image_width": "third",
-        "image_ratio": "adapt",
-        "columns_desktop": 3,
-        "column_alignment": "center",
-        "background_style": "none",
-        "button_label": "",
-        "button_link": "",
-        "swipe_on_mobile": false,
-        "color_scheme": "scheme-1",
-        "columns_mobile": "1",
         "padding_top": 36,
         "padding_bottom": 36
       }
     }
   },
   "order": [
-    "image_banner",
-    "rich_text",
-    "featured_collection",
-    "collage",
-    "video",
-    "multicolumn"
+    "link_blocks_e9BzjC",
+    "large_feature_blocks_KykRmr"
   ]
 }
