@@ -214,14 +214,51 @@
       ],
       "settings": {
         "padding_top": 52,
-        "padding_bottom": 52,
-        "auto_scroll": true
+        "padding_bottom": 52
+      }
+    },
+    "image_with_text_3mPaBt": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_4hn9VT": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>VIVARIUM SUPPLIES<\/strong>"
+          }
+        },
+        "text_daa6wX": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Vel a quisque vulputate malesuada hendrerit leo posuere iaculis dictum gravida malesuada cursus nibh. Diam blandit convallis nec eget porta eros phasellus lobortis orci eu volutpat feugiat proin quisque. Fringilla at tristique nulla et nullam tincidunt sodales cursus. Blandit vulputate senectus pulvinar integer iaculis tortor consectetur convallis blandit iaculis id. Nibh lectus integer arcu porta curabitur velit nisl integer orci diam orci faucibus vestibulum aliquet.<\/p>"
+          }
+        },
+        "button_N9RLaf": {
+          "type": "button",
+          "settings": {
+            "button_label": "Shop All Reptiles",
+            "button_link": "shopify:\/\/collections\/reptiles",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_4hn9VT",
+        "text_daa6wX",
+        "button_N9RLaf"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/AdobeStock_612455245_1.jpg",
+        "background_color": "#e5f6e6",
+        "layout": "text_first",
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     }
   },
   "order": [
     "link_blocks_e9BzjC",
     "large_feature_blocks_KykRmr",
-    "logo_blocks_iLGK48"
+    "logo_blocks_iLGK48",
+    "image_with_text_3mPaBt"
   ]
 }
