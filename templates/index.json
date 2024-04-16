@@ -217,6 +217,17 @@
         "padding_bottom": 52
       }
     },
+    "featured_blog_qkxRUK": {
+      "type": "featured-blog",
+      "settings": {
+        "background_color": "#f5f6fb",
+        "heading": "Latest updates",
+        "blog": "news",
+        "show_date": false,
+        "padding_top": 48,
+        "padding_bottom": 24
+      }
+    },
     "image_with_text_3mPaBt": {
       "type": "image-with-text",
       "blocks": {
@@ -259,6 +270,7 @@
     "link_blocks_e9BzjC",
     "large_feature_blocks_KykRmr",
     "logo_blocks_iLGK48",
+    "featured_blog_qkxRUK",
     "image_with_text_3mPaBt"
   ]
 }
