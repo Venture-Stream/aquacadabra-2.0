@@ -149,6 +149,10 @@
   margin-top: 0.5rem;
 }
 
+.mb-8{
+  margin-bottom: 2rem;
+}
+
 .block{
   display: block;
 }
@@ -237,6 +241,10 @@
 
 .cursor-pointer{
   cursor: pointer;
+}
+
+.resize{
+  resize: both;
 }
 
 .grid-cols-1{
@@ -369,6 +377,10 @@
   border-right-width: 0px;
 }
 
+.border-t{
+  border-top-width: 1px;
+}
+
 .border-t-0{
   border-top-width: 0px;
 }
@@ -380,6 +392,11 @@
 .border-\[\#0A2E71\]{
   --tw-border-opacity: 1;
   border-color: rgb(10 46 113 / var(--tw-border-opacity));
+}
+
+.border-\[\#DCDCDC\]{
+  --tw-border-opacity: 1;
+  border-color: rgb(220 220 220 / var(--tw-border-opacity));
 }
 
 .border-\[\#EEEEEE\]{
@@ -434,6 +451,15 @@
 .bg-white{
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#\]{
+  background-color: #;
+}
+
+.bg-\[\#15397B\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(21 57 123 / var(--tw-bg-opacity));
 }
 
 .fill-brand-orange{
@@ -514,6 +540,10 @@
 
 .pt-6{
   padding-top: 1.5rem;
+}
+
+.pt-12{
+  padding-top: 3rem;
 }
 
 .text-left{
@@ -899,6 +929,16 @@ input{
   text-decoration-line: underline;
 }
 
+@media (min-width: 480px){
+  .sm\:hidden{
+    display: none;
+  }
+
+  .sm\:cursor-default{
+    cursor: default;
+  }
+}
+
 @media (min-width: 768px){
   .md\:-mb-24{
     margin-bottom: -6rem;
@@ -906,6 +946,10 @@ input{
 
   .md\:-mt-48{
     margin-top: -12rem;
+  }
+
+  .md\:mb-0{
+    margin-bottom: 0px;
   }
 
   .md\:block{
@@ -976,6 +1020,10 @@ input{
     flex-direction: row-reverse;
   }
 
+  .md\:items-center{
+    align-items: center;
+  }
+
   .md\:justify-start{
     justify-content: flex-start;
   }
@@ -1013,12 +1061,25 @@ input{
     padding-bottom: 0px;
   }
 
+  .md\:py-12{
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
   .md\:pr-20{
     padding-right: 5rem;
   }
 
   .md\:pr-28{
     padding-right: 7rem;
+  }
+
+  .md\:pt-40{
+    padding-top: 10rem;
+  }
+
+  .md\:pt-28{
+    padding-top: 7rem;
   }
 
   .md\:text-3{
@@ -1073,6 +1134,10 @@ input{
 
   .lg\:overflow-x-hidden{
     overflow-x: hidden;
+  }
+
+  .lg\:border-0{
+    border-width: 0px;
   }
 
   .lg\:p-16{

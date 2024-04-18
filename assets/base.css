@@ -754,17 +754,6 @@ summary::-webkit-details-marker {
   letter-spacing: 0.08rem;
 }
 
-/* component-grid */
-.grid {
-  margin-bottom: 2rem;
-  padding: 0;
-  list-style: none;
-}
-
-.grid:last-child {
-  margin-bottom: 0;
-}
-
 .grid__item {
   flex-grow: 1;
   flex-shrink: 0;
