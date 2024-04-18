@@ -70,6 +70,10 @@
   right: 15%;
 }
 
+.top-0{
+  top: 0px;
+}
+
 .top-1\/2{
   top: 50%;
 }
@@ -173,6 +177,10 @@
   display: none;
 }
 
+.\!hidden{
+  display: none !important;
+}
+
 .h-20{
   height: 5rem;
 }
@@ -204,6 +212,14 @@
 
 .min-w-\[256px\]{
   min-width: 256px;
+}
+
+.min-w-\[312px\]{
+  min-width: 312px;
+}
+
+.min-w-\[260px\]{
+  min-width: 260px;
 }
 
 .max-w-\[120rem\]{
@@ -451,10 +467,6 @@
 .bg-white{
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-.bg-\[\#\]{
-  background-color: #;
 }
 
 .bg-\[\#15397B\]{
@@ -892,18 +904,35 @@ input{
   }
 }
 
-.section-heading {
-  border-width: 0 0 2px 0;
-  /* no shorthand for border widths */
+.section-heading{
   margin: 0px;
   margin-bottom: 2rem;
-  border-style: solid;
-  --tw-border-opacity: 1;
-  border-color: rgb(238 238 238 / var(--tw-border-opacity));
   padding-bottom: 1rem;
   text-decoration-line: underline;
   text-decoration-color: #FF9016;
   text-underline-offset: 16px;
+}
+
+.product-tab{
+  margin-bottom: 0px;
+}
+
+.section-heading:not(.product-tab),
+.featured-products {
+  border-width: 0 0 2px 0;
+  /* no shorthand for border widths */
+  border-style: solid;
+  --tw-border-opacity: 1;
+  border-color: rgb(238 238 238 / var(--tw-border-opacity));
+}
+
+.featured-products {
+  .product-tab:has(input:not(:checked)){
+    text-decoration-color: #EEEEEE;
+  }
+  .product-tab:has(input:not(:checked)){
+    opacity: 0.25;
+  }
 }
 
 .hover\:scale-y-105:hover{
@@ -946,10 +975,6 @@ input{
 
   .md\:-mt-48{
     margin-top: -12rem;
-  }
-
-  .md\:mb-0{
-    margin-bottom: 0px;
   }
 
   .md\:block{
@@ -1061,25 +1086,12 @@ input{
     padding-bottom: 0px;
   }
 
-  .md\:py-12{
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-  }
-
   .md\:pr-20{
     padding-right: 5rem;
   }
 
   .md\:pr-28{
     padding-right: 7rem;
-  }
-
-  .md\:pt-40{
-    padding-top: 10rem;
-  }
-
-  .md\:pt-28{
-    padding-top: 7rem;
   }
 
   .md\:text-3{
@@ -1130,6 +1142,10 @@ input{
 
   .lg\:grid-cols-6{
     grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
+
+  .lg\:grid-cols-5{
+    grid-template-columns: repeat(5, minmax(0, 1fr));
   }
 
   .lg\:overflow-x-hidden{
