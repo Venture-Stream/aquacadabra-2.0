@@ -110,6 +110,45 @@
         "padding_bottom": 36
       }
     },
+    "featured_products_HmegyR": {
+      "type": "featured-products",
+      "blocks": {
+        "tab_h4dFMm": {
+          "type": "tab",
+          "settings": {
+            "product_tab": "Popular",
+            "collection": "clearance",
+            "image_ratio": "square",
+            "image_shape": "default",
+            "show_secondary_image": false,
+            "show_vendor": false,
+            "show_rating": false,
+            "quick_add": "none"
+          }
+        },
+        "tab_qgYTqj": {
+          "type": "tab",
+          "settings": {
+            "product_tab": "New In",
+            "collection": "aquariums-fish-tank",
+            "image_ratio": "square",
+            "image_shape": "default",
+            "show_secondary_image": false,
+            "show_vendor": false,
+            "show_rating": false,
+            "quick_add": "none"
+          }
+        }
+      },
+      "block_order": [
+        "tab_h4dFMm",
+        "tab_qgYTqj"
+      ],
+      "settings": {
+        "padding_top": 52,
+        "padding_bottom": 40
+      }
+    },
     "logo_blocks_iLGK48": {
       "type": "logo-blocks",
       "blocks": {
@@ -314,13 +353,16 @@
       "settings": {
         "banner_image": "shopify:\/\/shop_images\/AdobeStock_366401238_1.jpg",
         "banner_title": "<p>Everything you need for your aquarium<\/p>",
-        "banner_content": "<p>Blandit vulputate senectus pulvinar integer iaculis tortor consectetur convallis blandit iaculis id. Nibh lectus integer arcu porta curabitur velit nisl integer orci diam orci faucibus vestibulum aliquet.<\/p>"
+        "banner_content": "<p>Blandit vulputate senectus pulvinar integer iaculis tortor consectetur convallis blandit iaculis id. Nibh lectus integer arcu porta curabitur velit nisl integer orci diam orci faucibus vestibulum aliquet.<\/p>",
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     }
   },
   "order": [
     "link_blocks_e9BzjC",
     "large_feature_blocks_KykRmr",
+    "featured_products_HmegyR",
     "logo_blocks_iLGK48",
     "featured_blog_qkxRUK",
     "image_with_text_3mPaBt",
