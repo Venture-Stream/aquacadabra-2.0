@@ -110,10 +110,6 @@
   }
 }
 
-.footer-block:empty {
-  display: none;
-}
-
 .footer-block--newsletter {
   display: flex;
   align-items: flex-end;
@@ -128,6 +124,10 @@
 @media screen and (max-width: 749px) {
   .footer-block.footer-block--menu:only-child {
     text-align: left;
+  }
+  
+  .footer-block:empty {
+    display: none;
   }
 }
 
@@ -413,8 +413,18 @@
   max-width: 20rem;
 }
 
+.footer-block__details-content .rte a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-block__details-content .rte {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
 .copyright__content {
-  font-size: 1.1rem;
+  font-size: 1.3rem;
 }
 
 .copyright__content a {

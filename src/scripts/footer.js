@@ -1,5 +1,4 @@
 function accordionFooter() {
-  console.log('accordionFooter');
   var tabHeadings = document.querySelectorAll('[data-footer-heading]');
   tabHeadings.forEach((item, index) => {
     var arrow = item.querySelector('svg'); 
