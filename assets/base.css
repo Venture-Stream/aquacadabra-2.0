@@ -758,6 +758,8 @@ summary::-webkit-details-marker {
   flex-shrink: 0;
 }
 
+li.grid__item {
+  list-style: none;}
 
 .grid--gapless.grid {
   column-gap: 0;
