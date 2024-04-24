@@ -157,6 +157,16 @@
   margin-bottom: 5rem;
 }
 
+.mx-6{
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+.mx-2{
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
 .mb-4{
   margin-bottom: 1rem;
 }
@@ -433,6 +443,10 @@
   border-radius: 0.75rem;
 }
 
+.rounded-\[5px\]{
+  border-radius: 5px;
+}
+
 .border{
   border-width: 1px;
 }
@@ -497,6 +511,16 @@
 .border-white{
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
+}
+
+.border-\[\#eee\]{
+  --tw-border-opacity: 1;
+  border-color: rgb(238 238 238 / var(--tw-border-opacity));
+}
+
+.border-\[\#E0E0E0\]{
+  --tw-border-opacity: 1;
+  border-color: rgb(224 224 224 / var(--tw-border-opacity));
 }
 
 .bg-\[\#15397B\]{
@@ -647,6 +671,20 @@
 .py-12{
   padding-top: 3rem;
   padding-bottom: 3rem;
+}
+
+.px-4{
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.px-8{
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.pb-10{
+  padding-bottom: 2.5rem;
 }
 
 .pb-24{
@@ -1369,6 +1407,10 @@ input{
 
   .lg\:gap-8{
     gap: 2rem;
+  }
+
+  .lg\:grid-cols-6{
+    grid-template-columns: repeat(6, minmax(0, 1fr));
   }
 
   .lg\:overflow-x-hidden{
