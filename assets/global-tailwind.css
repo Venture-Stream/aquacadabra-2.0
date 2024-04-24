@@ -522,6 +522,10 @@
   padding-bottom: 2rem;
 }
 
+.pb-10{
+  padding-bottom: 2.5rem;
+}
+
 .pb-24{
   padding-bottom: 6rem;
 }
@@ -548,10 +552,6 @@
 
 .pt-6{
   padding-top: 1.5rem;
-}
-
-.pb-10{
-  padding-bottom: 2.5rem;
 }
 
 .text-left{
