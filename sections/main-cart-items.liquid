@@ -29,7 +29,7 @@
   <div class="page-width">
     <div class="title-wrapper-with-link">
       <h1 class="title title--primary">{{ 'sections.cart.title' | t }}</h1>
-      <a href="{{ routes.all_products_collection_url }}" class="underlined-link">
+      <a href="{{ routes.all_products_collection_url }}" class="button button--secondary underlined-link">
         {{- 'general.continue_shopping' | t -}}
       </a>
     </div>
@@ -56,23 +56,26 @@
               <caption class="visually-hidden">
                 {{ 'sections.cart.title' | t }}
               </caption>
+              {% comment %} 
+                commenting because no designs so not sure if headings are used or not.
+               {% endcomment %}
               <thead>
                 <tr>
                   <th class="caption-with-letter-spacing" colspan="2" scope="col">
-                    {{ 'sections.cart.headings.product' | t }}
+                    {% comment %} {{ 'sections.cart.headings.product' | t }} {% endcomment %}
                   </th>
                   <th class="medium-hide large-up-hide right caption-with-letter-spacing" colspan="1" scope="col">
-                    {{ 'sections.cart.headings.total' | t }}
+                    {% comment %} {{ 'sections.cart.headings.total' | t }} {% endcomment %}
                   </th>
                   <th
                     class="cart-items__heading--wide cart-items__heading--quantity small-hide caption-with-letter-spacing"
                     colspan="1"
                     scope="col"
                   >
-                    {{ 'sections.cart.headings.quantity' | t }}
+                    {% comment %} {{ 'sections.cart.headings.quantity' | t }} {% endcomment %}
                   </th>
                   <th class="small-hide right caption-with-letter-spacing" colspan="1" scope="col">
-                    {{ 'sections.cart.headings.total' | t }}
+                    {% comment %} {{ 'sections.cart.headings.total' | t }} {% endcomment %}
                   </th>
                 </tr>
               </thead>
@@ -241,14 +244,14 @@
                               </button>
                             {%- endif -%}
                             <quantity-input class="quantity cart-quantity">
-                              <button class="quantity__button" name="minus" type="button">
+                              <button class="quantity__button border border-[#E0E0E0] rounded-[5px] border-solid" name="minus" type="button">
                                 <span class="visually-hidden">
                                   {{- 'products.product.quantity.decrease' | t: product: item.product.title | escape -}}
                                 </span>
                                 {% render 'icon-minus' %}
                               </button>
                               <input
-                                class="quantity__input"
+                                class="mx-2 quantity__input border border-[#E0E0E0] rounded-[5px] border-solid text-center"
                                 data-quantity-variant-id="{{ item.variant.id }}"
                                 type="number"
                                 name="updates[]"
@@ -266,7 +269,7 @@
                                 id="Quantity-{{ item.index | plus: 1 }}"
                                 data-index="{{ item.index | plus: 1 }}"
                               >
-                              <button class="quantity__button" name="plus" type="button">
+                              <button class="quantity__button border border-[#E0E0E0] rounded-[5px] border-solid" name="plus" type="button">
                                 <span class="visually-hidden">
                                   {{- 'products.product.quantity.increase' | t: product: item.product.title | escape -}}
                                 </span>
@@ -280,7 +283,7 @@
                           >
                             <a
                               href="{{ item.url_to_remove }}"
-                              class="button button--tertiary"
+                              class="px-8 button button--tertiary"
                               aria-label="{{ 'sections.cart.remove_title' | t: title: item.title }}"
                             >
                               {% render 'icon-remove' %}
@@ -388,7 +391,6 @@
                     </td>
 
                     <td class="cart-item__totals right small-hide">
-                      {%- render 'loading-spinner' -%}
                       <div class="cart-item__price-wrapper">
                         {%- if item.original_line_price != item.final_line_price -%}
                           <dl class="cart-item__discounted-prices">
