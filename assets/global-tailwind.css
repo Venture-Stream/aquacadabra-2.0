@@ -129,6 +129,10 @@
   margin-bottom: 1.5rem;
 }
 
+.mb-8{
+  margin-bottom: 2rem;
+}
+
 .ml-2{
   margin-left: 0.5rem;
 }
@@ -153,10 +157,6 @@
   margin-top: 0.5rem;
 }
 
-.mb-8{
-  margin-bottom: 2rem;
-}
-
 .block{
   display: block;
 }
@@ -175,10 +175,6 @@
 
 .hidden{
   display: none;
-}
-
-.\!hidden{
-  display: none !important;
 }
 
 .h-20{
@@ -212,10 +208,6 @@
 
 .min-w-\[256px\]{
   min-width: 256px;
-}
-
-.min-w-\[312px\]{
-  min-width: 312px;
 }
 
 .min-w-\[260px\]{
@@ -430,6 +422,11 @@
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
 
+.bg-\[\#15397B\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(21 57 123 / var(--tw-bg-opacity));
+}
+
 .bg-\[\#1F4489\]{
   --tw-bg-opacity: 1;
   background-color: rgb(31 68 137 / var(--tw-bg-opacity));
@@ -467,11 +464,6 @@
 .bg-white{
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-.bg-\[\#15397B\]{
-  --tw-bg-opacity: 1;
-  background-color: rgb(21 57 123 / var(--tw-bg-opacity));
 }
 
 .fill-brand-orange{
@@ -546,6 +538,10 @@
   padding-right: 1.5rem;
 }
 
+.pt-12{
+  padding-top: 3rem;
+}
+
 .pt-4{
   padding-top: 1rem;
 }
@@ -554,8 +550,8 @@
   padding-top: 1.5rem;
 }
 
-.pt-12{
-  padding-top: 3rem;
+.pb-10{
+  padding-bottom: 2.5rem;
 }
 
 .text-left{
@@ -977,6 +973,10 @@ input{
     margin-top: -12rem;
   }
 
+  .md\:mb-0{
+    margin-bottom: 0px;
+  }
+
   .md\:block{
     display: block;
   }
@@ -1086,12 +1086,21 @@ input{
     padding-bottom: 0px;
   }
 
+  .md\:py-12{
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
   .md\:pr-20{
     padding-right: 5rem;
   }
 
   .md\:pr-28{
     padding-right: 7rem;
+  }
+
+  .md\:pt-28{
+    padding-top: 7rem;
   }
 
   .md\:text-3{
@@ -1140,12 +1149,12 @@ input{
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
-  .lg\:grid-cols-6{
-    grid-template-columns: repeat(6, minmax(0, 1fr));
-  }
-
   .lg\:grid-cols-5{
     grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+
+  .lg\:grid-cols-6{
+    grid-template-columns: repeat(6, minmax(0, 1fr));
   }
 
   .lg\:overflow-x-hidden{
