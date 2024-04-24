@@ -118,7 +118,7 @@
     {% assign slides = section.blocks | where: "type", "slide" %}
   
     {%- if section.blocks.size > 1 -%}
-      <div class="absolute w-full bottom-0 flex items-center py-12 lg:px-16 px-6 justify-between md:bg-transparent z-2 no-js-hidden">
+      <div class="absolute bottom-0 flex items-center justify-between w-full px-6 py-12 lg:px-16 md:bg-transparent z-2 no-js-hidden">
         <div class="slider-counter slider-counter--dots">
           <div class="slideshow__control-wrapper">
             {%- for slide in slides -%}
@@ -127,7 +127,7 @@
                 aria-label="{{ 'sections.slideshow.load_slide' | t }} {{ forloop.index }} {{ 'general.slider.of' | t }} {{ forloop.length }}"
                 aria-controls="Slider-{{ section.id }}"
               >
-                <span class="dot"></span>
+                <span class="transition-all duration-200 ease-in-out delay-75 dot"></span>
               </button>
             {%- endfor -%}
           </div>
@@ -135,7 +135,7 @@
         <div class="flex">
           <button
             type="button"
-            class="slider-button slider-button--prev bg-white"
+            class="bg-white slider-button slider-button--prev"
             name="previous"
             aria-label="{{ 'sections.slideshow.previous_slideshow' | t }}"
             aria-controls="Slider-{{ section.id }}"
@@ -188,7 +188,7 @@
         </style>
         <div class="relative flex flex-col grow">
           <div class="hero-card flex min-h-[200px] grow w-[100%]" style="background-image: url('{{ block.settings.image | image_url }}'); background-size: cover">
-            <div class="lg:my-auto my-20 mx-10 w-full lg:gap-8 flex flex-col items-center justify-center text-center z-1">
+            <div class="flex flex-col items-center justify-center w-full mx-10 my-20 text-center lg:my-auto lg:gap-8 z-1">
               <p class="text-white text-2.8 lg:text-3.2 mb-6 lg:w-[95%] text-wrap uppercase font-black">{{ block.settings.title }}</p>
                 <a class="button {% if block.settings.button_style_secondary %}button--outline {% else %} button--default border-0 {% endif %}" href="{{ block.settings.link }}">
                 {{ block.settings.button_label }}
