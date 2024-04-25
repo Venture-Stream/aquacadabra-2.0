@@ -50,6 +50,8 @@
                   render 'icon-stars'
                 when 'finance'
                   render 'icon-finance'
+                when 'returns'
+                  render 'icon-returns'
                 else
                   render 'icon-accordion' icon: block.settings.icon
               endcase
@@ -57,7 +59,7 @@
           %}
           <div class="ml-2">
             {%- if block.settings.title != blank -%}
-              <span class="font-bold text-1 text-black">{{ block.settings.title | escape }}</span>
+              <span class="font-bold text-1 text-black uppercase">{{ block.settings.title | escape }}</span>
             {%- endif -%}
             {%- if block.settings.text != blank -%}
             <div class="rte text-1 {% if block.settings.title != blank %}mt-2{% endif %} text-[#666]">{{ block.settings.text }}</div>
@@ -121,6 +123,10 @@
             {
               "value": "finance",
               "label": "Finance"
+            },
+            {
+              "value": "returns",
+              "label": "Returns"
             },
             {
               "value": "price_beat_check_mark",
