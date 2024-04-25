@@ -79,10 +79,10 @@
       ],
       "settings": {
         "slide_height": "adapt_image",
-        "slider_visual": "dots",
         "image_behavior": "none",
-        "show_text_below": false,
-        "accessibility_info": "Slideshow about our brand"
+        "accessibility_info": "Slideshow about our brand",
+        "padding_top": 0,
+        "padding_bottom": 32
       }
     },
     "link_blocks_e9BzjC": {
@@ -232,6 +232,39 @@
       "settings": {
         "padding_top": 52,
         "padding_bottom": 40
+      }
+    },
+    "newsletter_zMFqMk": {
+      "type": "newsletter",
+      "blocks": {
+        "heading_KgVtHR": {
+          "type": "heading",
+          "settings": {
+            "heading": "Sign up for updates & offers"
+          }
+        },
+        "paragraph_kyTCrX": {
+          "type": "paragraph",
+          "settings": {
+            "text": "<p>Join our newsletter for occasional updates and offers in your inbox. You can unsubscribe at any time.<\/p>"
+          }
+        },
+        "email_form_6D74ac": {
+          "type": "email_form",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "heading_KgVtHR",
+        "paragraph_kyTCrX",
+        "email_form_6D74ac"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/AdobeStock_145607813_1.png",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
       }
     },
     "logo_blocks_iLGK48": {
@@ -449,6 +482,7 @@
     "link_blocks_e9BzjC",
     "large_feature_blocks_KykRmr",
     "featured_products_HmegyR",
+    "newsletter_zMFqMk",
     "logo_blocks_iLGK48",
     "featured_blog_qkxRUK",
     "image_with_text_3mPaBt",

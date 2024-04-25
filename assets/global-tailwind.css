@@ -196,6 +196,10 @@
   margin-top: 1.5rem;
 }
 
+.mt-8{
+  margin-top: 2rem;
+}
+
 .block{
   display: block;
 }
@@ -269,8 +273,20 @@
   min-width: 260px;
 }
 
+.max-w-\[1720px\]{
+  max-width: 1720px;
+}
+
 .max-w-\[260px\]{
   max-width: 260px;
+}
+
+.max-w-\[640px\]{
+  max-width: 640px;
+}
+
+.max-w-\[960px\]{
+  max-width: 960px;
 }
 
 .max-w-screen-max{
@@ -344,6 +360,10 @@
 
 .items-center{
   align-items: center;
+}
+
+.items-stretch{
+  align-items: stretch;
 }
 
 .justify-start{
@@ -1078,6 +1098,26 @@ input{
 }
 
 @media (min-width: 768px){
+  .md\:mx-0{
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .md\:my-16{
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+  }
+
+  .md\:mx-4{
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  .md\:mx-2{
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+
   .md\:-mb-24{
     margin-bottom: -6rem;
   }
@@ -1122,6 +1162,23 @@ input{
     width: 33.333333%;
   }
 
+  .md\:w-2\/5{
+    width: 40%;
+  }
+
+  .md\:w-3\/5{
+    width: 60%;
+  }
+
+  .md\:w-4\/5{
+    width: 80%;
+  }
+
+  .md\:w-max{
+    width: -moz-max-content;
+    width: max-content;
+  }
+
   .md\:min-w-0{
     min-width: 0px;
   }
@@ -1158,12 +1215,20 @@ input{
     flex-direction: row-reverse;
   }
 
+  .md\:flex-nowrap{
+    flex-wrap: nowrap;
+  }
+
   .md\:items-center{
     align-items: center;
   }
 
   .md\:justify-start{
     justify-content: flex-start;
+  }
+
+  .md\:gap-8{
+    gap: 2rem;
   }
 
   .md\:border-b{
@@ -1184,6 +1249,10 @@ input{
 
   .md\:bg-transparent{
     background-color: transparent;
+  }
+
+  .md\:p-16{
+    padding: 4rem;
   }
 
   .md\:p-20{
@@ -1232,6 +1301,10 @@ input{
   .md\:text-3\.8{
     font-size: 38px;
   }
+
+  .md\:text-3\.2{
+    font-size: 32px;
+  }
 }
 
 @media (min-width: 976px){
@@ -1258,6 +1331,10 @@ input{
 
   .lg\:min-h-0{
     min-height: 0px;
+  }
+
+  .lg\:min-h-\[350px\]{
+    min-height: 350px;
   }
 
   .lg\:min-h-\[725px\]{
@@ -1381,8 +1458,22 @@ input{
     max-width: 65%;
   }
 
+  .xl\:justify-center{
+    justify-content: center;
+  }
+
   .xl\:px-36{
     padding-left: 9rem;
     padding-right: 9rem;
+  }
+}
+
+@media (min-width: 1600px){
+  .max\:justify-center{
+    justify-content: center;
+  }
+
+  .max\:justify-between{
+    justify-content: space-between;
   }
 }
