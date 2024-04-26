@@ -273,6 +273,10 @@
   min-width: 260px;
 }
 
+.max-w-\[1100px\]{
+  max-width: 1100px;
+}
+
 .max-w-\[1720px\]{
   max-width: 1720px;
 }
@@ -625,6 +629,11 @@
   padding-bottom: 4rem;
 }
 
+.py-4{
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
 .py-6{
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
@@ -673,10 +682,6 @@
 
 .text-center{
   text-align: center;
-}
-
-.align-middle{
-  vertical-align: middle;
 }
 
 .text-1{
@@ -898,6 +903,8 @@ h1, h2, h3, h4, h5, h6{
   font-weight: 600;
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }
 
 a{
@@ -1112,16 +1119,6 @@ input{
     margin-bottom: 4rem;
   }
 
-  .md\:mx-4{
-    margin-left: 1rem;
-    margin-right: 1rem;
-  }
-
-  .md\:mx-2{
-    margin-left: 0.5rem;
-    margin-right: 0.5rem;
-  }
-
   .md\:-mb-24{
     margin-bottom: -6rem;
   }
@@ -1174,10 +1171,6 @@ input{
     width: 60%;
   }
 
-  .md\:w-4\/5{
-    width: 80%;
-  }
-
   .md\:w-max{
     width: -moz-max-content;
     width: max-content;
@@ -1219,10 +1212,6 @@ input{
     flex-direction: row-reverse;
   }
 
-  .md\:flex-nowrap{
-    flex-wrap: nowrap;
-  }
-
   .md\:items-center{
     align-items: center;
   }
@@ -1253,10 +1242,6 @@ input{
 
   .md\:bg-transparent{
     background-color: transparent;
-  }
-
-  .md\:p-16{
-    padding: 4rem;
   }
 
   .md\:p-20{
@@ -1302,12 +1287,12 @@ input{
     font-size: 30px;
   }
 
-  .md\:text-3\.8{
-    font-size: 38px;
-  }
-
   .md\:text-3\.2{
     font-size: 32px;
+  }
+
+  .md\:text-3\.8{
+    font-size: 38px;
   }
 }
 
@@ -1462,22 +1447,8 @@ input{
     max-width: 65%;
   }
 
-  .xl\:justify-center{
-    justify-content: center;
-  }
-
   .xl\:px-36{
     padding-left: 9rem;
     padding-right: 9rem;
-  }
-}
-
-@media (min-width: 1600px){
-  .max\:justify-center{
-    justify-content: center;
-  }
-
-  .max\:justify-between{
-    justify-content: space-between;
   }
 }
