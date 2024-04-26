@@ -100,13 +100,9 @@
   padding-top: 0;
 }
 
-.collapsible-content summary:hover {
-  background: rgba(var(--color-foreground), 0.04);
-}
-
 .collapsible-content summary:hover .accordion__title {
   text-decoration: underline;
-  text-underline-offset: 0.3rem;
+  text-underline-offset: 0.6rem;
 }
 
 /* check for flexbox gap in older Safari versions */
