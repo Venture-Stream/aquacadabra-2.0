@@ -10,6 +10,6 @@
     <span class="visually-hidden">{{ 'sections.header.cart_count' | t: count: cart.item_count }}</span>
   </div>
 {%- endif -%}
-<div class="hidden md:block border-l border-black ml-8 mr-4">
+<div class="hidden md:block ml-8 mr-4">
   <p class="text-1.2 text-brand-light-blue font-normal my-0">{{ cart.original_total_price  | money_without_trailing_zeros }}</p>
 </div>
