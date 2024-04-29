@@ -2865,7 +2865,7 @@ details-disclosure > details {
 
 .rte > p,
 .rte li {
-  color: #444444;
+  /* color: #444444; */
   line-height: 26px;
 }
 

@@ -96,3 +96,10 @@
     min-height: 20rem;
   }
 }
+
+.read-smore__link-wrap {
+  display: inline-block;
+}
+.read-smore__link {
+  text-decoration: underline;
+}
