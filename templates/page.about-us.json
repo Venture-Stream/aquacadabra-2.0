@@ -1,0 +1,120 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 0,
+        "page_content": false
+      }
+    },
+    "image_with_text_3QBaYm": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_pR6pEm": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>THE RIGHT PRODUCTS AT THE RIGHT PRICE<\/strong>"
+          }
+        },
+        "text_wR6tAa": {
+          "type": "text",
+          "settings": {
+            "text": "<p>There are many reasons to shop online with Aquacadabra, not just because we have a great range of products and FREE SHIPPING on all orders. Having traded online since 2003, we were one of the original specialist online aquatic retailers. As such, we have a huge wealth of experience in online trading. We continue to develop both our website and our operations to ensure we have the products you’re looking for, at the right price, providing you with an enjoyable online shopping experience backed by an excellent level of customer service.<br\/><br\/>At Aquacadabra however, it is not just about great value for money – service is equally important, which is why we are extremely proud of achieving an independently verified Service Rating of 99% from Feefo - that's an industry leading high level of service. The good thing about Feefo reviews, they can only be left by customers that have actually placed an order with us, unlike many alternative review companies. A big thank you to all our customers who have left this feedback - we're very grateful for you sharing this experience of shopping with us online.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_pR6pEm",
+        "text_wR6tAa"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/AdobeStock_605789034_1.png",
+        "background_color": "#f5f5fb",
+        "layout": "text_first",
+        "block_gap": true,
+        "padding_top": 36,
+        "padding_bottom": 0
+      }
+    },
+    "image_with_text_YLG9wY": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_kDTEib": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>VISIT US<\/strong>"
+          }
+        },
+        "text_RjjhQw": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We’re not just an online aquatic retailer, we are also a specialist aquatic retailer with a dry goods showroom and fish house located in Dartford, Kent, which you are very welcome to visit! Staffed by experienced aquarists with a love for the hobby, our staff don’t just manage the welfare of our livestock on site, many also have tropical and marine aquariums at home. It is only by being enthusiasts for the hobby that a true understanding of fish husbandry can be obtained, whether it is understanding the requirements of your fish or knowing the appropriate piece of equipment that you require to succeed in the hobby.<br\/><br\/>Our experience in-store and at home allows us to provide expert advice when required, so feel free to get in touch, you’re most welcome – whether that be by telephone (<a href=\"tel:01322 520 989\" target=\"_blank\" title=\"Phone 01322 520 989\">01322 520 989<\/a>), or our contact us form.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_kDTEib",
+        "text_RjjhQw"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/AdobeStock_458650585_1.png",
+        "background_color": "#f5f5fb",
+        "layout": "image_first",
+        "block_gap": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "testimonials_7BLYTa": {
+      "type": "testimonials",
+      "blocks": {
+        "testimonial_QqLxPE": {
+          "type": "testimonial",
+          "settings": {
+            "caption": "Excellent",
+            "excerpt": "<p>Very quick and happy to sort out an order error that was my mistake.<\/p>",
+            "cite": "- David Kerfoot",
+            "quote_color": "#15397B"
+          }
+        },
+        "testimonial_Ttca98": {
+          "type": "testimonial",
+          "settings": {
+            "caption": "Very easy to order",
+            "excerpt": "<p>Very easy to order and excellent service from ordering to delivery. I have ordered from the company several times and always good service and amazing product.<\/p>",
+            "cite": "",
+            "quote_color": "#15397B"
+          }
+        },
+        "testimonial_egEH7Y": {
+          "type": "testimonial",
+          "settings": {
+            "caption": "Good experience 👍🏻",
+            "excerpt": "<p>Nice easy to follow website,reasonable prices and speedy delivery with regular progress information.\u2028All in all a good experience 👍🏻<\/p>",
+            "cite": "– Michael Silvester",
+            "quote_color": "#15397B"
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_QqLxPE",
+        "testimonial_Ttca98",
+        "testimonial_egEH7Y"
+      ],
+      "settings": {
+        "section_title": "Read our customer reviews",
+        "button_text": "Read our reviews",
+        "button_link": "shopify:\/\/pages\/reviews",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    }
+  },
+  "order": [
+    "main",
+    "image_with_text_3QBaYm",
+    "image_with_text_YLG9wY",
+    "testimonials_7BLYTa"
+  ]
+}
