@@ -706,6 +706,11 @@ video {
   margin-bottom: 0px;
 }
 
+.my-12{
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
 .my-20{
   margin-top: 5rem;
   margin-bottom: 5rem;
@@ -756,6 +761,10 @@ video {
   margin-top: 0px;
 }
 
+.mt-12{
+  margin-top: 3rem;
+}
+
 .mt-2{
   margin-top: 0.5rem;
 }
@@ -766,10 +775,6 @@ video {
 
 .mt-8{
   margin-top: 2rem;
-}
-
-.mt-12{
-  margin-top: 3rem;
 }
 
 .block{
@@ -1036,6 +1041,10 @@ video {
   border-radius: 0.5rem;
 }
 
+.rounded-md{
+  border-radius: 0.375rem;
+}
+
 .rounded-xl{
   border-radius: 0.75rem;
 }
@@ -1099,6 +1108,11 @@ video {
 .border-\[\#F3F3F5\]{
   --tw-border-opacity: 1;
   border-color: rgb(243 243 245 / var(--tw-border-opacity));
+}
+
+.border-\[\#eee\]{
+  --tw-border-opacity: 1;
+  border-color: rgb(238 238 238 / var(--tw-border-opacity));
 }
 
 .border-white{
@@ -1190,6 +1204,11 @@ video {
   padding-right: 0px;
 }
 
+.px-16{
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+
 .px-6{
   padding-left: 1.5rem;
   padding-right: 1.5rem;
@@ -1218,6 +1237,11 @@ video {
 .py-16{
   padding-top: 4rem;
   padding-bottom: 4rem;
+}
+
+.py-3{
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
 }
 
 .py-4{
@@ -1331,6 +1355,10 @@ video {
   font-size: 34px;
 }
 
+.text-2\.2{
+  font-size: 22px;
+}
+
 .font-black{
   font-weight: 900;
 }
@@ -1410,14 +1438,19 @@ video {
   color: rgb(255 144 22 / var(--tw-text-opacity));
 }
 
+.text-offblack{
+  --tw-text-opacity: 1;
+  color: rgb(68 68 68 / var(--tw-text-opacity));
+}
+
 .text-white{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.text-offblack{
+.text-\[\#aaa\]{
   --tw-text-opacity: 1;
-  color: rgb(68 68 68 / var(--tw-text-opacity));
+  color: rgb(170 170 170 / var(--tw-text-opacity));
 }
 
 .no-underline{
@@ -1704,9 +1737,18 @@ input{
   }
 }
 
+.light-shadow {
+  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.10);
+}
+
 .hover\:scale-y-105:hover{
   --tw-scale-y: 1.05;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.hover\:bg-\[\#F2F2F2\]:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(242 242 242 / var(--tw-bg-opacity));
 }
 
 .hover\:text-\[\#000\]:hover{
@@ -1851,32 +1893,12 @@ input{
     max-width: 380px;
   }
 
-  .md\:max-w-\[85\%\]{
-    max-width: 85%;
-  }
-
-  .md\:max-w-\[70\%\]{
-    max-width: 70%;
-  }
-
   .md\:max-w-\[75\%\]{
     max-width: 75%;
   }
 
-  .md\:max-w-\[80\%\]{
-    max-width: 80%;
-  }
-
-  .md\:max-w-\[77\%\]{
-    max-width: 77%;
-  }
-
-  .md\:max-w-\[82\%\]{
-    max-width: 82%;
-  }
-
-  .md\:max-w-\[78\%\]{
-    max-width: 78%;
+  .md\:max-w-\[85\%\]{
+    max-width: 85%;
   }
 
   .md\:grid-cols-2{
@@ -1915,16 +1937,12 @@ input{
     justify-content: center;
   }
 
-  .md\:gap-8{
-    gap: 2rem;
-  }
-
-  .md\:gap-16{
-    gap: 4rem;
-  }
-
   .md\:gap-32{
     gap: 8rem;
+  }
+
+  .md\:gap-8{
+    gap: 2rem;
   }
 
   .md\:border-b{
