@@ -606,6 +606,10 @@ video {
   position: sticky;
 }
 
+.inset-0{
+  inset: 0px;
+}
+
 .bottom-0{
   bottom: 0px;
 }
@@ -668,6 +672,10 @@ video {
 
 .z-3{
   z-index: 3;
+}
+
+.-z-1{
+  z-index: -1;
 }
 
 .m-0{
@@ -1998,8 +2006,16 @@ input{
     grid-template-columns: repeat(6, minmax(0, 1fr));
   }
 
+  .lg\:grid-cols-2{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .lg\:flex-row{
     flex-direction: row;
+  }
+
+  .lg\:justify-center{
+    justify-content: center;
   }
 
   .lg\:gap-8{
@@ -2020,6 +2036,10 @@ input{
 
   .lg\:p-8{
     padding: 2rem;
+  }
+
+  .lg\:p-10{
+    padding: 2.5rem;
   }
 
   .lg\:px-0{
