@@ -363,3 +363,35 @@ class FacetRemove extends HTMLElement {
 }
 
 customElements.define('facet-remove', FacetRemove);
+
+class PriceCheckbox extends HTMLElement {
+  constructor() {
+    super();
+    this.addEventListener('click', () => this.handlePriceChange(this));
+  }
+
+  handlePriceChange(input) {
+    const allInputs = this.querySelectorAll('.price-filter');
+    const facetForm = this.closest('form');
+    const checkedInputs = [...allInputs].filter((input) => input.checked );
+    const first = checkedInputs[0];
+    const last = checkedInputs[checkedInputs.length - 1];
+
+    const min = first ? first.value.split('-')[0] * 1 / 100 : '';
+    const max = last ? last.value.split('-')[1] * 1 / 100 : '';
+
+    const parent = input.closest('.price-filter-menu');
+    const closestPriceRange = parent.querySelector('price-range');
+    const minInput = closestPriceRange.querySelectorAll('input')[0];
+    const maxInput = closestPriceRange.querySelectorAll('input')[1];
+    
+    minInput.value = min;
+    maxInput.value = max;
+
+    maxInput.dispatchEvent(new Event('change', { bubbles: true }));
+    facetForm.dispatchEvent(new Event('input', { bubbles: true }));
+  }
+
+}
+
+customElements.define('price-checkbox', PriceCheckbox);
