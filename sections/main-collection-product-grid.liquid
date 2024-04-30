@@ -54,6 +54,7 @@
             enable_filtering: section.settings.enable_filtering,
             enable_sorting: section.settings.enable_sorting,
             filter_type: section.settings.filter_type,
+            price_list: section.settings.price_list,
             paginate: paginate
           %}
         </aside>
@@ -327,6 +328,11 @@
     {
       "type": "header",
       "content": "t:sections.main-collection-product-grid.settings.header__1.content"
+    },
+    {
+      "type": "textarea",
+      "id": "price_list",
+      "label": "Price List"
     },
     {
       "type": "checkbox",
