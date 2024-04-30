@@ -674,10 +674,6 @@ video {
   z-index: 3;
 }
 
-.-z-1{
-  z-index: -1;
-}
-
 .m-0{
   margin: 0px;
 }
@@ -761,6 +757,10 @@ video {
   margin-top: 0px;
 }
 
+.mt-12{
+  margin-top: 3rem;
+}
+
 .mt-2{
   margin-top: 0.5rem;
 }
@@ -771,10 +771,6 @@ video {
 
 .mt-8{
   margin-top: 2rem;
-}
-
-.mt-12{
-  margin-top: 3rem;
 }
 
 .block{
@@ -1339,6 +1335,10 @@ video {
   font-size: 34px;
 }
 
+.text-2\.2{
+  font-size: 22px;
+}
+
 .font-black{
   font-weight: 900;
 }
@@ -1418,14 +1418,19 @@ video {
   color: rgb(255 144 22 / var(--tw-text-opacity));
 }
 
+.text-offblack{
+  --tw-text-opacity: 1;
+  color: rgb(68 68 68 / var(--tw-text-opacity));
+}
+
 .text-white{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.text-offblack{
+.text-\[\#aaa\]{
   --tw-text-opacity: 1;
-  color: rgb(68 68 68 / var(--tw-text-opacity));
+  color: rgb(170 170 170 / var(--tw-text-opacity));
 }
 
 .no-underline{
@@ -1804,10 +1809,6 @@ input{
     height: 800px;
   }
 
-  .md\:min-h-\[800px\]{
-    min-height: 800px;
-  }
-
   .md\:w-1\/2{
     width: 50%;
   }
@@ -1837,32 +1838,12 @@ input{
     max-width: 380px;
   }
 
-  .md\:max-w-\[85\%\]{
-    max-width: 85%;
-  }
-
-  .md\:max-w-\[70\%\]{
-    max-width: 70%;
-  }
-
   .md\:max-w-\[75\%\]{
     max-width: 75%;
   }
 
-  .md\:max-w-\[80\%\]{
-    max-width: 80%;
-  }
-
-  .md\:max-w-\[77\%\]{
-    max-width: 77%;
-  }
-
-  .md\:max-w-\[82\%\]{
-    max-width: 82%;
-  }
-
-  .md\:max-w-\[78\%\]{
-    max-width: 78%;
+  .md\:max-w-\[85\%\]{
+    max-width: 85%;
   }
 
   .md\:grid-cols-2{
@@ -1901,16 +1882,12 @@ input{
     justify-content: center;
   }
 
-  .md\:gap-8{
-    gap: 2rem;
-  }
-
-  .md\:gap-16{
-    gap: 4rem;
-  }
-
   .md\:gap-32{
     gap: 8rem;
+  }
+
+  .md\:gap-8{
+    gap: 2rem;
   }
 
   .md\:border-b{
@@ -2080,16 +2057,8 @@ input{
     grid-template-columns: repeat(6, minmax(0, 1fr));
   }
 
-  .lg\:grid-cols-2{
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
   .lg\:flex-row{
     flex-direction: row;
-  }
-
-  .lg\:justify-center{
-    justify-content: center;
   }
 
   .lg\:gap-8{
@@ -2110,10 +2079,6 @@ input{
 
   .lg\:p-8{
     padding: 2rem;
-  }
-
-  .lg\:p-10{
-    padding: 2.5rem;
   }
 
   .lg\:px-0{
