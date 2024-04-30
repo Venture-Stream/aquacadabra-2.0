@@ -543,7 +543,7 @@ summary {
   position: relative;
 }
 
-summary .icon-caret {
+summary:not(.facets__summary) .icon-caret {
   position: absolute;
   height: 0.6rem;
   right: 1.5rem;

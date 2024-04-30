@@ -189,8 +189,9 @@
 }
 
 .facets__summary {
-  color: rgba(var(--color-foreground), 0.75);
-  font-size: 1.4rem;
+  color: #000;
+  font-size: 1.6rem;
+  font-weight: 600;
   padding: 0 1.75rem 0 0;
   margin-bottom: 1.5rem;
 }
@@ -213,11 +214,6 @@
 
 .facets__summary span {
   transition: text-decoration var(--duration-short) ease;
-}
-
-.facets__summary:hover .facets__summary-label {
-  text-decoration: underline;
-  text-underline-offset: 0.3rem;
 }
 
 .facets__and-helptext {
@@ -433,7 +429,7 @@
 }
 
 .facet-checkbox {
-  padding: 1rem 2rem 1rem 0;
+  padding: 0.5rem 2rem 0.5rem 0;
   flex-grow: 1;
   position: relative;
   font-size: 1.4rem;
@@ -1199,7 +1195,11 @@ input.mobile-facets__checkbox {
     align-items: flex-start;
   }
 
-  .facets__disclosure-vertical[open] .facets__summary .icon-caret {
+  .facets__summary .icon-caret {
+    height: 0.6rem;
+  }
+
+  .facets__disclosure-vertical[open] .facets__summary svg {
     transform: rotate(180deg);
   }
 
