@@ -4,22 +4,64 @@
       "type": "main-page",
       "settings": {
         "padding_top": 36,
-        "padding_bottom": 36
+        "padding_bottom": 0,
+        "page_content": false
+      }
+    },
+    "contact_blocks_qJM7Lk": {
+      "type": "contact-blocks",
+      "blocks": {
+        "block_4aNr8G": {
+          "type": "block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/telephone-block.png",
+            "icon": "pin",
+            "heading": "Telephone",
+            "content": "<p><a href=\"tel:01322 520 989\" title=\"Phone 01322 520 989\">01322 520 989<br\/><\/a><br\/>Lines open between: 10:00 - 16:00<br\/><br\/>Calls may be recorded for training & quality purposes.<\/p>"
+          }
+        },
+        "block_chB4CQ": {
+          "type": "block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/visit-us-block.png",
+            "icon": "clock",
+            "heading": "Visit us",
+            "content": "<p>Unit B Panorama, Bridge Close,<br\/>Crossways Business Park,\u2028<br\/>Dartford, Kent DA2 6QP<\/p><p><br\/><strong>what3words:<\/strong> \/\/\/prove.trout.insert<\/p>"
+          }
+        },
+        "block_W7G6VG": {
+          "type": "block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/opening-hours-block.png",
+            "icon": "phone",
+            "heading": "Opening hours",
+            "content": "<p>Our shop is open Monday - Friday:<br\/><strong>09:00 - 17:00<\/strong><br\/><br\/><a href=\"\/\" title=\"\/\">Get directions<\/a><\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "block_4aNr8G",
+        "block_chB4CQ",
+        "block_W7G6VG"
+      ],
+      "settings": {
+        "padding_top": 0,
+        "padding_bottom": 72
       }
     },
     "form": {
       "type": "contact-form",
       "settings": {
-        "heading": "",
-        "heading_size": "h1",
-        "color_scheme": "scheme-1",
-        "padding_top": 36,
-        "padding_bottom": 36
+        "heading": "Get in touch",
+        "map_embed": "<iframe src=\"https:\/\/www.google.com\/maps\/embed?pb=!1m18!1m12!1m3!1d7767.467139353636!2d0.2508187251890556!3d51.460807404884655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8ae4eccf9bc07%3A0x4157259284d46c51!2sAquacadabra!5e0!3m2!1sen!2suk!4v1714486831694!5m2!1sen!2suk\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"><\/iframe>",
+        "padding_top": 0,
+        "padding_bottom": 16
       }
     }
   },
   "order": [
     "main",
+    "contact_blocks_qJM7Lk",
     "form"
   ]
 }
