@@ -40,7 +40,7 @@
         <a href="{{ metaobject.url.value }}" class="block relative">
           {{ metaobject.image.value | image_url: width: 800, height: 800 | image_tag: width: 800, height: 800, alt: metaobject.title.value, class: 'relative'}}
           <div class="absolute inset-0 z-1 flex items-center justify-center">
-            <h2 class="text-white uppercase">{{ metaobject.title.value }}</h2>
+            <h2 class="text-white uppercase text-center">{{ metaobject.title.value }}</h2>
           </div>
         </a>
       {% endfor %}
