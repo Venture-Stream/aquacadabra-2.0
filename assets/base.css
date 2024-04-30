@@ -1470,6 +1470,7 @@ details[open] > .share-button__fallback {
   position: relative;
   width: 100%;
   transition: box-shadow var(--duration-short) ease;
+  margin-bottom: 2rem;
 }
 
 .customer .field {
@@ -1487,6 +1488,7 @@ details[open] > .share-button__fallback {
   padding: 1.5rem;
   margin: var(--inputs-border-width);
   transition: box-shadow var(--duration-short) ease;
+  color: #333333;
 }
 
 .field__label,
@@ -1498,8 +1500,8 @@ details[open] > .share-button__fallback {
   pointer-events: none;
   color: #000;
   line-height: normal;
+  text-align: left;
 }
-
 
 .field__input::-webkit-search-cancel-button,
 .customer .field input::-webkit-search-cancel-button {
@@ -1508,7 +1510,7 @@ details[open] > .share-button__fallback {
 
 .field__input::placeholder,
 .customer .field input::placeholder {
-  color: #000;
+  color: #333333;
 }
 
 .field__button {
@@ -1545,6 +1547,10 @@ details[open] > .share-button__fallback {
   font-weight: var(--font-body-weight);
   min-height: 10rem;
   resize: none;
+}
+
+.contact-form .text-area {
+  min-height: 16rem;
 }
 
 input[type='checkbox'] {

@@ -22,14 +22,16 @@
 			{% for article in section.settings.blog.articles limit: 3 %}
         <a href="{{ article.url }}" class="full-unstyled-link">
           <div class="flex flex-col w-full group">
-            <img
-              src="{{ article.image | image_url: height: 530 }}"
-              alt="{{ article.title | escape }}"
-              width="{{ article.image.width }}"
-              height="{{ article.image.height }}"
-              loading="lazy"
-              class="object-cover w-full h-full"
-              >
+            <div class="overflow-hidden">
+              <img
+                src="{{ article.image | image_url: height: 530 }}"
+                alt="{{ article.title | escape }}"
+                width="{{ article.image.width }}"
+                height="{{ article.image.height }}"
+                loading="lazy"
+                class="object-cover w-full h-full group-hover:scale-105 transition-all duration-500"
+                >
+            </div>
             <h4 class="group-hover:underline underline-offset-8">{{ article.title }}</h4>
             {% if section.settings.show_date %}
               <div class="article-card__info caption-with-letter-spacing text-1.3">
