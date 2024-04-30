@@ -119,6 +119,8 @@
     "show_vendor": false,
     "show_cart_note": false,
     "cart_drawer_collection": "",
+    "checkout_header_image": "shopify:\/\/shop_images\/imageblock1.png",
+    "checkout_logo_image": "shopify:\/\/shop_images\/logo.png",
     "sections": {
       "main-password-header": {
         "type": "main-password-header",
