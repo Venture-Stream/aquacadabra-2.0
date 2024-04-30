@@ -126,3 +126,7 @@ input {
     @apply opacity-25 decoration-[#EEEEEE];
   }
 }
+
+.light-shadow {
+  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.10);
+}

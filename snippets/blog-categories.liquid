@@ -1,0 +1,39 @@
+<style>
+  select {
+    -webkit-appearance: none;
+  }
+</style>
+
+<script src="{{ 'blogheader.min.js' | asset_url }}" defer="defer"></script>
+
+{%- capture contentForQuerystring -%}{{ content_for_header }}{%- endcapture -%}
+  {%- assign pageUrl = contentForQuerystring | split:'"pageurl":"' | last | split:'"' | first | split:'.myshopify.com' | last |
+     replace:'\/','/' | 
+     replace:'%20',' ' | 
+     replace:'\u0026','&'
+  -%}
+
+<div class="flex items-center border border-[#eee] p-4 rounded-md mb-6 light-shadow md:hidden">
+  <select name="tags" id="blog_tags" class="w-full">
+    <option value="/blogs/news">All</option>
+    {%- for tag in blog.all_tags -%}
+      {% assign handle_tag = tag | handle %}
+      <option value="{{ handle_tag }}" {% if pageUrl contains handle_tag %} selected {% endif %}>
+      {{ tag }}
+      </option>
+    {%- endfor -%}
+  </select>
+  {% render 'thin-arrow-down' %}
+</div>
+
+<ul class="items-center justify-center hidden gap-4 my-12 md:flex">
+  {%- for tag in blog.all_tags -%}
+    {% assign handle_tag = tag | handle %}
+    <li>
+      <a href="{{ blog.url }}/tagged/{{ tag | handle }}" 
+      class="inline-block border border-[#E0E0E0] hover:bg-[#F2F2F2] rounded-full py-3 px-16 capitalize light-shadow">
+        {{- tag -}}
+      </a>
+    </li>
+  {%- endfor -%}
+</ul>
