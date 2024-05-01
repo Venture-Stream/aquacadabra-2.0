@@ -418,8 +418,16 @@
         "image": "shopify:\/\/shop_images\/AdobeStock_612455245_1.jpg",
         "background_color": "#e5f6e6",
         "layout": "text_first",
+        "block_gap": false,
         "padding_top": 36,
         "padding_bottom": 36
+      }
+    },
+    "feefo_reviews_T7rmzM": {
+      "type": "feefo-reviews",
+      "settings": {
+        "padding_top": 56,
+        "padding_bottom": 56
       }
     },
     "featured_content_Y99WJA": {
@@ -486,6 +494,7 @@
     "logo_blocks_iLGK48",
     "featured_blog_qkxRUK",
     "image_with_text_3mPaBt",
+    "feefo_reviews_T7rmzM",
     "featured_content_Y99WJA"
   ]
 }
