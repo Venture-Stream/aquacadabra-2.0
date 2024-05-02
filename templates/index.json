@@ -202,26 +202,22 @@
           "type": "tab",
           "settings": {
             "product_tab": "Popular",
-            "collection": "clearance",
-            "image_ratio": "square",
-            "image_shape": "default",
-            "show_secondary_image": false,
+            "collection": "most-popular",
             "show_vendor": false,
-            "show_rating": false,
-            "quick_add": "none"
+            "show_rating": true,
+            "show_wishlist": true,
+            "quick_add": "standard"
           }
         },
         "tab_qgYTqj": {
           "type": "tab",
           "settings": {
             "product_tab": "New In",
-            "collection": "aquariums-fish-tank",
-            "image_ratio": "square",
-            "image_shape": "default",
-            "show_secondary_image": false,
+            "collection": "newest-products",
             "show_vendor": false,
-            "show_rating": false,
-            "quick_add": "none"
+            "show_rating": true,
+            "show_wishlist": true,
+            "quick_add": "standard"
           }
         }
       },
