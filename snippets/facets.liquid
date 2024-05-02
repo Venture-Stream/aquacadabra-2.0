@@ -136,8 +136,8 @@
                 assign hide_filter = false
                 assign label_check = filter.label | downcase
                 for hidden_filter in hidden_filters
-                  assign hidden_filter = hidden_filter
-                  if hidden_filter == label_check
+                  assign downcase_hidden_filter = hidden_filter | downcase
+                  if downcase_hidden_filter == label_check
                     assign hide_filter = true
                   endif
                 endfor
