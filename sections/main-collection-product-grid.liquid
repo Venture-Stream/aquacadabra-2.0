@@ -71,7 +71,7 @@
 
         {% comment %} Sort is the first tabbable element when filter type is vertical {% endcomment %}
         {%- if section.settings.enable_sorting and section.settings.filter_type == 'vertical' -%}
-          <facet-filters-form class="facets facets-vertical-sort page-width small-hide">
+          <facet-filters-form class="facets facets-vertical-sort small-hide">
             <form class="facets-vertical-form" id="FacetSortForm">
               <div class="facet-filters sorting caption">
                 <div class="facet-filters__field">
@@ -82,7 +82,7 @@
                     {%- assign sort_by = collection.sort_by | default: collection.default_sort_by -%}
                     <select
                       name="sort_by"
-                      class="facet-filters__sort select__select caption-large"
+                      class="select__select"
                       id="SortBy"
                       aria-describedby="a11y-refresh-page-message"
                     >
