@@ -1,0 +1,133 @@
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+<div class="page-width">
+  <div class="section-{{ section.id }}-padding grid gap-16">
+    <div class="bg-[#F8F8F8] px-4 py-12">
+      <div class="text-center text-[#727272] max-w-[1100px] mx-auto flex flex-col gap-12">
+        {{ section.settings.content }}
+        <div class="flex flex-col md:flex-row items-center justify-center gap-4">
+          {% for block in section.blocks %}
+            <a class="text-offblack px-6 py-2 rounded-full border border-b-2 border-solid border-[#EEEEEE] hover:text-brand-blue bg-white" href="#{{ block.settings.title }}">{{ block.settings.title }}</a>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+
+    <div>
+      {% for block in section.blocks %}
+        <div class="flex flex-col md:flex-row items-start border-t-2 border-[#EEEEEE] py-8" id="{{ block.settings.title }}">
+          <div class="md:w-1/5 w-full">
+            {% if block.settings.title != blank %}
+              <h2 class="mt-0 mb-8">{{ block.settings.title }}</h2>
+            {% endif %}
+          </div>
+          {% if block.settings.brands != blank %}
+            <div class="md:w-4/5 w-full">
+              {% if block.settings.summary != blank %}
+                <div class="rte text-[#727272]">{{ block.settings.summary | replace: '<p>', '<p style="margin-bottom: 2rem;">'  }}</div>
+              {% endif %}
+              {% assign brands = block.settings.brands | newline_to_br | split: '<br />' %}
+              <div class="grid grid-cols-2 md:grid-cols-5 gap-8">
+                {%- for brand in brands -%}
+                  {% assign brand_handle = brand | handleize %}
+                  <div class="grid__item">
+                    <a href="/collections/{{ brand_handle }}">
+                      <img
+                        src="{{ brand_handle | append: '.jpg' | file_img_url: 'medium' }}"
+                        alt="{{ brand }}"
+                        height="256"
+                        width="256"
+                        class="border border-[#EEEEEE]"
+                        {% if forloop.index > 9 %}
+                          loading="lazy"
+                        {% endif %}
+                      >
+                      <h4 class="visually-hidden">{{- brand | escape -}}</h4>
+                    </a>
+                  </div>
+                {%- endfor -%}
+              </div>
+            </div>
+          {% endif %}
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Brands",
+  "settings": [
+    {
+      "type": "textarea",
+      "id": "content",
+      "label": "Header content"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.all.padding.section_padding_heading"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 36
+    }
+  ],
+  "blocks": [
+    {
+      "type": "category",
+      "name": "Category",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title"
+        },
+        {
+          "type": "richtext",
+          "id": "summary",
+          "label": "Summary"
+        },
+        {
+          "type": "textarea",
+          "id": "brands",
+          "label": "Brands"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Brands"
+    }
+  ]
+}
+{% endschema %}
