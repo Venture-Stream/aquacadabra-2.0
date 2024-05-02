@@ -148,6 +148,7 @@
             <div class="loading-overlay gradient"></div>
             <ul
               id="product-grid"
+              data-id="{{ section.id }}"
               class="grid grid-cols-2 gap-4 product-grid md:grid-cols-4"
             >
               {%- for product in collection.products -%}

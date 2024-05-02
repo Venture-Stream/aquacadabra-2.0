@@ -298,15 +298,25 @@
                                       {%- endif -%}
                                     </div>
                                   {%- else -%}
-                                    <svg
-                                      width="1.6rem"
-                                      height="1.6rem"
-                                      viewBox="0 0 16 16"
-                                      aria-hidden="true"
-                                      focusable="false"
-                                    >
-                                      <rect width="16" height="16" stroke="currentColor" fill="none" stroke-width="1"></rect>
-                                    </svg>
+                                  <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g filter="url(#filter0_d_939_4)">
+                                    <rect x="1" width="20" height="20" rx="5" fill="white"/>
+                                    <rect x="1.5" y="0.5" width="19" height="19" rx="4.5" stroke="#E0E0E0"/>
+                                    </g>
+                                    <defs>
+                                    <filter id="filter0_d_939_4" x="0" y="0" width="22" height="22" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                                    <feOffset dy="1"/>
+                                    <feGaussianBlur stdDeviation="0.5"/>
+                                    <feComposite in2="hardAlpha" operator="out"/>
+                                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"/>
+                                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_939_4"/>
+                                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_939_4" result="shape"/>
+                                    </filter>
+                                    </defs>
+                                  </svg>
+                                  
 
                                     <svg
                                       aria-hidden="true"
@@ -378,7 +388,7 @@
                         class="facets__display-vertical price-filter-menu"
                       >
                         <ul
-                          class="list-unstyled no-js-hidden max-h-[435px] overflow-y-auto"
+                          class="list-unstyled no-js-hidden max-h-[435px] overflow-y-auto facets-layout-list--text"
                           role="list"
                         >
                           {% assign price_ranges = price_list | newline_to_br | split: '<br />' %}
@@ -403,7 +413,7 @@
                             <price-checkbox>
                               <label
                                 for="Filter-{{ range_handle }}"
-                                class="flex items-center facet-checkbox{% if value.count == 0 and value.active == false %} facet-checkbox--disabled{% endif %}"
+                                class="{{ label_class }}"
                               >
                                 <input
                                   type="checkbox"
@@ -416,6 +426,42 @@
                                     checked="checked"
                                   {%- endif -%}
                                 >
+
+                                <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <g filter="url(#filter0_d_939_4)">
+                                  <rect x="1" width="20" height="20" rx="5" fill="white"/>
+                                  <rect x="1.5" y="0.5" width="19" height="19" rx="4.5" stroke="#E0E0E0"/>
+                                  </g>
+                                  <defs>
+                                  <filter id="filter0_d_939_4" x="0" y="0" width="22" height="22" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                  <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                  <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                                  <feOffset dy="1"/>
+                                  <feGaussianBlur stdDeviation="0.5"/>
+                                  <feComposite in2="hardAlpha" operator="out"/>
+                                  <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"/>
+                                  <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_939_4"/>
+                                  <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_939_4" result="shape"/>
+                                  </filter>
+                                  </defs>
+                                </svg>
+                              
+
+                                <svg
+                                  aria-hidden="true"
+                                  class="icon icon-checkmark"
+                                  width="1.1rem"
+                                  height="0.7rem"
+                                  viewBox="0 0 11 7"
+                                  fill="none"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                >
+                                  <path d="M1.5 3.5L2.83333 4.75L4.16667 6L9.5 1"
+                                    stroke="currentColor"
+                                    stroke-width="1.75"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                </svg>
 
                                 <span class="text-black" aria-hidden="true">
                                   {% if range contains '<' %}
@@ -865,16 +911,24 @@
                                     {%- else -%}
                                       <span class="mobile-facets__highlight"></span>
 
-                                      <svg
-                                        width="1.6rem"
-                                        height="1.6rem"
-                                        viewBox="0 0 16 16"
-                                        aria-hidden="true"
-                                        focusable="false"
-                                      >
-                                        <rect width="16" height="16" stroke="currentColor" fill="none" stroke-width="1"></rect>
+                                      <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g filter="url(#filter0_d_939_4)">
+                                        <rect x="1" width="20" height="20" rx="5" fill="white"/>
+                                        <rect x="1.5" y="0.5" width="19" height="19" rx="4.5" stroke="#E0E0E0"/>
+                                        </g>
+                                        <defs>
+                                        <filter id="filter0_d_939_4" x="0" y="0" width="22" height="22" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                                        <feOffset dy="1"/>
+                                        <feGaussianBlur stdDeviation="0.5"/>
+                                        <feComposite in2="hardAlpha" operator="out"/>
+                                        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"/>
+                                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_939_4"/>
+                                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_939_4" result="shape"/>
+                                        </filter>
+                                        </defs>
                                       </svg>
-
                                       <svg
                                         aria-hidden="true"
                                         class="icon icon-checkmark"
@@ -936,14 +990,221 @@
                             {{ filter.label | escape }}
                           </button>
 
-                          {%- assign max_price_amount = filter.range_max | money | strip_html | escape -%}
-                          <p class="mobile-facets__info">
-                            {{ 'products.facets.max_price' | t: price: max_price_amount }}
-                          </p>
-
+                          {% if price_list != blank %}
+                            <ul
+                              class="facets__list list-unstyled no-js-hidden max-h-[435px] overflow-y-auto facets-layout-list--text"
+                              role="list"
+                            >
+                              {% assign price_ranges = price_list | newline_to_br | split: '<br />' %}
+                              {% for range in price_ranges %}
+                                {% if range contains '<' %}
+                                  {% assign min_value = '0' | times: 1 %}
+                                  {% assign max_value = range | remove: '<' | strip | times: 1 %}
+                                  {% assign range_handle = min_value | append: '-' | append: max_value %}
+                                {% elsif range contains '>' %}
+                                  {% assign min_value = range | remove: '>' | strip | times: 1 %}
+                                  {% assign max_value = filter.range_max | times: 1 %}
+                                  {% assign range_handle = min_value | append: '-' | append: max_value %}
+                                {% else %}
+                                  {% assign min_value = range | split: '-' | first | strip | times: 1 %}
+                                  {% assign max_value = range | split: '-' | last | strip | times: 1 %}
+                                  {% assign range_handle = range | handleize %}
+                                {% endif %}
+                                <li
+                                  class="list-menu__item facets__item text-1.4 {% if forloop.index > 10 and filter_type == 'vertical' %} show-more-item hidden{% endif %}"
+                                  filter-data="{{ value.value }}"
+                                >
+                                <price-checkbox>
+                                  <label
+                                    for="FilterMobile-{{ range_handle }}"
+                                    class="flex items-center facet-checkbox{% if value.count == 0 and value.active == false %} facet-checkbox--disabled{% endif %}"
+                                  >
+                                    <input
+                                      type="checkbox"
+                                      name="{{ min_value | money }} - {{ max_value | money }}"
+                                      value="{{ range_handle }}"
+                                      id="FilterMobile-{{ range_handle }}"
+                                      class="price-filter"
+                                      {%- if filter.min_value.value == min_value -%}
+                                        checked="checked"
+                                      {%- endif -%}
+                                    >
+    
+                                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <g filter="url(#filter0_d_939_4)">
+                                      <rect x="1" width="20" height="20" rx="5" fill="white"/>
+                                      <rect x="1.5" y="0.5" width="19" height="19" rx="4.5" stroke="#E0E0E0"/>
+                                      </g>
+                                      <defs>
+                                      <filter id="filter0_d_939_4" x="0" y="0" width="22" height="22" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                                      <feOffset dy="1"/>
+                                      <feGaussianBlur stdDeviation="0.5"/>
+                                      <feComposite in2="hardAlpha" operator="out"/>
+                                      <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"/>
+                                      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_939_4"/>
+                                      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_939_4" result="shape"/>
+                                      </filter>
+                                      </defs>
+                                    </svg>
+    
+                                    <svg
+                                      aria-hidden="true"
+                                      class="icon icon-checkmark"
+                                      width="1.4rem"
+                                      height="1rem"
+                                      viewBox="0 0 11 7"
+                                      fill="none"
+                                      xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                      <path d="M1.5 3.5L2.83333 4.75L4.16667 6L9.5 1"
+                                        stroke="currentColor"
+                                        stroke-width="1.75"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    </svg>
+    
+                                    <span class="text-black" aria-hidden="true">
+                                      {% if range contains '<' %}
+                                        Under {{ max_value | money }}
+                                      {% elsif range contains '>' %}
+                                        Over {{ min_value | money }}
+                                      {% else %}
+                                        {{ min_value | money }} - {{ max_value | money }}
+                                      {% endif %}
+                                    </span>
+                                    <span class="visually-hidden">
+                                      {% if range contains '<' %}
+                                        Under {{ max_value | money }}
+                                      {% elsif range contains '>' %}
+                                        Over {{ min_value | money }}
+                                      {% else %}
+                                        {{ min_value | money }} - {{ max_value | money }}
+                                      {% endif %}
+                                    </span>
+                                  </label>
+                                </price-checkbox>
+                                </li>
+                              {% endfor %}
+                            </ul>
+                            <price-range class="hidden">
+                              <span class="field-currency">{{ cart.currency.symbol }}</span>
+                              <div class="field">
+                                <input
+                                  class="field__input"
+                                  name="{{ filter.min_value.param_name }}"
+                                  id="Filter-{{ filter.label | escape }}-GTE"
+                                  {%- if filter.min_value.value -%}
+                                    {%- if uses_comma_decimals -%}
+                                      value="{{ filter.min_value.value | money_without_currency | replace: '.', '' | replace: ',', '.' }}"
+                                    {%- else -%}
+                                      value="{{ filter.min_value.value | money_without_currency | replace: ',', '' }}"
+                                    {%- endif %}
+                                  {%- endif -%}
+                                  type="number"
+                                  placeholder="0"
+                                  min="0"
+                                  {%- if uses_comma_decimals -%}
+                                    max="{{ filter.range_max | money_without_currency | replace: '.', '' | replace: ',', '.' }}"
+                                  {%- else -%}
+                                    max="{{ filter.range_max | money_without_currency | replace: ',', '' }}"
+                                  {% endif %}
+                                >
+                                <label class="field__label" for="Filter-{{ filter.label | escape }}-GTE">
+                                  {{- 'products.facets.from' | t -}}
+                                </label>
+                              </div>
+                              {%- if filter_type != 'vertical' -%}
+                                <span class="field-currency">{{ cart.currency.symbol }}</span>
+                              {%- endif -%}
+                              <div class="field">
+                                <input
+                                  class="field__input"
+                                  name="{{ filter.max_value.param_name }}"
+                                  id="Filter-{{ filter.label | escape }}-LTE"
+                                  {%- if filter.max_value.value -%}
+                                    {%- if uses_comma_decimals -%}
+                                      value="{{ filter.max_value.value | money_without_currency | replace: '.', '' | replace: ',', '.' }}"
+                                    {%- else -%}
+                                      value="{{ filter.max_value.value | money_without_currency | replace: ',', '' }}"
+                                    {%- endif %}
+                                  {%- endif -%}
+                                  type="number"
+                                  min="0"
+                                  {%- if uses_comma_decimals -%}
+                                    placeholder="{{ filter.range_max | money_without_currency | replace: '.', '' | replace: ',', '.' }}"
+                                    max="{{ filter.range_max | money_without_currency | replace: '.', '' | replace: ',', '.' }}"
+                                  {%- else -%}
+                                    placeholder="{{ filter.range_max | money_without_currency | replace: ',', '' }}"
+                                    max="{{ filter.range_max | money_without_currency | replace: ',', '' }}"
+                                  {% endif %}
+                                >
+                                <label class="field__label" for="Filter-{{ filter.label | escape }}-LTE">
+                                  {{- 'products.facets.to' | t -}}
+                                </label>
+                              </div>
+                            </price-range>
+                        {% else %}
                           <price-range class="facets__price">
-                            {% render 'price-facet', filter: filter, id_prefix: 'Mobile-Filter-' %}
+                            <span class="field-currency">{{ cart.currency.symbol }}</span>
+                            <div class="field">
+                              <input
+                                class="field__input"
+                                name="{{ filter.min_value.param_name }}"
+                                id="Mobile-Filter-{{ filter.label | escape }}-GTE"
+                                {%- if filter.min_value.value -%}
+                                  {%- if uses_comma_decimals -%}
+                                    value="{{ filter.min_value.value | money_without_currency | replace: '.', '' | replace: ',', '.' }}"
+                                  {%- else -%}
+                                    value="{{ filter.min_value.value | money_without_currency | replace: ',', '' }}"
+                                  {%- endif %}
+                                {%- endif -%}
+                                type="number"
+                                placeholder="0"
+                                min="0"
+                                inputmode="decimal"
+                                {%- if uses_comma_decimals -%}
+                                  max="{{ filter.range_max | money_without_currency | replace: '.', '' | replace: ',', '.' }}"
+                                {%- else -%}
+                                  max="{{ filter.range_max | money_without_currency | replace: ',', '' }}"
+                                {% endif %}
+                              >
+                              <label class="field__label" for="Mobile-Filter-{{ filter.label | escape }}-GTE">
+                                {{- 'products.facets.from' | t -}}
+                              </label>
+                            </div>
+
+                            <span class="field-currency">{{ cart.currency.symbol }}</span>
+                            <div class="field">
+                              <input
+                                class="field__input"
+                                name="{{ filter.max_value.param_name }}"
+                                id="Mobile-Filter-{{ filter.label | escape }}-LTE"
+                                {%- if filter.max_value.value -%}
+                                  {%- if uses_comma_decimals -%}
+                                    value="{{ filter.max_value.value | money_without_currency | replace: '.', '' | replace: ',', '.' }}"
+                                  {%- else -%}
+                                    value="{{ filter.max_value.value | money_without_currency | replace: ',', '' }}"
+                                  {%- endif %}
+                                {%- endif -%}
+                                type="number"
+                                min="0"
+                                inputmode="decimal"
+                                {%- if uses_comma_decimals -%}
+                                  placeholder="{{ filter.range_max | money_without_currency | replace: '.', '' | replace: ',', '.' }}"
+                                  max="{{ filter.range_max | money_without_currency | replace: '.', '' | replace: ',', '.' }}"
+                                {%- else -%}
+                                  placeholder="{{ filter.range_max | money_without_currency | replace: ',', '' }}"
+                                  max="{{ filter.range_max | money_without_currency | replace: ',', '' }}"
+                                {% endif %}
+                              >
+                              <label class="field__label" for="Mobile-Filter-{{ filter.label | escape }}-LTE">
+                                {{- 'products.facets.to' | t -}}
+                              </label>
+                            </div>
                           </price-range>
+                        {% endif %}
                           <div class="mobile-facets__footer">
                             <facet-remove class="mobile-facets__clear-wrapper">
                               <a href="{{ filter.url_to_remove }}" class="mobile-facets__clear underlined-link">
