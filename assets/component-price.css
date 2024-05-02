@@ -20,7 +20,9 @@
 
 .price .price-item {
   display: inline-block;
-  margin: 0 1rem 0 0;
+  font-size: 1.4rem;
+  letter-spacing: normal;
+  font-weight: 500;
 }
 
 .price__regular .price-item--regular {
@@ -98,4 +100,8 @@
   margin-top: 0.2rem;
   text-transform: uppercase;
   color: rgba(var(--color-foreground), 0.7);
+}
+
+.unit-price.hidden {
+  display: none;
 }
