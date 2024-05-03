@@ -1,35 +1,5 @@
 {
   "sections": {
-    "rich_text_gWGBd6": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_WGy7YN": {
-          "type": "heading",
-          "settings": {
-            "heading": ""
-          }
-        },
-        "text_GU3aLT": {
-          "type": "text",
-          "disabled": true,
-          "settings": {
-            "text": "<p><strong>Cosmetics mix & match multi buy offer<\/strong> <\/p><p>Buy any 2 save 10%   <\/p><p>Buy any 3 save 15% <\/p><p>(excludes Chanel)<\/p><p><\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "heading_WGy7YN",
-        "text_GU3aLT"
-      ],
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "background_color": "bg-transparent",
-        "full_width": false,
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
     "product-grid": {
       "type": "main-collection-product-grid",
       "settings": {
@@ -39,10 +9,9 @@
         "image_ratio": "square",
         "image_shape": "default",
         "show_secondary_image": false,
-        "show_vendor": true,
+        "show_vendor": false,
         "show_rating": true,
-        "quick_add": "none",
-        "price_list": "< 1500\n1500 - 5000\n5000 - 10000\n10000 - 20000\n20000 - 50000\n50000 >",
+        "quick_add": "standard",
         "enable_filtering": true,
         "filter_type": "vertical",
         "enable_sorting": true,
@@ -53,7 +22,6 @@
     }
   },
   "order": [
-    "rich_text_gWGBd6",
     "product-grid"
   ]
 }

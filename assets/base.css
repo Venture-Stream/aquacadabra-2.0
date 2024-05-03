@@ -1468,6 +1468,7 @@ details[open] > .share-button__fallback {
   position: relative;
   width: 100%;
   transition: box-shadow var(--duration-short) ease;
+  margin-bottom: 2rem;
 }
 
 .customer .field {
@@ -1485,6 +1486,7 @@ details[open] > .share-button__fallback {
   padding: 1.5rem;
   margin: var(--inputs-border-width);
   transition: box-shadow var(--duration-short) ease;
+  color: #333333;
 }
 
 .field__label,
@@ -1496,8 +1498,8 @@ details[open] > .share-button__fallback {
   pointer-events: none;
   color: #000;
   line-height: normal;
+  text-align: left;
 }
-
 
 .field__input::-webkit-search-cancel-button,
 .customer .field input::-webkit-search-cancel-button {
@@ -1506,7 +1508,7 @@ details[open] > .share-button__fallback {
 
 .field__input::placeholder,
 .customer .field input::placeholder {
-  color: #000;
+  color: #333333;
 }
 
 .field__button {
@@ -1543,6 +1545,10 @@ details[open] > .share-button__fallback {
   font-weight: var(--font-body-weight);
   min-height: 10rem;
   resize: none;
+}
+
+.contact-form .text-area {
+  min-height: 16rem;
 }
 
 input[type='checkbox'] {
@@ -2642,14 +2648,12 @@ details-disclosure > details {
   border: 1px solid transparent;
   border-radius: var(--badge-corner-radius);
   display: inline-block;
-  font-size: 1.2rem;
-  letter-spacing: 0.1rem;
-  line-height: 1;
-  padding: 0.5rem 1.3rem 0.6rem 1.3rem;
+  font-size: 1.3rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 0.25rem 1rem;
   text-align: center;
-  background-color: rgb(var(--color-badge-background));
-  border-color: rgba(var(--color-badge-border), var(--alpha-badge-border));
-  color: rgb(var(--color-badge-foreground));
+  color: white;
   word-break: break-word;
 }
 

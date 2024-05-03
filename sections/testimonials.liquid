@@ -1,0 +1,154 @@
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+<div class="section-{{ section.id }}-padding flex flex-col gap-16">
+  {% if section.settings.section_title != empty %}
+    <div class="page-width page-width--narrow text-center">
+      <h4>{{ section.settings.section_title }}</h4>
+    </div>
+  {% endif %}
+
+  <div class="page-width flex md:flex-row flex-col md:gap-32 gap-16">
+    {% for block in section.blocks %}
+      <div class="flex flex-col md:w-1/3 w-full text-center">
+        <div class="mx-auto">
+          {% render 'icon-quote' fill: block.settings.quote_color %}
+        </div>
+        <h5 class="h4 uppercase">{{ block.settings.caption }}</h5>
+        <div class="text-offblack">
+          {{ block.settings.excerpt }}
+        </div>
+        {% if block.settings.cite != empty %}
+          <div class="text-offblack mt-12">
+            {{ block.settings.cite }}
+          </div>
+        {% endif %}
+      </div>
+    {% endfor %}
+  </div>
+
+  {% if section.settings.button_text != empty %}
+    <div class="page-width page-width--narrow py-8 text-center">
+      <a href="{{ section.settings.button_link }}" class="button">{{ section.settings.button_text }}</a>
+    </div>
+  {% endif %}
+</div>
+
+{% schema %}
+  {
+    "name": "Testimonials",
+    "settings": [
+      {
+        "type": "text",
+        "id": "section_title",
+        "label": "Title",
+        "default": "Read our customer reviews"
+      },
+      {
+        "type": "text",
+        "id": "button_text",
+        "label": "Button text",
+        "default": "Read our reviews"
+      },
+      {
+        "type": "url",
+        "id": "button_link",
+        "label": "Button link"
+      },
+      {
+        "type": "header",
+        "content": "t:sections.all.padding.section_padding_heading"
+      },
+      {
+        "type": "range",
+        "id": "padding_top",
+        "min": 0,
+        "max": 100,
+        "step": 4,
+        "unit": "px",
+        "label": "t:sections.all.padding.padding_top",
+        "default": 36
+      },
+      {
+        "type": "range",
+        "id": "padding_bottom",
+        "min": 0,
+        "max": 100,
+        "step": 4,
+        "unit": "px",
+        "label": "t:sections.all.padding.padding_bottom",
+        "default": 36
+      }
+    ],
+    "max_blocks": 3,
+    "blocks": [
+      {
+        "type": "testimonial",
+        "name": "Review",
+        "settings": [
+          {
+            "type": "text",
+            "id": "caption",
+            "label": "Review caption",
+            "default": "Excellent"
+          },
+          {
+            "type": "richtext",
+            "id": "excerpt",
+            "label": "Review excerpt",
+            "default": "<p>Very quick and happy to sort out an order error that was my mistake.</p>"
+          },
+          {
+            "type": "text",
+            "id": "cite",
+            "label": "Reviewer",
+            "default": "- John Doe"
+          },
+          {
+            "type": "select",
+            "id": "quote_color",
+            "label": "Blockquote color",
+            "options": [
+              {
+                "label": "Blue",
+                "value": "#15397B"
+              },
+              {
+                "label": "Orange",
+                "value": "#FF9016"
+              }
+            ],
+            "default": "#15397B"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Testimonials",
+        "blocks": [
+          {
+            "type": "testimonial"
+          },
+          {
+            "type": "testimonial"
+          },
+          {
+            "type": "testimonial"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}

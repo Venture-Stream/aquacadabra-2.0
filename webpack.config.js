@@ -10,7 +10,8 @@ const config = {
 		index: './src/scripts/index.js',
 		megamenu: './src/scripts/megamenu.js',
 		footer: './src/scripts/footer.js',
-		readmore: './src/scripts/readmore.js'
+		readmore: './src/scripts/readmore.js', 
+		blogheader: './src/scripts/blogheader.js',
   },
   output: {
     filename: '[name].min.js',

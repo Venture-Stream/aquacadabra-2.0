@@ -74,10 +74,10 @@ input {
 }
 
 .countdown-banner .time span {
-  @apply p-2 bg-white rounded text-brand-blue mr-2;
+  @apply p-2 mr-2 bg-white rounded text-brand-blue;
 }
 .countdown-banner .cart-span {
-  @apply block basis-full text-center mt-4;
+  @apply block mt-4 text-center basis-full;
 }
 .countdown-banner strong {
   @apply mr-1;
@@ -98,7 +98,7 @@ input {
 }
 
 .countdown-banner.cart-timer .time span{
-  @apply px-3 py-2 bg-transparent rounded text-white mr-1 border border-white;
+  @apply px-3 py-2 mr-1 text-white bg-transparent border border-white rounded;
 }
 
 @media screen and (min-width: 768px) {
@@ -125,4 +125,8 @@ input {
   .product-tab:has(input:not(:checked)) {
     @apply opacity-25 decoration-[#EEEEEE];
   }
+}
+
+.light-shadow {
+  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.10);
 }

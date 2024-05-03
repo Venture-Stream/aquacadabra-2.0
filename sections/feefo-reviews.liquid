@@ -1,4 +1,10 @@
-{{ 'section-main-page.css' | asset_url | stylesheet_tag }}
+<script
+  type="text/javascript"
+  class="feefo-plugin-widget-bootstrap"
+  src="//register.feefo.com/api/ecommerce/plugin/widget/merchant/aquacadabra"
+  async
+>
+</script>
 
 {%- style -%}
   .section-{{ section.id }}-padding {
@@ -14,22 +20,19 @@
   }
 {%- endstyle -%}
 
-<div class="page-width section-{{ section.id }}-padding">
-  <h1 class="section-heading{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}">
-    {{ page.title | escape }}
-  </h1>
-  {% if section.settings.page_content %}
-    <div class="rte{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %} max-w-[1100px] mx-auto py-4 md:py-12">
-      {{ page.content }}
-    </div>
-  {% endif %}
+<div class="max-w-[1100px] mx-auto section-{{ section.id }}-padding overflow-hidden">
+  <div id="feefo-service-review-carousel-widgetId" class="feefo-review-carousel-widget-service"></div>
 </div>
 
 {% schema %}
 {
-  "name": "t:sections.main-page.name",
-  "tag": "section",
-  "class": "section",
+  "name": "Feefo Reviews",
+  "disabled_on": {
+    "groups": [
+      "header",
+      "footer"
+    ]
+  },
   "settings": [
     {
       "type": "header",
@@ -54,12 +57,11 @@
       "unit": "px",
       "label": "t:sections.all.padding.padding_bottom",
       "default": 36
-    },
+    }
+  ],
+  "presets": [
     {
-      "type": "checkbox",
-      "id": "page_content",
-      "label": "Show page content?",
-      "default": true
+      "name": "Feefo Reviews"
     }
   ]
 }

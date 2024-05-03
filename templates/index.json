@@ -202,26 +202,22 @@
           "type": "tab",
           "settings": {
             "product_tab": "Popular",
-            "collection": "clearance",
-            "image_ratio": "square",
-            "image_shape": "default",
-            "show_secondary_image": false,
+            "collection": "most-popular",
             "show_vendor": false,
-            "show_rating": false,
-            "quick_add": "none"
+            "show_rating": true,
+            "show_wishlist": true,
+            "quick_add": "standard"
           }
         },
         "tab_qgYTqj": {
           "type": "tab",
           "settings": {
             "product_tab": "New In",
-            "collection": "aquariums-fish-tank",
-            "image_ratio": "square",
-            "image_shape": "default",
-            "show_secondary_image": false,
+            "collection": "newest-products",
             "show_vendor": false,
-            "show_rating": false,
-            "quick_add": "none"
+            "show_rating": true,
+            "show_wishlist": true,
+            "quick_add": "standard"
           }
         }
       },
@@ -418,8 +414,16 @@
         "image": "shopify:\/\/shop_images\/AdobeStock_612455245_1.jpg",
         "background_color": "#e5f6e6",
         "layout": "text_first",
+        "block_gap": false,
         "padding_top": 36,
         "padding_bottom": 36
+      }
+    },
+    "feefo_reviews_T7rmzM": {
+      "type": "feefo-reviews",
+      "settings": {
+        "padding_top": 56,
+        "padding_bottom": 56
       }
     },
     "featured_content_Y99WJA": {
@@ -486,6 +490,7 @@
     "logo_blocks_iLGK48",
     "featured_blog_qkxRUK",
     "image_with_text_3mPaBt",
+    "feefo_reviews_T7rmzM",
     "featured_content_Y99WJA"
   ]
 }
