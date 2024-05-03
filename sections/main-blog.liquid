@@ -19,9 +19,11 @@
 {%- paginate blog.articles by 7 -%}
   <div class="main-blog page-width section-{{ section.id }}-padding">
     <div>
-      <h1 class="section-heading h2 scroll-trigger animate--fade-in">
-        {{ blog.title | escape }}
-      </h1>
+      <div class="heading--wrapper">
+        <h1 class="section-heading h2 scroll-trigger animate--fade-in">
+          {{ blog.title | escape }}
+        </h1>
+      </div>
 
       {% render 'blog-categories' %}
     </div>
