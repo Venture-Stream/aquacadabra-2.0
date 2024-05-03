@@ -12,6 +12,7 @@ const config = {
 		footer: './src/scripts/footer.js',
 		readmore: './src/scripts/readmore.js', 
 		blogheader: './src/scripts/blogheader.js',
+		loadmore: './src/scripts/loadmore.js'
   },
   output: {
     filename: '[name].min.js',

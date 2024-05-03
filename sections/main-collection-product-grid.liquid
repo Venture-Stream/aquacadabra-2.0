@@ -181,7 +181,20 @@
             </ul>
 
             {%- if paginate.pages > 1 -%}
-              {% render 'pagination', paginate: paginate, anchor: '' %}
+              {% if section.settings.pagination_type == 'numbers' %}
+                {% render 'pagination', paginate: paginate, anchor: '' %}
+              {% else %}
+                <div class="flex items-center justify-center my-12">
+                  <load-more 
+                    class="button"
+                    data-page="{{ paginate.current_page | plus: 1 }}"
+                    data-limit="{{ paginate.pages }}">
+                    <span>LOAD MORE</span>
+                    {% render 'loading-spinner' %}
+                  </load-more>
+                </div>
+                <script src="{{ 'loadmore.min.js' |  asset_url }}" defer="defer" type="text/javascript"></script>
+              {% endif %}
             {%- endif -%}
           </div>
         {%- endif -%}
@@ -296,6 +309,23 @@
         }
       ],
       "default": "horizontal",
+      "label": "t:sections.main-collection-product-grid.settings.filter_type.label",
+      "info": "t:sections.main-collection-product-grid.settings.filter_type.info"
+    },
+    {
+      "type": "select",
+      "id": "pagination_type",
+      "options": [
+        {
+          "value": "numbers",
+          "label": "Page Numbers"
+        },
+        {
+          "value": "load_more",
+          "label": "Load More"
+        }
+      ],
+      "default": "load_more",
       "label": "t:sections.main-collection-product-grid.settings.filter_type.label",
       "info": "t:sections.main-collection-product-grid.settings.filter_type.info"
     },
