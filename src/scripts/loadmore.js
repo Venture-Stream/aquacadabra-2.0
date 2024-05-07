@@ -19,8 +19,6 @@ class Pagination extends HTMLElement {
             searchURL = `${window.location.pathname}?page=${page}`;
         }
 
-        console.log(searchURL);
-
         this.querySelector('span').classList.add('hidden');
         this.querySelector('.loading__spinner').classList.remove('hidden');
 
