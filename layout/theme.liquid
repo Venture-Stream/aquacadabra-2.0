@@ -35,10 +35,6 @@
       <script src="{{ 'animations.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
 
-    <!-- jQuery for product review widget file -->
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous" defer="defer"></script>
-    <script src="{{ 'product-card-review.js' | asset_url }}" defer="defer"></script>
-
     {{ content_for_header }}
 
     {%- liquid
@@ -370,5 +366,6 @@
       <script src="{{ 'predictive-search.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
   <script src="https://zooomyapps.com/wishlist/ZooomyColl.js" data-shop-id="aquacadabrastore.myshopify.com" data-cus-id="{{customer.id}}" data-cus-email="{{customer.email}}" data-cus-name="{{customer.first_name}} {{customer.last_name}}" data-page="{{template}}"></script>
+  <script src="https://api.feefo.com/api/javascript/aquacadabra" async></script> 
 </body>
 </html>

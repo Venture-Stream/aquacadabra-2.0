@@ -262,19 +262,7 @@
           <div class="flex items-center justify-between w-full">
           {%- if show_rating -%}
             {%- assign current_variant = card_product.selected_or_first_available_variant -%}
-            {% if card_product.variants.size > 1 %}
-              <div
-                class="feefo-custom-holder flex items-center justify-start"
-                data-parent-product-sku="{{ current_variant.sku }}"
-                onClick="window.location = '{{ card_product.url | within: collection }}'"
-              ></div>
-            {% else %}
-              <div
-                class="feefo-custom-holder flex items-center justify-start"
-                data-product-sku="{{ current_variant.sku }}"
-                onClick="window.location = '{{ card_product.url | within: collection }}'"
-              ></div>
-            {% endif %}
+            <div class="feefo-product-stars-widget" data-product-sku="{{ current_variant.sku }}" data-parent-product-sku="{{ current_variant.sku }}"></div>
           {%- endif -%}
           {%- if show_wishlist -%}
             {% render 'ZooomyListWishlistColl' , product: card_product %}
