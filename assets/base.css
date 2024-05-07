@@ -277,9 +277,7 @@ figcaption {
 }
 
 .caption {
-  font-size: 1rem;
-  letter-spacing: 0.07rem;
-  line-height: calc(1 + 0.7 / var(--font-body-scale));
+  font-size: 1.6rem;
 }
 
 @media screen and (min-width: 750px) {
@@ -543,7 +541,7 @@ summary {
   position: relative;
 }
 
-summary .icon-caret {
+summary:not(.facets__summary) .icon-caret {
   position: absolute;
   height: 0.6rem;
   right: 1.5rem;

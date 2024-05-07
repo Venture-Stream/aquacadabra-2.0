@@ -302,10 +302,9 @@ FacetFiltersForm.setListeners();
 class PriceRange extends HTMLElement {
   constructor() {
     super();
-    this.querySelectorAll('input').forEach((element) => {
-      element.addEventListener('change', this.onRangeChange.bind(this));
-      element.addEventListener('keydown', this.onKeyDown.bind(this));
-    });
+    this.querySelectorAll('input').forEach((element) =>
+      element.addEventListener('change', this.onRangeChange.bind(this))
+    );
     this.setMinAndMaxValues();
   }
 
@@ -314,27 +313,20 @@ class PriceRange extends HTMLElement {
     this.setMinAndMaxValues();
   }
 
-  onKeyDown(event) {
-    if (event.metaKey) return;
-
-    const pattern = /[0-9]|\.|,|'| |Tab|Backspace|Enter|ArrowUp|ArrowDown|ArrowLeft|ArrowRight|Delete|Escape/;
-    if (!event.key.match(pattern)) event.preventDefault();
-  }
-
   setMinAndMaxValues() {
     const inputs = this.querySelectorAll('input');
     const minInput = inputs[0];
     const maxInput = inputs[1];
-    if (maxInput.value) minInput.setAttribute('data-max', maxInput.value);
-    if (minInput.value) maxInput.setAttribute('data-min', minInput.value);
-    if (minInput.value === '') maxInput.setAttribute('data-min', 0);
-    if (maxInput.value === '') minInput.setAttribute('data-max', maxInput.getAttribute('data-max'));
+    if (maxInput.value) minInput.setAttribute('max', maxInput.value);
+    if (minInput.value) maxInput.setAttribute('min', minInput.value);
+    if (minInput.value === '') maxInput.setAttribute('min', 0);
+    if (maxInput.value === '') minInput.setAttribute('max', maxInput.getAttribute('max'));
   }
 
   adjustToValidValues(input) {
     const value = Number(input.value);
-    const min = Number(input.getAttribute('data-min'));
-    const max = Number(input.getAttribute('data-max'));
+    const min = Number(input.getAttribute('min'));
+    const max = Number(input.getAttribute('max'));
 
     if (value < min) input.value = min;
     if (value > max) input.value = max;
@@ -363,3 +355,39 @@ class FacetRemove extends HTMLElement {
 }
 
 customElements.define('facet-remove', FacetRemove);
+
+class PriceCheckbox extends HTMLElement {
+  constructor() {
+    super();
+    this.addEventListener('click', () => this.handlePriceChange(this));
+  }
+
+  handlePriceChange(input) {
+    const allInputs = this.querySelectorAll('.price-filter');
+    const facetForm = this.closest('form');
+    const checkedInputs = [...allInputs].filter((input) => input.checked );
+    console.log(checkedInputs);
+    const first = checkedInputs[0];
+    const last = checkedInputs[checkedInputs.length - 1];
+
+    const min = first ? first.value.split('-')[0] * 1 / 100 : '';
+    const max = last ? last.value.split('-')[1] * 1 / 100 : '';
+
+    const parent = input.closest('.price-filter-menu');
+    const closestPriceRange = parent.querySelector('price-range');
+    const minInput = closestPriceRange.querySelectorAll('input')[0];
+    const maxInput = closestPriceRange.querySelectorAll('input')[1];
+
+    console.log(minInput, min);
+    console.log(maxInput, max);
+    
+    minInput.value = min;
+    maxInput.value = max;
+
+    maxInput.dispatchEvent(new Event('change', { bubbles: true }));
+    facetForm.dispatchEvent(new Event('input', { bubbles: true }));
+  }
+
+}
+
+customElements.define('price-checkbox', PriceCheckbox);

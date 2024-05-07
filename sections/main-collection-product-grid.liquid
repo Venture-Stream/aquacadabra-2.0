@@ -57,6 +57,7 @@
             enable_filtering: section.settings.enable_filtering,
             enable_sorting: section.settings.enable_sorting,
             filter_type: section.settings.filter_type,
+            price_list: section.settings.price_list,
             paginate: paginate
           %}
         </aside>
@@ -73,7 +74,7 @@
 
         {% comment %} Sort is the first tabbable element when filter type is vertical {% endcomment %}
         {%- if section.settings.enable_sorting and section.settings.filter_type == 'vertical' -%}
-          <facet-filters-form class="facets facets-vertical-sort page-width small-hide">
+          <facet-filters-form class="facets facets-vertical-sort small-hide">
             <form class="facets-vertical-form" id="FacetSortForm">
               <div class="facet-filters sorting caption">
                 <div class="facet-filters__field">
@@ -84,7 +85,7 @@
                     {%- assign sort_by = collection.sort_by | default: collection.default_sort_by -%}
                     <select
                       name="sort_by"
-                      class="facet-filters__sort select__select caption-large"
+                      class="select__select"
                       id="SortBy"
                       aria-describedby="a11y-refresh-page-message"
                     >
@@ -128,6 +129,19 @@
           </facet-filters-form>
         {%- endif -%}
 
+        {%- if paginate.previous -%}
+          <div class="flex items-center justify-center my-12">
+            <a
+              href="{{ paginate.previous.url }}"
+              class="button"
+              aria-label="{{ 'general.pagination.previous' | t }}"
+            >
+              Load Previous
+            </a>
+          </div>
+
+        {%- endif -%}
+
         {%- if collection.products.size == 0 -%}
           <div class="collection collection--empty page-width" id="product-grid" data-id="{{ section.id }}">
             <div class="loading-overlay gradient"></div>
@@ -150,6 +164,7 @@
             <div class="loading-overlay gradient"></div>
             <ul
               id="product-grid"
+              data-id="{{ section.id }}"
               class="grid grid-cols-2 gap-4 product-grid md:grid-cols-4"
             >
               {%- for product in collection.products -%}
@@ -179,7 +194,20 @@
             </ul>
 
             {%- if paginate.pages > 1 -%}
-              {% render 'pagination', paginate: paginate, anchor: '' %}
+              {% if section.settings.pagination_type == 'numbers' %}
+                {% render 'pagination', paginate: paginate, anchor: '' %}
+              {% else %}
+                <div class="flex items-center justify-center my-12">
+                  <load-more 
+                    class="button min-w-[15rem] min-h-[5rem]"
+                    data-page="{{ paginate.current_page | plus: 1 }}"
+                    data-limit="{{ paginate.pages }}">
+                    <span>LOAD MORE</span>
+                    {% render 'loading-spinner', class: 'hidden loading__spinner text-white' %}
+                  </load-more>
+                </div>
+                <script src="{{ 'loadmore.min.js' |  asset_url }}" defer="defer" type="text/javascript"></script>
+              {% endif %}
             {%- endif -%}
           </div>
         {%- endif -%}
@@ -265,6 +293,11 @@
       "content": "t:sections.main-collection-product-grid.settings.header__1.content"
     },
     {
+      "type": "textarea",
+      "id": "price_list",
+      "label": "Price List"
+    },
+    {
       "type": "checkbox",
       "id": "enable_filtering",
       "default": true,
@@ -289,6 +322,23 @@
         }
       ],
       "default": "horizontal",
+      "label": "t:sections.main-collection-product-grid.settings.filter_type.label",
+      "info": "t:sections.main-collection-product-grid.settings.filter_type.info"
+    },
+    {
+      "type": "select",
+      "id": "pagination_type",
+      "options": [
+        {
+          "value": "numbers",
+          "label": "Page Numbers"
+        },
+        {
+          "value": "load_more",
+          "label": "Load More"
+        }
+      ],
+      "default": "load_more",
       "label": "t:sections.main-collection-product-grid.settings.filter_type.label",
       "info": "t:sections.main-collection-product-grid.settings.filter_type.info"
     },
