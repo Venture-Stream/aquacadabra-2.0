@@ -32,14 +32,22 @@ class Pagination extends HTMLElement {
             const data = html.getElementById('product-grid');
 
             collectionGrid.insertAdjacentHTML('beforeend', data.innerHTML);
+
+            this.querySelector('span').classList.remove('hidden');
+            this.querySelector('.loading__spinner').classList.add('hidden');
+
+            const current_page = params.get('page')
+            if(current_page == null) {
+                params.set('page', page);
+            } else {
+                params.append('page', page);
+            }
+
+
+            console.log(params.get('page'));
         });
 
-        params.set('page', page);
 
-        console.log(params.get('page'));
-
-        this.querySelector('span').classList.add('hidden');
-        this.querySelector('.loading__spinner').classList.remove('hidden');
 
         this.dataset.page = page + 1;
         if(page >= limit) {
