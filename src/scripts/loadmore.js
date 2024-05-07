@@ -11,9 +11,7 @@ class Pagination extends HTMLElement {
         let searchURL;
         let page = this.dataset.page * 1;
         let limit = this.dataset.limit * 1;
-        let params = new URL(window.location.href).searchParams;
-
-        console.log(params)
+        let url = new URL(window.location.href)
 
         if(window.location.search != '') {
             searchURL = `${window.location.pathname}${window.location.search}&page=${page}`;
@@ -36,15 +34,12 @@ class Pagination extends HTMLElement {
             this.querySelector('span').classList.remove('hidden');
             this.querySelector('.loading__spinner').classList.add('hidden');
 
-            const current_page = params.get('page')
-            if(current_page == null) {
-                params.set('page', page);
+            if(!(url.searchParams.has('page'))){
+                url.searchParams.append('page', page)
             } else {
-                params.append('page', page);
+                url.searchParams.set('page', page)
             }
-
-
-            console.log(params.get('page'));
+            history.pushState({}, '', url.href)
         });
 
 

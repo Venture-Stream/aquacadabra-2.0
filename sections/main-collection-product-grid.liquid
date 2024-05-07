@@ -129,6 +129,19 @@
           </facet-filters-form>
         {%- endif -%}
 
+        {%- if paginate.previous -%}
+          <div class="flex items-center justify-center my-12">
+            <a
+              href="{{ paginate.previous.url }}"
+              class="button"
+              aria-label="{{ 'general.pagination.previous' | t }}"
+            >
+              Load Previous
+            </a>
+          </div>
+
+        {%- endif -%}
+
         {%- if collection.products.size == 0 -%}
           <div class="collection collection--empty page-width" id="product-grid" data-id="{{ section.id }}">
             <div class="loading-overlay gradient"></div>
@@ -190,7 +203,7 @@
                     data-page="{{ paginate.current_page | plus: 1 }}"
                     data-limit="{{ paginate.pages }}">
                     <span>LOAD MORE</span>
-                    {% render 'loading-spinner' %}
+                    {% render 'loading-spinner', class: 'hidden loading__spinner text-white' %}
                   </load-more>
                 </div>
                 <script src="{{ 'loadmore.min.js' |  asset_url }}" defer="defer" type="text/javascript"></script>
