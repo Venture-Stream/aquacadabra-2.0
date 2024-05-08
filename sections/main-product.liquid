@@ -777,6 +777,41 @@
                 </product-recommendations>
               {%- when 'icon-with-text' -%}
                 {% render 'icon-with-text', block: block %}
+              {%- when 'stock_message' -%}
+                {% assign productTags = product.tags | join:',' | downcase  %}
+                {% assign variant_dispatch = current_variant.metafields.custom.variant_dispatch_day %}
+    
+                {% unless variant_dispatch != null or productTags contains 'dispatch' or productTags contains 'pre-order' %}
+                  <div id="stock_message" class="text-[#666] text-1.4 my-4">
+                    {% if current_variant.inventory_management == "shopify" and current_variant.inventory_policy != "continue" %}
+                      {% if current_variant.inventory_quantity > 10 %}
+                        {% assign stock = "normal" %}
+                      {% elsif current_variant.inventory_quantity > 0 %}
+                        {% assign stock = "low" %}
+                      {% else  %}
+                        {% assign stock = "out-of-stock" %}
+                      {% endif %}
+                      {% if stock != "out-of-stock" %}
+                        <span class="text-[#21A400]">In Stock</span> {% unless stock == "low" %} and ready to ship{% endunless %}
+                      {% else %}
+                        <span class="text-[#F00]">Out of Stock</span>
+                      {% endif %}
+                    {% else %}
+                        <span>In Stock</span>
+                    {% endif %}
+                  </div>
+                {% endunless %}
+              {%- when 'countdown_timer' -%}
+                <div class="product-timer">
+                  {% render 'countdown-timer',
+                    cart_timer: false,
+                    enable_timer: settings.enable_timer,
+                    banner_text: settings.banner_text,
+                    right_text: settings.right_text,
+                    cut_off_time: settings.cut_off_time
+                  %}
+                </div>
+
             {%- endcase -%}
           {%- endfor -%}
           <a href="{{ product.url }}" class="link product__view-details animate-arrow">
@@ -2263,6 +2298,14 @@
           "info": "t:sections.main-product.blocks.icon_with_text.settings.heading.info"
         }
       ]
+    },
+    {
+      "type": "stock_message",
+      "name": "Stock Message"
+    },
+    {
+      "type": "countdown_timer",
+      "name": "Countdown Timer"
     }
   ],
   "settings": [

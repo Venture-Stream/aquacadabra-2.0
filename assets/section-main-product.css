@@ -1450,3 +1450,16 @@ a.product__text {
     border: none;
   }
 }
+
+.product-timer {
+  border-radius: 5px;
+  background: #F6F6F6;
+  padding: 2rem;
+}
+.product-timer .countdown-banner {
+  color: #15397B;
+}
+.product-timer .countdown-banner .time span {
+  background: #15397B;
+  color: #fff;
+}

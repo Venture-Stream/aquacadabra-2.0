@@ -25,6 +25,11 @@
           "settings": {
           }
         },
+        "stock_message_bDqLXR": {
+          "type": "stock_message",
+          "settings": {
+          }
+        },
         "description_99QiPX": {
           "type": "description",
           "settings": {
@@ -44,8 +49,14 @@
             "show_gift_card_recipient": true
           }
         },
+        "countdown_timer_6WpLAb": {
+          "type": "countdown_timer",
+          "settings": {
+          }
+        },
         "wishlist_wishify_product_W9JT6A": {
           "type": "shopify:\/\/apps\/wishlist-wishify\/blocks\/product\/e14a43b5-34c6-492d-b46f-3ad2eda08696",
+          "disabled": true,
           "settings": {
           }
         },
@@ -99,9 +110,11 @@
         "caption",
         "rating_zHdmjr",
         "price",
+        "stock_message_bDqLXR",
         "description_99QiPX",
         "variant_picker",
         "custom_buy_buttons_Q3XzfD",
+        "countdown_timer_6WpLAb",
         "wishlist_wishify_product_W9JT6A",
         "collapsible_tab_wEPe66",
         "collapsible_tab_mmM8UU",
@@ -120,7 +133,7 @@
         "mobile_thumbnails": "show",
         "hide_variants": true,
         "enable_video_looping": false,
-        "padding_top": 36,
+        "padding_top": 12,
         "padding_bottom": 12
       }
     },
