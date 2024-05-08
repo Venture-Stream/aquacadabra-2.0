@@ -184,10 +184,10 @@
 }
 
 /* Product info */
-
+/* 
 .product__info-container > * + * {
   margin: 1.5rem 0;
-}
+} */
 
 .product__info-container iframe {
   max-width: 100%;
@@ -215,7 +215,7 @@ a.product__text {
 
 .product__title {
   word-break: break-word;
-  margin-bottom: 1.5rem;
+  /* margin-bottom: 1.5rem; */
 }
 
 
