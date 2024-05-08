@@ -100,6 +100,12 @@
                   {{- block.settings.text -}}
                 </p>
               {%- when 'title' -%}
+              {%- if product.compare_at_price > product.price and product.quantity_price_breaks_configured? != true %}
+                <span class="badge price__badge-sale bg-[#F00] text-white mb-4">
+                  {{ 'products.product.on_sale' | t }}
+                </span>
+              {% endif -%}
+
                 <div class="product__title" {{ block.shopify_attributes }}>
                   <h1 class="text-2 m-0">{{ product.title | escape }}</h1>
                   <a href="{{ product.url }}" class="product__title">
