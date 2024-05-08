@@ -40,11 +40,57 @@
         "custom_buy_buttons_Q3XzfD": {
           "type": "custom_buy_buttons",
           "settings": {
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": true
           }
         },
         "wishlist_wishify_product_W9JT6A": {
           "type": "shopify:\/\/apps\/wishlist-wishify\/blocks\/product\/e14a43b5-34c6-492d-b46f-3ad2eda08696",
           "settings": {
+          }
+        },
+        "collapsible_tab_wEPe66": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Description",
+            "icon": "none",
+            "content": "",
+            "page": "",
+            "use_description": true,
+            "show_reviews": false
+          }
+        },
+        "collapsible_tab_mmM8UU": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Reviews",
+            "icon": "none",
+            "content": "",
+            "page": "",
+            "use_description": false,
+            "show_reviews": true
+          }
+        },
+        "collapsible_tab_HyWiUA": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Finance",
+            "icon": "none",
+            "content": "",
+            "page": "buy-now-pay-later-no-fees",
+            "use_description": false,
+            "show_reviews": false
+          }
+        },
+        "collapsible_tab_Emgdj4": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Delivery & Returns",
+            "icon": "none",
+            "content": "",
+            "page": "delivery-information",
+            "use_description": false,
+            "show_reviews": false
           }
         }
       },
@@ -56,7 +102,11 @@
         "description_99QiPX",
         "variant_picker",
         "custom_buy_buttons_Q3XzfD",
-        "wishlist_wishify_product_W9JT6A"
+        "wishlist_wishify_product_W9JT6A",
+        "collapsible_tab_wEPe66",
+        "collapsible_tab_mmM8UU",
+        "collapsible_tab_HyWiUA",
+        "collapsible_tab_Emgdj4"
       ],
       "settings": {
         "enable_sticky_info": true,
