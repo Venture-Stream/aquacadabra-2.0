@@ -11,12 +11,22 @@
         "caption": {
           "type": "text",
           "settings": {
-            "text": "{{ product.metafields.descriptors.subtitle.value }}",
-            "text_style": "subtitle"
+            "text": "{{ product.vendor }}",
+            "text_style": "body"
+          }
+        },
+        "rating_zHdmjr": {
+          "type": "rating",
+          "settings": {
           }
         },
         "price": {
           "type": "price",
+          "settings": {
+          }
+        },
+        "description_99QiPX": {
+          "type": "description",
           "settings": {
           }
         },
@@ -27,50 +37,26 @@
             "swatch_shape": "circle"
           }
         },
-        "buy_buttons": {
-          "type": "buy_buttons",
+        "custom_buy_buttons_Q3XzfD": {
+          "type": "custom_buy_buttons",
           "settings": {
-            "show_dynamic_checkout": true,
-            "show_gift_card_recipient": true
           }
         },
-        "9256a068-a803-43b9-b856-285cee037d15": {
-          "type": "collapsible_tab",
+        "wishlist_wishify_product_W9JT6A": {
+          "type": "shopify:\/\/apps\/wishlist-wishify\/blocks\/product\/e14a43b5-34c6-492d-b46f-3ad2eda08696",
           "settings": {
-            "heading": "Description",
-            "icon": "none",
-            "content": "",
-            "page": ""
-          }
-        },
-        "collapsible-row-1": {
-          "type": "collapsible_tab",
-          "settings": {
-            "heading": "Deliveries & Returns",
-            "icon": "none",
-            "content": "<h4>UK DELIVERY OPTIONS<\/h4><p>Orders over £25.00 Royal Mail Tracked 48 | FREE<\/p><p>Orders under £25.00 Royal Mail Tracked 48  | £2.50 <\/p><p>Royal Mail Tracked 24 (next day, not guaranteed)  | £1.99<\/p><p>Royal Mail Special Delivery Next Day<\/p><p>Order before 3pm Monday - Thursday, excl bank holidays | £6.95<\/p><p>DPD Next Day Order before 3pm Monday - Thursday, excl bank holidays | £5.99<\/p><h4>INTERNATIONAL DELIVERY OPTIONS<\/h4><p>Royal Mail International Tracked 2 - 4 Business Days | £6.95<\/p><p>DPD International2 - 4 Business Days | From £7.95<\/p>",
-            "page": ""
-          }
-        },
-        "e33de7c5-fc60-4190-b23e-3366954acb97": {
-          "type": "collapsible_tab",
-          "settings": {
-            "heading": "Blemished Boxes",
-            "icon": "none",
-            "content": "<h4>ABOUT BLEMISHES ON THE BOX<\/h4><p>At Hogies, we don’t judge by appearances. You’ll see even bigger discounts on brand new products throughout our clearance section, which have a few cosmetic imperfections, but only to their packaging. The box or packaging may have dents, marks, be unsealed or have no box. You may not think they are suitable to give as a gift, but they are perfect for your personal use (or perhaps for non-discerning family and friends). <\/p>",
-            "page": ""
           }
         }
       },
       "block_order": [
         "title",
         "caption",
+        "rating_zHdmjr",
         "price",
+        "description_99QiPX",
         "variant_picker",
-        "buy_buttons",
-        "9256a068-a803-43b9-b856-285cee037d15",
-        "collapsible-row-1",
-        "e33de7c5-fc60-4190-b23e-3366954acb97"
+        "custom_buy_buttons_Q3XzfD",
+        "wishlist_wishify_product_W9JT6A"
       ],
       "settings": {
         "enable_sticky_info": true,
@@ -86,6 +72,12 @@
         "enable_video_looping": false,
         "padding_top": 36,
         "padding_bottom": 12
+      }
+    },
+    "171515839923400ed5": {
+      "type": "apps",
+      "settings": {
+        "include_margins": true
       }
     },
     "related-products": {
@@ -121,6 +113,7 @@
   },
   "order": [
     "main",
+    "171515839923400ed5",
     "related-products",
     "17091362601ad43f02",
     "1713262074d2a660d6"
