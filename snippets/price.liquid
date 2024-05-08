@@ -35,6 +35,8 @@
   if target == product and product.price_varies
     assign money_price = 'products.product.price.from_price_html' | t: price: money_price
   endif
+
+  assign percent_diff = compare_at_price | minus: price | times: 100.0 | divided_by: compare_at_price
 -%}
 
 <div
@@ -86,6 +88,9 @@
     <div class="price__sale">
       {%- unless product.price_varies == false and product.compare_at_price_varies %}
         <span class="visually-hidden visually-hidden--inline">{{ 'products.product.price.regular_price' | t }}</span>
+        <span class="price-item price-item--sale price-item--last">
+          {{ money_price }}
+        </span>
         <span>
           <s class="price-item price-item--regular">
             {% if settings.currency_code_enabled %}
@@ -97,9 +102,6 @@
         </span>
       {%- endunless -%}
       <span class="visually-hidden visually-hidden--inline">{{ 'products.product.price.sale_price' | t }}</span>
-      <span class="price-item price-item--sale price-item--last">
-        {{ money_price }}
-      </span>
     </div>
     <small class="unit-price caption{% if product.selected_or_first_available_variant.unit_price_measurement == nil %} hidden{% endif %}">
       <span class="visually-hidden">{{ 'products.product.price.unit_price' | t }}</span>
@@ -117,8 +119,8 @@
     </small>
   </div>
   {%- if show_badges -%}
-    <span class="badge price__badge-sale color-{{ settings.sale_badge_color_scheme }}">
-      {{ 'products.product.on_sale' | t }}
+    <span class="badge price__badge-sale bg-[#888] text-white">
+      {{ percent_diff | round }}% OFF
     </span>
 
     <span class="badge price__badge-sold-out color-{{ settings.sold_out_badge_color_scheme }}">

@@ -245,7 +245,8 @@ a.product__text {
 }
 
 .product .price__container {
-  margin-bottom: 0.5rem;
+  margin-bottom: 2rem;
+  margin-right: 2rem;
 }
 
 .product .price dl {
@@ -257,12 +258,15 @@ a.product__text {
   display: none;
 }
 
+.product__info-container .price .price-item:not(.price-item--regular) {
+  color: #F00;
+}
+
+.product__info-container .price--on-sale .price-item--regular, .product__info-container .price .price-item{
+  font-size: 2rem;
+}
+
 @media screen and (min-width: 750px) {
-
-  .product__info-container .price--on-sale .price-item--regular {
-    font-size: 1.6rem;
-  }
-
   .product__info-container > *:first-child {
     margin-top: 0;
   }
