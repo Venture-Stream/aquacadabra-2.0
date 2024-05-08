@@ -1463,3 +1463,25 @@ a.product__text {
   background: #15397B;
   color: #fff;
 }
+
+.product__description {
+  color: #444;
+  font-size: 15px;
+  line-height: 26px;
+}
+
+#ZooomyList, #ZooomyList label {
+  width: 100% !important;
+}
+
+#ZooomyList p.zooomypwishmsg {
+  width: 100% !important;
+  background: white !important;
+  color: #A5A5A5 !important;
+  text-align: center !important;
+  margin: auto !important;
+  text-transform: uppercase !important;
+  font-weight: 600 !important;
+  font-size: 12px !important;
+  letter-spacing: 1.2px !important;
+}

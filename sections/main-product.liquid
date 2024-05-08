@@ -817,7 +817,24 @@
                     cut_off_time: settings.cut_off_time
                   %}
                 </div>
-
+              {%- when 'wishlist'-%}
+                <div
+                  id="ZlistWishlist"
+                  data-product-id="{{product.id}}"
+                  data-handle="{{product.handle}}"
+                  data-image="{{product.featured_image | img_url: '360x'}}"
+                  data-variantname="{{product.selected_or_first_available_variant.title}}"
+                  data-title="{{product.title}}"
+                  data-variant="{{product.selected_or_first_available_variant.id}}"
+                  data-price="{{product.selected_or_first_available_variant.price | remove: '.' | remove: ',' | divided_by: 100.0 }}"
+                ></div>
+                <script
+                  src="https://zooomyapps.com/wishlist/ListWishlistProduct.js"
+                  data-product-id="{{product.id}}"
+                  data-shop-id="{{shop.permanent_domain}}"
+                  data-customer-id="{{customer.id}}"
+                ></script>
+                
             {%- endcase -%}
           {%- endfor -%}
           <a href="{{ product.url }}" class="link product__view-details animate-arrow">
@@ -2312,6 +2329,10 @@
     {
       "type": "countdown_timer",
       "name": "Countdown Timer"
+    },
+    {
+      "type": "wishlist",
+      "name": "Wishlist"
     }
   ],
   "settings": [

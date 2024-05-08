@@ -3233,7 +3233,7 @@ details-disclosure > details {
   }
 }
 .read-smore__link-wrap {
-  display: inline-block;
+  display: block;
 }
 .read-smore__link {
   text-decoration: underline;
