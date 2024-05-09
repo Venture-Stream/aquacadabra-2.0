@@ -1,0 +1,23 @@
+<div class="page-width">
+  <div class="heading--wrapper">
+    <h1 class="section-heading h2 scroll-trigger animate--fade-in">
+      {{ blog.title | escape }}
+    </h1>
+  </div>
+
+  {% render 'blog-categories' %}
+</div>
+
+{% schema %}
+{
+  "name": "Blog header",
+  "settings": [],
+  "presets": [
+    {
+      "category": "Blog",
+      "name": "Blog header",
+      "settings": {}
+    }
+  ]
+}
+{% endschema %}
