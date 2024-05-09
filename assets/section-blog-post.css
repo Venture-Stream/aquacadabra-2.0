@@ -67,6 +67,7 @@
 
 .article-template__title {
   margin: 0;
+  text-align: center;
 }
 
 .article-template__title:not(:only-child) {
@@ -90,6 +91,10 @@
 .article-template__content {
   margin-top: 3rem;
   margin-bottom: 3rem;
+}
+
+.article-template__content ol, .article-template__content ul, .article-template__content li {
+  list-style: revert;
 }
 
 .article-template__social-sharing {

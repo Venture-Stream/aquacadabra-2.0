@@ -1,5 +1,8 @@
 {
   "sections": {
+    "header": {
+      "type": "blog-header"
+    },
     "main": {
       "type": "main-blog",
       "settings": {
@@ -14,6 +17,7 @@
     }
   },
   "order": [
+    "header",
     "main"
   ]
 }
