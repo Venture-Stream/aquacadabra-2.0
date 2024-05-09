@@ -1,7 +1,9 @@
 {
   "sections": {
     "header": {
-      "type": "blog-header"
+      "type": "blog-header",
+      "settings": {
+      }
     },
     "main": {
       "type": "main-article",
@@ -26,7 +28,9 @@
           }
         },
         "content": {
-          "type": "content"
+          "type": "content",
+          "settings": {
+          }
         }
       },
       "block_order": [
@@ -34,7 +38,9 @@
         "title",
         "share",
         "content"
-      ]
+      ],
+      "settings": {
+      }
     }
   },
   "order": [

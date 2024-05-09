@@ -1,7 +1,9 @@
 {
   "sections": {
     "header": {
-      "type": "blog-header"
+      "type": "blog-header",
+      "settings": {
+      }
     },
     "main": {
       "type": "main-blog",
