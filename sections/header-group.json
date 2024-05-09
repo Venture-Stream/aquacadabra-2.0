@@ -293,13 +293,24 @@
             "align_items": true,
             "link": ""
           }
+        },
+        "column_37nQx9": {
+          "type": "column",
+          "settings": {
+            "icon": "returns",
+            "title": "60 Day Returns",
+            "text": "<p>Shop with confidence<\/p>",
+            "align_items": true,
+            "link": ""
+          }
         }
       },
       "block_order": [
         "column_78w7Gm",
         "column_xDVLBa",
         "column_bDNxQr",
-        "column_8pVXCY"
+        "column_8pVXCY",
+        "column_37nQx9"
       ],
       "settings": {
       }

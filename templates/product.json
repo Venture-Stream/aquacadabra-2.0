@@ -54,10 +54,18 @@
           "settings": {
           }
         },
-        "wishlist_wishify_product_W9JT6A": {
-          "type": "shopify:\/\/apps\/wishlist-wishify\/blocks\/product\/e14a43b5-34c6-492d-b46f-3ad2eda08696",
-          "disabled": true,
+        "wishlist_7NKRt7": {
+          "type": "wishlist",
           "settings": {
+          }
+        },
+        "usps_eCTbg4": {
+          "type": "usps",
+          "settings": {
+            "free_delivery_text": "<p><strong>Free UK Delivery<\/strong> on all orders<\/p>",
+            "pallete_text": "<p>This product will be sent out on a palleted kerbside delivery. <a href=\"\/pages\/pallet-delivery-information\" target=\"_blank\">Learn more.<\/a><\/p>",
+            "finance_text": "<p><strong>Finance Options<\/strong> Choose pay monthly or pay later at checkout<\/p>",
+            "returns_text": "<p>60 Day Returns Shop with confidence<\/p>"
           }
         },
         "collapsible_tab_wEPe66": {
@@ -115,7 +123,8 @@
         "variant_picker",
         "custom_buy_buttons_Q3XzfD",
         "countdown_timer_6WpLAb",
-        "wishlist_wishify_product_W9JT6A",
+        "wishlist_7NKRt7",
+        "usps_eCTbg4",
         "collapsible_tab_wEPe66",
         "collapsible_tab_mmM8UU",
         "collapsible_tab_HyWiUA",
