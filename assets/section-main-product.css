@@ -1451,34 +1451,6 @@ a.product__text {
   }
 }
 
-.product-timer {
-  border-radius: 5px;
-  background: #F6F6F6;
-  padding: 2rem;
-}
-.product-timer .countdown-banner {
-  color: #15397B;
-  flex-direction: column;
-  padding: 0;
-}
-
-.product-timer .countdown-banner .time {
-  margin: 1rem 0;
-}
-
-.product-timer .countdown-banner .time span {
-  background: #15397B;
-  color: #fff;
-}
-
-@media screen and (min-width: 768px) {
-  .product-timer .countdown-banner {
-    flex-direction: row;
-  }
-  .product-timer .countdown-banner .time {
-    margin: 0 0 0 1rem;
-  }
-}
 
 .product__description {
   color: #444;
