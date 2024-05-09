@@ -54,7 +54,7 @@
             {{ article.title | escape }}
           </h1>
           {%- if block.settings.blog_show_date -%}
-            <span class="circle-divider caption-with-letter-spacing" itemprop="dateCreated pubdate datePublished">
+            <span class="block article-card__info text-[#aaa] text-1.3 text-center mx-auto" itemprop="dateCreated pubdate datePublished">
               {{- article.published_at | time_tag: format: 'date' -}}
             </span>
           {%- endif -%}
@@ -85,12 +85,6 @@
     {%- endcase -%}
   {%- endfor -%}
 
-  <div class="article-template__back element-margin-top center{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
-    <a href="{{ blog.url }}" class="article-template__link link animate-arrow">
-      <span class="icon-wrap">{% render 'icon-arrow' %}</span>
-      {{ 'blogs.article.back_to_blog' | t: title: blog.title }}
-    </a>
-  </div>
   {%- if blog.comments_enabled? -%}
     <div class="article-template__comment-wrapper background-secondary">
       <div
