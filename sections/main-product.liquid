@@ -834,9 +834,66 @@
                   data-shop-id="{{shop.permanent_domain}}"
                   data-customer-id="{{customer.id}}"
                 ></script>
-                
+              {%- when 'usps' -%}
+                <div id="prod-alerts" class="border border-[#EEE] rounded-md px-8">
+                  <div class="py-8 border-b border-[#EEE] text-black text-1.3 flex items-center gap-4">
+                    {% render 'icon-delivery-blue' %}
+                    {{ block.settings.free_delivery_text }}
+                  </div>
+                  {% for tag in product.tags %}
+                    {% assign productTag = tag | downcase %}
+                    {% if productTag contains 'live-food_' %}
+                      <div class="py-8 border-b border-[#EEE] text-black text-1.3 flex items-center gap-4">
+                      {{ tag | replace: "live-food_", "" }}
+                      </div>
+                    {% endif %}
+                    {% if productTag contains 'dispatch_' and variant_dispatch == null %}
+                      <div class="py-8 border-b border-[#EEE] text-black text-1.3 flex items-center gap-4">
+                        {% render 'icon-express-delivery' %}
+                        This product will be dispatched in {{ tag | downcase | replace: "dispatch_", "" }}. Not available for Express Shipping.
+                      </div>
+                    {% endif %} 
+                    {% if productTag contains 'pallet' %}
+                      <div class="py-8 border-b border-[#EEE] text-black text-1.3 flex items-center gap-4">
+                        {% render 'icon-info' %}
+                        {{ block.settings.pallete_text }}               
+                      </div>
+                    {% endif %}
+                  {% endfor %}
+
+                  {% if variant_dispatch != null %}
+                    <div class="py-8 border-b border-[#EEE] text-black text-1.3 flex items-center gap-4" data-dispatch-metafield>
+                      {% render 'icon-express-delivery' %}
+                      <strong>This product will be dispatched in {{ variant_dispatch | downcase | replace: "dispatch_", "" }}</strong> - Not available for Express Shipping.
+                    </div>
+                  {% endif %}
+                  <div class="finance-available">
+                    <div class="py-8 border-b border-[#EEE] text-black text-1.3 flex items-center gap-4">
+                      {% render 'icon-finance-blue' %}
+                      {{ block.settings.finance_text }}
+                    </div>
+                  </div>
+                  <div class="py-8 border-b border-[#EEE] text-black text-1.3 flex items-center gap-4">
+                    {% render 'icon-returns-blue' %}
+                    {{ block.settings.returns_text }}
+                  </div>
+                </div>
             {%- endcase -%}
           {%- endfor -%}
+
+          <script>
+            var variantData =[
+              {% for variant in product.variants %}
+                {% if variant.metafields.custom.variant_dispatch_day != null %}
+                  {
+                    variantDispatchMsg: "This product will be dispatched in {{ variant.metafields.custom.variant_dispatch_day | downcase | replace: "dispatch_", "" }}. Not available for Express Shipping.",
+                    variantId: {{ variant.id }}
+                  }{% unless forloop.last %},{% endunless %}								
+                {% endif %}
+              {% endfor %}
+            ]
+          </script>
+
           <a href="{{ product.url }}" class="link product__view-details animate-arrow">
             {{ 'products.product.view_full_details' | t }}
             {% render 'icon-arrow' %}
@@ -2333,6 +2390,40 @@
     {
       "type": "wishlist",
       "name": "Wishlist"
+    },
+    {
+      "type": "usps",
+      "name": "USPs",
+      "settings": [
+        {
+          "type": "header",
+          "content": "Product USPs"
+        },
+        {
+          "type": "richtext",
+          "id": "free_delivery_text",
+          "label": "Free Delivery Text",
+          "default": "<p><strong>Free UK Delivery</strong> on all orders</p>"
+        },
+        {
+          "type": "richtext",
+          "id": "pallete_text",
+          "label": "Pallete Text",
+          "default": "<p>This product will be sent out on a palleted kerbside delivery. <a target=\"_blank\" href=\"/pages/pallet-delivery-information\">Learn more.</a></p>"
+        },
+        {
+          "type": "richtext",
+          "id": "finance_text",
+          "label": "Finance Text",
+          "default": "<p><strong>Finance Options</strong> Choose pay monthly or pay later at checkout</p>"
+        },
+        {
+          "type": "richtext",
+          "id": "returns_text",
+          "label": "Returns Text",
+          "default": "<p>60 Day Returns Shop with confidence</p>"
+        }
+      ]
     }
   ],
   "settings": [
