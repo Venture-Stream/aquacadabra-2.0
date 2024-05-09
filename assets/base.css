@@ -1702,7 +1702,6 @@ input[type='checkbox'] {
 }
 
 .quantity__button svg {
-  width: 1rem;
   pointer-events: none;
 }
 
