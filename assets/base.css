@@ -3269,3 +3269,12 @@ details-disclosure > details {
     margin: 0 0 0 1rem;
   }
 }
+
+.products .grid-item {
+  padding-right: 1rem;
+  border-right: 1px solid #EEEEEE;
+}
+
+.products .grid-item:nth-child(5n) {
+  border-right: none;
+}

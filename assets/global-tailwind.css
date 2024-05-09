@@ -838,12 +838,12 @@ video {
   height: 100%;
 }
 
-.max-h-\[435px\]{
-  max-height: 435px;
-}
-
 .max-h-\[10rem\]{
   max-height: 10rem;
+}
+
+.max-h-\[435px\]{
+  max-height: 435px;
 }
 
 .min-h-\[200px\]{
