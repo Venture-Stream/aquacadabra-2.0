@@ -1622,10 +1622,14 @@ input[type='checkbox'] {
 .quantity {
   color: rgba(var(--color-foreground));
   position: relative;
-  width: calc(18rem / var(--font-body-scale) + var(--inputs-border-width) * 2);
   display: flex;
   border-radius: var(--inputs-radius);
   min-height: calc((var(--inputs-border-width) * 2) + 4.5rem);
+}
+@media screen and (max-width: 768px) {
+  .quantity {
+    width: 100%;
+  }
 }
 
 /* .quantity:after {
@@ -1664,15 +1668,14 @@ input[type='checkbox'] {
   font-weight: var(--font-body-weight);
   font-size: 1.6rem;
   font-weight: 500;
-  opacity: 0.85;
   text-align: center;
   background-color: transparent;
-  border: 0;
   padding: 0 0.5rem;
   width: 100%;
   flex-grow: 1;
   -webkit-appearance: none;
   appearance: none;
+  margin: 0 0.5rem;
 }
 
 .quantity__button {
@@ -1686,6 +1689,8 @@ input[type='checkbox'] {
   justify-content: center;
   color: rgb(var(--color-foreground));
   padding: 0;
+  border: 1px solid #E0E0E0;
+  border-radius: 5px;
 }
 
 .quantity__button:first-child {
@@ -2906,7 +2911,7 @@ details-disclosure > details {
   margin-bottom: 0;
 }
 
-.rte a {
+.rte a:not(.read-smore__link) {
   color: #15397B;
   text-underline-offset: 0.3rem;
   text-decoration-thickness: 0.1rem;
@@ -3226,4 +3231,12 @@ details-disclosure > details {
   .animate--hover-vertical-lift .button:not([disabled]).button--secondary:hover:after {
     --border-offset: 0px; /* Prevent the border from growing on buttons when this effect is on. */
   }
+}
+.read-smore__link-wrap {
+  display: block;
+}
+.read-smore__link {
+  text-decoration: underline;
+  color: #444;
+  font-size: 13px;
 }
