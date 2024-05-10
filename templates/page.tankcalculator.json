@@ -5,9 +5,83 @@
       "settings": {
         "calculator_type": "tank-calculator"
       }
+    },
+    "link_blocks_f7TKYG": {
+      "type": "link-blocks",
+      "blocks": {
+        "block_fkeXPw": {
+          "type": "block",
+          "settings": {
+            "link": "shopify:\/\/collections\/small-fish-tanks",
+            "link_image": "shopify:\/\/shop_images\/small-tanks_d9f11d52-66ae-437b-b81f-cc63d2ed0293.webp",
+            "link_title": "Small Tanks (50-100L)"
+          }
+        },
+        "block_idkTYT": {
+          "type": "block",
+          "settings": {
+            "link": "shopify:\/\/collections\/medium-fish-tanks",
+            "link_image": "shopify:\/\/shop_images\/medium-tank_779a0467-20fe-4444-aa0e-2eebc26d8e1e.webp",
+            "link_title": "Medium Tanks (50-100L)"
+          }
+        },
+        "block_HAwyq6": {
+          "type": "block",
+          "settings": {
+            "link": "shopify:\/\/collections\/large-fish-tanks",
+            "link_image": "shopify:\/\/shop_images\/large-tank_56372214-b8ea-4287-9b7c-820e2c012e59.webp",
+            "link_title": "Large Tanks (100-250L)"
+          }
+        },
+        "block_hGbk9w": {
+          "type": "block",
+          "disabled": true,
+          "settings": {
+            "link": "",
+            "link_image": "shopify:\/\/shop_images\/xl-tank_202aa73f-eaca-4368-8266-6303ef16dd0b.webp",
+            "link_title": ""
+          }
+        }
+      },
+      "block_order": [
+        "block_fkeXPw",
+        "block_idkTYT",
+        "block_HAwyq6",
+        "block_hGbk9w"
+      ],
+      "settings": {
+        "section_title": "Looking for the right-sized fish tank?",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "featured_products_7pdECi": {
+      "type": "featured-products",
+      "blocks": {
+        "tab_gVX4w7": {
+          "type": "tab",
+          "settings": {
+            "product_tab": "Aquariums & Fish Tanks",
+            "collection": "aquariums-fish-tank",
+            "show_vendor": true,
+            "show_rating": true,
+            "show_wishlist": true,
+            "quick_add": "standard"
+          }
+        }
+      },
+      "block_order": [
+        "tab_gVX4w7"
+      ],
+      "settings": {
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "link_blocks_f7TKYG",
+    "featured_products_7pdECi"
   ]
 }
