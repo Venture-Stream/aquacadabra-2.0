@@ -507,15 +507,14 @@
           </small>
         </div>
 
-        <div class="product-timer mb-8">
-          {% render 'countdown-timer',
-            cart_timer: false,
-            enable_timer: settings.enable_timer,
-            banner_text: settings.banner_text,
-            right_text: settings.right_text,
-            cut_off_time: settings.cut_off_time
-          %}
-        </div>
+        {% render 'countdown-timer',
+          cart_timer: false,
+          enable_timer: settings.enable_timer,
+          banner_text: settings.banner_text,
+          right_text: settings.right_text,
+          cut_off_time: settings.cut_off_time,
+          class: 'product-timer mb-8'
+        %}
 
         <!-- CTAs -->
 

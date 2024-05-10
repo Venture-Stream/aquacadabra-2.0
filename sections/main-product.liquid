@@ -808,15 +808,14 @@
                   </div>
                 {% endunless %}
               {%- when 'countdown_timer' -%}
-                <div class="product-timer">
-                  {% render 'countdown-timer',
-                    cart_timer: false,
-                    enable_timer: settings.enable_timer,
-                    banner_text: settings.banner_text,
-                    right_text: settings.right_text,
-                    cut_off_time: settings.cut_off_time
-                  %}
-                </div>
+                {% render 'countdown-timer',
+                  cart_timer: false,
+                  enable_timer: settings.enable_timer,
+                  banner_text: settings.banner_text,
+                  right_text: settings.right_text,
+                  cut_off_time: settings.cut_off_time,
+                  class: 'product-timer'
+                %}
               {%- when 'wishlist'-%}
                 <div
                   id="ZlistWishlist"
