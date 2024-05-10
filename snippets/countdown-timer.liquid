@@ -17,12 +17,14 @@
 
 {% unless disable_same_day %}
   {%- if enable_timer -%}
-    <countdown-timer class="countdown-banner {% if cart_timer %}cart-timer{% endif %}" data-hours="{{ hours }}" data-minutes="{{ minutes }}">
-      {{ banner_text }}  
-      <p class="time" data-countdown-time></p>
-      {% if right_text != blank %}
-        <span {% if cart_timer %}class="cart-span"{% endif %}>{{ right_text }}</span>
-      {% endif %}
-    </countdown-timer>
+    <div class="{{ class }}">
+      <countdown-timer class="countdown-banner {% if cart_timer %}cart-timer{% endif %}" data-hours="{{ hours }}" data-minutes="{{ minutes }}">
+        {{ banner_text }}  
+        <p class="time" data-countdown-time></p>
+        {% if right_text != blank %}
+          <span {% if cart_timer %}class="cart-span"{% endif %}>{{ right_text }}</span>
+        {% endif %}
+      </countdown-timer>
+    </div>
   {%- endif -%}
 {% endunless %}

@@ -58,18 +58,20 @@
             </div>
           {%- endif -%}
         </div>
+      {%- else -%}
+        <div class="heading--wrapper pt-8">
+          <h2 class="section-heading">{{ 'sections.cart.title' | t }}</h2>
+          <button
+            class="drawer__close"
+            type="button"
+            onclick="this.closest('cart-drawer').close()"
+            aria-label="{{ 'accessibility.close' | t }}"
+          >
+            {% render 'icon-close' %}
+          </button>
+        </div>
       {%- endif -%}
-      <div class="heading--wrapper pt-8">
-        <h2 class="section-heading">{{ 'sections.cart.title' | t }}</h2>
-        <button
-          class="drawer__close"
-          type="button"
-          onclick="this.closest('cart-drawer').close()"
-          aria-label="{{ 'accessibility.close' | t }}"
-        >
-          {% render 'icon-close' %}
-        </button>
-      </div>
+
       <cart-drawer-items
         {% if cart == empty %}
           class=" is-empty"
@@ -505,15 +507,14 @@
           </small>
         </div>
 
-        <div class="product-timer mb-8">
-          {% render 'countdown-timer',
-            cart_timer: false,
-            enable_timer: settings.enable_timer,
-            banner_text: settings.banner_text,
-            right_text: settings.right_text,
-            cut_off_time: settings.cut_off_time
-          %}
-        </div>
+        {% render 'countdown-timer',
+          cart_timer: false,
+          enable_timer: settings.enable_timer,
+          banner_text: settings.banner_text,
+          right_text: settings.right_text,
+          cut_off_time: settings.cut_off_time,
+          class: 'product-timer mb-8'
+        %}
 
         <!-- CTAs -->
 
