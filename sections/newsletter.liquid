@@ -36,7 +36,7 @@
             {% render block %}
           {%- when 'heading' -%}
             <h2
-              class="text-white md:text-3.2 uppercase{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+              class="text-white md:text-3.2 m-0 uppercase{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
               {{ block.shopify_attributes }}
               {% if settings.animations_reveal_on_scroll %}
                 data-cascade
