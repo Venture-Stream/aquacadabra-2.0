@@ -1,0 +1,12 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-calculator",
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

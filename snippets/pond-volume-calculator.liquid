@@ -1,0 +1,51 @@
+<div class="calculator-holder">
+  <h3>Select Pond Dimensions & Measurement Units</h3>
+
+  <div class="select">
+    <select class="select__select" name="measurement-format" id="measurement-format">
+      <option value="m">Metres</option>
+      <option value="ft">Feet</option>
+    </select>
+    {% render 'icon-caret' %}
+  </div>
+
+  <div id="pond-volume">
+    <p class="sub-title">Enter average dimensions below</p>
+    <img class="sqr-img" src="{{ 'pond-calculator.svg' | asset_url }}" alt="">
+    <div class="measure-holder">
+      <label for="sqr-width">Width</label>
+      <span data-format>(m)</span>
+      <input class="field__input" type="number" id="sqr-width" min="0" step="1">
+    </div>
+    <div class="measure-holder">
+      <label for="sqr-length">Length</label>
+      <span data-format>(m)</span>
+      <input class="field__input" type="number" id="sqr-length" min="0" step="1">
+    </div>
+    <div class="measure-holder">
+      <label for="sqr-height">Depth</label>
+      <span data-format>(m)</span>
+      <input class="field__input" type="number" id="sqr-height" min="0" step="1">
+    </div>
+
+    <button class="block button calculate w-full" id="sqr-submit"> Calculate</button>
+
+    <div class="results">
+      <div class="results-holder">
+        <label for="sqr-euro-gallon">UK Gallons</label>
+        <span ></span>
+        <input class="field__input" type="text" name="sqr-euro-gallon" id="sqr-euro-gallon" disabled>
+      </div>
+      <div class="results-holder">
+        <label for="sqr-us-gallon">US Gallons</label>
+        <span ></span>
+        <input class="field__input" type="text" name="us-euro-gallon" id="sqr-us-gallon" disabled>
+      </div>
+      <div class="results-holder">
+        <label for="sqr-liter">Litres</label>
+        <span></span>
+        <input class="field__input" type="text" name="sqr-liter" id="sqr-liter" disabled>
+      </div>
+    </div>
+  </div>
+</div>

@@ -881,6 +881,45 @@
             {%- endcase -%}
           {%- endfor -%}
 
+          {% assign show_calculator = false %}
+          {% assign show_pond_liner_calculator = false %}
+          {% assign show_pond_calculator = false %}
+          {% for _collection in product.collections %}
+            {% if _collection.handle == 'aquariums' or _collection.handle == 'water-quality' %}
+              {% assign show_calculator = true %}
+              {% break %}
+
+            {% elsif _collection.handle == 'pond-liners' %}
+              {% assign show_pond_liner_calculator = true %}
+              {% break %}
+
+            {% elsif _collection.handle == 'pond-filters'
+              or _collection.handle == 'pond-pumps'
+              or _collection.handle == 'ponds-supplies-pond-water-treatments'
+            %}
+              {% assign show_pond_calculator = true %}
+            {% elsif _collection.handle == 'pond-filters-filter-media'
+              or _collection.handle == 'ponds-supplies-pond-pumps-fountain-pumps'
+            %}
+              {% assign show_pond_calculator = false %}
+              {% break %}
+            {% endif %}
+          {% endfor %}
+
+          {% if show_calculator == true %}
+            <a class="button button--outline block w-full text-center mt-8" href="/pages/fish-tank-volume-calculator" target="_blank">
+              Fish Tank Volume Calculator
+            </a>
+          {% elsif show_pond_liner_calculator == true %}
+            <a class="button button--outline block w-full text-center mt-8" href="/pages/pond-liner-calculator" target="_blank">
+              Pond Liner Calculator
+            </a>
+          {% elsif show_pond_calculator == true %}
+            <a class="button button--outline block w-full text-center mt-8" href="/pages/pond-volume-calculator" target="_blank">
+              Pond Volume Calculator
+            </a>
+          {% endif %}
+
           <script>
             var variantData =[
               {% for variant in product.variants %}
