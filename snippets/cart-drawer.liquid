@@ -58,18 +58,20 @@
             </div>
           {%- endif -%}
         </div>
+      {%- else -%}
+        <div class="heading--wrapper pt-8">
+          <h2 class="section-heading">{{ 'sections.cart.title' | t }}</h2>
+          <button
+            class="drawer__close"
+            type="button"
+            onclick="this.closest('cart-drawer').close()"
+            aria-label="{{ 'accessibility.close' | t }}"
+          >
+            {% render 'icon-close' %}
+          </button>
+        </div>
       {%- endif -%}
-      <div class="heading--wrapper pt-8">
-        <h2 class="section-heading">{{ 'sections.cart.title' | t }}</h2>
-        <button
-          class="drawer__close"
-          type="button"
-          onclick="this.closest('cart-drawer').close()"
-          aria-label="{{ 'accessibility.close' | t }}"
-        >
-          {% render 'icon-close' %}
-        </button>
-      </div>
+
       <cart-drawer-items
         {% if cart == empty %}
           class=" is-empty"
