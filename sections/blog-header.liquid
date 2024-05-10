@@ -1,8 +1,17 @@
 <div class="page-width">
   <div class="heading--wrapper">
-    <h1 class="section-heading h2 scroll-trigger animate--fade-in">
-      {{ blog.title | escape }}
-    </h1>
+    {% if template == blog %}
+      <h1 class="section-heading h2 scroll-trigger animate--fade-in">
+        {{ blog.title | escape }}
+      </h1>
+    {% else %}
+      <h2 class="section-heading h2 scroll-trigger animate--fade-in">
+        <a href="{{ blog.url }}">
+          {{ blog.title | escape }}
+        </a>
+      </h2>
+    {% endif %}
+
   </div>
 
   {% render 'blog-categories' %}
