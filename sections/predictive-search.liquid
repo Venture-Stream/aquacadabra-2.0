@@ -17,7 +17,7 @@
     {%- endif -%}
     {%- if predictive_search.resources.queries.size > 0 or predictive_search.resources.collections.size > 0 -%}
       <div>
-        <h2 id="predictive-search-queries" class="predictive-search__heading text-body caption-with-letter-spacing">
+        <h2 id="predictive-search-queries" class="predictive-search__heading">
           {{- 'templates.search.suggestions' | t -}}
         </h2>
         <ul
@@ -36,7 +36,7 @@
               <a href="{{ query.url }}" class="predictive-search__item " tabindex="-1">
                 <div class="predictive-search__item-content predictive-search__item-content--centered">
                   <p
-                    class="predictive-search__item-heading predictive-search__item-query-result h5"
+                    class="predictive-search__item-heading predictive-search__item-query-result text-black text-1.3"
                     aria-label="{{ query.text }}"
                   >
                     {{ query.styled_text }}
@@ -54,7 +54,7 @@
             >
               <a href="{{ collection.url }}" class="predictive-search__item " tabindex="-1">
                 <div class="predictive-search__item-content predictive-search__item-content--centered">
-                  <p class="predictive-search__item-heading h5">{{ collection.title | escape }}</p>
+                  <p class="predictive-search__item-heading text-black text-1.3">{{ collection.title | escape }}</p>
                 </div>
               </a>
             </li>
@@ -66,7 +66,7 @@
       <div class="predictive-search__pages-wrapper">
         <h2
           id="predictive-search-pages-desktop"
-          class="predictive-search__heading text-body caption-with-letter-spacing"
+          class="predictive-search__heading"
         >
           {{- 'templates.search.pages' | t -}}
         </h2>
@@ -85,7 +85,7 @@
             >
               <a href="{{ page.url }}" class="predictive-search__item" tabindex="-1">
                 <div class="predictive-search__item-content predictive-search__item-content--centered">
-                  <p class="predictive-search__item-heading h5">{{ page.title | escape }}</p>
+                  <p class="predictive-search__item-heading text-black text-1.3">{{ page.title | escape }}</p>
                 </div>
               </a>
             </li>
@@ -99,7 +99,7 @@
             >
               <a href="{{ article.url }}" class="predictive-search__item  " tabindex="-1">
                 <div class="predictive-search__item-content predictive-search__item-content--centered">
-                  <p class="predictive-search__item-heading h5">{{ article.title | escape }}</p>
+                  <p class="predictive-search__item-heading text-black text-1.3">{{ article.title | escape }}</p>
                 </div>
               </a>
             </li>
@@ -119,7 +119,7 @@
           <div>
             <h2
               id="predictive-search-products"
-              class="predictive-search__heading text-body caption-with-letter-spacing"
+              class="predictive-search__heading"
             >
               {{- 'templates.search.products' | t -}}
             </h2>
@@ -157,7 +157,7 @@
                           {{ product.vendor }}
                         </div>
                       {%- endif -%}
-                      <p class="predictive-search__item-heading h5">{{ product.title | escape }}</p>
+                      <p class="predictive-search__item-heading text-black text-1.3">{{ product.title | escape }}</p>
                       {%- if settings.predictive_search_show_price -%}
                         {% render 'price', product: product, use_variant: true, show_badges: false %}
                       {%- endif -%}
@@ -172,7 +172,7 @@
           <div class="predictive-search__pages-wrapper">
             <h2
               id="predictive-search-pages-mobile"
-              class="predictive-search__heading text-body caption-with-letter-spacing"
+              class="predictive-search__heading"
             >
               {{- 'templates.search.pages' | t -}}
             </h2>
@@ -191,7 +191,7 @@
                 >
                   <a href="{{ page.url }}" class="predictive-search__item  " tabindex="-1">
                     <div class="predictive-search__item-content predictive-search__item-content--centered">
-                      <p class="predictive-search__item-heading h5">{{ page.title | escape }}</p>
+                      <p class="predictive-search__item-heading text-black text-1.3">{{ page.title | escape }}</p>
                     </div>
                   </a>
                 </li>
@@ -205,7 +205,7 @@
                 >
                   <a href="{{ article.url }}" class="predictive-search__item  " tabindex="-1">
                     <div class="predictive-search__item-content predictive-search__item-content--centered">
-                      <p class="predictive-search__item-heading h5">{{ article.title | escape }}</p>
+                      <p class="predictive-search__item-heading text-black text-1.3">{{ article.title | escape }}</p>
                     </div>
                   </a>
                 </li>
