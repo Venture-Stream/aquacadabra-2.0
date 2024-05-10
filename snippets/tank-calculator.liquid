@@ -1,0 +1,129 @@
+<div class="calculator-holder">
+  <h3>Select Tank Shape & Measurement</h3>
+  <div class="select">
+    <select class="select__select inline-block" name="tank-type" id="tank-type">
+      <option value="sqr-tank">Square / Rectangular Tank</option>
+      <option value="spherical-tank">Spherical / Bowl Tank</option>
+      <option value="cylindrical-tank">Cylindrical Tank</option>
+    </select>
+    {% render 'icon-caret' %}
+  </div>
+
+  <div class="select">
+    <select class="select__select inline-block" name="measurement-format" id="measurement-format">
+      <option value="cm">cm</option>
+      <option value="mm">mm</option>
+      <option value="Inches">Inches</option>
+    </select>
+    {% render 'icon-caret' %}
+  </div>
+
+  <div id="sqr-tank" data-tank data-sqr-tank>
+    <p class="sub-title">Enter Dimensions below</p>
+    <img class="sqr-img" src="{{ 'rectangle-frame.svg' | asset_url }}" alt="">
+    <div class="measure-holder">
+      <label for="sqr-width">Width</label>
+      <span data-format>(cm)</span>
+      <input class="field__input" type="number" id="sqr-width" min="0" step="1">
+    </div>
+    <div class="measure-holder">
+      <label for="sqr-length">Length</label>
+      <span data-format>(cm)</span>
+      <input class="field__input" type="number" id="sqr-length" min="0" step="1">
+    </div>
+    <div class="measure-holder">
+      <label for="sqr-height">Height</label>
+      <span data-format>(cm)</span>
+      <input class="field__input" type="number" id="sqr-height" min="0" step="1">
+    </div>
+
+    <button class="block button calculate w-full" id="sqr-submit"> Calculate</button>
+
+    <div class="results">
+      <div class="results-holder">
+        <label for="sqr-euro-gallon">UK Gallons</label>
+        <span ></span>
+        <input class="field__input" type="text" name="sqr-euro-gallon" id="sqr-euro-gallon" disabled>
+      </div>
+      <div class="results-holder">
+        <label for="sqr-us-gallon">US Gallons</label>
+        <span ></span>
+        <input class="field__input" type="text" name="us-euro-gallon" id="sqr-us-gallon" disabled>
+      </div>
+      <div class="results-holder">
+        <label for="sqr-liter">Litres</label>
+        <span></span>
+        <input class="field__input" type="text" name="sqr-liter" id="sqr-liter" disabled>
+      </div>
+    </div>
+  </div>
+
+  <div id="spherical-tanks" class="hide" data-tank data-spherical-tank>
+    <p class="sub-title">Enter Dimensions below</p>
+    <img class="sph-img" src="{{ 'sphere-frame.svg' | asset_url }}" alt="">
+    <div class="measure-holder">
+        <label for="sph-radius">Width</label>
+        <span data-format>(cm)</span>
+        <input class="field__input" type="number" name="" id="sph-radius">
+        <div class="tool-tips">
+          <img src="{{ 'info-circle.svg' | asset_url }}" alt="">
+          The Width will be halved to find the radius
+        </div>
+    </div>
+    <button class="block button calculate w-full" id="sph-submit"> Calculate</button>
+    <div class="results">
+      <div class="results-holder">
+        <label for="sph-euro-gallon">UK Gallons</label>
+        <span></span>
+        <input class="field__input" type="text" name="sph-euro-gallon" id="sph-euro-gallon" disabled>
+      </div>
+      <div class="results-holder">
+        <label for="sph-us-gallon">US Gallons</label>
+        <span></span>
+        <input class="field__input" type="text" name="us-euro-gallon" id="sph-us-gallon" disabled>
+      </div>
+      <div class="results-holder">
+        <label for="sph-liter">Litres</label>
+        <span></span>
+        <input class="field__input" type="text" name="sph-liter" id="sph-liter" disabled>
+      </div>
+    </div>
+  </div>
+
+  <div id="cylindrical-tanks" class="hide" data-tank data-cylindrical-tank>
+    <p class="sub-title">Enter Dimensions below</p>
+    <img class="cyld-img" src="{{ 'cyclinder-frame.svg' | asset_url }}" alt="">
+    <div class="measure-holder">
+      <label for="cyld-radius">Width</label>
+      <span data-format>(cm)</span>
+      <input class="field__input" type="number" name="" id="cyld-radius">
+      <div class="tool-tips">
+        <img src="{{ 'info-circle.svg' | asset_url }}" alt="">
+        The Width will be halved to find the radius
+      </div>
+    </div>
+    <div class="measure-holder">
+      <label for="cyld-height">Height</label>
+      <span data-format>(cm)</span>
+      <input class="field__input" type="number" name="" id="cyld-height">
+    </div>
+    <button class="block button calculate w-full" id="cyld-submit"> Calculate</button>
+    <div class="results">
+      <div class="results-holder">
+        <label for="cyld-euro-gallon">UK Gallons</label>
+        <span></span>
+        <input class="field__input" type="text" name="cyld-euro-gallon" id="cyld-euro-gallon" disabled>
+      </div>
+      <div class="results-holder">
+        <label for="cyld-us-gallon">US Gallons</label>
+        <span></span>
+        <input class="field__input" type="text" name="us-euro-gallon" id="cyld-us-gallon" disabled>
+      </div>
+      <div class="results-holder">
+        <label for="cyld-liter">Litres</label>
+        <span></span>
+        <input class="field__input" type="text" name="cyld-liter" id="cyld-liter" disabled>
+      </div>
+    </div>
+  </div>
+</div>

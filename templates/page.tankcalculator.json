@@ -1,0 +1,13 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-calculator",
+      "settings": {
+        "calculator_type": "tank-calculator"
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

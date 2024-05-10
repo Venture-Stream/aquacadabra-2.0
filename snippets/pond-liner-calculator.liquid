@@ -1,0 +1,54 @@
+<div class="calculator-holder">
+  <h3>Select Pond Dimensions & Measurement Units</h3>
+
+  <div class="select">
+    <select class="select__select" name="measurement-format" id="measurement-format">
+      <option value="m">Metres</option>
+      <option value="ft">Feet</option>
+    </select>
+    {% render 'icon-caret' %}
+  </div>
+
+  <div id="sqr-tank" data-tank data-sqr-tank>
+    <p class="sub-title">Enter average dimensions below</p>
+    <img class="sqr-img" src="{{ 'pond-calculator.svg' | asset_url }}" alt="Pond Calculator" width="575" height="402" loading="lazy">
+    <div class="measure-holder">
+      <label for="sqr-width">Width</label>
+      <span data-format>(m)</span>
+      <input class="field__input" type="number" id="sqr-width" min="0" step="1">
+    </div>
+    <div class="measure-holder">
+      <label for="sqr-length">Length</label>
+      <span data-format>(m)</span>
+      <input class="field__input" type="number" id="sqr-length" min="0" step="1">
+    </div>
+    <div class="measure-holder">
+      <label for="sqr-height">Depth</label>
+      <span data-format>(m)</span>
+      <input class="field__input" type="number" id="sqr-height" min="0" step="1">
+    </div>
+
+    <button class="block button calculate w-full" id="area-submit"> Calculate</button>
+
+    <span id="symbol" hidden>&sup2;</span>
+
+    <div class="results">
+      <div class="results-holder">
+        <label for="sqr-euro-area">Area</label>
+        <span data-format data-format-both data-format-squared>(m&sup2;/ft&sup2;)</span>
+        <input class="field__input" type="text" name="sqr-area" id="sqr-area" disabled>
+      </div>
+      <div class="results-holder">
+        <label for="sqr-result-width">Width</label>
+        <span data-format data-format-both>(m/ft)</span>
+        <input class="field__input" type="text" name="sqr-result-width" id="sqr-result-width" disabled>
+      </div>
+      <div class="results-holder">
+        <label for="sqr-result-length">Length</label>
+        <span data-format data-format-both>(m/ft)</span>
+        <input class="field__input" type="text" name="sqr-result-length" id="sqr-result-length" disabled>
+      </div>
+    </div>
+  </div>
+
+</div>
