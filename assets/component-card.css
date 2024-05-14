@@ -2,13 +2,13 @@
 .zoomywishid .zoomywishidheart {
   width: fit-content !important;
   float: none !important;
-  cursor: pointer;
-  z-index: 10;
+  z-index: 2;
 }
 
 .fa.fa-heart-o,
 .fa.fa-heart {
   padding: 0 !important;
+  cursor: pointer;
 }
 
 .card-wrapper {
