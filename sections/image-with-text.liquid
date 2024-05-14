@@ -14,8 +14,8 @@
 
 <div class="section-{{ section.id }}-padding">
   <div class="max-w-screen-max mx-auto">
-    <div class="flex flex-col-reverse {% if section.settings.layout == 'text_first' %}md:flex-row {% else %}md:flex-row-reverse {% endif %}items-center justify-center md:h-[800px] {% if section.settings.block_gap %}md:gap-8{% endif %}">
-      <div class="w-full md:w-1/2 flex h-full" style="background-color: {{ section.settings.background_color }};">
+    <div class="flex flex-col-reverse {% if section.settings.layout == 'text_first' %}md:flex-row {% else %}md:flex-row-reverse {% endif %}items-stretch justify-center md:min-h-[800px] {% if section.settings.block_gap %}md:gap-8{% endif %}">
+      <div class="w-full md:w-1/2 flex" style="background-color: {{ section.settings.background_color }};">
         <div class="flex flex-col grow items-center justify-center text-center gap-16 md:p-20 px-6 py-10">
           {% for block in section.blocks %}
             {% case block.type %}
@@ -35,7 +35,7 @@
           {% endfor %}
         </div>
       </div>
-      <div class="w-full md:w-1/2 h-full">
+      <div class="w-full md:w-1/2">
         <img src="{{ section.settings.image |  image_url: height: 800 }}" width="{{ section.settings.image.width }}" height="{{ section.settings.image.height }}" class="object-cover w-full h-full" />
       </div>
     </div>
