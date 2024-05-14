@@ -138,7 +138,7 @@
             <div class="flex w-full items-start justify-between">
               {% render 'price', product: card_product, price_class: '', show_compare_at_price: true %}
               {% if quick_add == 'standard' %}
-                <div class="quick-add no-js-hidden z-10">
+                <div class="quick-add no-js-hidden z-[2]">
                   {%- liquid
                     assign product_form_id = 'quick-add-' | append: section_id | append: card_product.id
                     assign qty_rules = false
