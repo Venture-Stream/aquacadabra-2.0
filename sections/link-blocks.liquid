@@ -24,7 +24,7 @@
 			{% for block in section.blocks %}
 				<div class="min-w-[256px] lg:min-w-0 flex-shrink-0">
 					<a class="full-unstyled-link group relative" href="{{ block.settings.link }}">
-						<div class="border border-solid border-[#EEEEEE] h-[256px]">
+						<div class="border border-solid border-[#EEEEEE] h-auto relative">
 							<div class="overflow-hidden">
 								<img
 								src="{{ block.settings.link_image | image_url: height: 256 }}"
@@ -32,10 +32,10 @@
 								width="256"
 								height="256"
 								loading="lazy"
-								class="object-cover w-full h-full group-hover:scale-105 transition-all duration-500"
+								class="object-cover w-full h-full group-hover:scale-105 transition-all duration-500 aspect-square"
 								>
 							</div>
-							<div class="absolute top-[calc(256px-63px)] right-0">
+							<div class="absolute -bottom-[1px] -right-[1px]">
 								<svg width="63" height="63" viewBox="0 0 63 63" fill="none" xmlns="http://www.w3.org/2000/svg">
 									<path d="M62.9998 62.6667V0.637695L0.970703 62.6667H62.9998Z" class="transition-all fill-brand-orange group-hover:fill-brand-blue" />
 								</svg>
@@ -44,7 +44,7 @@
 								</svg>
 							</div>
 						</div>
-						<p class="text-1.4">{{ block.settings.link_title }}</p>
+						<p class="text-1.4 mt-3">{{ block.settings.link_title }}</p>
 					</a>
 				</div>
 			{% endfor %}
