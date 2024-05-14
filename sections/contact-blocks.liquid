@@ -35,7 +35,7 @@
     {% for block in section.blocks %}
       <div class="contact--block w-full text-center">
         <div class="h-[120px] relative contact--block-image flex items-center justify-center" style="background: url({{ block.settings.image | image_url: height: 120 }}) center;">
-          <div class="z-10">
+          <div class="z-[2]">
             {% case block.settings.icon %}
               {% when 'pin' %}
                 {% render 'icon-pin', fill: 'white' %}
