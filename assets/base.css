@@ -2094,7 +2094,7 @@ product-info .loading__spinner:not(.hidden) ~ *,
 .header {
   display: grid;
   grid-template-areas: 'left-icons heading icons';
-  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-columns: 0.225fr 1fr 0.225fr;
   align-items: center;
 }
 

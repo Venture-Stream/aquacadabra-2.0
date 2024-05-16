@@ -802,6 +802,14 @@ video {
   margin-top: 1rem;
 }
 
+.-mr-\[1\.2rem\]{
+  margin-right: -1.2rem;
+}
+
+.ml-\[1\.2rem\]{
+  margin-left: 1.2rem;
+}
+
 .block{
   display: block;
 }
