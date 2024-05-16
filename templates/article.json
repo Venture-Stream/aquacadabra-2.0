@@ -3,6 +3,7 @@
     "header": {
       "type": "blog-header",
       "settings": {
+        "custom_title": "Fishkeeping & Tank Guides"
       }
     },
     "main": {
@@ -21,12 +22,6 @@
             "blog_show_author": false
           }
         },
-        "share": {
-          "type": "share",
-          "settings": {
-            "share_label": "Share"
-          }
-        },
         "content": {
           "type": "content",
           "settings": {
@@ -36,7 +31,6 @@
       "block_order": [
         "featured_image",
         "title",
-        "share",
         "content"
       ],
       "settings": {

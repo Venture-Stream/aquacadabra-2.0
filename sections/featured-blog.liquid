@@ -34,7 +34,7 @@
                 class="object-cover w-full h-full group-hover:scale-105 transition-all duration-500"
                 >
             </div>
-            <h4 class="group-hover:underline underline-offset-8">{{ article.title }}</h4>
+            <h4>{{ article.title }}</h4>
             {% if section.settings.show_date %}
               <div class="article-card__info caption-with-letter-spacing text-1.3">
                 <span>{{ article.published_at | time_tag: format: 'date' }}</span>

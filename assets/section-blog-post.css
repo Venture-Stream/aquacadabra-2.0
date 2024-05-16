@@ -9,7 +9,7 @@
 }
 
 .article-template__hero-container {
-  max-width: 130rem;
+  max-width: 108rem;
   margin: 0 auto;
 }
 
@@ -54,15 +54,8 @@
 }
 
 .article-template header {
-  margin-top: 4.4rem;
-  margin-bottom: 2rem;
+  margin: 3rem auto;
   line-height: calc(0.8 / var(--font-body-scale));
-}
-
-@media screen and (min-width: 750px) {
-  .article-template header {
-    margin-top: 5rem;
-  }
 }
 
 .article-template__title {
@@ -86,11 +79,6 @@
   display: flex;
   margin-right: 1rem;
   transform: rotate(180deg);
-}
-
-.article-template__content {
-  margin-top: 3rem;
-  margin-bottom: 3rem;
 }
 
 .article-template__content ol, .article-template__content ul, .article-template__content li {

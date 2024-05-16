@@ -1,13 +1,21 @@
-<div class="page-width">
+<div class="page-width pt-8">
   <div class="heading--wrapper">
-    {% if template == blog %}
+    {% if template == blog or template == article %}
       <h1 class="section-heading h2 scroll-trigger animate--fade-in">
-        {{ blog.title | escape }}
+        {% if section.settings.custom_title != empty %}
+          {{ section.settings.custom_title | escape }}
+        {% else %}
+          {{ blog.title | escape }}
+        {% endif %}
       </h1>
     {% else %}
       <h2 class="section-heading h2 scroll-trigger animate--fade-in">
         <a href="{{ blog.url }}">
-          {{ blog.title | escape }}
+          {% if section.settings.custom_title != empty %}
+            {{ section.settings.custom_title | escape }}
+          {% else %}
+            {{ blog.title | escape }}
+          {% endif %}
         </a>
       </h2>
     {% endif %}
@@ -20,7 +28,14 @@
 {% schema %}
 {
   "name": "Blog header",
-  "settings": [],
+  "settings": [
+    {
+      "type": "text",
+      "id": "custom_title",
+      "label": "Custom header title",
+      "info": "Will default to the blog's name unless set"
+    }
+  ],
   "presets": [
     {
       "category": "Blog",
