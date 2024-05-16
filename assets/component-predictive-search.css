@@ -5,15 +5,18 @@
   left: -0.1rem;
   border-width: var(--popup-border-width);
   border-style: solid;
-  border-color: rgba(var(--color-foreground), var(--popup-border-opacity));
-  background-color: rgb(var(--color-background));
+  border-color: transparent;
+  border-radius: 5px;
+  background-color: white;
   z-index: 3;
-  border-bottom-right-radius: var(--popup-corner-radius);
-  border-bottom-left-radius: var(--popup-corner-radius);
-  box-shadow: var(--popup-shadow-horizontal-offset) var(--popup-shadow-vertical-offset) var(--popup-shadow-blur-radius)
-    rgba(var(--color-shadow), var(--popup-shadow-opacity));
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
+}
+
+@media screen and (min-width: 750px) {
+  .predictive-search {
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.25);
+  }
 }
 
 .predictive-search--search-template {
