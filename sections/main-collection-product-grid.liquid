@@ -45,9 +45,9 @@
     description: collection.metafields.global.description,
     collection_links: collection.metafields.custom.collection_links,
     image_blocks: collection.metafields.custom.collection_image_blocks,
-    classes: 'block md:hidden' %}
+    classes: 'lg:hidden block' %}
   {%- paginate collection.products by section.settings.products_per_page -%}
-    <div class="{% if section.settings.filter_type == 'vertical' %} facets-vertical page-width{% endif %}">
+    <div class="{% if section.settings.filter_type == 'vertical' %}facets-vertical page-width{% endif %}">
       {{ 'component-facets.css' | asset_url | stylesheet_tag }}
       <script src="{{ 'facets.js' | asset_url }}" defer="defer"></script>
       {%- if section.settings.enable_filtering or section.settings.enable_sorting -%}
@@ -80,11 +80,11 @@
           description: collection.metafields.global.description,
           collection_links: collection.metafields.custom.collection_links,
           image_blocks: collection.metafields.custom.collection_image_blocks,
-          classes: 'hidden md:block' %}
+          classes: 'hidden lg:block' %}
 
         {% comment %} Sort is the first tabbable element when filter type is vertical {% endcomment %}
         {%- if section.settings.enable_sorting and section.settings.filter_type == 'vertical' -%}
-          <facet-filters-form class="facets facets-vertical-sort small-hide">
+          <facet-filters-form class="facets facets-vertical-sort">
             <form class="facets-vertical-form" id="FacetSortForm">
               <div class="facet-filters sorting caption">
                 <div class="facet-filters__field">

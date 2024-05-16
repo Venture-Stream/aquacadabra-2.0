@@ -2216,6 +2216,10 @@ input{
     display: grid;
   }
 
+  .lg\:hidden{
+    display: none;
+  }
+
   .lg\:h-auto{
     height: auto;
   }
