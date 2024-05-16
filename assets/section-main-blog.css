@@ -12,8 +12,8 @@
 @media screen and (min-width: 750px) {
   .blog-articles {
     grid-template-columns: 1fr 1fr;
-    column-gap: var(--grid-desktop-horizontal-spacing);
-    row-gap: var(--grid-desktop-vertical-spacing);
+    column-gap: 2rem;
+    row-gap: 2rem;
   }
 
   .blog-articles--collage > *:nth-child(-n + 1) {
@@ -22,7 +22,8 @@
   }
 
   .blog-articles--collage > *:nth-child(-n + 1) .card__heading,
-  .blog-articles--collage > *:nth-child(-n + 1) .article-card__info {
+  .blog-articles--collage > *:nth-child(-n + 1) .article-card__info,
+  .blog-articles--collage > *:nth-child(-n + 1) .rte-width {
     text-align: center;
   }
 

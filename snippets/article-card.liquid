@@ -23,7 +23,7 @@
       assign ratio = media_aspect_ratio
     endif
   -%}
-  <div class="article-card-wrapper card-wrapper underline-links-hover">
+  <div class="article-card-wrapper card-wrapper">
     {% comment %} <article aria-labelledby="Article-{{ article.id }}"> {% endcomment %}
     <div
       class="
@@ -75,7 +75,7 @@
         {%- endif -%}
         <div class="card__content">
           <div class="card__information">
-            <h3 class="card__heading text-2.2">
+            <h3 class="card__heading">
               <a href="{{ article.url }}" class="full-unstyled-link">
                 {{ article.title | truncate: 50 | escape }}
               </a>
@@ -113,8 +113,8 @@
         </div>
       </div>
       <div class="card__content">
-        <div class="card__information">
-          <h3 class="card__heading text-2.2">
+        <div class="pt-16 lg:pt-12 py-4">
+          <h3 class="card__heading">
             <a href="{{ article.url }}" class="full-unstyled-link">
               {{ article.title | truncate: 50 | escape }}
             </a>
@@ -129,7 +129,7 @@
           </div>
           {%- if show_excerpt -%}
             {%- if article.excerpt.size > 0 or article.content.size > 0 -%}
-              <p class="article-card__excerpt rte-width text-1.6 font-light">
+              <p class="article-card__excerpt rte-width text-1.6 mt-8">
                 {%- if article.excerpt.size > 0 -%}
                   {{ article.excerpt | strip_html | truncatewords: 30 }}
                 {%- else -%}

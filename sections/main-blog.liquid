@@ -17,7 +17,7 @@
 {%- endstyle -%}
 
 {%- paginate blog.articles by 7 -%}
-  <div class="main-blog page-width section-{{ section.id }}-padding">
+  <div class="main-blog max-w-[1080px] mx-auto px-6 section-{{ section.id }}-padding">
     <div class="blog-articles {% if section.settings.layout == 'collage' %}blog-articles--collage{% endif %}">
       {%- for article in blog.articles -%}
         <div
