@@ -1951,10 +1951,6 @@ input{
     margin-left: 0px;
   }
 
-  .sm\:hidden{
-    display: none;
-  }
-
   .sm\:cursor-default{
     cursor: default;
   }

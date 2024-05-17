@@ -2316,7 +2316,8 @@ product-info .loading__spinner:not(.hidden) ~ *,
   width: 100%;
   display: block;
   position: absolute;
-  background: rgba(var(--color-foreground), 0.5);
+  background: black;
+  opacity: 30%;
 }
 
 .header__icon--account shop-user-avatar {

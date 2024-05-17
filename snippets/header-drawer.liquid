@@ -30,7 +30,7 @@
           <form action="{{ routes.search_url }}" method="get" role="search" class="search search-modal__form">
             <div class="field mb-0">
               <input
-                class="search__input w-full border-0 bg-[#FFFFFF] rounded-xl p-6 md:pr-28 h-20 text-black"
+                class="search__input w-full border bg-[#FFFFFF] rounded-xl p-6 md:pr-28 h-20 text-black"
                 id="{{ input_id }}"
                 type="search"
                 name="q"
@@ -197,7 +197,7 @@
             {%- if shop.customer_accounts_enabled -%}
               <a
                 href="{%- if customer -%}{{ routes.account_url }}{%- else -%}{{ routes.account_login_url }}{%- endif -%}"
-                class="link focus-inset h5 medium-hide large-up-hide block no-underline mb-4"
+                class="link focus-inset h5 block no-underline"
               >
                 {%- liquid
                   if customer
@@ -210,13 +210,13 @@
             {%- endif -%}
             <a
               href="/pages/wishlist"
-              class="link focus-inset h5 medium-hide large-up-hide block no-underline mb-4"
+              class="link focus-inset h5 block no-underline"
             >
               My Wishlist
             </a>
             <a
-            href="/pages/contact"
-            class="link focus-inset h5 medium-hide large-up-hide block no-underline"
+            href="/pages/contact-details"
+            class="link focus-inset h5 block no-underline"
           >
             Contact Us
           </a>
