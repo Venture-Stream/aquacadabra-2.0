@@ -802,6 +802,14 @@ video {
   margin-top: 1rem;
 }
 
+.-mr-\[1\.2rem\]{
+  margin-right: -1.2rem;
+}
+
+.ml-\[1\.2rem\]{
+  margin-left: 1.2rem;
+}
+
 .block{
   display: block;
 }
@@ -1276,6 +1284,11 @@ video {
 }
 
 .bg-white{
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#FFFFFF\]{
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
@@ -2209,6 +2222,10 @@ input{
 
   .lg\:grid{
     display: grid;
+  }
+
+  .lg\:hidden{
+    display: none;
   }
 
   .lg\:h-auto{

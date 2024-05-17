@@ -63,7 +63,7 @@
               class="announcement-bar__link link link--text focus-inset animate-arrow"
             >
           {%- endif -%}
-          <p class="announcement-bar__message h5">
+          <p class="text-1.4 font-semibold py-4">
             <span>{{ section.blocks.first.settings.text | escape }}</span>
             {%- if section.blocks.first.settings.link != blank -%}
               {% render 'icon-arrow' %}
@@ -122,7 +122,7 @@
                         class="announcement-bar__link link link--text focus-inset animate-arrow"
                       >
                     {%- endif -%}
-                    <p class="announcement-bar__message h5">
+                    <p class="text-1.4 font-semibold py-4">
                       <span>{{ block.settings.text | escape }}</span>
                       {%- if block.settings.link != blank -%}
                         {% render 'icon-arrow' %}
