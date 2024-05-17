@@ -2391,6 +2391,10 @@ input{
     max-width: 65%;
   }
 
+  .xl\:flex-row{
+    flex-direction: row;
+  }
+
   .xl\:px-36{
     padding-left: 9rem;
     padding-right: 9rem;
