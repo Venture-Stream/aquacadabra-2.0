@@ -178,7 +178,7 @@
           "type": "column",
           "settings": {
             "column_url": "shopify:\/\/collections\/all",
-            "block_image": "shopify:\/\/shop_images\/Rectangle_44.png",
+            "block_image": "shopify:\/\/shop_images\/big-sale-logo.png",
             "block_heading": "Up to 70% off in our Big Sale!",
             "block_content": "<p>Augue curabitur tristique tempus vulputate cras ac facilisis praesent.<\/p>",
             "button_text": "Shop the sale"

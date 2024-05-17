@@ -68,13 +68,13 @@
               >
                 {%- if block.settings.heading != blank -%}
                   <div
-                    class="footer-block__heading font-bold text-1.4 uppercase flex justify-between items-center cursor-pointer sm:cursor-default"
+                    class="footer-block__heading font-black text-1.4 uppercase flex justify-between items-center cursor-pointer sm:cursor-default"
                     data-footer-heading
                     data-tab-heading="{{ block.id }}"
                   >
                     {{- block.settings.heading | escape -}}
 
-                    {% render 'icon-chevron-down', classes: 'sm:hidden' %}
+                    {% render 'icon-chevron-down', classes: 'md:hidden' %}
                   </div>
                 {%- endif -%}
 
@@ -87,7 +87,7 @@
                     </div>
                   {%- when 'link_list' -%}
                     {%- if block.settings.menu != blank -%}
-                      <ul class="hidden lg:block footer-block__details-content list-unstyled mb-8 md:mb-0"
+                      <ul class="hidden md:block footer-block__details-content list-unstyled mb-6 md:mb-8"
                       data-tab="{{ block.id }}">
                         {%- for link in block.settings.menu.links -%}
                           <li>
@@ -102,7 +102,7 @@
                       </ul>
                     {%- endif -%}
                   {%- when 'brand_information' -%}
-                    <div class="footer-block__brand-info">
+                    <div class="footer-block__brand-info md:mb-0 mb-8">
                       {%- if settings.brand_image != blank -%}
                         {%- assign brand_image_height = settings.brand_image_width
                           | divided_by: settings.brand_image.aspect_ratio
@@ -124,16 +124,16 @@
                       {%- endif -%}
                       {%- if settings.brand_headline != blank -%}
                         <div
-                          class="footer-block__heading font-bold text-1.4 uppercase flex justify-between items-center cursor-pointer sm:cursor-default"
+                          class="footer-block__heading font-black text-1.4 uppercase flex justify-between items-center cursor-pointer sm:cursor-default"
                           data-footer-heading
                           data-tab-heading="{{ block.id }}"
                         >
                           {{ settings.brand_headline }}
       
-                          {% render 'icon-chevron-down', classes: 'sm:hidden' %}
+                          {% render 'icon-chevron-down', classes: 'md:hidden' %}
                         </div>
                       {%- endif -%}
-                      <div class="hidden lg:block footer-block__details-content"
+                      <div class="hidden md:block footer-block__details-content"
                       data-tab="{{ block.id }}">
                         {%- if settings.brand_description != blank -%}
                           <div class="rte">{{ settings.brand_description }}</div>
