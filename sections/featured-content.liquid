@@ -26,20 +26,20 @@
       <div class="relative bottom-12">
         <div class="lg:grid lg:grid-cols-4 flex gap-8 flex-nowrap lg:overflow-x-hidden overflow-x-scroll lg:pr-0 md:pr-20 pr-6">
           {% for block in section.blocks %}
-            <div class="max-w-[260px] md:max-w-[380px] flex-shrink-0">
-              <a class="full-unstyled-link group relative bg-white text-[#333333] md:p-4" href="{{ block.settings.link }}">
-                <div class="md:h-[380px] h-[260px] overflow-hidden">
+            <div class="min-w-[260px] lg:min-w-0">
+              <a class="full-unstyled-link group relative bg-white text-[#333333] md:p-4 h-full" href="{{ block.settings.link }}">
+                <div class="h-auto overflow-hidden">
                   <img
                   src="{{ block.settings.link_image | image_url: height: 380 }}"
                   alt="{{ block.settings.link_title | escape }}"
                   width="{{ block.settings.link_image.width }}"
                   height="{{ block.settings.link_image.height }}"
                   loading="lazy"
-                  class="object-cover w-full h-full group-hover:scale-105 transition-all duration-500"
+                  class="object-cover w-full h-full group-hover:scale-105 transition-all duration-500 aspect-square"
                   >
                 </div>
-                <div class="py-10 px-6 rte">
-                  <p class="text-1.8 font-bold">{{ block.settings.link_title }}</p>
+                <div class="lg:py-10 py-8 px-6 rte">
+                  <p class="text-1.8 font-bold mb-4 lg:mb-8 group-hover:underline underline-offset-[6px]">{{ block.settings.link_title }}</p>
                   <div>
                     {{ block.settings.link_content }}
                   </div>
