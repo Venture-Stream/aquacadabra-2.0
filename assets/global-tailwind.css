@@ -1599,6 +1599,14 @@ video {
   text-decoration-line: none;
 }
 
+.underline-offset-4{
+  text-underline-offset: 4px;
+}
+
+.underline-offset-\[6px\]{
+  text-underline-offset: 6px;
+}
+
 .opacity-0{
   opacity: 0;
 }
@@ -1929,6 +1937,10 @@ input{
 
 .group:hover .group-hover\:fill-brand-blue{
   fill: #15397B;
+}
+
+.group:hover .group-hover\:underline{
+  text-decoration-line: underline;
 }
 
 @media (min-width: 480px){
