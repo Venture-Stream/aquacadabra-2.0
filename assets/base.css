@@ -1823,8 +1823,8 @@ product-info .loading__spinner:not(.hidden) ~ *,
 
 .cart-count-bubble {
   position: absolute;
-  background-color: #DB7300;
-  color: rgb(var(--color-button-text));
+  background-color: white;
+  color: #444;
   height: 1.7rem;
   width: 1.7rem;
   border-radius: 100%;
@@ -2248,7 +2248,6 @@ product-info .loading__spinner:not(.hidden) ~ *,
   align-items: center;
   grid-area: icons;
   justify-self: end;
-  padding-right: 0.8rem;
 }
 
 .icon-cart__container  {
