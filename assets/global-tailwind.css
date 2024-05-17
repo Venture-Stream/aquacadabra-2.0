@@ -658,6 +658,10 @@ video {
   top: 100%;
 }
 
+.right-\[13\%\]{
+  right: 13%;
+}
+
 .isolate{
   isolation: isolate;
 }
