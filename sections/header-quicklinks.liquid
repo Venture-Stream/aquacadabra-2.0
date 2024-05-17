@@ -1,10 +1,10 @@
 <div class="bg-[#F8F8F8]">
-  <div class="page-width">
+  <div class="max-w-[1700px] mx-auto px-0 md:px-20">
     <div class="
     max-w-screen-sm lg:max-w-none whitespace-nowrap overflow-hidden overflow-x-auto m-auto text-left
     py-6 flex items-start justify-evenly md:justify-start">
       {%- for block in section.blocks -%}
-        <a href="{{ block.settings.url }}" class="text-[#777] hover:text-[#000] transition-colors no-underline text-1.2 mr-8">{{ block.settings.text }}</a>
+        <a href="{{ block.settings.url }}" class="text-[#777] hover:text-[#000] transition-colors no-underline text-1.2 {% if forloop.index == 1 %}ml-6 sm:ml-0 {% endif %}mr-8">{{ block.settings.text }}</a>
       {%- endfor -%}
     </div>
   </div>

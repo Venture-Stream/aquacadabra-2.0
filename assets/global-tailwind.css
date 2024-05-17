@@ -638,8 +638,8 @@ video {
   right: 2rem;
 }
 
-.right-\[15\%\]{
-  right: 15%;
+.right-\[13\%\]{
+  right: 13%;
 }
 
 .top-0{
@@ -656,10 +656,6 @@ video {
 
 .top-full{
   top: 100%;
-}
-
-.right-\[13\%\]{
-  right: 13%;
 }
 
 .isolate{
@@ -758,6 +754,10 @@ video {
   margin-left: 1rem;
 }
 
+.ml-6{
+  margin-left: 1.5rem;
+}
+
 .ml-8{
   margin-left: 2rem;
 }
@@ -842,8 +842,8 @@ video {
   height: 120px;
 }
 
-.h-\[260px\]{
-  height: 260px;
+.h-\[36px\]{
+  height: 36px;
 }
 
 .h-\[calc\(100\%-104px\)\]{
@@ -856,14 +856,6 @@ video {
 
 .h-full{
   height: 100%;
-}
-
-.h-9{
-  height: 2.25rem;
-}
-
-.h-\[36px\]{
-  height: 36px;
 }
 
 .max-h-\[10rem\]{
@@ -894,6 +886,10 @@ video {
   width: 100%;
 }
 
+.w-\[260px\]{
+  width: 260px;
+}
+
 .w-full{
   width: 100%;
 }
@@ -901,10 +897,6 @@ video {
 .w-max{
   width: -moz-max-content;
   width: max-content;
-}
-
-.w-\[260px\]{
-  width: 260px;
 }
 
 .min-w-\[15rem\]{
@@ -939,12 +931,12 @@ video {
   max-width: 1100px;
 }
 
-.max-w-\[1720px\]{
-  max-width: 1720px;
+.max-w-\[1700px\]{
+  max-width: 1700px;
 }
 
-.max-w-\[260px\]{
-  max-width: 260px;
+.max-w-\[1720px\]{
+  max-width: 1720px;
 }
 
 .max-w-\[640px\]{
@@ -1392,16 +1384,6 @@ video {
   padding-bottom: 2rem;
 }
 
-.py-5{
-  padding-top: 1.25rem;
-  padding-bottom: 1.25rem;
-}
-
-.py-7{
-  padding-top: 1.75rem;
-  padding-bottom: 1.75rem;
-}
-
 .pb-10{
   padding-bottom: 2.5rem;
 }
@@ -1618,10 +1600,6 @@ video {
 
 .no-underline{
   text-decoration-line: none;
-}
-
-.underline-offset-4{
-  text-underline-offset: 4px;
 }
 
 .underline-offset-\[6px\]{
@@ -1965,6 +1943,10 @@ input{
 }
 
 @media (min-width: 480px){
+  .sm\:ml-0{
+    margin-left: 0px;
+  }
+
   .sm\:hidden{
     display: none;
   }
@@ -2011,10 +1993,6 @@ input{
 
   .md\:hidden{
     display: none;
-  }
-
-  .md\:h-\[380px\]{
-    height: 380px;
   }
 
   .md\:h-\[530px\]{
@@ -2072,10 +2050,6 @@ input{
 
   .md\:min-w-full{
     min-width: 100%;
-  }
-
-  .md\:max-w-\[380px\]{
-    max-width: 380px;
   }
 
   .md\:max-w-\[75\%\]{
@@ -2347,14 +2321,14 @@ input{
     padding-right: 4rem;
   }
 
-  .lg\:py-8{
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-  }
-
   .lg\:py-10{
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
+  }
+
+  .lg\:py-8{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
   }
 
   .lg\:pr-0{
