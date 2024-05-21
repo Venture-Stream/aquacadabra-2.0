@@ -1,7 +1,7 @@
 <div class="bg-brand-blue text-white border-b border-[#0A2E71]">
   <div class="page-width">
-    <div class="grid grid-cols-1 md:grid-cols-3 py-4">
-      <div class="hidden md:flex items-center justify-start">
+    <div class="grid grid-cols-1 py-4 md:grid-cols-3">
+      <div class="items-center justify-start hidden md:flex">
         {%- if section.settings.left_text != blank-%}
           <span class="text-1.3">{{ section.settings.left_text }}</span>
         {%- endif -%}
@@ -15,7 +15,7 @@
           cut_off_time: settings.cut_off_time
         %}
       </div>
-      <div class="hidden md:flex items-center justify-end">
+      <div class="items-center justify-end hidden md:flex">
         {%- if shop.customer_accounts_enabled -%}
           <a href="{%- if customer -%}{{ routes.account_url }}{%- else -%}{{ routes.account_login_url }}{%- endif -%}" class="text-white text-1.3 no-underline">
             <span>

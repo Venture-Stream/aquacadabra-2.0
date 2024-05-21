@@ -18,12 +18,9 @@
 
 <div class="section-{{ section.id }}-padding">
 	<div class="page-width offscreen-right">
-		<div class="md:grid md:grid-cols-6 flex pb-8 flex-nowrap lg:overflow-x-hidden overflow-x-scroll lg:pr-0 md:pr-20 pr-6">
+		<div class="flex pb-8 pr-6 overflow-x-scroll md:grid md:grid-cols-6 flex-nowrap lg:overflow-x-hidden lg:pr-0 md:pr-20">
 			{% for block in section.blocks %}
 				<div class="flex">
-        {% if block.settings.link %}
-					<a href="{{ block.settings.link }}">
-        {% endif %}
 						<div class="lg:p-16 p-8 border-t-0 border-r-0 border-l-0 border-[#EEEEEE] md:border-solid md:min-w-0 min-w-[200px] grow flex items-center justify-center
 							{% if forloop.index != 1 %}
 								{% unless forloop.index == 7 %}
@@ -32,6 +29,9 @@
 							{% endif %} 
               {% if forloop.index > 6 %}md:border-b-0{% else %}md:border-b{% endif %}">
 							{% if block.settings.image != blank %}
+                {% if block.settings.link %}
+                  <a href="{{ block.settings.link }}">
+                {% endif %}
 								<img
                   src="{{ block.settings.image | image_url: width: 200 }}"
                   alt="{{ block.settings.image.alt | escape }}"
@@ -40,11 +40,11 @@
                   loading="lazy"
                   class="object-contain w-full h-full"
                 >
+                {% if block.settings.link %}
+                  </a>
+                {% endif %}
 							{% endif %}
 						</div>
-        {% if block.settings.link %}
-					</a>
-        {% endif %}
 				</div>
 			{% endfor %}
 		</div>

@@ -108,7 +108,7 @@ input {
 }
 
 .section-heading {
-  @apply relative m-0 inline-block;
+  @apply relative inline-block m-0;
 }
 
 .section-heading:after {
@@ -121,7 +121,7 @@ input {
 }
 
 .heading--wrapper {
-  @apply mb-8 pb-4;
+  @apply pb-4 mb-8;
 }
 
 .heading--wrapper,
@@ -144,4 +144,24 @@ input {
 
 .light-shadow {
   box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.10);
+}
+
+.zooomywishlistgridclass {
+  @apply justify-center;
+}
+
+.ZoomyWishlistPageGrid {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#ZoomyWishlistPage a {
+  width: 200px;
+  display: block;
+  margin: auto;
+}
+
+.ZoomyWishlistPageGrid .zbodytitle a {
+  width: 100% !important;
 }
