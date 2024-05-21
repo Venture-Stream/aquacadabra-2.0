@@ -27,11 +27,18 @@
 </div>
 
 <ul class="items-center justify-center hidden gap-4 my-8 md:flex">
+  <li>
+    <a href="{{ blog.url }}" 
+    class="inline-block border border-[#E0E0E0] hover:bg-[#F2F2F2] rounded-full py-3 px-16 capitalize light-shadow">
+      All
+    </a>
+  </li>
   {%- for tag in blog.all_tags -%}
     {% assign handle_tag = tag | handle %}
     <li>
       <a href="{{ blog.url }}/tagged/{{ tag | handle }}" 
-      class="inline-block border border-[#E0E0E0] hover:bg-[#F2F2F2] rounded-full py-3 px-16 capitalize light-shadow">
+      class="inline-block border border-[#E0E0E0] hover:bg-[#F2F2F2] rounded-full py-3 px-16 capitalize light-shadow
+      {% if pageUrl contains handle_tag %} bg-brand-orange {% endif %}">
         {{- tag -}}
       </a>
     </li>

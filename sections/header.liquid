@@ -216,13 +216,13 @@
         {%- endcase -%}
       {%- endfor -%}
 
-      <a href="/pages/wishlist" class="hidden md:flex p-6 bg-transparent rounded-lg border border-solid border-white times-center justify-center mr-4">
+      <a href="/pages/wishlist" class="justify-center hidden p-6 mr-4 bg-transparent border border-white border-solid rounded-lg md:flex times-center">
         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="18" viewBox="0 0 20 18" fill="none">
           <path d="M17.6284 9.18649C19.4572 7.31331 19.4572 4.27808 17.6284 2.40489C15.7996 0.531703 12.8363 0.531703 11.0075 2.40489C10.5637 2.85944 10.229 3.38364 10 3.94267C9.77095 3.38364 9.43633 2.85944 8.99254 2.40489C7.16373 0.531703 4.20042 0.531703 2.37161 2.40489C0.542797 4.27808 0.542797 7.31331 2.37161 9.18649L10 17L17.6284 9.18649Z" stroke="white" stroke-miterlimit="10"/>
         </svg>
       </a>
 
-      <a href="{{ routes.cart_url }}" class="no-underline text-black header__icon--cart focus-inset flex flex-row items-center bg-brand-orange p-4 md:p-6 rounded-lg" id="cart-icon-bubble">
+      <a href="{{ routes.cart_url }}" class="flex flex-row items-center p-4 text-black no-underline rounded-lg header__icon--cart focus-inset bg-brand-orange md:p-6" id="cart-icon-bubble">
         <div class="icon-cart__container">
           {%- render 'icon-cart' -%}
         </div>
@@ -235,7 +235,7 @@
             <span class="visually-hidden">{{ 'sections.header.cart_count' | t: count: cart.item_count }}</span>
           </div>
         {%- endif -%}
-        <div class="hidden md:block ml-8 mr-4">
+        <div class="hidden ml-8 mr-4 md:block">
           <p class="text-1.2 text-brand-light-blue font-normal my-0">{{ cart.original_total_price  | money_without_trailing_zeros }}</p>
         </div>
       </a>
@@ -353,7 +353,7 @@
 
     closeSearchModal() {
       this.searchModal = this.searchModal || this.header.querySelector('details-modal');
-      this.searchModal.close(false);
+      // this.searchModal.close(false);
     }
   }
 

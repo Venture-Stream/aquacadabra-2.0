@@ -15,7 +15,7 @@
 {% endstyle %}
 
 <div class="background-{{ section.settings.background_style }}{% if section.settings.title == blank %} no-heading{% endif %}{% if template != 'index' %} border-b border-[#DFDFDF]{% endif %}">
-  <div class="page-width mx-auto py-6 lg:py-8">
+  <div class="py-2 mx-auto page-width lg:py-8">
     {% if section.settings.title != blank %}
       <div class="title-wrapper-with-link title-wrapper--self-padded-mobile{% if section.settings.title == blank %} title-wrapper-with-link--no-heading{% endif %}">
         <h2 class="title">
@@ -28,12 +28,12 @@
         {%- endif -%}
       </div>
     {% endif %}
-    <div class="usps lg:h-auto flex items-center justify-between gap-8">
+    <div class="flex items-center justify-between gap-8 usps lg:h-auto">
       {% for block in section.blocks %}
         {%- if block.settings.link != blank -%}
           <a
             href="{{ block.settings.link }}"
-            class="usp hidden lg:block opacity-0 lg:opacity-100 transition-opacity w-full lg:w-auto"
+            class="hidden w-full transition-opacity opacity-0 usp lg:block lg:opacity-100 lg:w-auto"
           >
         {%- else -%}
           <div class="usp hidden lg:block opacity-0 lg:opacity-100 transition-opacity w-full lg:w-auto lg:max-w-[25%]">
@@ -59,7 +59,7 @@
           %}
           <div class="ml-2">
             {%- if block.settings.title != blank -%}
-              <span class="font-bold text-1 text-black uppercase">{{ block.settings.title | escape }}</span>
+              <span class="font-bold text-black uppercase text-1">{{ block.settings.title | escape }}</span>
             {%- endif -%}
             {%- if block.settings.text != blank -%}
             <div class="text-1 {% if block.settings.title != blank %}mt-2{% endif %} text-[#666]">{{ block.settings.text }}</div>

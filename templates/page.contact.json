@@ -15,7 +15,7 @@
           "type": "block",
           "settings": {
             "image": "shopify:\/\/shop_images\/telephone-block.png",
-            "icon": "pin",
+            "icon": "phone",
             "heading": "Telephone",
             "content": "<p><a href=\"tel:01322 520 989\" title=\"Phone 01322 520 989\">01322 520 989<br\/><\/a><br\/>Lines open between: 10:00 - 16:00<br\/><br\/>Calls may be recorded for training & quality purposes.<\/p>"
           }
@@ -24,7 +24,7 @@
           "type": "block",
           "settings": {
             "image": "shopify:\/\/shop_images\/visit-us-block.png",
-            "icon": "clock",
+            "icon": "pin",
             "heading": "Visit us",
             "content": "<p>Unit B Panorama, Bridge Close,<br\/>Crossways Business Park,\u2028<br\/>Dartford, Kent DA2 6QP<\/p><p><br\/><strong>what3words:<\/strong> <a href=\"https:\/\/what3words.com\/prove.trout.insert\" target=\"_blank\" title=\"What3Words link\">\/\/\/prove.trout.insert<\/a><\/p>"
           }
@@ -33,7 +33,7 @@
           "type": "block",
           "settings": {
             "image": "shopify:\/\/shop_images\/opening-hours-block.png",
-            "icon": "phone",
+            "icon": "clock",
             "heading": "Opening hours",
             "content": "<p>Our shop is open Monday - Friday:<br\/><strong>09:00 - 17:00<\/strong><br\/><br\/><a href=\"https:\/\/www.google.com\/maps\/dir\/\/Aquacadabra+Unit+B,+Panorama+Bridge+Close+Crossways+Business+Park+Dartford+DA2+6QP\/@51.4610361,0.2577361,15z\/data=!4m8!4m7!1m0!1m5!1m1!1s0x47d8ae4eccf9bc07:0x4157259284d46c51!2m2!1d0.2577361!2d51.4610361?entry=ttu\" target=\"_blank\" title=\"Directions to Aquacadabra\">Get directions<\/a><\/p>"
           }

@@ -1,7 +1,7 @@
 {
   "current": {
     "enable_timer": true,
-    "cut_off_time": "2200",
+    "cut_off_time": "1700",
     "banner_text": "Order within",
     "right_text": "for same day dispatch",
     "logo": "shopify:\/\/shop_images\/logo.png",
