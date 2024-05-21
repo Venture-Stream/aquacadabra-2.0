@@ -36,12 +36,12 @@
           </h2>
         </div>
         <ul
-          class="products grid grid-cols-2 gap-8 py-4 md:grid-cols-5"
+          class="grid grid-cols-2 gap-8 py-4 products md:grid-cols-5"
           role="list"
         >
           {% for recommendation in recommendations.products %}
             <li class="grid-item">
-              {% render 'card-product',
+              {% render 'related-card-product',
                 card_product: recommendation,
                 media_aspect_ratio: "square",
                 show_vendor: section.settings.show_vendor,

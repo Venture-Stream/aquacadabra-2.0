@@ -16,9 +16,7 @@
       {%- endif -%}
 
       {%- if collection_links != blank -%}
-        <div class="
-        lg:max-w-screen-lg whitespace-nowrap overflow-hidden overflow-x-auto m-auto text-center
-        flex items-center justify-start md:justify-center mt-8 pb-2 pl-8">
+        <div class="flex items-center justify-start pb-2 pl-8 m-auto mt-8 overflow-hidden overflow-x-auto text-center lg:max-w-screen-lg whitespace-nowrap md:justify-center">
           {%- assign links_array = collection_links | split: ', ' -%}
           {%- for _link in links_array -%}
             {%- assign _link = _link | strip -%}
@@ -34,13 +32,13 @@
     </div>
   </div>
 
-  {% if collection_image_blocks != blank %}
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8 px-6 md:px-0">
-      {% for metaobject in collection_image_blocks.value %}
-        <a href="{{ metaobject.url.value }}" class="block relative">
+  {% if image_blocks != blank %}
+    <div class="grid grid-cols-1 gap-8 px-6 mb-8 md:grid-cols-2 md:px-0">
+      {% for metaobject in image_blocks.value %}
+        <a href="{{ metaobject.url.value }}" class="relative block">
           {{ metaobject.image.value | image_url: width: 800, height: 800 | image_tag: width: 800, height: 800, alt: metaobject.title.value, class: 'relative'}}
-          <div class="absolute inset-0 z-1 flex items-center justify-center">
-            <h2 class="text-white uppercase text-center">{{ metaobject.title.value }}</h2>
+          <div class="absolute inset-0 flex items-center justify-center z-1">
+            <h2 class="text-center text-white uppercase">{{ metaobject.title.value }}</h2>
           </div>
         </a>
       {% endfor %}
