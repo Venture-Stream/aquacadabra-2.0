@@ -846,6 +846,10 @@ video {
   height: 120px;
 }
 
+.h-\[300px\]{
+  height: 300px;
+}
+
 .h-\[36px\]{
   height: 36px;
 }
@@ -862,12 +866,8 @@ video {
   height: 100%;
 }
 
-.h-\[400px\]{
-  height: 400px;
-}
-
-.h-\[300px\]{
-  height: 300px;
+.h-\[40px\]{
+  height: 40px;
 }
 
 .max-h-\[10rem\]{
@@ -909,6 +909,10 @@ video {
 .w-max{
   width: -moz-max-content;
   width: max-content;
+}
+
+.w-\[40px\]{
+  width: 40px;
 }
 
 .min-w-\[15rem\]{
@@ -1932,6 +1936,10 @@ input{
 
 .ZoomyWishlistPageGrid .zbodytitle a {
   width: 100% !important;
+}
+
+.search__button {
+  border-radius: 0 4px 4px 0;
 }
 
 .hover\:bg-\[\#F2F2F2\]:hover{

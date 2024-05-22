@@ -19,7 +19,7 @@
     <div id="menu-drawer" class="gradient menu-drawer motion-reduce color-{{ section.settings.menu_color_scheme }}">
       <div class="menu-drawer__inner-container">        
         <div
-          class="p-6 relative"
+          class="relative p-6"
           tabindex="-1"
           >
           {%- if settings.predictive_search_enabled -%}
@@ -28,9 +28,9 @@
             <search-form class="search-modal__form">
           {%- endif -%}
           <form action="{{ routes.search_url }}" method="get" role="search" class="search search-modal__form">
-            <div class="field mb-0">
+            <div class="mb-0 field">
               <input
-                class="search__input w-full border bg-[#FFFFFF] rounded-xl p-6 md:pr-28 h-20 text-black"
+                class="search__input w-full border bg-[#FFFFFF] rounded-xl p-8 md:pr-28 h-20 text-black"
                 id="{{ input_id }}"
                 type="search"
                 name="q"
@@ -197,7 +197,7 @@
             {%- if shop.customer_accounts_enabled -%}
               <a
                 href="{%- if customer -%}{{ routes.account_url }}{%- else -%}{{ routes.account_login_url }}{%- endif -%}"
-                class="link focus-inset h5 block no-underline"
+                class="block no-underline link focus-inset h5"
               >
                 {%- liquid
                   if customer
@@ -210,13 +210,13 @@
             {%- endif -%}
             <a
               href="/pages/wishlist"
-              class="link focus-inset h5 block no-underline"
+              class="block no-underline link focus-inset h5"
             >
               My Wishlist
             </a>
             <a
             href="/pages/contact-details"
-            class="link focus-inset h5 block no-underline"
+            class="block no-underline link focus-inset h5"
           >
             Contact Us
           </a>
