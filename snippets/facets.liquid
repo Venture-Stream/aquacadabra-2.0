@@ -405,7 +405,7 @@
                                   value="{{ range_handle }}"
                                   id="Filter-{{ range_handle }}"
                                   class="price-filter"
-                                  data-value="{{ min_value | times }} = {{ filter.min_value.value }}"
+                                  data-value="{{ min_value | times: 1 }} = {{ filter.min_value.value }}"
                                   {%- if filter.min_value.value == min_value -%}
                                     checked="checked"
                                   {%- endif -%}
