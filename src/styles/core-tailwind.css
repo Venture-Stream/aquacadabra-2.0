@@ -165,3 +165,7 @@ input {
 .ZoomyWishlistPageGrid .zbodytitle a {
   width: 100% !important;
 }
+
+.search__button {
+  border-radius: 0 4px 4px 0;
+}

@@ -854,6 +854,10 @@ video {
   height: 36px;
 }
 
+.h-\[40px\]{
+  height: 40px;
+}
+
 .h-\[calc\(100\%-104px\)\]{
   height: calc(100% - 104px);
 }
@@ -896,6 +900,10 @@ video {
 
 .w-\[260px\]{
   width: 260px;
+}
+
+.w-\[40px\]{
+  width: 40px;
 }
 
 .w-full{
@@ -1928,6 +1936,10 @@ input{
 
 .ZoomyWishlistPageGrid .zbodytitle a {
   width: 100% !important;
+}
+
+.search__button {
+  border-radius: 0 4px 4px 0;
 }
 
 .hover\:bg-\[\#F2F2F2\]:hover{

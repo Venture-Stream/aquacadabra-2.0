@@ -28,7 +28,8 @@
 .predictive-search__results-groups-wrapper {
   display: flex;
   border-bottom: 0.1rem solid rgba(var(--color-foreground), 0.08);
-  padding-bottom: 1rem;
+  gap: 2.3rem;
+  padding: 2rem;
 }
 
 @media screen and (max-width: 749px) {
@@ -86,7 +87,7 @@ predictive-search[loading] .predictive-search {
     display: initial;
   }
   .predictive-search__result-group:first-child {
-    flex: 0 0 26.4rem;
+    flex: 0 0 21.4rem;
   }
   .predictive-search__results-groups-wrapper--no-products .predictive-search__result-group:first-child,
   .predictive-search__result-group:only-child {
@@ -96,8 +97,8 @@ predictive-search[loading] .predictive-search {
 
 .predictive-search__heading {
   border-bottom: 0.1rem solid #EEE;
-  margin: 0 2rem;
-  padding: 1.5rem 0 0.75rem;
+  margin:0 0 5px 0;
+  padding: 0 0 0.75rem;
   color: #666;
   font-size: 1.4rem;
   font-weight: 400;
@@ -148,10 +149,11 @@ predictive-search[loading] .predictive-search__results-groups-wrapper ~ .predict
 
 .predictive-search__item {
   display: flex;
-  padding: 1rem 2rem;
+  padding: 2px 0;
   text-align: left;
   text-decoration: none;
   width: 100%;
+  line-height: 1.5;
 }
 
 .predictive-search__item--link-with-thumbnail {
@@ -227,6 +229,8 @@ predictive-search[loading] .predictive-search__results-groups-wrapper ~ .predict
 .predictive-search__image {
   grid-area: product-image;
   object-fit: contain;
-  font-family: 'object-fit: contain';
-  margin-right: 1rem;
+  height:40px;
+  width:40px;
+  min-width:40px;
+  min-height:40px;
 }
