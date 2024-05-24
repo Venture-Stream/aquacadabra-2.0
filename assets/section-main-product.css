@@ -905,6 +905,7 @@ a.product__text {
 .product--thumbnail_slider .slider-mobile-gutter .slider-button {
   display: flex;
   rotate: 90deg;
+  border-left: 1px solid black;
 }
 
 /* Fix to show some space at the end of our sliders in all browsers to be applied on thumbnails */
