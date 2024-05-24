@@ -107,7 +107,7 @@
               {% endif -%}
 
                 <div class="product__title" {{ block.shopify_attributes }}>
-                  <h1 class="text-2 m-0">{{ product.title | escape }}</h1>
+                  <h1 class="m-0 text-2">{{ product.title | escape }}</h1>
                   <a href="{{ product.url }}" class="product__title">
                     <h2 class="h1">
                       {{ product.title | escape }}
@@ -200,7 +200,7 @@
                 </p>
               {%- when 'description' -%}
                 {%- if product.description != blank -%}
-                  <div class="product__description my-8 rte quick-add-hidden" {{ block.shopify_attributes }}>
+                  <div class="my-8 product__description rte quick-add-hidden" {{ block.shopify_attributes }}>
                     <div data-read-smore-words="27" class="inline-block">{{ product.description }}</div>
                     <script src="{{ 'readmore.min.js' | asset_url }}" type="text/javascript" defer="defer"></script>
                   </div>
@@ -460,7 +460,7 @@
                   show_pickup_availability: true
                 -%}
               {%- when 'custom_buy_buttons' -%}
-                  <div class="relative flex flex-col xl:flex-row items-start justify-between my-8">
+                  <div class="relative flex flex-col items-start justify-between my-8 xl:flex-row">
                     <div
                       id="Quantity-Form-{{ section.id }}"
                       class="product-form__input product-form__quantity flex-none{% if settings.inputs_shadow_vertical_offset != 0 and settings.inputs_shadow_vertical_offset < 0 %} product-form__quantity-top{% endif %}"
@@ -906,15 +906,15 @@
           {% endfor %}
 
           {% if show_calculator == true %}
-            <a class="button button--outline block w-full text-center mt-8" href="/pages/fish-tank-volume-calculator" target="_blank">
+            <a class="block w-full mt-8 text-center button button--outline" href="/pages/fish-tank-volume-calculator" target="_blank">
               Fish Tank Volume Calculator
             </a>
           {% elsif show_pond_liner_calculator == true %}
-            <a class="button button--outline block w-full text-center mt-8" href="/pages/pond-liner-calculator" target="_blank">
+            <a class="block w-full mt-8 text-center button button--outline" href="/pages/pond-liner-calculator" target="_blank">
               Pond Liner Calculator
             </a>
           {% elsif show_pond_calculator == true %}
-            <a class="button button--outline block w-full text-center mt-8" href="/pages/pond-volume-calculator" target="_blank">
+            <a class="block w-full mt-8 text-center button button--outline" href="/pages/pond-volume-calculator" target="_blank">
               Pond Volume Calculator
             </a>
           {% endif %}
@@ -932,9 +932,10 @@
             ]
           </script>
 
-          <a href="{{ product.url }}" class="link product__view-details animate-arrow">
-            {{ 'products.product.view_full_details' | t }}
-            {% render 'icon-arrow' %}
+          <a href="{{ product.url }}" class="p-8 mt-4 button product__view-details animate-arrow">
+            <div class="flex items-center justify-center">
+              <span>{{ 'products.product.view_full_details' | t }}</span>
+            </div>
           </a>
         </product-info>
       </div>

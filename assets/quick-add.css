@@ -196,8 +196,8 @@
 
 @media screen and (max-width: 749px) {
   quick-add-modal .slider .product__media-item.grid__item {
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
+    /* margin-left: 1.5rem;
+    margin-right: 1.5rem; */
   }
 
   .quick-add-modal__content {
@@ -269,17 +269,6 @@ quick-add-modal .product__column-sticky {
 }
 
 @media screen and (min-width: 750px) {
-  quick-add-modal .product:not(.product--no-media) .product__media-wrapper {
-    max-width: 45%;
-    width: calc(45% - var(--grid-desktop-horizontal-spacing) / 2);
-  }
-
-  quick-add-modal .product:not(.product--no-media) .product__info-wrapper {
-    padding-left: 4rem;
-    max-width: 54%;
-    width: calc(54% - var(--grid-desktop-horizontal-spacing) / 2);
-  }
-
   quick-add-modal .product--columns .product__media-item:not(.product__media-item--single):not(:only-child) {
     max-width: 100%;
     width: 100%;
@@ -373,4 +362,35 @@ quick-add-bulk .quantity__input {
 
 .quantity__input-disabled {
   pointer-events: none;
+}
+
+quick-add-modal .product__info-wrapper {
+  padding:0;
+}
+
+@media screen and (min-width: 750px) {
+  quick-add-modal .product__info-wrapper {
+    padding: 0 0 0 4rem;
+  }
+}
+
+quick-add-modal .product-media-container {
+  width:100% !important;
+}
+
+quick-add-modal .h1 {
+  margin: 0;
+  font-size:20px;
+}
+
+quick-add-modal .scroll-trigger.animate--slide-in {
+  transform: none;
+}
+
+quick-add-modal .hidden.loading__spinner {
+  display: none !important
+}
+
+quick-add-modal .grid--peek.slider .grid__item:first-of-type {
+  margin-left:0;
 }
