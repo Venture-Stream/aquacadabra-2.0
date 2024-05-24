@@ -806,6 +806,10 @@ video {
   margin-top: 2rem;
 }
 
+.mt-4{
+  margin-top: 1rem;
+}
+
 .block{
   display: block;
 }
@@ -1149,6 +1153,10 @@ video {
 
 .rounded-xl{
   border-radius: 0.75rem;
+}
+
+.rounded{
+  border-radius: 0.25rem;
 }
 
 .border{
