@@ -131,6 +131,38 @@
 
             <script src="{{ 'show-more.js' | asset_url }}" defer="defer"></script>
             {% comment %} Filters for both horizontal and vertical filter {% endcomment %}
+
+            {% if template contains 'collection' %}
+              <details
+                id="Details-{{ forloop.index }}-{{ section.id }}"
+                class="category-dropdown {% if filter_type == 'horizontal' %}disclosure-has-popup facets__disclosure{% else %} facets__disclosure-vertical{% endif %} js-filter"
+                data-index="{{ forloop.index }}"
+                open
+              >
+                <summary class="facets__summary caption-large focus-offset">
+                  <div class="flex items-center justify-start gap-4">
+                    {% render 'icon-arrow-black' %}
+                    <span>
+                      Category
+                    </span>
+                  </div>
+                </summary>
+                <div
+                  id="Facet-{{ forloop.index }}-{{ section.id }}"
+                  class="parent-display {% if filter_type == 'horizontal' %}facets__display{% else %}facets__display-vertical{% endif %}"
+                >
+                  <ul class="nav-category">
+                      {% assign filterMenus = "filter-aquariums, filter-ponds, filter-reptiles" | split: ', ' %}
+                      {% assign compiledMenu = "" | split: ',' %}
+                      {% for menu in filterMenus %}
+                          {% render "filter-menu-render", links: linklists[menu].links %}
+                      {% endfor %}
+                      <div class="visually-hidden">{{ compiledMenu | json }}</div>
+                  </ul>
+                </div>
+              </details>
+           {% endif %}
+
             {%- for filter in results.filters -%}
               {% liquid
                 assign hide_filter = false
@@ -779,6 +811,47 @@
                       assign visual_layout_class = 'facets-layout facets-layout-list facets-layout-list--' | append: presentation
                     endif
                   %}
+                  
+                  {% if template contains 'collection' %}
+                    <details
+                      id="Details-{{ forloop.index }}-{{ section.id }}"
+                      class="category-dropdown {% if filter_type == 'horizontal' %}disclosure-has-popup facets__disclosure{% else %} facets__disclosure-vertical{% endif %} js-filter"
+                      data-index="{{ forloop.index }}"
+                    >
+                    <summary class="mobile-facets__summary focus-inset">
+                      <div>
+                        <span>Category</span>
+                        <span class="mobile-facets__arrow">{% render 'icon-arrow' %}</span>
+                      </div>
+                    </summary>
+                      <div
+                        id="FacetMobile-{{ forloop.index }}-{{ section.id }}"
+                        class="mobile-facets__submenu gradient"
+                      >
+                        <button
+                          class="mobile-facets__close-button link link--text focus-inset"
+                          aria-expanded="true"
+                          type="button"
+                        >
+                          {% render 'icon-arrow' %}
+                          <span>Category</span>
+                          {%- if filter.operator == 'AND' -%}
+                            <span class="facets__and-helptext">
+                              {{ 'products.facets.filter_and_operator_subtitle' | t }}
+                            </span>
+                          {%- endif -%}
+                        </button>
+                        <ul class="{{ visual_layout_class }} mobile-facets__list list-unstyled nav-category" role="list">
+                            {% assign filterMenus = "filter-aquariums, filter-ponds, filter-reptiles" | split: ', ' %}
+                            {% assign compiledMenu = "" | split: ',' %}
+                            {% for menu in filterMenus %}
+                                {% render "filter-menu-render", links: linklists[menu].links, class: 'mobile-facets__label' %}
+                            {% endfor %}
+                            <div class="visually-hidden">{{ compiledMenu | json }}</div>
+                        </ul>
+                      </div>
+                    </details>
+                 {% endif %}
 
                   {% case filter.type %}
                     {% when 'boolean', 'list' %}

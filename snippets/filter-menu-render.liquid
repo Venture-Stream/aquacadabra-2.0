@@ -1,0 +1,22 @@
+{% for link in links %}
+  {% assign childlinks = link.links %}
+  {% assign link_url = link.url | replace: "/collections/" %}
+  {% if link_url == collection.handle %}
+      {% if childlinks.size > 0 %}
+          {% for childlink in childlinks %}
+              {% render "filter-menu-collection", link: childlink, class: class %}
+          {% endfor %}
+      {% endif %}
+  {% elsif force == true %}
+      {% render "filter-menu-collection", link: link, class: class%}
+  {% elsif compiledMenu contains link.url %}
+      {% comment %} If another menu contains the same links {% endcomment %}
+      {% if childlinks.size > 0 %}
+          {% render "filter-menu-collection", link: link, reorder: true, class: class %}
+      {% endif %}
+  {% else %}
+      {% if childlinks.size %}
+          {% render "filter-menu-render", links: childlinks, class: class %}
+      {% endif %}
+  {% endif %}
+{% endfor %}
