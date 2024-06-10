@@ -989,6 +989,18 @@
       endif
     -%}
 
+    <script>
+      var calcWidth = window.innerWidth;
+      if (calcWidth <= 768) {
+        const detailsElement = document.querySelectorAll("[tab_details]");
+        detailsElement.forEach((element) => {
+          if (element.hasAttribute("open")) {
+            element.removeAttribute("open");
+          }
+        });
+      }
+    </script>
+
     <script type="application/ld+json">
       {
         "@context": "http://schema.org/",
@@ -1495,6 +1507,11 @@
           "type": "checkbox",
           "id": "use_description",
           "label": "Use Product Description"
+        },
+        {
+          "type": "checkbox", 
+          "id": "open_by_default",
+          "label": "Open by default?"
         },
         {
           "type": "checkbox",

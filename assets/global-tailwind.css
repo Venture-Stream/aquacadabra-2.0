@@ -798,16 +798,16 @@ video {
   margin-top: 0.75rem;
 }
 
+.mt-4{
+  margin-top: 1rem;
+}
+
 .mt-6{
   margin-top: 1.5rem;
 }
 
 .mt-8{
   margin-top: 2rem;
-}
-
-.mt-4{
-  margin-top: 1rem;
 }
 
 .block{
@@ -1153,10 +1153,6 @@ video {
 
 .rounded-xl{
   border-radius: 0.75rem;
-}
-
-.rounded{
-  border-radius: 0.25rem;
 }
 
 .border{
