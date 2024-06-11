@@ -734,6 +734,10 @@ video {
   margin-bottom: 0px;
 }
 
+.mb-2{
+  margin-bottom: 0.5rem;
+}
+
 .mb-4{
   margin-bottom: 1rem;
 }
@@ -808,10 +812,6 @@ video {
 
 .mt-8{
   margin-top: 2rem;
-}
-
-.mb-2{
-  margin-bottom: 0.5rem;
 }
 
 .block{
@@ -1018,10 +1018,6 @@ video {
 
 .grid-cols-2{
   grid-template-columns: repeat(2, minmax(0, 1fr));
-}
-
-.grid-cols-6{
-  grid-template-columns: repeat(6, minmax(0, 1fr));
 }
 
 .flex-row{
@@ -1516,10 +1512,6 @@ video {
   font-weight: 700;
 }
 
-.font-light{
-  font-weight: 300;
-}
-
 .font-medium{
   font-weight: 500;
 }
@@ -1948,6 +1940,115 @@ input{
 
 .search__button {
   border-radius: 0 4px 4px 0;
+}
+
+/*================ Dropdowns ================*/
+
+li {
+  padding: 2.5rem 0;
+  position: unset;
+}
+
+li.site-nav__top-level:focus,
+li.site-nav__top-level:hover {
+  outline: none;
+}
+
+.site-nav__link--main {
+  font-size: 1.6rem;
+}
+
+li a {
+  text-decoration: none;
+}
+
+li a:focus,
+li a:hover,
+li a:active {
+  color: #000;
+}
+
+.site-nav__label {
+  border-bottom: none;
+}
+
+.site-nav__link:focus,
+.site-nav__link:hover {
+  outline: none;
+}
+
+.site-nav__dropdown {
+  left: 0;
+  right: 0;
+  top: 125px !important;
+  background: rgba(255, 255, 255, .8);
+  -webkit-backdrop-filter: blur(20px) brightness(2);
+          backdrop-filter: blur(20px) brightness(2);
+}
+
+.site-nav__childlist {
+  width: 100%;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.site-nav__childlist-grid {
+  flex-basis: 25%;
+  background: #F8F8F8;
+  display: flex;
+  flex-direction: column;
+}
+
+.third-level__dropdown--group {
+  flex-basis: 75%;
+}
+
+ul li {
+  width: 100%;
+  display: block;
+  padding: 0;
+  font-size: 16px;
+}
+
+.site-nav__child-link {
+  padding: 10px 30px 10px;
+  margin: 0;
+  background: #F8F8F8;
+  transition: background .2s ease-in-out;
+  display: block;
+  font-size: 16px;
+}
+
+.site-nav__child-link:hover {
+  background: #e6e6e6;
+}
+
+.third-level__dropdown {
+  padding: 20px;
+  display: none;
+}
+
+.third-level__dropdown.active {
+  display: block;
+}
+
+.third-level__dropdown ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.link-group {
+  flex-basis: 25%;
+  margin-bottom: 20px;
+}
+
+.child-link {
+  font-weight: 600;
+}
+
+.grandchild-list {
+  margin-top: 10px;
 }
 
 .hover\:bg-\[\#F2F2F2\]:hover{
