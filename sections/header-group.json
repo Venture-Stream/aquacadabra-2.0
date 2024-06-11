@@ -40,24 +40,7 @@
           "settings": {
             "title": "Aquariums",
             "item_link": "#",
-            "col_linklist_1": "aquariums",
-            "col_1_link": "",
-            "col_1_img_text": "",
-            "col_linklist_2": "",
-            "col_2_link": "",
-            "col_2_img_text": "",
-            "col_linklist_3": "",
-            "col_3_link": "",
-            "col_3_img_text": "",
-            "col_linklist_4": "",
-            "col_4_link": "",
-            "col_4_img_text": "",
-            "col_linklist_5": "",
-            "col_5_link": "",
-            "col_5_img_text": "",
-            "col_linklist_6": "",
-            "col_6_link": "",
-            "col_6_img_text": ""
+            "submenu": "main-menu"
           }
         },
         "sub_menu_6dwc94": {
@@ -65,24 +48,7 @@
           "settings": {
             "title": "Pond",
             "item_link": "#",
-            "col_linklist_1": "",
-            "col_1_link": "",
-            "col_1_img_text": "",
-            "col_linklist_2": "",
-            "col_2_link": "",
-            "col_2_img_text": "",
-            "col_linklist_3": "",
-            "col_3_link": "",
-            "col_3_img_text": "",
-            "col_linklist_4": "",
-            "col_4_link": "",
-            "col_4_img_text": "",
-            "col_linklist_5": "",
-            "col_5_link": "",
-            "col_5_img_text": "",
-            "col_linklist_6": "",
-            "col_6_link": "",
-            "col_6_img_text": ""
+            "submenu": ""
           }
         },
         "sub_menu_f4b9mW": {
@@ -90,24 +56,7 @@
           "settings": {
             "title": "Reptiles",
             "item_link": "#",
-            "col_linklist_1": "",
-            "col_1_link": "",
-            "col_1_img_text": "",
-            "col_linklist_2": "",
-            "col_2_link": "",
-            "col_2_img_text": "",
-            "col_linklist_3": "",
-            "col_3_link": "",
-            "col_3_img_text": "",
-            "col_linklist_4": "",
-            "col_4_link": "",
-            "col_4_img_text": "",
-            "col_linklist_5": "",
-            "col_5_link": "",
-            "col_5_img_text": "",
-            "col_linklist_6": "",
-            "col_6_link": "",
-            "col_6_img_text": ""
+            "submenu": ""
           }
         },
         "sub_menu_NqfPgk": {
@@ -115,24 +64,7 @@
           "settings": {
             "title": "Clearance",
             "item_link": "",
-            "col_linklist_1": "",
-            "col_1_link": "",
-            "col_1_img_text": "",
-            "col_linklist_2": "",
-            "col_2_link": "",
-            "col_2_img_text": "",
-            "col_linklist_3": "",
-            "col_3_link": "",
-            "col_3_img_text": "",
-            "col_linklist_4": "",
-            "col_4_link": "",
-            "col_4_img_text": "",
-            "col_linklist_5": "",
-            "col_5_link": "",
-            "col_5_img_text": "",
-            "col_linklist_6": "",
-            "col_6_link": "",
-            "col_6_img_text": ""
+            "submenu": ""
           }
         },
         "sub_menu_kjdrka": {
@@ -140,24 +72,7 @@
           "settings": {
             "title": "Brands",
             "item_link": "shopify:\/\/pages\/brands",
-            "col_linklist_1": "",
-            "col_1_link": "",
-            "col_1_img_text": "",
-            "col_linklist_2": "",
-            "col_2_link": "",
-            "col_2_img_text": "",
-            "col_linklist_3": "",
-            "col_3_link": "",
-            "col_3_img_text": "",
-            "col_linklist_4": "",
-            "col_4_link": "",
-            "col_4_img_text": "",
-            "col_linklist_5": "",
-            "col_5_link": "",
-            "col_5_img_text": "",
-            "col_linklist_6": "",
-            "col_6_link": "",
-            "col_6_img_text": ""
+            "submenu": ""
           }
         },
         "sub_menu_WzqrNa": {
@@ -165,24 +80,7 @@
           "settings": {
             "title": "Blog",
             "item_link": "shopify:\/\/blogs\/news",
-            "col_linklist_1": "",
-            "col_1_link": "",
-            "col_1_img_text": "",
-            "col_linklist_2": "",
-            "col_2_link": "",
-            "col_2_img_text": "",
-            "col_linklist_3": "",
-            "col_3_link": "",
-            "col_3_img_text": "",
-            "col_linklist_4": "",
-            "col_4_link": "",
-            "col_4_img_text": "",
-            "col_linklist_5": "",
-            "col_5_link": "",
-            "col_5_img_text": "",
-            "col_linklist_6": "",
-            "col_6_link": "",
-            "col_6_img_text": ""
+            "submenu": ""
           }
         }
       },

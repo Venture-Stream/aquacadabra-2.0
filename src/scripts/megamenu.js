@@ -5,6 +5,8 @@ class MegaMenu extends HTMLElement {
     var subMenus = this.querySelectorAll('[data-sub-menu]');
     var page = document.getElementById('MainContent');
     var header = document.querySelector('header');
+    var topLevel = this.querySelectorAll('[data-toplevel-link]');
+    var subMenuLinks = this.querySelectorAll('.site-nav__child-link');
 
     menuItems.forEach((item) => {
       item.addEventListener('mouseover', () => {
@@ -25,6 +27,18 @@ class MegaMenu extends HTMLElement {
     })
     page.addEventListener('mouseenter', () => {
       this.closeMenus(menuItems, subMenus);
+    })
+
+    topLevel.forEach((item) => {
+      item.addEventListener('mouseover', () => {
+        this.showThirdLevel(item);
+      })
+    })
+
+    subMenuLinks.forEach((item) => {
+      item.addEventListener('mouseover', (e) => {
+        this.stopImmediatePropagation(e);
+      })
     })
 
   }
@@ -53,6 +67,25 @@ class MegaMenu extends HTMLElement {
     subMenus.forEach((item) => {
       item.classList.add('hidden');
     })
+  }
+
+  showThirdLevel(element) {
+    let id = element.getAttribute('data-toplevel-link'),
+      dropdowns = document.querySelectorAll('.third-level__dropdown');
+
+    for(let i=0; i < dropdowns.length; i++) {
+      let dropdown = dropdowns[i],
+        dropdown_id = dropdown.getAttribute('data-toplevel-submenu');
+      
+      dropdown.classList.remove('active');
+      if(dropdown_id == id) {
+        dropdown.classList.add('active');
+      }
+    }
+  }
+
+  stopImmediatePropagation(event) {
+    event.stopImmediatePropagation();
   }
 }
 
