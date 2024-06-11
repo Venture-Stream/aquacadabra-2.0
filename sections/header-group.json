@@ -63,7 +63,7 @@
           "type": "sub_menu",
           "settings": {
             "title": "Clearance",
-            "item_link": "",
+            "item_link": "shopify:\/\/collections\/clearance",
             "submenu": ""
           }
         },
