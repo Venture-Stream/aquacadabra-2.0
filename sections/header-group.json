@@ -39,7 +39,7 @@
           "type": "sub_menu",
           "settings": {
             "title": "Aquariums",
-            "item_link": "#",
+            "item_link": "shopify:\/\/collections\/aquariums-fish-tank",
             "submenu": "aquariums"
           }
         },
