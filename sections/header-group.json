@@ -64,7 +64,7 @@
           "settings": {
             "title": "Clearance",
             "item_link": "shopify:\/\/collections\/clearance",
-            "submenu": ""
+            "submenu": "clearance"
           }
         },
         "sub_menu_kjdrka": {
@@ -72,7 +72,7 @@
           "settings": {
             "title": "Brands",
             "item_link": "shopify:\/\/pages\/brands",
-            "submenu": ""
+            "submenu": "brands"
           }
         },
         "sub_menu_WzqrNa": {
