@@ -48,7 +48,7 @@
           "settings": {
             "title": "Pond",
             "item_link": "#",
-            "submenu": "main-menu"
+            "submenu": "pond"
           }
         },
         "sub_menu_f4b9mW": {
@@ -56,7 +56,7 @@
           "settings": {
             "title": "Reptiles",
             "item_link": "#",
-            "submenu": "main-menu"
+            "submenu": "reptiles"
           }
         },
         "sub_menu_NqfPgk": {
