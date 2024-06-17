@@ -171,11 +171,6 @@ input {
 }
 
 /*================ Dropdowns ================*/
-li {
-  padding: 2.5rem 0;
-  position: unset;
-}
-
 li.site-nav__top-level:focus,
 li.site-nav__top-level:hover {
   outline: none;
@@ -231,7 +226,7 @@ li a:active {
   flex-basis: 75%;
 }
 
-ul li {
+.menu-item ul li {
   width: 100%;
   display: block;
   padding: 0;
