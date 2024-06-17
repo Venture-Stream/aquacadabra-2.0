@@ -134,9 +134,8 @@
 
             {% if template contains 'collection' %}
               <details
-                id="Details-{{ forloop.index }}-{{ section.id }}"
+                id="Details-category-{{ section.id }}"
                 class="category-dropdown {% if filter_type == 'horizontal' %}disclosure-has-popup facets__disclosure{% else %} facets__disclosure-vertical{% endif %} js-filter"
-                data-index="{{ forloop.index }}"
                 open
               >
                 <summary class="facets__summary caption-large focus-offset">
@@ -148,7 +147,7 @@
                   </div>
                 </summary>
                 <div
-                  id="Facet-{{ forloop.index }}-{{ section.id }}"
+                  id="Facet-category-{{ section.id }}"
                   class="parent-display {% if filter_type == 'horizontal' %}facets__display{% else %}facets__display-vertical{% endif %}"
                 >
                   <ul class="nav-category">
@@ -814,9 +813,8 @@
                   
                   {% if template contains 'collection' %}
                     <details
-                      id="Details-{{ forloop.index }}-{{ section.id }}"
+                      id="Details-category-{{ section.id }}"
                       class="category-dropdown {% if filter_type == 'horizontal' %}disclosure-has-popup facets__disclosure{% else %} facets__disclosure-vertical{% endif %} js-filter"
-                      data-index="{{ forloop.index }}"
                     >
                     <summary class="mobile-facets__summary focus-inset">
                       <div>
@@ -825,7 +823,7 @@
                       </div>
                     </summary>
                       <div
-                        id="FacetMobile-{{ forloop.index }}-{{ section.id }}"
+                        id="FacetMobile-category-{{ section.id }}"
                         class="mobile-facets__submenu gradient"
                       >
                         <button
