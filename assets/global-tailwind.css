@@ -2004,7 +2004,7 @@ li a:active {
   flex-basis: 75%;
 }
 
-ul li {
+.menu-item ul li {
   width: 100%;
   display: block;
   padding: 0;
