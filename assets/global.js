@@ -965,6 +965,85 @@ class SlideshowComponent extends SliderComponent {
 
 customElements.define('slideshow-component', SlideshowComponent);
 
+class VerticalSlider extends SliderComponent {
+  constructor() {
+    super();
+  }
+
+  initPages() {
+    this.sliderItemsToShow = Array.from(this.sliderItems).filter((element) => element.clientHeight > 0);
+    if (this.sliderItemsToShow.length < 2) return;
+    this.sliderItemOffset = this.sliderItemsToShow[1].offsetTop - this.sliderItemsToShow[0].offsetTop;
+    this.slidesPerPage = Math.floor(
+      (this.slider.clientHeight - this.sliderItemsToShow[0].offsetTop) / this.sliderItemOffset
+    );
+    this.totalPages = this.sliderItemsToShow.length - this.slidesPerPage + 1;
+    this.update();
+  }
+
+  update() {
+    // Temporarily prevents unneeded updates resulting from variant changes
+    // This should be refactored as part of https://github.com/Shopify/dawn/issues/2057
+    if (!this.slider || !this.nextButton) return;
+
+    const previousPage = this.currentPage;
+    this.currentPage = Math.round(this.slider.scrollTop / this.sliderItemOffset) + 1;
+
+    if (this.currentPageElement && this.pageTotalElement) {
+      this.currentPageElement.textContent = this.currentPage;
+      this.pageTotalElement.textContent = this.totalPages;
+    }
+
+    if (this.currentPage != previousPage) {
+      this.dispatchEvent(
+        new CustomEvent('slideChanged', {
+          detail: {
+            currentPage: this.currentPage,
+            currentElement: this.sliderItemsToShow[this.currentPage - 1],
+          },
+        })
+      );
+    }
+
+    if (this.enableSliderLooping) return;
+
+    if (this.isSlideVisible(this.sliderItemsToShow[0]) && this.slider.scrollTop === 0) {
+      this.prevButton.setAttribute('disabled', 'disabled');
+    } else {
+      this.prevButton.removeAttribute('disabled');
+    }
+
+    if (this.isSlideVisible(this.sliderItemsToShow[this.sliderItemsToShow.length - 1])) {
+      this.nextButton.setAttribute('disabled', 'disabled');
+    } else {
+      this.nextButton.removeAttribute('disabled');
+    }
+  }
+
+  isSlideVisible(element, offset = 0) {
+    const lastVisibleSlide = this.slider.clientHeight + this.slider.scrollTop - offset;
+    return element.offsetTop + element.clientHeight <= lastVisibleSlide && element.offsetTop >= this.slider.scrollTop;
+  }
+
+  onButtonClick(event) {
+    event.preventDefault();
+    const step = event.currentTarget.dataset.step || 1;
+    this.slideScrollPosition =
+      event.currentTarget.name === 'next'
+        ? this.slider.scrollTop + step * this.sliderItemOffset
+        : this.slider.scrollTop - step * this.sliderItemOffset;
+    this.setSlidePosition(this.slideScrollPosition);
+  }
+
+  setSlidePosition(position) {
+    this.slider.scrollTo({
+      top: position,
+    });
+  }
+}
+
+customElements.define('vertical-slider', VerticalSlider);
+
 class VariantSelects extends HTMLElement {
   constructor() {
     super();

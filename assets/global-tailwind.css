@@ -850,6 +850,10 @@ video {
   height: 5rem;
 }
 
+.h-8{
+  height: 2rem;
+}
+
 .h-\[120px\]{
   height: 120px;
 }
@@ -876,10 +880,6 @@ video {
 
 .h-full{
   height: 100%;
-}
-
-.h-8{
-  height: 2rem;
 }
 
 .max-h-\[10rem\]{
