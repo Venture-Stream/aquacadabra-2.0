@@ -477,7 +477,7 @@
         "banner_title": "<p>Everything you need for your aquarium<\/p>",
         "banner_content": "<p>Blandit vulputate senectus pulvinar integer iaculis tortor consectetur convallis blandit iaculis id. Nibh lectus integer arcu porta curabitur velit nisl integer orci diam orci faucibus vestibulum aliquet.<\/p>",
         "padding_top": 36,
-        "padding_bottom": 36
+        "padding_bottom": 0
       }
     }
   },

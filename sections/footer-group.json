@@ -65,7 +65,7 @@
         "enable_language_selector": false,
         "payment_enable": true,
         "show_policy": false,
-        "margin_top": 48,
+        "margin_top": 0,
         "disclaimer_copy": "<p>P.D. Aquatics Ltd, trading as Aqucadabra, is an Introducer Appointed Representative of Pay4Later Limited, trading as Deko, which is authorised and regulated by the Financial Conduct Authority (FRN 728646). Deko is a credit broker, not a lender and does not charge you for credit broking services. They will introduce you exclusively to Newpay finance products provided by NewDay Limited under this Introducer Appointed Representative arrangement. Pay4Later Ltd is a sister company of NewDay Ltd. Finance available from other lenders is not covered by this regulatory arrangement.<\/p>"
       }
     }
