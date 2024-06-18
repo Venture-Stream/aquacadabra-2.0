@@ -54,7 +54,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/billboard-card-1.png",
             "title": "<strong>How many fish should you put in a fish tank?<\/strong>",
-            "link": "shopify:\/\/collections\/all",
+            "link": "shopify:\/\/collections\/aquariums",
             "button_label": "Shop Now",
             "button_style_secondary": true
           }
@@ -64,7 +64,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/billboard-card-2.png",
             "title": "<strong>BiOrb Aquariums<\/strong>",
-            "link": "shopify:\/\/collections\/all",
+            "link": "shopify:\/\/collections\/biorb-aquariums",
             "button_label": "Shop Now",
             "button_style_secondary": true
           }
@@ -91,7 +91,7 @@
         "block_qKhWMa": {
           "type": "block",
           "settings": {
-            "link": "shopify:\/\/collections\/d-d-aquapro-reef",
+            "link": "shopify:\/\/collections\/aquariums-fish-tank",
             "link_image": "shopify:\/\/shop_images\/tanks.jpg",
             "link_title": "Aquarium Tanks"
           }
@@ -115,7 +115,7 @@
         "block_eJdHUz": {
           "type": "block",
           "settings": {
-            "link": "shopify:\/\/collections\/all",
+            "link": "shopify:\/\/collections\/ponds-supplies-pond-water-treatments",
             "link_image": "shopify:\/\/shop_images\/clearwater.jpg",
             "link_title": "Fish Treatments"
           }
@@ -131,7 +131,7 @@
         "block_c3BjU9": {
           "type": "block",
           "settings": {
-            "link": "shopify:\/\/collections\/all",
+            "link": "shopify:\/\/collections\/above-ground-ponds",
             "link_image": "shopify:\/\/shop_images\/Mask_group.jpg",
             "link_title": "Above Ground Ponds"
           }
@@ -157,7 +157,7 @@
         "column_VYcW4H": {
           "type": "column",
           "settings": {
-            "column_url": "shopify:\/\/collections\/all",
+            "column_url": "shopify:\/\/collections\/above-ground-ponds",
             "block_image": "shopify:\/\/shop_images\/mask_group.png",
             "block_heading": "Above ground ponds",
             "block_content": "<p>Augue curabitur tristique tempus vulputate cras ac facilisis praesent.<\/p>",
@@ -167,7 +167,7 @@
         "column_Kynqwi": {
           "type": "column",
           "settings": {
-            "column_url": "shopify:\/\/collections\/all",
+            "column_url": "shopify:\/\/collections\/new-products",
             "block_image": "shopify:\/\/shop_images\/pond_plant_kit_small_promo.jpg",
             "block_heading": "New In",
             "block_content": "<p>Augue curabitur tristique tempus vulputate cras ac facilisis praesent.<\/p>",
@@ -177,7 +177,7 @@
         "column_QaQKVn": {
           "type": "column",
           "settings": {
-            "column_url": "shopify:\/\/collections\/all",
+            "column_url": "shopify:\/\/collections\/clearance",
             "block_image": "shopify:\/\/shop_images\/big-sale-logo.png",
             "block_heading": "Up to 70% off in our Big Sale!",
             "block_content": "<p>Augue curabitur tristique tempus vulputate cras ac facilisis praesent.<\/p>",
@@ -432,7 +432,7 @@
         "block_C87zrC": {
           "type": "block",
           "settings": {
-            "link": "shopify:\/\/collections\/all",
+            "link": "shopify:\/\/collections\/aquariums-fish-tank",
             "link_image": "shopify:\/\/shop_images\/tanks.jpg",
             "link_title": "Tanks",
             "link_content": "Augue curabitur tristique tempus vulputate cras ac facilisis praesent."
@@ -441,7 +441,7 @@
         "block_4Mwp4Y": {
           "type": "block",
           "settings": {
-            "link": "shopify:\/\/collections\/all",
+            "link": "shopify:\/\/collections\/filtration",
             "link_image": "shopify:\/\/shop_images\/filters.jpg",
             "link_title": "Filters",
             "link_content": "Augue curabitur tristique tempus vulputate cras ac facilisis praesent."
@@ -450,7 +450,7 @@
         "block_cPH8B6": {
           "type": "block",
           "settings": {
-            "link": "shopify:\/\/collections\/all",
+            "link": "shopify:\/\/collections\/lighting",
             "link_image": "shopify:\/\/shop_images\/lighting.jpg",
             "link_title": "Lighting",
             "link_content": "Augue curabitur tristique tempus vulputate cras ac facilisis praesent."
@@ -459,7 +459,7 @@
         "block_ticR6t": {
           "type": "block",
           "settings": {
-            "link": "shopify:\/\/collections\/all",
+            "link": "shopify:\/\/collections\/accessories",
             "link_image": "shopify:\/\/shop_images\/AdobeStock_322309773_1.jpg",
             "link_title": "Decoration & Accessories",
             "link_content": "Augue curabitur tristique tempus vulputate cras ac facilisis praesent."
