@@ -42,7 +42,7 @@
   {{ block.shopify_attributes }}
 >
   <button class="absolute top-4 right-8 z-2 outline-none bg-transparent shadow-none border-0 cursor-pointer">
-    {% render 'icon-close' %}
+    {% render 'icon-close', classes: 'h-8' %}
     <span class="visually-hidden">Close announcement bar</span>
   </button>
   <div class="page-width utility-bar__grid{% if announcement_bar and language_country_selector or section.settings.show_social and social_icons %} utility-bar__grid--3-col{% elsif language_country_selector or section.settings.show_social and social_icons %} utility-bar__grid--2-col{% endif %}">
