@@ -40,8 +40,18 @@
 {%- endstyle -%}
 
 <div class="section-{{ section.id }}-padding gradient color-{{ section.settings.color_scheme }}">
+  {% liquid
+    assign title_segments = collection.title | split: ' > '
+    assign heading = collection.metafields.global.h1_tag
+    if heading
+      assign title = heading
+    else
+      assign title = title_segments.last
+    endif
+  %}
+
   {% render 'main-collection-banner', 
-    title: collection.title,
+    title: title,
     description: collection.metafields.global.description,
     collection_links: collection.metafields.custom.collection_links,
     image_blocks: collection.metafields.custom.collection_image_blocks,
@@ -76,7 +86,7 @@
         {% endif %}
       >
         {% render 'main-collection-banner', 
-          title: collection.title,
+          title: title,
           description: collection.metafields.global.description,
           collection_links: collection.metafields.custom.collection_links,
           image_blocks: collection.metafields.custom.collection_image_blocks,
