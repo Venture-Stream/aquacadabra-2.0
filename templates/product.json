@@ -1,3 +1,12 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "sections": {
     "main": {
@@ -77,6 +86,7 @@
             "content": "",
             "page": "",
             "use_description": true,
+            "open_by_default": true,
             "show_reviews": false
           }
         },
@@ -88,6 +98,7 @@
             "content": "",
             "page": "",
             "use_description": false,
+            "open_by_default": false,
             "show_reviews": true
           }
         },
@@ -99,6 +110,7 @@
             "content": "",
             "page": "buy-now-pay-later-no-fees",
             "use_description": false,
+            "open_by_default": false,
             "show_reviews": false
           }
         },
@@ -110,6 +122,7 @@
             "content": "",
             "page": "delivery-information",
             "use_description": false,
+            "open_by_default": false,
             "show_reviews": false
           }
         }
