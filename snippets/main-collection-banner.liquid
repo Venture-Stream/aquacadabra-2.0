@@ -24,7 +24,11 @@
             {% if section.settings.collection_links_bg %}background-color: {{ section.settings.collection_links_bg }} {% endif %};
             {% if section.settings.collection_links_text %}color: {{ section.settings.collection_links_text }} {% endif %}
               " class="transition-all inline-block border border-solid border-[#E0E0E0] shadow-sm hover:shadow-md rounded-full px-8 py-4 font-normal text-1.6 mr-4 bg-white hover:text-brand-blue no-underline">
-              {{- collections[_link].title -}}
+              {% if collections[_link].title contains ' > ' %}
+                {{- collections[_link].title | split: ' > ' | last -}}
+              {% else %}
+                {{- collections[_link].title -}}
+              {% endif %}
             </a>
           {%- endfor -%}
         </div>
