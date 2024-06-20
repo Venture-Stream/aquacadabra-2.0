@@ -67,7 +67,7 @@ input {
 
 /* Countdown Timer */
 .countdown-banner {
-  @apply py-4 flex items-center justify-center text-white text-1.3;
+  @apply py-4 items-center justify-center text-white text-1.3;
 }
 .countdown-banner .time {
   @apply ml-4 text-white font-semibold text-1.2;

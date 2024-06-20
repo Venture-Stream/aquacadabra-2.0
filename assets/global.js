@@ -1520,7 +1520,9 @@ class CountdownTimer extends HTMLElement {
       // If the count down is finished, write some text 
       if (distance < 0) {
         clearInterval(x);
-        this.classList.add('hide');
+        this.classList.add('hidden');
+      } else {
+        this.classList.add('flex');
       }
     }, 1000);
   }

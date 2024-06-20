@@ -234,6 +234,18 @@
                 {{ collection.description }}
               </div>
             {% endif %}
+
+            <h4>Category</h4>
+            <div>
+              <ul role="list">
+                  {% assign filterMenus = "filter-aquariums, filter-ponds, filter-reptiles" | split: ', ' %}
+                  {% assign compiledMenu = "" | split: ',' %}
+                  {% for menu in filterMenus %}
+                      {% render "filter-menu-render", links: linklists[menu].links %}
+                  {% endfor %}
+                  <div class="visually-hidden">{{ compiledMenu | json }}</div>
+              </ul>
+            </div>
           </div>
         {%- endif -%}
       </div>
