@@ -8,7 +8,7 @@
     "check": "shopify theme check --category performance --category liquid --category json",
     "build:css": "tailwind build -i src/styles/core-tailwind.css -o assets/global-tailwind.css --watch",
     "build:scripts": "npx webpack",
-    "shopify:dev": "shopify theme dev",
+    "shopify:dev": "shopify theme dev --store aquacadabrastore.myshopify.com",
     "pull": "shopify theme pull --store aquacadabrastore.myshopify.com",
     "deploy": "shopify theme push --store aquacadabrastore.myshopify.com",
     "sync": "shopify theme pull --development"
