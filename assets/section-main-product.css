@@ -1464,6 +1464,10 @@ a.product__text {
   float: unset !important;
 }
 
+#ZlistWishlist, #ZooomyList, #ZooomyList label:hover {
+  cursor: pointer !important;
+}
+
 #ZooomyList p.zooomypwishmsg {
   width: 100% !important;
   background: white !important;

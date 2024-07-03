@@ -41,7 +41,7 @@
           {% endif %}
           placeholder="{{ 'customer.login_page.email' | t }}"
         >
-        <label for="RecoverEmail">
+        <label for="RecoverEmail" class="visually-hidden">
           {{ 'customer.login_page.email' | t }}
         </label>
       </div>
@@ -109,7 +109,7 @@
           {% endif %}
           placeholder="{{ 'customer.login_page.email' | t }}"
         >
-        <label for="CustomerEmail">
+        <label for="CustomerEmail" class="visually-hidden">
           {{ 'customer.login_page.email' | t }}
         </label>
       </div>
@@ -127,7 +127,7 @@
             {% endif %}
             placeholder="{{ 'customer.login_page.password' | t }}"
           >
-          <label for="CustomerPassword">
+          <label for="CustomerPassword" class="visually-hidden">
             {{ 'customer.login_page.password' | t }}
           </label>
         </div>
@@ -141,7 +141,7 @@
         {{ 'customer.login_page.sign_in' | t }}
       </button>
 
-      <a href="{{ routes.account_register_url }}">
+      <a href="{{ routes.account_register_url }}" class="mb-8">
         {{ 'customer.login_page.create_account' | t }}
       </a>
     {%- endform -%}

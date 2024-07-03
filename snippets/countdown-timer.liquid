@@ -18,7 +18,7 @@
 {% unless disable_same_day %}
   {%- if enable_timer -%}
     <div class="{{ class }}">
-      <countdown-timer class="countdown-banner {% if cart_timer %}cart-timer{% endif %}" data-hours="{{ hours }}" data-minutes="{{ minutes }}">
+      <countdown-timer class="countdown-banner {% if cart_timer %}cart-timer{% endif %} hidden" data-hours="{{ hours }}" data-minutes="{{ minutes }}">
         {{ banner_text }}  
         <p class="time" data-countdown-time></p>
         {% if right_text != blank %}

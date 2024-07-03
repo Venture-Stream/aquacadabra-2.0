@@ -3241,15 +3241,12 @@ details-disclosure > details {
   font-size: 13px;
 }
 
-.product-timer {
+.product-timer .countdown-banner {
   border-radius: 5px;
   background: #F6F6F6;
   padding: 2rem;
-}
-.product-timer .countdown-banner {
   color: #15397B;
   flex-direction: column;
-  padding: 0;
 }
 
 .product-timer .countdown-banner .time {
