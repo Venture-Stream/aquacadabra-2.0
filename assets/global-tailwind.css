@@ -2036,13 +2036,16 @@ li a:active {
   display: block;
 }
 
-.third-level__dropdown ul {
-  display: flex;
-  flex-wrap: wrap;
+.third-level__dropdown > ul {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.link-group.extended {
+  grid-row: span 2;
 }
 
 .link-group {
-  flex-basis: 25%;
   margin-bottom: 20px;
 }
 
