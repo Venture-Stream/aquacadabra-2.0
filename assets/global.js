@@ -1480,6 +1480,7 @@ class CountdownTimer extends HTMLElement {
         this.classList.add('hidden');
       } else {
         this.classList.add('flex');
+        this.classList.remove('hidden');
       }
     }, 1000);
   }
