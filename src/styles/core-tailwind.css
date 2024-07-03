@@ -274,3 +274,7 @@ li a:active {
 .grandchild-list {
   margin-top: 10px;
 }
+
+.flex {
+  flex: 0 !important; /* override stupid recharge css on account activation page */
+}

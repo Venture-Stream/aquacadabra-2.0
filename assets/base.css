@@ -1402,7 +1402,8 @@ details[open] > .share-button__fallback {
 .field__input,
 .select__select,
 .customer .field input,
-.customer select {
+.customer select,
+.input-wrapper input {
   -webkit-appearance: none;
   appearance: none;
   background-color: rgb(var(--color-background));

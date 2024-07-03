@@ -2061,6 +2061,11 @@ li a:active {
   margin-top: 10px;
 }
 
+.flex {
+  flex: 0 !important;
+  /* override stupid recharge css on account activation page */
+}
+
 .hover\:bg-\[\#F2F2F2\]:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(242 242 242 / var(--tw-bg-opacity));
