@@ -460,7 +460,7 @@
                   show_pickup_availability: true
                 -%}
               {%- when 'custom_buy_buttons' -%}
-                  <div class="relative flex flex-col items-start justify-between my-8 xl:flex-row">
+                  <div class="relative flex flex-col gap-4 items-start justify-between my-8 xl:flex-row">
                     <div
                       id="Quantity-Form-{{ section.id }}"
                       class="product-form__input product-form__quantity flex-none{% if settings.inputs_shadow_vertical_offset != 0 and settings.inputs_shadow_vertical_offset < 0 %} product-form__quantity-top{% endif %}"
