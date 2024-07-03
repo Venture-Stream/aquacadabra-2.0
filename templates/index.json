@@ -1,3 +1,12 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "sections": {
     "slideshow_9wH96k": {
@@ -6,12 +15,12 @@
         "slide_gVmjbK": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/billboard-hero.jpg",
-            "heading": "<strong>Lumenize Your Vevarium<\/strong>",
+            "image": "shopify:\/\/shop_images\/shutterstock_2225505841.jpg",
+            "heading": "<strong>Live Aquarium Plants<\/strong>",
             "text_color": "white",
-            "subheading": "Marina Elite Stingray Aquarium Filters are quiet, underwater filters, which are easy to set up and maintain.",
+            "subheading": "We now stock aquarium plants from Tropica! Come see our new fridge in the shop, or order online today.",
             "button_label": "Shop Now",
-            "link": "shopify:\/\/collections\/all",
+            "link": "shopify:\/\/collections\/live-aquarium-plants",
             "button_style_secondary": true,
             "box_align": "bottom-left",
             "show_text_box": false,
@@ -22,13 +31,14 @@
         "slide_3fgaqA": {
           "type": "slide",
           "settings": {
-            "heading": "Image slide",
+            "image": "shopify:\/\/shop_images\/shutterstock_64128967.jpg",
+            "heading": "Sign up to our Newsletter",
             "text_color": "white",
-            "subheading": "Tell your brand's story through images",
-            "button_label": "Button label",
-            "link": "",
-            "button_style_secondary": false,
-            "box_align": "middle-center",
+            "subheading": "For discounts, new products, competitions and more!",
+            "button_label": "Sign up",
+            "link": "shopify:\/\/pages\/sign-up-to-our-newsletter",
+            "button_style_secondary": true,
+            "box_align": "top-left",
             "show_text_box": true,
             "text_alignment": "center",
             "text_alignment_mobile": "center"
@@ -37,13 +47,14 @@
         "slide_JChg8F": {
           "type": "slide",
           "settings": {
-            "heading": "Image slide",
+            "image": "shopify:\/\/shop_images\/shutterstock_1264014247.jpg",
+            "heading": "Sale!",
             "text_color": "white",
-            "subheading": "Tell your brand's story through images",
-            "button_label": "Button label",
-            "link": "",
-            "button_style_secondary": false,
-            "box_align": "middle-center",
+            "subheading": "Grab a bargin from our clerance section! We hav a wide range of products at great prices - grab them before they go!",
+            "button_label": "shop clearance",
+            "link": "shopify:\/\/collections\/clearance",
+            "button_style_secondary": true,
+            "box_align": "bottom-left",
             "show_text_box": false,
             "text_alignment": "center",
             "text_alignment_mobile": "center"
@@ -393,13 +404,13 @@
         "text_daa6wX": {
           "type": "text",
           "settings": {
-            "text": "<p>Vel a quisque vulputate malesuada hendrerit leo posuere iaculis dictum gravida malesuada cursus nibh. Diam blandit convallis nec eget porta eros phasellus lobortis orci eu volutpat feugiat proin quisque. Fringilla at tristique nulla et nullam tincidunt sodales cursus. Blandit vulputate senectus pulvinar integer iaculis tortor consectetur convallis blandit iaculis id. Nibh lectus integer arcu porta curabitur velit nisl integer orci diam orci faucibus vestibulum aliquet.<\/p>"
+            "text": "<p>Discover top-quality vivarium & terrarium supplies designed to create the perfect habitat for your reptiles, amphibians and other exotics. Our extensive range includes everything from substrates and heating systems to humidity controls and decorative elements. Ensure your pets thrive in a well-equipped and naturalistic environment with our reliable products.<\/p>"
           }
         },
         "button_N9RLaf": {
           "type": "button",
           "settings": {
-            "button_label": "Shop All Reptiles",
+            "button_label": "Shop Reptile Supplies",
             "button_link": "shopify:\/\/collections\/reptiles",
             "button_style_secondary": false
           }
