@@ -1423,6 +1423,10 @@ details[open] > .share-button__fallback {
   border-radius: 5px;
 }
 
+.rc_form__group.input-wrapper input {
+  margin-bottom: 2rem;
+}
+
 
 .field__input:focus,
 .select__select:focus,
