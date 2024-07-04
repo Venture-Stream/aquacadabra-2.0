@@ -224,7 +224,7 @@
                           endif
                         -%}
                         <ul
-                          class="{{ visual_layout_class }}{% if filter_type == 'vertical' %} facets__list--vertical{% else %} facets__list{% endif %} list-unstyled"
+                          class="{{ visual_layout_class }}{% if filter_type == 'vertical' %} facets__list--vertical{% else %} facets__list{% endif %} list-unstyled max-h-[384px] overflow-y-scroll"
                           role="list"
                         >
                           {%- for value in sorted_values -%}
@@ -343,6 +343,11 @@
                         </ul>
                       </fieldset>
                     </div>
+                    {% if sorted_values.size > 12 %}
+                      <button class="pb-6 text-1.3 text-[#444] underline" type="button" id="show-more-{{ filter.label | downcase }}" closed>
+                        Expand
+                      </button>
+                    {% endif %}
                   </details>
                 {% when 'price_range' %}
                   {% liquid

@@ -398,3 +398,20 @@ class PriceCheckbox extends HTMLElement {
 }
 
 customElements.define('price-checkbox', PriceCheckbox);
+
+let filterWrappers = document.querySelectorAll('.facets__disclosure-vertical');
+
+filterWrappers.forEach((filter) => {
+  if (filter.querySelector('button[id^="show-more-"]')) {
+    let listToggle = filter.querySelector('button[id^="show-more-"]');
+    listToggle.addEventListener('click', function() {
+      filter.querySelector('.facets__display-vertical .facets-wrap .facets-layout-list').classList.toggle('max-h-[384px]');
+      listToggle.toggleAttribute('closed');
+      if (listToggle.hasAttribute('closed')) {
+        listToggle.innerHTML = "Expand";
+      } else {
+        listToggle.innerHTML = "Close";
+      }
+    })
+  }
+})

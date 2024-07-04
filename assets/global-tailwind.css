@@ -894,6 +894,14 @@ video {
   max-height: 435px;
 }
 
+.max-h-96{
+  max-height: 24rem;
+}
+
+.max-h-\[384px\]{
+  max-height: 384px;
+}
+
 .min-h-\[200px\]{
   min-height: 200px;
 }
@@ -1127,6 +1135,10 @@ video {
 
 .overflow-x-scroll{
   overflow-x: scroll;
+}
+
+.overflow-y-scroll{
+  overflow-y: scroll;
 }
 
 .truncate{
@@ -1465,6 +1477,10 @@ video {
   padding-top: 2rem;
 }
 
+.pb-6{
+  padding-bottom: 1.5rem;
+}
+
 .text-left{
   text-align: left;
 }
@@ -1625,6 +1641,15 @@ video {
 .text-white{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-\[\#444\]{
+  --tw-text-opacity: 1;
+  color: rgb(68 68 68 / var(--tw-text-opacity));
+}
+
+.underline{
+  text-decoration-line: underline;
 }
 
 .no-underline{
