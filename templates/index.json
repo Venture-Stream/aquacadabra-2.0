@@ -444,36 +444,36 @@
           "type": "block",
           "settings": {
             "link": "shopify:\/\/collections\/aquariums-fish-tank",
-            "link_image": "shopify:\/\/shop_images\/tanks.jpg",
+            "link_image": "shopify:\/\/shop_images\/shutterstock_763239571.jpg",
             "link_title": "Tanks",
-            "link_content": "Augue curabitur tristique tempus vulputate cras ac facilisis praesent."
+            "link_content": "See our wide selection of aquarium tanks, available in sizes and styles to suit any space."
           }
         },
         "block_4Mwp4Y": {
           "type": "block",
           "settings": {
             "link": "shopify:\/\/collections\/filtration",
-            "link_image": "shopify:\/\/shop_images\/filters.jpg",
+            "link_image": "shopify:\/\/shop_images\/shutterstock_1156035046.jpg",
             "link_title": "Filters",
-            "link_content": "Augue curabitur tristique tempus vulputate cras ac facilisis praesent."
+            "link_content": "Keep your water crystal clear and healthy with our filter range, designed for efficiency and reliability."
           }
         },
         "block_cPH8B6": {
           "type": "block",
           "settings": {
             "link": "shopify:\/\/collections\/lighting",
-            "link_image": "shopify:\/\/shop_images\/lighting.jpg",
+            "link_image": "shopify:\/\/shop_images\/shutterstock_2122813520.jpg",
             "link_title": "Lighting",
-            "link_content": "Augue curabitur tristique tempus vulputate cras ac facilisis praesent."
+            "link_content": "Enhance the beauty of your aquarium and support aquatic life with our range of quality lighting solutions."
           }
         },
         "block_ticR6t": {
           "type": "block",
           "settings": {
             "link": "shopify:\/\/collections\/accessories",
-            "link_image": "shopify:\/\/shop_images\/AdobeStock_322309773_1.jpg",
-            "link_title": "Decoration & Accessories",
-            "link_content": "Augue curabitur tristique tempus vulputate cras ac facilisis praesent."
+            "link_image": "shopify:\/\/shop_images\/shutterstock_2065163135_small_733cb50d-a528-4577-94ed-eeea8c7fc109.jpg",
+            "link_title": "Accessories",
+            "link_content": "Add personality to your aquarium with our vibrant decorations and practical accessories."
           }
         }
       },
@@ -484,9 +484,9 @@
         "block_ticR6t"
       ],
       "settings": {
-        "banner_image": "shopify:\/\/shop_images\/AdobeStock_366401238_1.jpg",
+        "banner_image": "shopify:\/\/shop_images\/shutterstock_1046527558.jpg",
         "banner_title": "<p>Everything you need for your aquarium<\/p>",
-        "banner_content": "<p>Blandit vulputate senectus pulvinar integer iaculis tortor consectetur convallis blandit iaculis id. Nibh lectus integer arcu porta curabitur velit nisl integer orci diam orci faucibus vestibulum aliquet.<\/p>",
+        "banner_content": "<p>Set up your perfect underwater world with our complete range of aquarium essentials.<\/p><p>From tanks to filters, we've got everything you need to get started.<\/p>",
         "padding_top": 36,
         "padding_bottom": 0
       }
