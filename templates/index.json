@@ -168,20 +168,20 @@
         "column_VYcW4H": {
           "type": "column",
           "settings": {
-            "column_url": "shopify:\/\/collections\/above-ground-ponds",
-            "block_image": "shopify:\/\/shop_images\/mask_group.png",
-            "block_heading": "Above ground ponds",
-            "block_content": "<p>Augue curabitur tristique tempus vulputate cras ac facilisis praesent.<\/p>",
-            "button_text": "Shop Above ground ponds"
+            "column_url": "shopify:\/\/collections\/fish-foods-live-food",
+            "block_image": "shopify:\/\/shop_images\/shutterstock_2163492781.jpg",
+            "block_heading": "Live Food",
+            "block_content": "<p>Fish love variety in their diets and feeding live food is a great way to provide enrichment and nutrition.<\/p>",
+            "button_text": "Shop Live Food"
           }
         },
         "column_Kynqwi": {
           "type": "column",
           "settings": {
             "column_url": "shopify:\/\/collections\/new-products",
-            "block_image": "shopify:\/\/shop_images\/pond_plant_kit_small_promo.jpg",
+            "block_image": "shopify:\/\/shop_images\/shutterstock_1302310498.jpg",
             "block_heading": "New In",
-            "block_content": "<p>Augue curabitur tristique tempus vulputate cras ac facilisis praesent.<\/p>",
+            "block_content": "<p>Explore our latest arrivals and discover the newest additions to our collection.<\/p>",
             "button_text": "Shop all New In"
           }
         },
@@ -189,9 +189,9 @@
           "type": "column",
           "settings": {
             "column_url": "shopify:\/\/collections\/clearance",
-            "block_image": "shopify:\/\/shop_images\/big-sale-logo.png",
+            "block_image": "shopify:\/\/shop_images\/shutterstock_765923830.jpg",
             "block_heading": "Up to 70% off in our Big Sale!",
-            "block_content": "<p>Augue curabitur tristique tempus vulputate cras ac facilisis praesent.<\/p>",
+            "block_content": "<p>Don't miss out on great deals! Shop our clearance items and save up to 70% on our biggest bargains.<\/p>",
             "button_text": "Shop the sale"
           }
         }
