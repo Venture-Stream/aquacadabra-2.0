@@ -275,6 +275,6 @@ li a:active {
   margin-top: 10px;
 }
 
-.flex {
-  flex: 0 !important; /* override stupid recharge css on account activation page */
-}
+/* .flex {
+  flex: 0 !important;
+} */
