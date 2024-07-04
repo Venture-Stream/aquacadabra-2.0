@@ -73,9 +73,9 @@
         "card_PcGL8B": {
           "type": "card",
           "settings": {
-            "image": "shopify:\/\/shop_images\/billboard-card-2.png",
-            "title": "<strong>BiOrb Aquariums<\/strong>",
-            "link": "shopify:\/\/collections\/biorb-aquariums",
+            "image": "shopify:\/\/shop_images\/beautiful-beach-in-portugal.jpg",
+            "title": "Going on your holidays?",
+            "link": "shopify:\/\/collections\/holiday-foods",
             "button_label": "Shop Now",
             "button_style_secondary": true
           }
