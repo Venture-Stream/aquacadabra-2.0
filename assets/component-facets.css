@@ -288,6 +288,13 @@
   padding: 2rem 2.4rem;
 }
 
+@media screen and (min-width: 1024px) {
+  .facets-layout-list {
+    max-height: 320px;
+    overflow-y: scroll;
+  }
+}
+
 .facets-layout-list--swatch {
   --swatch-input--size: 2.4rem;
 }
