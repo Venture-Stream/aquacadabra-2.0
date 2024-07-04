@@ -245,6 +245,12 @@
           font-size: 1.6rem;
         }
       }
+
+      {% if request.path contains 'get-subscription-access' %}
+        .flex {
+          flex: 0 !important;
+        }
+      {% endif %}
     {% endstyle %}
     {% # theme-check-disable %}
 
