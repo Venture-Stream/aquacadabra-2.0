@@ -107,8 +107,8 @@
           "settings": {
             "heading": "Finance",
             "icon": "none",
-            "content": "",
-            "page": "buy-now-pay-later-no-fees",
+            "content": "<p>Aquacadabra acts as credit broker\/intermediary and not as a lender.<\/p><p><\/p><p>Klarna's credit products are provided by Klarna Bank AB, which is authorised and regulated by the Swedish Financial Services Authority, with limited supervision by the Financial Conduct Authority. More information can be found <a href=\"https:\/\/www.aquacadabra.com\/pages\/buy-now-pay-later-no-fees\">here<\/a>.<\/p><p><\/p><p>Newpay finance options are provided through Deko’s platform by NewDay. P.D. Aquatics Ltd, t\/a Aquacadabra is an Introducer Appointed Representative of Pay4Later Ltd, t\/a Deko, which is authorised and regulated by the Financial Conduct Authority (ref no 728646) and is a credit broker, not a lender. NewDay Ltd is authorised and regulated by the Financial Conduct Authority (ref no 690292) and is authorised by the Financial Conduct Authority under the Payment Services Regulations 2017 for the provision of payment services (ref no 555318). More information can be found by clicking the newpay option above, or in the <a href=\"https:\/\/www.aquacadabra.com\/pages\/newpay-faqs\">Newpay FAQs<\/a>.<\/p>",
+            "page": "",
             "use_description": false,
             "open_by_default": false,
             "show_reviews": false
@@ -119,8 +119,8 @@
           "settings": {
             "heading": "Delivery & Returns",
             "icon": "none",
-            "content": "",
-            "page": "delivery-information",
+            "content": "<p>We really want you to be happy with the product that you've received. If however, when the goods arrive they're not what you want, then no problem - we have a 60 day no quibble return guarantee. Just let us know that you're going to return the item(s) by <a href=\"https:\/\/aquacadabra.com\/pages\/contact-details\" title=\"Contact Us\">contacting us<\/a>(stating your Order Number) and complete the returns packing slip that will have been included with your delivery. This will help us to quickly identify the item that you have returned (unopened and unused) - and we'll put a refund through for you.<\/p>",
+            "page": "",
             "use_description": false,
             "open_by_default": false,
             "show_reviews": false
