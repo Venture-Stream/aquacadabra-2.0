@@ -25,6 +25,7 @@ document.querySelectorAll('[id^="Details-"] summary').forEach((summary) => {
 const trapFocusHandlers = {};
 
 function trapFocus(container, elementToFocus = container) {
+  console.log('trapFocus');
   var elements = getFocusableElements(container);
   var first = elements[0];
   var last = elements[elements.length - 1];
@@ -396,6 +397,7 @@ class MenuDrawer extends HTMLElement {
     const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
 
     function addTrapFocus() {
+      console.log('addTrapFocus');
       trapFocus(summaryElement.nextElementSibling, detailsElement.querySelector('button'));
       summaryElement.nextElementSibling.removeEventListener('transitionend', addTrapFocus);
     }
@@ -567,7 +569,7 @@ class ModalDialog extends HTMLElement {
     document.body.classList.add('overflow-hidden');
     this.setAttribute('open', '');
     if (popup) popup.loadContent();
-    trapFocus(this, this.querySelector('[role="dialog"]'));
+    // trapFocus(this, this.querySelector('[role="dialog"]'));
     window.pauseAllMedia();
   }
 
@@ -575,7 +577,7 @@ class ModalDialog extends HTMLElement {
     document.body.classList.remove('overflow-hidden');
     document.body.dispatchEvent(new CustomEvent('modalClosed'));
     this.removeAttribute('open');
-    removeTrapFocus(this.openedBy);
+    // removeTrapFocus(this.openedBy);
     window.pauseAllMedia();
   }
 }
