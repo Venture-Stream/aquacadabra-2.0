@@ -236,8 +236,8 @@
               </div>
             {% endif %}
 
-            <h4>Category</h4>
-            <div>
+            <div class="category-dropdown">
+              <h4>Category</h4>
               <ul role="list">
                   {% assign filterMenus = "filter-aquariums, filter-ponds, filter-reptiles" | split: ', ' %}
                   {% assign compiledMenu = "" | split: ',' %}
@@ -247,6 +247,15 @@
                   <div class="visually-hidden">{{ compiledMenu | json }}</div>
               </ul>
             </div>
+            <script>
+              document.addEventListener('DOMContentLoaded', function() {
+                const categoryDropdown = document.querySelector('.category-dropdown');
+                const li = categoryDropdown.querySelectorAll('li');
+                if(li.length < 1) {
+                  categoryDropdown.classList.add('hidden');
+                }
+              })
+            </script>
           </div>
         {%- endif -%}
       </div>
