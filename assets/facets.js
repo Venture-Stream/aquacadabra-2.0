@@ -12,16 +12,6 @@ class FacetFiltersForm extends HTMLElement {
 
     const facetWrapper = this.querySelector('#FacetsWrapperDesktop');
     if (facetWrapper) facetWrapper.addEventListener('keyup', onKeyUpEscape);
-
-    const categoryDropdowns = this.querySelectorAll('.category-dropdown');
-    categoryDropdowns.forEach((categoryDropdown) => {
-      const li = categoryDropdown.querySelectorAll('li');
-
-      
-      if(li.length < 1) {
-        categoryDropdown.classList.add('hidden');
-      }
-    });
   }
 
   static setListeners() {

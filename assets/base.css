@@ -2881,6 +2881,10 @@ details-disclosure > details {
   line-height: 26px;
 }
 
+.rte > p:not(:first-of-type) {
+  margin-bottom: 10px;
+}
+
 .rte table {
   table-layout: fixed;
 }

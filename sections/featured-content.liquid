@@ -16,7 +16,7 @@
   <div class="bg-[#FAFAFA]">
     <div class="md:h-[530px] md:-mb-24 flex flex-col items-center justify-center text-center" style="background: url({{ section.settings.banner_image | image_url: height: 530 }}) center / cover no-repeat;">
       <div class="page-width rte text-white md:-mt-48 pt-6 pb-24 md:py-0">
-        <div>
+        <div {% if section.settings.toggle_background %}class="bg-black px-8 pb-8 pt-px"{% endif %}>
           <h2 class="text-white uppercase rte md:text-3.8 text-2.8">{{ section.settings.banner_title }}</h2>
           <div class="xl:max-w-[65%] xl:px-36 mx-auto leading-relaxed">{{ section.settings.banner_content }}</div>
         </div>
@@ -71,6 +71,12 @@
       "type": "richtext",
       "id": "banner_content",
       "label": "Content"
+    },
+    {
+      "type": "checkbox",
+      "id": "toggle_background",
+      "label": "Toggle background to text",
+      "default": false
     },
     {
       "type": "header",

@@ -1954,6 +1954,9 @@
             }
           }
         },
+        "meta_desc": {
+          "name": "Meta description"
+        },
         "title": {
           "name": "Title"
         },
