@@ -34,6 +34,11 @@
           "settings": {
           }
         },
+        "meta_desc_PqXVEx": {
+          "type": "meta_desc",
+          "settings": {
+          }
+        },
         "stock_message_bDqLXR": {
           "type": "stock_message",
           "settings": {
@@ -132,6 +137,7 @@
         "caption",
         "rating_zHdmjr",
         "price",
+        "meta_desc_PqXVEx",
         "stock_message_bDqLXR",
         "description_99QiPX",
         "variant_picker",
