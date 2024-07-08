@@ -99,6 +99,15 @@
                 >
                   {{- block.settings.text -}}
                 </p>
+              {%- when 'meta_desc' -%}
+                {% if product.metafields.global.description_tag != blank %}
+                  <p
+                    class="text-[#666] text-1.3 mb-4 inline-richtext{% if block.settings.text_style == 'uppercase' %} caption-with-letter-spacing{% elsif block.settings.text_style == 'subtitle' %} subtitle{% endif %}"
+                    {{ block.shopify_attributes }}
+                  >
+                    {{- product.metafields.global.description_tag -}}
+                  </p>
+                {% endif %}
               {%- when 'title' -%}
               {%- if product.compare_at_price > product.price and product.quantity_price_breaks_configured? != true %}
                 <span class="badge price__badge-sale bg-[#F00] text-white mb-4">
@@ -1088,6 +1097,10 @@
           "label": "t:sections.main-product.blocks.text.settings.text_style.label"
         }
       ]
+    },
+    {
+      "type": "meta_desc",
+      "name": "t:sections.main-product.blocks.meta_desc.name"
     },
     {
       "type": "title",
