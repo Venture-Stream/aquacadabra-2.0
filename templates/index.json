@@ -15,7 +15,7 @@
         "slide_gVmjbK": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/shutterstock_2225505841.jpg",
+            "image": "shopify:\/\/shop_images\/shutterstock_2225505841_copy.jpg",
             "heading": "<strong>Live Aquarium Plants<\/strong>",
             "text_color": "white",
             "subheading": "We now stock aquarium plants from Tropica! Come see our new fridge in the shop, or order online today.",
@@ -103,15 +103,15 @@
           "type": "block",
           "settings": {
             "link": "shopify:\/\/collections\/aquariums-fish-tank",
-            "link_image": "shopify:\/\/shop_images\/tanks.jpg",
+            "link_image": "shopify:\/\/shop_images\/shutterstock_1050657911.jpg",
             "link_title": "Aquarium Tanks"
           }
         },
         "block_qw4kDE": {
           "type": "block",
           "settings": {
-            "link": "shopify:\/\/collections\/pond-pumps",
-            "link_image": "shopify:\/\/shop_images\/pond_pump.jpg",
+            "link": "shopify:\/\/collections\/pond-filters",
+            "link_image": "shopify:\/\/shop_images\/shutterstock_1235661850_1.jpg",
             "link_title": "Pond Pumps"
           }
         },
@@ -119,31 +119,31 @@
           "type": "block",
           "settings": {
             "link": "shopify:\/\/collections\/fish-foods-1",
-            "link_image": "shopify:\/\/shop_images\/food.jpg",
+            "link_image": "shopify:\/\/shop_images\/shutterstock_1248008848.jpg",
             "link_title": "Fish Food"
           }
         },
         "block_eJdHUz": {
           "type": "block",
           "settings": {
-            "link": "shopify:\/\/collections\/ponds-supplies-pond-water-treatments",
-            "link_image": "shopify:\/\/shop_images\/clearwater.jpg",
+            "link": "shopify:\/\/collections\/water-quality-aquarium-treatments",
+            "link_image": "shopify:\/\/shop_images\/shutterstock_1309932031_cropped_copy.jpg",
             "link_title": "Fish Treatments"
           }
         },
         "block_hrzCRP": {
           "type": "block",
           "settings": {
-            "link": "shopify:\/\/collections\/vivariums",
-            "link_image": "shopify:\/\/shop_images\/heat.jpg",
+            "link": "shopify:\/\/collections\/reptiles-reptile-lighting",
+            "link_image": "shopify:\/\/shop_images\/shutterstock_2274773835.jpg",
             "link_title": "Vivarium Lighting"
           }
         },
         "block_c3BjU9": {
           "type": "block",
           "settings": {
-            "link": "shopify:\/\/collections\/above-ground-ponds",
-            "link_image": "shopify:\/\/shop_images\/Mask_group.jpg",
+            "link": "shopify:\/\/collections\/preformed-ponds",
+            "link_image": "shopify:\/\/shop_images\/shutterstock_2161535657.jpg",
             "link_title": "Above Ground Ponds"
           }
         }
@@ -487,6 +487,8 @@
         "banner_image": "shopify:\/\/shop_images\/shutterstock_1046527558.jpg",
         "banner_title": "<p>Everything you need for your aquarium<\/p>",
         "banner_content": "<p>Set up your perfect underwater world with our complete range of aquarium essentials. From tanks to filters, we've got everything you need to get started.<\/p>",
+        "bg_opacity": 0,
+        "bg_color": "#000000",
         "padding_top": 36,
         "padding_bottom": 0
       }
