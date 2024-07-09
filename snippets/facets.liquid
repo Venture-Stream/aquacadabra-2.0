@@ -224,7 +224,7 @@
                           endif
                         -%}
                         <ul
-                          class="{{ visual_layout_class }}{% if filter_type == 'vertical' %} facets__list--vertical{% else %} facets__list{% endif %} list-unstyled max-h-[384px] overflow-y-scroll"
+                          class="{{ visual_layout_class }}{% if filter_type == 'vertical' %} facets__list--vertical{% else %} facets__list{% endif %} list-unstyled max-h-[384px] overflow-y-auto"
                           role="list"
                         >
                           {%- for value in sorted_values -%}
