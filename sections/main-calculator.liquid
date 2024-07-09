@@ -1,28 +1,24 @@
 {{ 'component-calculator.css' | asset_url | stylesheet_tag }}
 
 {% assign content = page.content | split: 'SPLIT' %}
-<div class="page-width">
-  <div class="grid">
-    <div class="grid__item medium-up--one-whole">
-      <div class="heading--wrapper">
-        <h1 class="section-heading{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}">
-          {{ page.title | escape }}
-        </h1>
-      </div>
-    <div class="rte scroll-trigger animate--slide-in max-w-[1100px] mx-auto py-4 md:py-12">
-        {{ content | first }}
-        {% case section.settings.calculator_type %}
-          {% when 'pond-liner' %}
-            {% render 'pond-liner-calculator' %}
-          {% when 'tank-calculator' %}
-            {% render 'tank-calculator' %}
-          {% when 'pond-volume' %}
-            {% render 'pond-volume-calculator' %}
-        {% endcase %}
-        {{ content | last }}
-      </div>
+<div class="page-width pt-12">
+    <div class="heading--wrapper">
+      <h1 class="section-heading{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}">
+        {{ page.title | escape }}
+      </h1>
     </div>
-  </div>
+    <div class="rte scroll-trigger animate--slide-in max-w-[1100px] mx-auto py-4 md:py-12">
+      {{ content | first }}
+      {% case section.settings.calculator_type %}
+        {% when 'pond-liner' %}
+          {% render 'pond-liner-calculator' %}
+        {% when 'tank-calculator' %}
+          {% render 'tank-calculator' %}
+        {% when 'pond-volume' %}
+          {% render 'pond-volume-calculator' %}
+      {% endcase %}
+      {{ content | last }}
+    </div>
 </div>
 
 <script src="{{ 'calculator.min.js' |  asset_url }}" type="text/javascript" defer="defer"></script>
