@@ -1,3 +1,5 @@
+{% assign alpha =  section.settings.bg_opacity | times: 1 | divided_by: 100.0 %}
+
 {%- style -%}
   .section-{{ section.id }}-padding {
     padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
@@ -10,13 +12,16 @@
       padding-bottom: {{ section.settings.padding_bottom }}px;
     }
   }
+  .content-background {
+    background-color: {{ section.settings.bg_color | color_to_rgb | color_modify: 'alpha', alpha }};
+  }
 {%- endstyle -%}
 
 <div class="h-full section-{{ section.id }}-padding">
   <div class="bg-[#FAFAFA]">
     <div class="md:h-[530px] md:-mb-24 flex flex-col items-center justify-center text-center" style="background: url({{ section.settings.banner_image | image_url: height: 530 }}) center / cover no-repeat;">
       <div class="page-width rte text-white md:-mt-48 pt-6 pb-24 md:py-0">
-        <div {% if section.settings.toggle_background %}class="bg-black px-8 pb-8 pt-px"{% endif %}>
+        <div class="content-background px-8 pb-8 pt-px">
           <h2 class="text-white uppercase rte md:text-3.8 text-2.8">{{ section.settings.banner_title }}</h2>
           <div class="xl:max-w-[65%] xl:px-36 mx-auto leading-relaxed">{{ section.settings.banner_content }}</div>
         </div>
@@ -73,10 +78,19 @@
       "label": "Content"
     },
     {
-      "type": "checkbox",
-      "id": "toggle_background",
-      "label": "Toggle background to text",
-      "default": false
+      "type": "range",
+      "id": "bg_opacity",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "label": "t:sections.all.opacity",
+      "default": 0
+    },
+    {
+      "type": "color",
+      "id": "bg_color",
+      "label": "t:sections.all.bg_color",
+      "default": "#000000"
     },
     {
       "type": "header",

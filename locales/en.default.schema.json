@@ -395,6 +395,8 @@
         "padding_top": "Top padding",
         "padding_bottom": "Bottom padding"
       },
+      "opacity": "Opacity",
+      "bg_color": "Background Colour",
       "spacing": "Spacing",
       "colors": {
         "label": "Color scheme",
