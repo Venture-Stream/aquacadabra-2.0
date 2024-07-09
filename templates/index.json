@@ -487,8 +487,8 @@
         "banner_image": "shopify:\/\/shop_images\/shutterstock_1046527558.jpg",
         "banner_title": "<p>Everything you need for your aquarium<\/p>",
         "banner_content": "<p>Set up your perfect underwater world with our complete range of aquarium essentials. From tanks to filters, we've got everything you need to get started.<\/p>",
-        "bg_opacity": 0,
-        "bg_color": "#000000",
+        "bg_opacity": 61,
+        "bg_color": "#15397b",
         "padding_top": 36,
         "padding_bottom": 0
       }
