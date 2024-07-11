@@ -1138,10 +1138,6 @@ video {
   overflow-x: scroll;
 }
 
-.overflow-y-scroll{
-  overflow-y: scroll;
-}
-
 .truncate{
   overflow: hidden;
   text-overflow: ellipsis;
@@ -2194,6 +2190,10 @@ li a:active {
 
   .md\:h-auto{
     height: auto;
+  }
+
+  .md\:h-\[650px\]{
+    height: 650px;
   }
 
   .md\:min-h-\[800px\]{

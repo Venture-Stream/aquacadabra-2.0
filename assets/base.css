@@ -2909,6 +2909,8 @@ details-disclosure > details {
 .rte ul,
 .rte ol {
   list-style-position: inside;
+  list-style: unset;
+  margin-bottom: 1rem;
   padding-left: 2rem;
 }
 

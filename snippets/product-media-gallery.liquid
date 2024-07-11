@@ -41,6 +41,8 @@
   if is_duplicate
     assign id_append = '-duplicate'
   endif
+
+  assign first_height = product.media.first.image.height
 -%}
 
 <media-gallery
@@ -49,6 +51,7 @@
   class="flex flex-row-reverse mb-8"
   aria-label="{{ 'products.product.media.gallery_viewer' | t }}"
   data-desktop-layout="{{ section.settings.gallery_layout }}"
+  style="max-height: {{ first_height }}px;"
 >
   <div id="GalleryStatus-{{ section.id }}" class="visually-hidden" role="status"></div>
   <slider-component id="GalleryViewer-{{ section.id }}{{ id_append }}" class="w-full slider-mobile-gutter">
@@ -165,7 +168,7 @@
   -%}
     <vertical-slider
       id="GalleryThumbnails-{{ section.id }}{{ id_append }}"
-      class="h-[300px] md:h-auto thumbnail-slider slider-mobile-gutter quick-add-hidden{% unless section.settings.gallery_layout contains 'thumbnail' %} medium-hide large-up-hide{% endunless %}{% if section.settings.mobile_thumbnails != 'show' %} small-hide{% endif %}{% if media_count <= 3 %} thumbnail-slider--no-slide{% endif %}"
+      class="h-[300px] md:h-[650px] thumbnail-slider slider-mobile-gutter quick-add-hidden{% unless section.settings.gallery_layout contains 'thumbnail' %} medium-hide large-up-hide{% endunless %}{% if section.settings.mobile_thumbnails != 'show' %} small-hide{% endif %}{% if media_count <= 3 %} thumbnail-slider--no-slide{% endif %}"
     >
       <button
         type="button"
