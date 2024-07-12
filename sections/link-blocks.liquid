@@ -10,6 +10,12 @@
       padding-bottom: {{ section.settings.padding_bottom }}px;
     }
   }
+
+.section-{{ section.id }} .link-block-image img {
+  filter: sepia(0.4);
+}
+
+  
 {%- endstyle -%}
 
 <div class="section-{{ section.id }}-padding">
