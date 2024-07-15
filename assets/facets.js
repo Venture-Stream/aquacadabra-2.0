@@ -90,6 +90,17 @@ class FacetFiltersForm extends HTMLElement {
       .forEach((element) => {
         element.classList.add('scroll-trigger--cancel');
       });
+
+
+    const categoryDropdowns = document.querySelectorAll('.category-dropdown');
+    categoryDropdowns.forEach((categoryDropdown) => {
+      const li = categoryDropdown.querySelectorAll('li');
+
+
+      if(li.length < 1) {
+        categoryDropdown.classList.add('hidden');
+      }
+    });
   }
 
   static renderProductCount(html) {

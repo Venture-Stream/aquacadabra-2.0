@@ -867,10 +867,6 @@ video {
   height: 120px;
 }
 
-.h-\[300px\]{
-  height: 300px;
-}
-
 .h-\[36px\]{
   height: 36px;
 }
@@ -1454,6 +1450,10 @@ video {
   padding-left: 2rem;
 }
 
+.pl-\[8rem\]{
+  padding-left: 8rem;
+}
+
 .pr-6{
   padding-right: 1.5rem;
 }
@@ -1480,10 +1480,6 @@ video {
 
 .pt-px{
   padding-top: 1px;
-}
-
-.pl-\[8rem\]{
-  padding-left: 8rem;
 }
 
 .text-left{
@@ -1694,6 +1690,11 @@ video {
 
 .outline{
   outline-style: solid;
+}
+
+.sepia{
+  --tw-sepia: sepia(100%);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
 .filter{
@@ -2188,16 +2189,8 @@ li a:active {
     height: 530px;
   }
 
-  .md\:h-\[650px\]{
-    height: 650px;
-  }
-
   .md\:h-\[800px\]{
     height: 800px;
-  }
-
-  .md\:h-auto{
-    height: auto;
   }
 
   .md\:min-h-\[800px\]{
@@ -2361,6 +2354,10 @@ li a:active {
     padding-bottom: 3rem;
   }
 
+  .md\:pl-\[12rem\]{
+    padding-left: 12rem;
+  }
+
   .md\:pr-20{
     padding-right: 5rem;
   }
@@ -2371,10 +2368,6 @@ li a:active {
 
   .md\:pt-28{
     padding-top: 7rem;
-  }
-
-  .md\:pl-\[12rem\]{
-    padding-left: 12rem;
   }
 
   .md\:text-3{
