@@ -31,7 +31,8 @@ class MegaMenu extends HTMLElement {
 
     topLevel.forEach((item) => {
       item.addEventListener('mouseover', () => {
-        this.showThirdLevel(item);
+        let parent = item.closest('.site-nav__childlist');
+        this.showThirdLevel(item, parent);
       })
     })
 
@@ -69,9 +70,9 @@ class MegaMenu extends HTMLElement {
     })
   }
 
-  showThirdLevel(element) {
+  showThirdLevel(element, parent) {
     let id = element.getAttribute('data-toplevel-link'),
-      dropdowns = document.querySelectorAll('.third-level__dropdown');
+      dropdowns = parent.querySelectorAll('.third-level__dropdown');
 
     for(let i=0; i < dropdowns.length; i++) {
       let dropdown = dropdowns[i],
