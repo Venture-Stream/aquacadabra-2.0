@@ -47,7 +47,7 @@
 <media-gallery
   id="MediaGallery-{{ section.id }}{{ id_append }}"
   role="region"
-  class="flex flex-row-reverse mb-8 relative pl-[8rem] md:pl-[12rem]"
+  class="flex flex-row-reverse mb-8 relative {% if product.media.size > 1 %}pl-[8rem] md:pl-[12rem]{% endif %}"
   aria-label="{{ 'products.product.media.gallery_viewer' | t }}"
   data-desktop-layout="{{ section.settings.gallery_layout }}"
 >
