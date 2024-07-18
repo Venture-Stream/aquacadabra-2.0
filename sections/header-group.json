@@ -130,22 +130,29 @@
         "quicklink_Qpyrw4": {
           "type": "quicklink",
           "settings": {
-            "text": "Pond Heaters",
-            "url": "shopify:\/\/collections\/ponds-supplies-pond-accessories"
+            "text": "Holiday Foods",
+            "url": "shopify:\/\/collections\/holiday-foods"
           }
         },
         "quicklink_FxGMrh": {
           "type": "quicklink",
           "settings": {
-            "text": "Algae Remover",
-            "url": "shopify:\/\/products\/api-aqua-essential-water-conditioner"
+            "text": "Chillers",
+            "url": "shopify:\/\/collections\/aquarium-chillers"
           }
         },
         "quicklink_gL73Ad": {
           "type": "quicklink",
           "settings": {
-            "text": "Aquarium Starter Kit",
-            "url": "shopify:\/\/collections\/aquariums"
+            "text": "Cooling Fans",
+            "url": "shopify:\/\/collections\/cooling-fans"
+          }
+        },
+        "quicklink_JbXbUG": {
+          "type": "quicklink",
+          "settings": {
+            "text": "Pond Air Pumps",
+            "url": "shopify:\/\/collections\/ponds-supplies-outdoor-air-pumps"
           }
         }
       },
@@ -153,7 +160,8 @@
         "quicklink_jUqKMn",
         "quicklink_Qpyrw4",
         "quicklink_FxGMrh",
-        "quicklink_gL73Ad"
+        "quicklink_gL73Ad",
+        "quicklink_JbXbUG"
       ],
       "settings": {
       }
