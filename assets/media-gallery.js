@@ -4,6 +4,7 @@ if (!customElements.get('media-gallery')) {
     class MediaGallery extends HTMLElement {
       constructor() {
         super();
+        console.log('media-gallery init');
         this.elements = {
           liveRegion: this.querySelector('[id^="GalleryStatus"]'),
           viewer: this.querySelector('[id^="GalleryViewer"]'),
