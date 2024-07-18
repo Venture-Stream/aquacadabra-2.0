@@ -24,7 +24,7 @@
 			{% for article in section.settings.blog.articles limit: 3 %}
         <a href="{{ article.url }}" class="full-unstyled-link">
           <div class="flex flex-col w-full group">
-            <div class="overflow-hidden">
+            <div class="overflow-hidden h-auto md:h-[25vw]">
               <img
                 src="{{ article.image | image_url: height: 530 }}"
                 alt="{{ article.title | escape }}"
