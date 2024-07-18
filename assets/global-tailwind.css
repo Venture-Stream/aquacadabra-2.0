@@ -2201,6 +2201,10 @@ li a:active {
     height: 25vw;
   }
 
+  .md\:h-\[20vw\]{
+    height: 20vw;
+  }
+
   .md\:min-h-\[800px\]{
     min-height: 800px;
   }
