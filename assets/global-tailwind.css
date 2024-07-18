@@ -2185,24 +2185,16 @@ li a:active {
     display: none;
   }
 
+  .md\:h-\[20vw\]{
+    height: 20vw;
+  }
+
   .md\:h-\[530px\]{
     height: 530px;
   }
 
   .md\:h-\[800px\]{
     height: 800px;
-  }
-
-  .md\:h-\[300px\]{
-    height: 300px;
-  }
-
-  .md\:h-\[25vw\]{
-    height: 25vw;
-  }
-
-  .md\:h-\[20vw\]{
-    height: 20vw;
   }
 
   .md\:min-h-\[800px\]{
