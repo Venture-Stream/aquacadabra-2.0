@@ -844,25 +844,25 @@
                 ></script>
               {%- when 'usps' -%}
                 <div id="prod-alerts" class="border border-[#EEE] rounded-md px-8">
-                  <div class="py-8 border-b border-[#EEE] text-black text-1.3 flex items-center gap-4">
+                  <div class="py-8 border-b border-[#EEE] text-black text-1.4 flex items-center gap-4">
                     {% render 'icon-delivery-blue' %}
                     {{ 'usp.free_delivery' | t }}
                   </div>
                   {% for tag in product.tags %}
                     {% assign productTag = tag | downcase %}
                     {% if productTag contains 'live-food_' %}
-                      <div class="py-8 border-b border-[#EEE] text-black text-1.3 flex items-center gap-4">
+                      <div class="py-8 border-b border-[#EEE] text-black text-1.4 flex items-center gap-4">
                       {{ tag | replace: "live-food_", "" }}
                       </div>
                     {% endif %}
                     {% if productTag contains 'dispatch_' and variant_dispatch == null %}
-                      <div class="py-8 border-b border-[#EEE] text-black text-1.3 flex items-center gap-4">
+                      <div class="py-8 border-b border-[#EEE] text-black text-1.4 flex items-center gap-4">
                         {% render 'icon-express-delivery' %}
-                        This product will be dispatched in {{ tag | downcase | replace: "dispatch_", "" }}. Not available for Express Shipping.
+                        This product will be dispatched in <strong>{{ tag | downcase | replace: "dispatch_", "" }}.</strong> Not available for Express Shipping.
                       </div>
                     {% endif %} 
                     {% if productTag contains 'pallet' %}
-                      <div class="py-8 border-b border-[#EEE] text-black text-1.3 flex items-center gap-4">
+                      <div class="py-8 border-b border-[#EEE] text-black text-1.4 flex items-center gap-4">
                         {% render 'icon-info' %}
                         {{ block.settings.pallete_text }}               
                       </div>
@@ -870,18 +870,18 @@
                   {% endfor %}
 
                   {% if variant_dispatch != null %}
-                    <div class="py-8 border-b border-[#EEE] text-black text-1.3 flex items-center gap-4" data-dispatch-metafield>
+                    <div class="py-8 border-b border-[#EEE] text-black text-1.4 flex items-center gap-4" data-dispatch-metafield>
                       {% render 'icon-express-delivery' %}
                       <strong>This product will be dispatched in {{ variant_dispatch | downcase | replace: "dispatch_", "" }}</strong> - Not available for Express Shipping.
                     </div>
                   {% endif %}
                   <div class="finance-available">
-                    <div class="py-8 border-b border-[#EEE] text-black text-1.3 flex items-center gap-4">
+                    <div class="py-8 border-b border-[#EEE] text-black text-1.4 flex items-center gap-4">
                       {% render 'icon-finance-blue' %}
                       {{ block.settings.finance_text }}
                     </div>
                   </div>
-                  <div class="py-8 border-b border-[#EEE] text-black text-1.3 flex items-center gap-4">
+                  <div class="py-8 border-b border-[#EEE] text-black text-1.4 flex items-center gap-4">
                     {% render 'icon-returns-blue' %}
                     {{ 'usp.returns' | t }}
                   </div>
