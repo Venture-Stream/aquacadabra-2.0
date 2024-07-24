@@ -838,9 +838,11 @@
                     </div>
                   {% endif %}
                   {% if productTag contains 'pallet' %}
-                    <div class="countdown-banner flex items-center justify-center mt-4">
-                      {% render 'icon-info' %}
-                      <p class="ml-2">{{ block.settings.pallete_text }}</p>
+                    <div class="product-timer">
+                      <div class="countdown-banner flex items-center justify-center mt-4">
+                        {% render 'icon-info' %}
+                        <div class="ml-2">{{ block.settings.pallet_text }}</div>
+                      </div>
                     </div>
                   {% endif %}
                 {% endfor %}
@@ -2490,6 +2492,11 @@
           "id": "color",
           "label": "Colour",
           "default": "#15397B"
+        },
+        {
+          "type": "richtext",
+          "id": "pallet_text",
+          "label": "Pallet Text"
         }
       ]
     },
