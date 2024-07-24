@@ -206,6 +206,24 @@
                                   </div>
                                 {%- endif -%}
                               {%- endfor -%}
+                              {% assign variant_dispatch = current_variant.metafields.custom.variant_dispatch_day %}
+                              {% for tag in product.tags %}
+                                {% assign product_tag = tag | downcase %}
+                                {% if product_tag contains 'live-food_' %}
+                                  <div class="py-8 border-b border-[#EEE] text-black text-1.3 md:text-1.4 flex items-center gap-4">
+                                  {{ tag | replace: "live-food_", "" }}
+                                  </div>
+                                {% endif %}
+                                {% if product_tag contains 'dispatch_' and variant_dispatch == null %}
+                                  <p class="text-1.1 mb-2">This product will be dispatched in <strong>{{ tag | downcase | replace: "dispatch_", "" }}.</strong></p>
+                                {% endif %} 
+                                {% if product_tag contains 'pallet' %}
+                                  <p class="text-1.1 mb-2">This product will be sent out on a palleted kerbside delivery.</p>
+                                {% endif %}
+                              {% endfor %}
+            
+                              {% if variant_dispatch != null %}
+                                <strong class="text-1.1">This product will be dispatched in {{ variant_dispatch | downcase | replace: "dispatch_", "" }}</strong>                              {% endif %}
                             </dl>
 
                             <p class="product-option">{{ item.selling_plan_allocation.selling_plan.name }}</p>
