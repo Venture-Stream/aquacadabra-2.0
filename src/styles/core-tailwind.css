@@ -274,3 +274,7 @@ li a:active {
 .grandchild-list {
   margin-top: 10px;
 }
+
+div#ZoomyWishlistPage {
+  @apply flex !important;
+}

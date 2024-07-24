@@ -1502,6 +1502,10 @@ video {
   font-size: 10px;
 }
 
+.text-1\.1{
+  font-size: 11px;
+}
+
 .text-1\.2{
   font-size: 12px;
 }
@@ -1540,10 +1544,6 @@ video {
 
 .text-3\.4{
   font-size: 34px;
-}
-
-.text-1\.1{
-  font-size: 11px;
 }
 
 .font-black{
@@ -2106,6 +2106,10 @@ li a:active {
 
 .grandchild-list {
   margin-top: 10px;
+}
+
+div#ZoomyWishlistPage{
+  display: flex !important;
 }
 
 .hover\:bg-\[\#F2F2F2\]:hover{
