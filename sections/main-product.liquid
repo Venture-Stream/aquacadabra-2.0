@@ -831,11 +831,18 @@
                   {% if productTag contains 'dispatch_' or variant_dispatch != null %}
                     {% assign dispatch_product = true %}
                     <div class="product-timer">
-                      <div class="countdown-banner text-center">
-                        <p>This product will be dispatched in <strong>{{ tag | downcase | replace: "dispatch_", "" }}.</strong> Not available for Express Shipping.</p>
+                      <div class="countdown-banner flex items-center justify-center">
+                        {% render 'icon-express-delivery' %}
+                        <p class="ml-2">This product will be dispatched in <strong>{{ tag | downcase | replace: "dispatch_", "" }}.</strong> Not available for Express Shipping.</p>
                       </div>
                     </div>
-                  {% endif %} 
+                  {% endif %}
+                  {% if productTag contains 'pallet' %}
+                    <div class="countdown-banner flex items-center justify-center mt-4">
+                      {% render 'icon-info' %}
+                      <p class="ml-2">{{ block.settings.pallete_text }}</p>
+                    </div>
+                  {% endif %}
                 {% endfor %}
                 {% unless dispatch_product %}
                   {% render 'countdown-timer',
