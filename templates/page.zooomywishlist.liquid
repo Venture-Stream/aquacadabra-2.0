@@ -4,8 +4,8 @@
     document.addEventListener('DOMContentLoaded', function() {
         setTimeout(function() {
             document.querySelectorAll('.ZoomyWishlistPageGrid img').forEach(function(img) {
-                if (img.attributes['src'].value.indexOf('products') === 0) {
-                    img.attributes['src'].value = '/cdn/shop/' + img.attributes['src'].value;
+                if (!img.src.includes('cdn/shop')) {
+                    img.src = '/cdn/shop/' + img.getAttribute('src');
                 }
             });
             document.getElementById('ZoomyWishlistPage').style.display = 'block';
