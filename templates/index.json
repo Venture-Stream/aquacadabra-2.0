@@ -164,6 +164,7 @@
     },
     "ss_featured_collection_5_66Ywm3": {
       "type": "ss-featured-collection-5",
+      "disabled": true,
       "settings": {
         "body_layout": "collection_products",
         "body_layout_mobile": "collection_products",
