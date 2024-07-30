@@ -234,7 +234,8 @@ body:has(.section-header .drawer-menu) .announcement-bar-section .page-width {
 }
 
 ::selection {
-  background-color: rgba(var(--color-foreground), 0.2);
+  background-color: #092B6A;
+  color: #FFF;
 }
 
 .text-body {
