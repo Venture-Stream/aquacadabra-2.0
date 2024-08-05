@@ -817,14 +817,45 @@
                   </div>
                 {% endunless %}
               {%- when 'countdown_timer' -%}
-                {% render 'countdown-timer',
-                  cart_timer: false,
-                  enable_timer: settings.enable_timer,
-                  banner_text: settings.banner_text,
-                  right_text: settings.right_text,
-                  cut_off_time: settings.cut_off_time,
-                  class: 'product-timer'
-                %}
+                <style>
+                  .product-timer .countdown-banner {
+                    color: {{ block.settings.color }};
+                  }
+                  .product-timer .countdown-banner .time span {
+                    background: {{ block.settings.color }};
+                  }
+                </style>
+                {% assign dispatch_product = false %}
+                {% for tag in product.tags %}
+                  {% assign productTag = tag | downcase %}
+                  {% if productTag contains 'dispatch_' or variant_dispatch != null %}
+                    {% assign dispatch_product = true %}
+                    <div class="product-timer">
+                      <div class="countdown-banner flex items-center justify-center">
+                        {% render 'icon-express-delivery' %}
+                        <p class="ml-2">This product will be dispatched in <strong>{{ tag | downcase | replace: "dispatch_", "" }}.</strong> Not available for Express Shipping.</p>
+                      </div>
+                    </div>
+                  {% endif %}
+                  {% if productTag contains 'pallet' %}
+                    <div class="product-timer">
+                      <div class="countdown-banner flex items-center justify-center mt-4">
+                        {% render 'icon-info' %}
+                        <div class="ml-2">{{ block.settings.pallet_text }}</div>
+                      </div>
+                    </div>
+                  {% endif %}
+                {% endfor %}
+                {% unless dispatch_product %}
+                  {% render 'countdown-timer',
+                    cart_timer: false,
+                    enable_timer: settings.enable_timer,
+                    banner_text: settings.banner_text,
+                    right_text: settings.right_text,
+                    cut_off_time: settings.cut_off_time,
+                    class: 'product-timer'
+                  %}
+                {% endunless %}              
               {%- when 'wishlist'-%}
                 <div
                   id="ZlistWishlist"
@@ -844,25 +875,25 @@
                 ></script>
               {%- when 'usps' -%}
                 <div id="prod-alerts" class="border border-[#EEE] rounded-md px-8">
-                  <div class="py-8 border-b border-[#EEE] text-black text-1.3 flex items-center gap-4">
+                  <div class="py-8 border-b border-[#EEE] text-black text-1.3 md:text-1.4 flex items-center gap-4">
                     {% render 'icon-delivery-blue' %}
                     {{ 'usp.free_delivery' | t }}
                   </div>
                   {% for tag in product.tags %}
                     {% assign productTag = tag | downcase %}
                     {% if productTag contains 'live-food_' %}
-                      <div class="py-8 border-b border-[#EEE] text-black text-1.3 flex items-center gap-4">
+                      <div class="py-8 border-b border-[#EEE] text-black text-1.3 md:text-1.4 flex items-center gap-4">
                       {{ tag | replace: "live-food_", "" }}
                       </div>
                     {% endif %}
                     {% if productTag contains 'dispatch_' and variant_dispatch == null %}
-                      <div class="py-8 border-b border-[#EEE] text-black text-1.3 flex items-center gap-4">
+                      <div class="py-8 border-b border-[#EEE] text-black text-1.3 md:text-1.4 flex items-center gap-4">
                         {% render 'icon-express-delivery' %}
-                        This product will be dispatched in {{ tag | downcase | replace: "dispatch_", "" }}. Not available for Express Shipping.
+                        <p>This product will be dispatched in <strong>{{ tag | downcase | replace: "dispatch_", "" }}.</strong> Not available for Express Shipping.</p>
                       </div>
                     {% endif %} 
                     {% if productTag contains 'pallet' %}
-                      <div class="py-8 border-b border-[#EEE] text-black text-1.3 flex items-center gap-4">
+                      <div class="py-8 border-b border-[#EEE] text-black text-1.3 md:text-1.4 flex items-center gap-4">
                         {% render 'icon-info' %}
                         {{ block.settings.pallete_text }}               
                       </div>
@@ -870,18 +901,18 @@
                   {% endfor %}
 
                   {% if variant_dispatch != null %}
-                    <div class="py-8 border-b border-[#EEE] text-black text-1.3 flex items-center gap-4" data-dispatch-metafield>
+                    <div class="py-8 border-b border-[#EEE] text-black text-1.3 md:text-1.4 flex items-center gap-4" data-dispatch-metafield>
                       {% render 'icon-express-delivery' %}
                       <strong>This product will be dispatched in {{ variant_dispatch | downcase | replace: "dispatch_", "" }}</strong> - Not available for Express Shipping.
                     </div>
                   {% endif %}
                   <div class="finance-available">
-                    <div class="py-8 border-b border-[#EEE] text-black text-1.3 flex items-center gap-4">
+                    <div class="py-8 border-b border-[#EEE] text-black text-1.3 md:text-1.4 flex items-center gap-4">
                       {% render 'icon-finance-blue' %}
                       {{ block.settings.finance_text }}
                     </div>
                   </div>
-                  <div class="py-8 border-b border-[#EEE] text-black text-1.3 flex items-center gap-4">
+                  <div class="py-8 border-b border-[#EEE] text-black text-1.3 md:text-1.4 flex items-center gap-4">
                     {% render 'icon-returns-blue' %}
                     {{ 'usp.returns' | t }}
                   </div>
@@ -2454,7 +2485,20 @@
     },
     {
       "type": "countdown_timer",
-      "name": "Countdown Timer"
+      "name": "Countdown Timer",
+      "settings": [
+        {
+          "type": "color",
+          "id": "color",
+          "label": "Colour",
+          "default": "#15397B"
+        },
+        {
+          "type": "richtext",
+          "id": "pallet_text",
+          "label": "Pallet Text"
+        }
+      ]
     },
     {
       "type": "wishlist",

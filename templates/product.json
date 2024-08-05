@@ -67,6 +67,8 @@
         "countdown_timer_6WpLAb": {
           "type": "countdown_timer",
           "settings": {
+            "color": "#15397B",
+            "pallet_text": "<p>This product will be sent out on a palleted kerbside delivery. <a href=\"https:\/\/aquacadabra.com\/pages\/pallet-delivery-information\" target=\"_blank\">Learn more.<\/a><\/p>"
           }
         },
         "wishlist_7NKRt7": {
