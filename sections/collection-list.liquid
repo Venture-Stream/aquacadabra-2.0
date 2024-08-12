@@ -348,3 +348,14 @@ classname[i].addEventListener('click', addToCart, false);
 }
 </script>
 
+<script type="text/javascript">
+var _learnq = _learnq || [];
+  var classname = document.getElementsByClassName(“product-form__submit button button--full-width button--secondary
+”);
+var addToCart = function() {
+_learnq.push(['track', 'Added to Cart', item]);
+}; for (var i = 0; i < classname.length; i++) {
+classname[i].addEventListener('click', addToCart, false);
+}
+</script>
+
