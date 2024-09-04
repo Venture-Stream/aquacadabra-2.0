@@ -12,6 +12,22 @@
     "slideshow_9wH96k": {
       "type": "slideshow",
       "blocks": {
+        "slide_JChg8F": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Roma_125_carousel_copy.jpg",
+            "heading": "Sale!",
+            "text_color": "white",
+            "subheading": "Fluval Roma Walnut Aquariums are on sale - with Bluetooth LED Lighting and Internal Filters!",
+            "button_label": "fluval roma walnut sale",
+            "link": "shopify:\/\/collections\/fluval-roma-walnut-sale",
+            "button_style_secondary": true,
+            "box_align": "bottom-left",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "text_alignment_mobile": "center"
+          }
+        },
         "slide_gVmjbK": {
           "type": "slide",
           "settings": {
@@ -44,22 +60,6 @@
             "text_alignment_mobile": "center"
           }
         },
-        "slide_JChg8F": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/shutterstock_1264014247.jpg",
-            "heading": "Sale!",
-            "text_color": "white",
-            "subheading": "Grab a bargin from our clerance section! We hav a wide range of products at great prices - grab them before they go!",
-            "button_label": "shop clearance",
-            "link": "shopify:\/\/collections\/clearance",
-            "button_style_secondary": true,
-            "box_align": "bottom-left",
-            "show_text_box": false,
-            "text_alignment": "center",
-            "text_alignment_mobile": "center"
-          }
-        },
         "card_CRpzGx": {
           "type": "card",
           "settings": {
@@ -82,9 +82,9 @@
         }
       },
       "block_order": [
+        "slide_JChg8F",
         "slide_gVmjbK",
         "slide_3fgaqA",
-        "slide_JChg8F",
         "card_CRpzGx",
         "card_PcGL8B"
       ],
