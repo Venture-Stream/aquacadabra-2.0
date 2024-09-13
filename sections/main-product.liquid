@@ -131,6 +131,9 @@
                     show_badges: true,
                     price_class: 'price--large'
                   -%}
+                  <div class="block mb-8 text-brand-blue font-semibold">
+                    Earn <span data-lion-points-for-product-id="{{ product.id }}"></span> points when you purchase
+                  </div>
                 </div>
                 {%- if product.quantity_price_breaks_configured? -%}
                   <div class="volume-pricing-note" id="Volume-Note-{{ section.id }}">

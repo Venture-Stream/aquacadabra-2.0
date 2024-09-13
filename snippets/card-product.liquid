@@ -27,6 +27,16 @@
 {{ 'quick-order-list.css' | asset_url | stylesheet_tag }}
 {{ 'quantity-popover.css' | asset_url | stylesheet_tag }}
 
+{% liquid
+  assign collection_badge = blank
+  for collection in card_product.collections
+  if collection.metafields.custom.loyalty_lion_badges != blank
+    assign collection_badge = collection.metafields.custom.loyalty_lion_badges
+    break
+  endif
+  endfor
+%}
+
 {%- if card_product and card_product != empty -%}
   {%- liquid
     assign ratio = 1
@@ -121,6 +131,14 @@
                   </span>
                 {% endif %}
               {% endfor %}
+            {% endif %}
+            {% if collection_badge != blank %}
+              {% assign badge = collection_badge.value %}
+              <div class="card__badge z-1">
+                <span class="badge" style="background-color: {{ badge.background_colour }}; color: {{ badge.text_colour }};">
+                  {{ badge.badge_text }}
+                </span>
+              </div>
             {% endif %}
           </div>
         </div>

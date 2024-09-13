@@ -662,6 +662,18 @@ video {
   top: 100%;
 }
 
+.left-8{
+  left: 2rem;
+}
+
+.top-8{
+  top: 2rem;
+}
+
+.left-4{
+  left: 1rem;
+}
+
 .isolate{
   isolation: isolate;
 }
@@ -1644,6 +1656,11 @@ video {
 .text-black{
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
+.text-brand-blue{
+  --tw-text-opacity: 1;
+  color: rgb(21 57 123 / var(--tw-text-opacity));
 }
 
 .text-brand-orange{
