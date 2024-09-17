@@ -634,6 +634,10 @@ video {
   left: 0px;
 }
 
+.left-4{
+  left: 1rem;
+}
+
 .right-0{
   right: 0px;
 }
@@ -1644,6 +1648,11 @@ video {
 .text-black{
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
+.text-brand-blue{
+  --tw-text-opacity: 1;
+  color: rgb(21 57 123 / var(--tw-text-opacity));
 }
 
 .text-brand-orange{

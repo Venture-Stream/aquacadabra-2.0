@@ -42,6 +42,13 @@
     assign id_append = '-duplicate'
   endif
 
+  assign collection_badge = blank
+  for collection in product.collections
+    if collection.metafields.custom.loyalty_lion_badges != blank
+      assign collection_badge = collection.metafields.custom.loyalty_lion_badges
+      break
+    endif
+  endfor
 -%}
 
 <media-gallery
@@ -51,6 +58,14 @@
   aria-label="{{ 'products.product.media.gallery_viewer' | t }}"
   data-desktop-layout="{{ section.settings.gallery_layout }}"
 >
+  {% if collection_badge != blank %}
+    {% assign badge = collection_badge.value %}
+    <div class="card__badge absolute top-4 left-4 right-0 z-1">
+      <span class="badge" style="background-color: {{ badge.background_colour }}; color: {{ badge.text_colour }};">
+        {{ badge.badge_text }}
+      </span>
+    </div>
+  {% endif %}
   <div id="GalleryStatus-{{ section.id }}" class="visually-hidden" role="status"></div>
   <slider-component id="GalleryViewer-{{ section.id }}{{ id_append }}" class="w-full slider-mobile-gutter">
     {%- unless is_duplicate -%}
