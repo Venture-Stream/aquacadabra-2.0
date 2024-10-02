@@ -92,6 +92,18 @@
             {%- case block.type -%}
               {%- when '@app' -%}
                 {% render block %}
+              {% when 'vendor' %}
+                  {% liquid
+                    assign vendor_handle = product.vendor | handleize
+                    assign vendor_collection = collections[vendor_handle]
+                  %}
+                  <a
+                    href="{{ vendor_collection.url }}"
+                    class="product__text inline-richtext text-[#666] text-base"
+                    {{ block.shopify_attributes }}
+                  >
+                    {{- product.vendor -}}
+                  </a>
               {%- when 'text' -%}
                 <p
                   class="text-[#666] text-base inline-richtext{% if block.settings.text_style == 'uppercase' %} caption-with-letter-spacing{% elsif block.settings.text_style == 'subtitle' %} subtitle{% endif %}"
@@ -1101,6 +1113,10 @@
   "blocks": [
     {
       "type": "@app"
+    },
+    {
+      "type": "vendor",
+      "name": "Product Vendor"
     },
     {
       "type": "text",
