@@ -98,6 +98,7 @@
         },
         "slide_ALhyMV": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/D_D_Autumn_Sale_A.jpg",
             "heading": "Black Friday!",
