@@ -101,9 +101,9 @@
           "disabled": true,
           "settings": {
             "image": "shopify://shop_images/D_D_Autumn_Sale_A.jpg",
-            "heading": "Black Friday!",
+            "heading": "",
             "text_color": "white",
-            "subheading": "Shop Black Friday Deals Now  Explore exclusive discounts on a selected range of products during our Black Friday event.",
+            "subheading": "",
             "button_label": "Shop Now",
             "link": "https://aquacadabra.com/search?q=D-D+Aqua-Pro+Aquascaper&options%5Bprefix%5D=last&page=2",
             "button_style_secondary": true,
