@@ -14,6 +14,7 @@
       "blocks": {
         "slide_JChg8F": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/Roma.jpg",
             "heading": "Sale!",
@@ -30,6 +31,7 @@
         },
         "slide_ewTTQR": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/interpet_aquaverse_carousel_copy.jpg",
             "heading": "BARGAIN!",
@@ -46,6 +48,7 @@
         },
         "slide_gVmjbK": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/shutterstock_2225505841_copy.jpg",
             "heading": "<strong>Live Aquarium Plants</strong>",
@@ -62,6 +65,7 @@
         },
         "slide_3fgaqA": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/shutterstock_64128967.jpg",
             "heading": "Sign up to our Newsletter",
@@ -98,7 +102,6 @@
         },
         "slide_ALhyMV": {
           "type": "slide",
-          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/D_D_Autumn_Sale_A.jpg",
             "heading": "",
