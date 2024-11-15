@@ -1,12 +1,12 @@
 /*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "slideshow_9wH96k": {
@@ -15,12 +15,12 @@
         "slide_JChg8F": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Roma_125_carousel_copy.jpg",
+            "image": "shopify://shop_images/Roma_125_carousel_copy.jpg",
             "heading": "Sale!",
             "text_color": "white",
             "subheading": "Fluval Roma Walnut Aquariums are on sale - with Bluetooth LED Lighting and Internal Filters!",
             "button_label": "fluval roma walnut sale",
-            "link": "shopify:\/\/collections\/fluval-roma-walnut-sale",
+            "link": "shopify://collections/fluval-roma-walnut-sale",
             "button_style_secondary": true,
             "box_align": "bottom-left",
             "show_text_box": false,
@@ -31,12 +31,12 @@
         "slide_ewTTQR": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/interpet_aquaverse_carousel_copy.jpg",
+            "image": "shopify://shop_images/interpet_aquaverse_carousel_copy.jpg",
             "heading": "BARGAIN!",
             "text_color": "white",
             "subheading": "Interpet Aquaverse Aquarium & Cabinets, grab a bargain!",
             "button_label": "See More",
-            "link": "https:\/\/aquacadabra.com\/collections\/aquariums?filter.p.vendor=Interpet&%C2%A3100.00+-+%C2%A3200.00=10000-20000&%C2%A3200.00+-+%C2%A3500.00=20000-50000&filter.v.price.gte=100&filter.v.price.lte=500&sort_by=best-selling",
+            "link": "https://aquacadabra.com/collections/aquariums?filter.p.vendor=Interpet&%C2%A3100.00+-+%C2%A3200.00=10000-20000&%C2%A3200.00+-+%C2%A3500.00=20000-50000&filter.v.price.gte=100&filter.v.price.lte=500&sort_by=best-selling",
             "button_style_secondary": true,
             "box_align": "bottom-left",
             "show_text_box": false,
@@ -47,12 +47,12 @@
         "slide_gVmjbK": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/shutterstock_2225505841_copy.jpg",
-            "heading": "<strong>Live Aquarium Plants<\/strong>",
+            "image": "shopify://shop_images/shutterstock_2225505841_copy.jpg",
+            "heading": "<strong>Live Aquarium Plants</strong>",
             "text_color": "white",
             "subheading": "We now stock aquarium plants from Tropica! Come see our new fridge in the shop, or order online today.",
             "button_label": "Shop Now",
-            "link": "shopify:\/\/collections\/live-aquarium-plants",
+            "link": "shopify://collections/live-aquarium-plants",
             "button_style_secondary": true,
             "box_align": "bottom-left",
             "show_text_box": false,
@@ -63,12 +63,12 @@
         "slide_3fgaqA": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/shutterstock_64128967.jpg",
+            "image": "shopify://shop_images/shutterstock_64128967.jpg",
             "heading": "Sign up to our Newsletter",
             "text_color": "white",
             "subheading": "For discounts, new products, competitions and more!",
             "button_label": "Sign up",
-            "link": "shopify:\/\/pages\/sign-up-to-our-newsletter",
+            "link": "shopify://pages/sign-up-to-our-newsletter",
             "button_style_secondary": true,
             "box_align": "top-left",
             "show_text_box": false,
@@ -79,9 +79,9 @@
         "card_CRpzGx": {
           "type": "card",
           "settings": {
-            "image": "shopify:\/\/shop_images\/shutterstock_1156035046_cropped.jpg",
-            "title": "<strong>How many fish should you put in a fish tank?<\/strong>",
-            "link": "shopify:\/\/blogs\/news\/how-many-fish-should-you-put-in-a-fish-tank",
+            "image": "shopify://shop_images/shutterstock_1156035046_cropped.jpg",
+            "title": "<strong>How many fish should you put in a fish tank?</strong>",
+            "link": "shopify://blogs/news/how-many-fish-should-you-put-in-a-fish-tank",
             "button_label": "Read More",
             "button_style_secondary": true
           }
@@ -89,11 +89,28 @@
         "card_PcGL8B": {
           "type": "card",
           "settings": {
-            "image": "shopify:\/\/shop_images\/beautiful-beach-in-portugal.jpg",
+            "image": "shopify://shop_images/beautiful-beach-in-portugal.jpg",
             "title": "Going on your holidays?",
-            "link": "shopify:\/\/collections\/holiday-foods",
+            "link": "shopify://collections/holiday-foods",
             "button_label": "Shop Holiday Food",
             "button_style_secondary": true
+          }
+        },
+        "slide_ALhyMV": {
+          "type": "slide",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/shutterstock_642230203.jpg",
+            "heading": "Black Friday!",
+            "text_color": "white",
+            "subheading": "Shop Black Friday Deals Now  Explore exclusive discounts on a wide range of products during our Black Friday event.",
+            "button_label": "Shop Now",
+            "link": "",
+            "button_style_secondary": true,
+            "box_align": "bottom-center",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "text_alignment_mobile": "center"
           }
         }
       },
@@ -103,7 +120,8 @@
         "slide_gVmjbK",
         "slide_3fgaqA",
         "card_CRpzGx",
-        "card_PcGL8B"
+        "card_PcGL8B",
+        "slide_ALhyMV"
       ],
       "settings": {
         "slide_height": "adapt_image",
@@ -119,48 +137,48 @@
         "block_qKhWMa": {
           "type": "block",
           "settings": {
-            "link": "shopify:\/\/collections\/aquariums-fish-tank",
-            "link_image": "shopify:\/\/shop_images\/shutterstock_1050657911.jpg",
+            "link": "shopify://collections/aquariums-fish-tank",
+            "link_image": "shopify://shop_images/shutterstock_1050657911.jpg",
             "link_title": "Aquarium Tanks"
           }
         },
         "block_qw4kDE": {
           "type": "block",
           "settings": {
-            "link": "shopify:\/\/collections\/pond-filters",
-            "link_image": "shopify:\/\/shop_images\/shutterstock_1235661850_1.jpg",
+            "link": "shopify://collections/pond-filters",
+            "link_image": "shopify://shop_images/shutterstock_1235661850_1.jpg",
             "link_title": "Pond Pumps"
           }
         },
         "block_wf7mPK": {
           "type": "block",
           "settings": {
-            "link": "shopify:\/\/collections\/fish-foods-1",
-            "link_image": "shopify:\/\/shop_images\/shutterstock_1248008848.jpg",
+            "link": "shopify://collections/fish-foods-1",
+            "link_image": "shopify://shop_images/shutterstock_1248008848.jpg",
             "link_title": "Fish Food"
           }
         },
         "block_eJdHUz": {
           "type": "block",
           "settings": {
-            "link": "shopify:\/\/collections\/water-quality-aquarium-treatments",
-            "link_image": "shopify:\/\/shop_images\/shutterstock_1309932031_cropped_copy.jpg",
+            "link": "shopify://collections/water-quality-aquarium-treatments",
+            "link_image": "shopify://shop_images/shutterstock_1309932031_cropped_copy.jpg",
             "link_title": "Fish Treatments"
           }
         },
         "block_hrzCRP": {
           "type": "block",
           "settings": {
-            "link": "shopify:\/\/collections\/reptiles-reptile-lighting",
-            "link_image": "shopify:\/\/shop_images\/shutterstock_2274773835.jpg",
+            "link": "shopify://collections/reptiles-reptile-lighting",
+            "link_image": "shopify://shop_images/shutterstock_2274773835.jpg",
             "link_title": "Vivarium Lighting"
           }
         },
         "block_c3BjU9": {
           "type": "block",
           "settings": {
-            "link": "shopify:\/\/collections\/preformed-ponds",
-            "link_image": "shopify:\/\/shop_images\/shutterstock_2161535657.jpg",
+            "link": "shopify://collections/preformed-ponds",
+            "link_image": "shopify://shop_images/shutterstock_2161535657.jpg",
             "link_title": "Above Ground Ponds"
           }
         }
@@ -198,7 +216,7 @@
           "laguna-pond-sludge-vacuum-cleaner-kit-1012298"
         ],
         "collection_link": "button",
-        "collection_image": "shopify:\/\/shop_images\/shutterstock_2190277935_copy.jpg",
+        "collection_image": "shopify://shop_images/shutterstock_2190277935_copy.jpg",
         "collection_image_radius": 0,
         "collection_image_border_thickness": 0,
         "collection_image_ratio": "square",
@@ -303,30 +321,30 @@
         "column_VYcW4H": {
           "type": "column",
           "settings": {
-            "column_url": "shopify:\/\/collections\/fish-foods-live-food",
-            "block_image": "shopify:\/\/shop_images\/shutterstock_2163492781.jpg",
+            "column_url": "shopify://collections/fish-foods-live-food",
+            "block_image": "shopify://shop_images/shutterstock_2163492781.jpg",
             "block_heading": "Live Food",
-            "block_content": "<p>Fish love variety in their diets and feeding live food is a great way to provide enrichment and nutrition.<\/p>",
+            "block_content": "<p>Fish love variety in their diets and feeding live food is a great way to provide enrichment and nutrition.</p>",
             "button_text": "Shop Live Food"
           }
         },
         "column_Kynqwi": {
           "type": "column",
           "settings": {
-            "column_url": "shopify:\/\/collections\/new-products",
-            "block_image": "shopify:\/\/shop_images\/shutterstock_1302310498.jpg",
+            "column_url": "shopify://collections/new-products",
+            "block_image": "shopify://shop_images/shutterstock_1302310498.jpg",
             "block_heading": "New In",
-            "block_content": "<p>Explore our latest arrivals and discover the newest additions to our collection.<\/p>",
+            "block_content": "<p>Explore our latest arrivals and discover the newest additions to our collection.</p>",
             "button_text": "Shop all New In"
           }
         },
         "column_QaQKVn": {
           "type": "column",
           "settings": {
-            "column_url": "shopify:\/\/collections\/clearance",
-            "block_image": "shopify:\/\/shop_images\/shutterstock_1808741692_cropped.jpg",
+            "column_url": "shopify://collections/clearance",
+            "block_image": "shopify://shop_images/shutterstock_1808741692_cropped.jpg",
             "block_heading": "Up to 70% off in our Big Sale!",
-            "block_content": "<p>Don't miss out on great deals! Shop our clearance items and save up to 70% on our biggest bargains.<\/p>",
+            "block_content": "<p>Don't miss out on great deals! Shop our clearance items and save up to 70% on our biggest bargains.</p>",
             "button_text": "Shop the sale"
           }
         }
@@ -388,13 +406,12 @@
         "paragraph_kyTCrX": {
           "type": "paragraph",
           "settings": {
-            "text": "<p>Join our newsletter for occasional updates and offers in your inbox. You can unsubscribe at any time.<\/p>"
+            "text": "<p>Join our newsletter for occasional updates and offers in your inbox. You can unsubscribe at any time.</p>"
           }
         },
         "email_form_6D74ac": {
           "type": "email_form",
-          "settings": {
-          }
+          "settings": {}
         }
       },
       "block_order": [
@@ -403,7 +420,7 @@
         "email_form_6D74ac"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/AdobeStock_145607813_1.png",
+        "image": "shopify://shop_images/AdobeStock_145607813_1.png",
         "full_width": true,
         "padding_top": 40,
         "padding_bottom": 52
@@ -415,85 +432,85 @@
         "logo_cqYwXf": {
           "type": "logo",
           "settings": {
-            "image": "shopify:\/\/shop_images\/fluval.svg",
-            "link": "shopify:\/\/collections\/fluval"
+            "image": "shopify://shop_images/fluval.svg",
+            "link": "shopify://collections/fluval"
           }
         },
         "logo_qzymPd": {
           "type": "logo",
           "settings": {
-            "image": "shopify:\/\/shop_images\/EA-Logo_1.png",
-            "link": "shopify:\/\/collections\/evolution-aqua"
+            "image": "shopify://shop_images/EA-Logo_1.png",
+            "link": "shopify://collections/evolution-aqua"
           }
         },
         "logo_Npaq3L": {
           "type": "logo",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Oase_1.svg",
-            "link": "shopify:\/\/collections\/oase"
+            "image": "shopify://shop_images/Oase_1.svg",
+            "link": "shopify://collections/oase"
           }
         },
         "logo_DhnAbd": {
           "type": "logo",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Layer_1.svg",
-            "link": "shopify:\/\/collections\/hozelock"
+            "image": "shopify://shop_images/Layer_1.svg",
+            "link": "shopify://collections/hozelock"
           }
         },
         "logo_hCq4QP": {
           "type": "logo",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Layer_2.svg",
-            "link": "shopify:\/\/collections\/red-sea"
+            "image": "shopify://shop_images/Layer_2.svg",
+            "link": "shopify://collections/red-sea"
           }
         },
         "logo_acNai8": {
           "type": "logo",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Layer_3.svg",
-            "link": "shopify:\/\/collections\/biorb"
+            "image": "shopify://shop_images/Layer_3.svg",
+            "link": "shopify://collections/biorb"
           }
         },
         "logo_38QDrc": {
           "type": "logo",
           "settings": {
-            "image": "shopify:\/\/shop_images\/api-logo_1.svg",
-            "link": "shopify:\/\/collections\/api"
+            "image": "shopify://shop_images/api-logo_1.svg",
+            "link": "shopify://collections/api"
           }
         },
         "logo_DyjqWU": {
           "type": "logo",
           "settings": {
-            "image": "shopify:\/\/shop_images\/tropica_rec.jpg",
-            "link": "shopify:\/\/collections\/easy-life"
+            "image": "shopify://shop_images/tropica_rec.jpg",
+            "link": "shopify://collections/easy-life"
           }
         },
         "logo_GTmB8d": {
           "type": "logo",
           "settings": {
-            "image": "shopify:\/\/shop_images\/interpet_rec.jpg",
-            "link": "shopify:\/\/collections\/reef-octopus"
+            "image": "shopify://shop_images/interpet_rec.jpg",
+            "link": "shopify://collections/reef-octopus"
           }
         },
         "logo_MeMWDd": {
           "type": "logo",
           "settings": {
-            "image": "shopify:\/\/shop_images\/aquaforest_rec.jpg",
-            "link": "shopify:\/\/collections\/sicce"
+            "image": "shopify://shop_images/aquaforest_rec.jpg",
+            "link": "shopify://collections/sicce"
           }
         },
         "logo_tRjF4j": {
           "type": "logo",
           "settings": {
-            "image": "shopify:\/\/shop_images\/superfish_rectangle.jpg",
-            "link": "shopify:\/\/collections\/reeflowers"
+            "image": "shopify://shop_images/superfish_rectangle.jpg",
+            "link": "shopify://collections/reeflowers"
           }
         },
         "logo_hRf4Kj": {
           "type": "logo",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Layer_7.svg",
-            "link": "shopify:\/\/collections\/eheim"
+            "image": "shopify://shop_images/Layer_7.svg",
+            "link": "shopify://collections/eheim"
           }
         }
       },
@@ -533,20 +550,20 @@
         "heading_4hn9VT": {
           "type": "heading",
           "settings": {
-            "heading": "<strong>VIVARIUM SUPPLIES<\/strong>"
+            "heading": "<strong>VIVARIUM SUPPLIES</strong>"
           }
         },
         "text_daa6wX": {
           "type": "text",
           "settings": {
-            "text": "<p>Discover top-quality vivarium & terrarium supplies designed to create the perfect habitat for your reptiles, amphibians and other exotics. Our extensive range includes everything from substrates and heating systems to humidity controls and decorative elements. Ensure your pets thrive in a well-equipped and naturalistic environment with our reliable products.<\/p>"
+            "text": "<p>Discover top-quality vivarium & terrarium supplies designed to create the perfect habitat for your reptiles, amphibians and other exotics. Our extensive range includes everything from substrates and heating systems to humidity controls and decorative elements. Ensure your pets thrive in a well-equipped and naturalistic environment with our reliable products.</p>"
           }
         },
         "button_N9RLaf": {
           "type": "button",
           "settings": {
             "button_label": "Shop Reptile Supplies",
-            "button_link": "shopify:\/\/collections\/reptiles",
+            "button_link": "shopify://collections/reptiles",
             "button_style_secondary": false
           }
         }
@@ -557,7 +574,7 @@
         "button_N9RLaf"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/AdobeStock_612455245_1.jpg",
+        "image": "shopify://shop_images/AdobeStock_612455245_1.jpg",
         "background_color": "#e5f6e6",
         "layout": "text_first",
         "block_gap": false,
@@ -578,8 +595,8 @@
         "block_C87zrC": {
           "type": "block",
           "settings": {
-            "link": "shopify:\/\/collections\/aquariums-fish-tank",
-            "link_image": "shopify:\/\/shop_images\/shutterstock_763239571.jpg",
+            "link": "shopify://collections/aquariums-fish-tank",
+            "link_image": "shopify://shop_images/shutterstock_763239571.jpg",
             "link_title": "Tanks",
             "link_content": "See our wide selection of aquarium tanks, available in sizes and styles to suit any space."
           }
@@ -587,8 +604,8 @@
         "block_4Mwp4Y": {
           "type": "block",
           "settings": {
-            "link": "shopify:\/\/collections\/filtration",
-            "link_image": "shopify:\/\/shop_images\/shutterstock_1156035046.jpg",
+            "link": "shopify://collections/filtration",
+            "link_image": "shopify://shop_images/shutterstock_1156035046.jpg",
             "link_title": "Filters",
             "link_content": "Keep your water crystal clear and healthy with our filter range, designed for efficiency and reliability."
           }
@@ -596,8 +613,8 @@
         "block_cPH8B6": {
           "type": "block",
           "settings": {
-            "link": "shopify:\/\/collections\/lighting",
-            "link_image": "shopify:\/\/shop_images\/shutterstock_2122813520.jpg",
+            "link": "shopify://collections/lighting",
+            "link_image": "shopify://shop_images/shutterstock_2122813520.jpg",
             "link_title": "Lighting",
             "link_content": "Enhance the beauty of your aquarium and support aquatic life with our range of quality lighting solutions."
           }
@@ -605,8 +622,8 @@
         "block_ticR6t": {
           "type": "block",
           "settings": {
-            "link": "shopify:\/\/collections\/accessories",
-            "link_image": "shopify:\/\/shop_images\/shutterstock_2065163135_small_733cb50d-a528-4577-94ed-eeea8c7fc109.jpg",
+            "link": "shopify://collections/accessories",
+            "link_image": "shopify://shop_images/shutterstock_2065163135_small_733cb50d-a528-4577-94ed-eeea8c7fc109.jpg",
             "link_title": "Accessories",
             "link_content": "Add personality to your aquarium with our vibrant decorations and practical accessories."
           }
@@ -619,9 +636,9 @@
         "block_ticR6t"
       ],
       "settings": {
-        "banner_image": "shopify:\/\/shop_images\/shutterstock_1046527558.jpg",
-        "banner_title": "<p>Everything you need for your aquarium<\/p>",
-        "banner_content": "<p>Set up your perfect underwater world with our complete range of aquarium essentials. From tanks to filters, we've got everything you need to get started.<\/p>",
+        "banner_image": "shopify://shop_images/shutterstock_1046527558.jpg",
+        "banner_title": "<p>Everything you need for your aquarium</p>",
+        "banner_content": "<p>Set up your perfect underwater world with our complete range of aquarium essentials. From tanks to filters, we've got everything you need to get started.</p>",
         "bg_opacity": 61,
         "bg_color": "#15397b",
         "padding_top": 36,
