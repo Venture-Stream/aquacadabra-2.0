@@ -98,14 +98,13 @@
         },
         "slide_ALhyMV": {
           "type": "slide",
-          "disabled": true,
           "settings": {
-            "image": "shopify://shop_images/shutterstock_642230203.jpg",
+            "image": "shopify://shop_images/D_D_Autumn_Sale_A.jpg",
             "heading": "Black Friday!",
             "text_color": "white",
             "subheading": "Shop Black Friday Deals Now  Explore exclusive discounts on a selected range of products during our Black Friday event.",
             "button_label": "Shop Now",
-            "link": "",
+            "link": "https://aquacadabra.com/search?q=D-D+Aqua-Pro+Aquascaper&options%5Bprefix%5D=last&page=2",
             "button_style_secondary": true,
             "box_align": "bottom-left",
             "show_text_box": false,
