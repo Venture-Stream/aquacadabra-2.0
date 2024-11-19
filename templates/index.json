@@ -345,7 +345,7 @@
           "type": "column",
           "settings": {
             "column_url": "shopify://collections/clearance",
-            "block_image": "shopify://shop_images/shutterstock_1808741692_cropped.jpg",
+            "block_image": "shopify://shop_images/sale-tag-online-shopping.jpg",
             "block_heading": "Up to 70% off in our Big Sale!",
             "block_content": "<p>Don't miss out on great deals! Shop our clearance items and save up to 70% on our biggest bargains.</p>",
             "button_text": "Shop the sale"
