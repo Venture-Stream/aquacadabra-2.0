@@ -83,10 +83,10 @@
         "card_CRpzGx": {
           "type": "card",
           "settings": {
-            "image": "shopify://shop_images/shutterstock_1156035046_cropped.jpg",
+            "image": "shopify://shop_images/AQUA1.png",
             "title": "<strong>How many fish should you put in a fish tank?</strong>",
             "link": "shopify://blogs/news/how-many-fish-should-you-put-in-a-fish-tank",
-            "button_label": "Read More",
+            "button_label": "FIND OUT NOW",
             "button_style_secondary": true
           }
         },
