@@ -103,11 +103,11 @@
         "slide_ALhyMV": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/D_D_Autumn_Sale_B.jpg",
+            "image": "shopify://shop_images/Aqua_B_editedNJ_1.png",
             "heading": "",
             "text_color": "white",
             "subheading": "",
-            "button_label": "Shop Now",
+            "button_label": "",
             "link": "https://aquacadabra.com/search?q=D-D+Aqua-Pro+Aquascaper&options%5Bprefix%5D=last&page=2",
             "button_style_secondary": true,
             "box_align": "middle-center",
