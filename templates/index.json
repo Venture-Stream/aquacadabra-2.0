@@ -335,7 +335,7 @@
           "type": "column",
           "settings": {
             "column_url": "shopify://collections/new-products",
-            "block_image": "shopify://shop_images/shutterstock_1302310498.jpg",
+            "block_image": "shopify://shop_images/hands-holding-up-a-new-sign.jpg",
             "block_heading": "New In",
             "block_content": "<p>Explore our latest arrivals and discover the newest additions to our collection.</p>",
             "button_text": "Shop all New In"
