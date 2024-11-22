@@ -31,7 +31,6 @@
         },
         "slide_ewTTQR": {
           "type": "slide",
-          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/shutterstock_721552462_1.jpg",
             "heading": "\"BLACK Friday\"",
