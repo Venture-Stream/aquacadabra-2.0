@@ -33,15 +33,15 @@
           "type": "slide",
           "settings": {
             "image": "shopify://shop_images/BLACKKK.jpg",
-            "heading": "BLACK FRIDAY DEALS!",
+            "heading": "",
             "text_color": "white",
-            "subheading": "UP TO 20% OFF SELECTED ITEMS <em>ADD TO BASKEST TO SEE OFFER </em>",
-            "button_label": "See More",
+            "subheading": "",
+            "button_label": "add to basket to see offer",
             "link": "https://aquacadabra.com/collections/aquariums?filter.p.vendor=Interpet&%C2%A3100.00+-+%C2%A3200.00=10000-20000&%C2%A3200.00+-+%C2%A3500.00=20000-50000&filter.v.price.gte=100&filter.v.price.lte=500&sort_by=best-selling",
             "button_style_secondary": true,
-            "box_align": "middle-center",
+            "box_align": "top-center",
             "show_text_box": false,
-            "text_alignment": "left",
+            "text_alignment": "center",
             "text_alignment_mobile": "center"
           }
         },
