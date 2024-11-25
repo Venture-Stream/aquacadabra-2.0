@@ -82,10 +82,10 @@
         "card_CRpzGx": {
           "type": "card",
           "settings": {
-            "image": "shopify://shop_images/Aqua_B_editedNJ_700_x_500_px_2_bc7014a4-31c9-48e3-86d7-15432f9cabaa.png",
+            "image": "shopify://shop_images/Aqua_B_editedNJ_700_x_500_px.png",
             "title": "",
-            "link": "shopify://blogs/news/how-many-fish-should-you-put-in-a-fish-tank",
-            "button_label": "FIND OUT NOW",
+            "link": "https://aquacadabra.com/collections/aquariums-d-d-reef-pro",
+            "button_label": "SAVE 12% TODAY",
             "button_style_secondary": true
           }
         },
@@ -129,7 +129,7 @@
       "settings": {
         "slide_height": "adapt_image",
         "image_behavior": "none",
-        "accessibility_info": "Slideshow about our brand",
+        "accessibility_info": "AQUACADABRA Aquarium and Pond Supplied",
         "padding_top": 0,
         "padding_bottom": 32
       }

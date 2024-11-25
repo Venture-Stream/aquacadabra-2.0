@@ -1,21 +1,21 @@
 /*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "current": {
     "enable_timer": true,
     "cut_off_time": "13:00",
     "banner_text": "Order within",
     "right_text": "for same day dispatch",
-    "logo": "shopify:\/\/shop_images\/logo.png",
+    "logo": "shopify://shop_images/logo.png",
     "logo_width": 270,
-    "favicon": "shopify:\/\/shop_images\/favicon.png",
+    "favicon": "shopify://shop_images/favicon.png",
     "type_header_font": "assistant_n4",
     "heading_scale": 100,
     "type_body_font": "assistant_n4",
@@ -24,6 +24,7 @@
     "spacing_sections": 0,
     "spacing_grid_horizontal": 8,
     "spacing_grid_vertical": 8,
+    "animations_reveal_on_scroll": true,
     "buttons_border_thickness": 1,
     "buttons_border_opacity": 100,
     "buttons_radius": 0,
@@ -110,9 +111,9 @@
     "sale_badge_color_scheme": "scheme-5",
     "sold_out_badge_color_scheme": "scheme-3",
     "brand_headline": "Get in touch",
-    "brand_description": "<p>Call <a href=\"tel:01322520989\" title=\"tel:01322520989\">01322 520 989<\/a><\/p><p>Email <a href=\"mailto:info@aquacadabra.com\" title=\"mailto:info@aquacadabra.com\">info@aquacadabra.com<\/a><\/p><p><a href=\"\/pages\/contact-details\" title=\"Contact Details\">Visit our store<\/a><\/p>",
-    "social_facebook_link": "https:\/\/www.facebook.com\/Aquacadabraofficialpage\/",
-    "social_instagram_link": "https:\/\/www.instagram.com\/aquacadabra_official\/",
+    "brand_description": "<p>Call <a href=\"tel:01322520989\" title=\"tel:01322520989\">01322 520 989</a></p><p>Email <a href=\"mailto:info@aquacadabra.com\" title=\"mailto:info@aquacadabra.com\">info@aquacadabra.com</a></p><p><a href=\"/pages/contact-details\" title=\"Contact Details\">Visit our store</a></p>",
+    "social_facebook_link": "https://www.facebook.com/Aquacadabraofficialpage/",
+    "social_instagram_link": "https://www.instagram.com/aquacadabra_official/",
     "social_youtube_link": "",
     "social_tiktok_link": "",
     "social_twitter_link": "",
@@ -128,8 +129,8 @@
     "show_vendor": false,
     "show_cart_note": false,
     "cart_drawer_collection": "",
-    "checkout_header_image": "shopify:\/\/shop_images\/imageblock1.png",
-    "checkout_logo_image": "shopify:\/\/shop_images\/logo.png",
+    "checkout_header_image": "shopify://shop_images/imageblock1.png",
+    "checkout_logo_image": "shopify://shop_images/logo.png",
     "sections": {
       "main-password-header": {
         "type": "main-password-header",
@@ -144,18 +145,15 @@
         }
       }
     },
-    "content_for_index": [
-
-    ],
+    "content_for_index": [],
     "blocks": {
       "16881471024131275657": {
-        "type": "shopify:\/\/apps\/searchanise-search-filter\/blocks\/app-embed\/d8f24ada-02b1-458a-bbeb-5bf16d5c921e",
+        "type": "shopify://apps/searchanise-search-filter/blocks/app-embed/d8f24ada-02b1-458a-bbeb-5bf16d5c921e",
         "disabled": false,
-        "settings": {
-        }
+        "settings": {}
       },
       "4291333794791649201": {
-        "type": "shopify:\/\/apps\/loyalty-rewards-and-referrals\/blocks\/embed-sdk\/6f172e67-4106-4ac0-89c5-b32a069b3101",
+        "type": "shopify://apps/loyalty-rewards-and-referrals/blocks/embed-sdk/6f172e67-4106-4ac0-89c5-b32a069b3101",
         "disabled": false,
         "settings": {
           "disableBundledCSS": false,
@@ -164,10 +162,9 @@
         }
       },
       "855628211100114053": {
-        "type": "shopify:\/\/apps\/klaviyo-email-marketing-sms\/blocks\/klaviyo-onsite-embed\/2632fe16-c075-4321-a88b-50b567f42507",
+        "type": "shopify://apps/klaviyo-email-marketing-sms/blocks/klaviyo-onsite-embed/2632fe16-c075-4321-a88b-50b567f42507",
         "disabled": false,
-        "settings": {
-        }
+        "settings": {}
       }
     },
     "color_schemes": {
