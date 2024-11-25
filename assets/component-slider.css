@@ -225,8 +225,8 @@ slider-component.slider-component-full-width {
 }
 
 .slider::-webkit-scrollbar {
-  height: 0.4rem;
-  width: 0.4rem;
+  height: 0.0rem;
+  width: 0.0rem;
   display: none;
 }
 
