@@ -83,8 +83,8 @@
           "type": "card",
           "settings": {
             "image": "shopify://shop_images/shutterstock_335496737.webp",
-            "title": "How Many Fish are right for tank",
-            "link": "https://aquacadabra.com/collections/aquariums-d-d-reef-pro",
+            "title": "How Many Fish are right for tank?",
+            "link": "shopify://blogs/news/how-many-fish-should-you-put-in-a-fish-tank",
             "button_label": "find out more",
             "button_style_secondary": true
           }
