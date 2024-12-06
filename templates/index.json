@@ -333,6 +333,7 @@
         },
         "column_Kynqwi": {
           "type": "column",
+          "disabled": true,
           "settings": {
             "column_url": "shopify://collections/new-products",
             "block_image": "shopify://shop_images/hands-holding-up-a-new-sign.jpg",
