@@ -120,7 +120,7 @@
         "column_jUj66z": {
           "type": "column",
           "settings": {
-            "column_url": "",
+            "column_url": "shopify://products/marina-stingray-5-internal-filter",
             "block_image": "shopify://shop_images/stingray_and_fish.jpg",
             "block_heading": "Deal of the Week",
             "block_content": "",
@@ -269,6 +269,50 @@
         "section_title": "Grab a Christmas Bargain!",
         "padding_top": 40,
         "padding_bottom": 52
+      }
+    },
+    "large_feature_blocks_KykRmr": {
+      "type": "large-feature-blocks",
+      "blocks": {
+        "column_Kynqwi": {
+          "type": "column",
+          "settings": {
+            "column_url": "shopify://collections/new-products",
+            "block_image": "shopify://shop_images/shutterstock_1966643347_NEW_copy.jpg",
+            "block_heading": "New In",
+            "block_content": "<p>Explore our latest arrivals and discover the newest additions to our collection.</p>",
+            "button_text": "Shop all New In"
+          }
+        },
+        "column_VYcW4H": {
+          "type": "column",
+          "settings": {
+            "column_url": "shopify://collections/fish-foods-live-food",
+            "block_image": "shopify://shop_images/shutterstock_2163492781.jpg",
+            "block_heading": "Live Food",
+            "block_content": "<p>Fish love variety in their diets and feeding live food is a great way to provide enrichment and nutrition.</p>",
+            "button_text": "Shop Live Food"
+          }
+        },
+        "column_QaQKVn": {
+          "type": "column",
+          "settings": {
+            "column_url": "shopify://collections/clearance",
+            "block_image": "shopify://shop_images/shutterstock_665138536_sale_2_copy.jpg",
+            "block_heading": "Up to 70% off in our Big Sale!",
+            "block_content": "<p>Don't miss out on great deals! Shop our clearance items and save up to 70% on our biggest bargains.</p>",
+            "button_text": "Shop the sale"
+          }
+        }
+      },
+      "block_order": [
+        "column_Kynqwi",
+        "column_VYcW4H",
+        "column_QaQKVn"
+      ],
+      "settings": {
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
     "link_blocks_e9BzjC": {
@@ -453,50 +497,6 @@
         "content_width": 160,
         "border_thickness": 0,
         "lazy": true
-      }
-    },
-    "large_feature_blocks_KykRmr": {
-      "type": "large-feature-blocks",
-      "blocks": {
-        "column_Kynqwi": {
-          "type": "column",
-          "settings": {
-            "column_url": "shopify://collections/new-products",
-            "block_image": "shopify://shop_images/shutterstock_1966643347_NEW_copy.jpg",
-            "block_heading": "New In",
-            "block_content": "<p>Explore our latest arrivals and discover the newest additions to our collection.</p>",
-            "button_text": "Shop all New In"
-          }
-        },
-        "column_VYcW4H": {
-          "type": "column",
-          "settings": {
-            "column_url": "shopify://collections/fish-foods-live-food",
-            "block_image": "shopify://shop_images/shutterstock_2163492781.jpg",
-            "block_heading": "Live Food",
-            "block_content": "<p>Fish love variety in their diets and feeding live food is a great way to provide enrichment and nutrition.</p>",
-            "button_text": "Shop Live Food"
-          }
-        },
-        "column_QaQKVn": {
-          "type": "column",
-          "settings": {
-            "column_url": "shopify://collections/clearance",
-            "block_image": "shopify://shop_images/shutterstock_665138536_sale_2_copy.jpg",
-            "block_heading": "Up to 70% off in our Big Sale!",
-            "block_content": "<p>Don't miss out on great deals! Shop our clearance items and save up to 70% on our biggest bargains.</p>",
-            "button_text": "Shop the sale"
-          }
-        }
-      },
-      "block_order": [
-        "column_Kynqwi",
-        "column_VYcW4H",
-        "column_QaQKVn"
-      ],
-      "settings": {
-        "padding_top": 36,
-        "padding_bottom": 36
       }
     },
     "featured_products_HmegyR": {
