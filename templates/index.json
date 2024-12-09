@@ -517,7 +517,7 @@
           "type": "tab",
           "settings": {
             "product_tab": "New In",
-            "collection": "newest-products",
+            "collection": "new-products",
             "show_vendor": false,
             "show_rating": true,
             "show_wishlist": true,
