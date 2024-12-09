@@ -123,7 +123,7 @@
             "column_url": "shopify://products/marina-stingray-5-internal-filter",
             "block_image": "shopify://shop_images/stingray_and_fish.jpg",
             "block_heading": "Deal of the Week",
-            "block_content": "",
+            "block_content": "<p>Elite Stingray Aquarium Filters are quiet, underwater filters, which are easy to set up and maintain.</p>",
             "button_text": "shop now"
           }
         },
@@ -133,7 +133,7 @@
             "column_url": "shopify://collections/black-friday-2024",
             "block_image": "shopify://shop_images/shutterstock_2522152333_copy.jpg",
             "block_heading": "Christmas Deals",
-            "block_content": "",
+            "block_content": "<p>Grab a Christmas Bargain or Gift from our Christmas Special collection.</p>",
             "button_text": "shop now"
           }
         },
@@ -143,7 +143,7 @@
             "column_url": "shopify://products/marina-360-aquarium-with-led-remote",
             "block_image": "shopify://shop_images/4qkyqlq5lqm.jpg",
             "block_heading": "Marina 360 Aquarium",
-            "block_content": "",
+            "block_content": "<p>The much-loved Marina 360 Aquarium now comes with remote controlled colour-changing LEDs!</p>",
             "button_text": "shop now"
           }
         }
