@@ -47,7 +47,6 @@
         },
         "slide_gVmjbK": {
           "type": "slide",
-          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/shutterstock_2225505841_copy.jpg",
             "heading": "<strong>Live Aquarium Plants</strong>",
@@ -64,7 +63,6 @@
         },
         "slide_3fgaqA": {
           "type": "slide",
-          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/shutterstock_673830499.jpg",
             "heading": "Sign up to our Newsletter",
@@ -89,23 +87,6 @@
             "button_style_secondary": true
           }
         },
-        "slide_ALhyMV": {
-          "type": "slide",
-          "disabled": true,
-          "settings": {
-            "image": "shopify://shop_images/Aqua_B_editedNJ_700_x_500_px_2.png",
-            "heading": "",
-            "text_color": "white",
-            "subheading": "",
-            "button_label": "",
-            "link": "https://aquacadabra.com/search?q=D-D+Aqua-Pro+Aquascaper&options%5Bprefix%5D=last&page=2",
-            "button_style_secondary": true,
-            "box_align": "middle-center",
-            "show_text_box": false,
-            "text_alignment": "center",
-            "text_alignment_mobile": "center"
-          }
-        },
         "card_PcGL8B": {
           "type": "card",
           "settings": {
@@ -123,7 +104,6 @@
         "slide_gVmjbK",
         "slide_3fgaqA",
         "card_CRpzGx",
-        "slide_ALhyMV",
         "card_PcGL8B"
       ],
       "settings": {
