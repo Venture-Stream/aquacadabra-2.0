@@ -114,6 +114,163 @@
         "padding_bottom": 32
       }
     },
+    "large_feature_blocks_QKLneq": {
+      "type": "large-feature-blocks",
+      "blocks": {
+        "column_jUj66z": {
+          "type": "column",
+          "settings": {
+            "column_url": "",
+            "block_image": "shopify://shop_images/stingray_and_fish.jpg",
+            "block_heading": "Deal of the Week",
+            "block_content": "",
+            "button_text": "shop now"
+          }
+        },
+        "column_Aw4DWf": {
+          "type": "column",
+          "settings": {
+            "column_url": "shopify://collections/black-friday-2024",
+            "block_image": "shopify://shop_images/shutterstock_2522152333_copy.jpg",
+            "block_heading": "Christmas Deals",
+            "block_content": "",
+            "button_text": "shop now"
+          }
+        },
+        "column_zFCffP": {
+          "type": "column",
+          "settings": {
+            "column_url": "shopify://products/marina-360-aquarium-with-led-remote",
+            "block_image": "shopify://shop_images/4qkyqlq5lqm.jpg",
+            "block_heading": "Marina 360 Aquarium",
+            "block_content": "",
+            "button_text": "shop now"
+          }
+        }
+      },
+      "block_order": [
+        "column_jUj66z",
+        "column_Aw4DWf",
+        "column_zFCffP"
+      ],
+      "settings": {
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "featured_products_LLWWhM": {
+      "type": "featured-products",
+      "blocks": {
+        "tab_LAjgMz": {
+          "type": "tab",
+          "settings": {
+            "product_tab": "Christmas Deals",
+            "collection": "black-friday-2024",
+            "show_vendor": false,
+            "show_rating": false,
+            "show_wishlist": true,
+            "quick_add": "none"
+          }
+        },
+        "tab_4bpETL": {
+          "type": "tab",
+          "settings": {
+            "product_tab": "Aquarium Sale",
+            "collection": "aquarium-sale",
+            "show_vendor": false,
+            "show_rating": false,
+            "show_wishlist": true,
+            "quick_add": "none"
+          }
+        },
+        "tab_zCATca": {
+          "type": "tab",
+          "settings": {
+            "product_tab": "Pond Sale",
+            "collection": "pond-sale",
+            "show_vendor": false,
+            "show_rating": false,
+            "show_wishlist": true,
+            "quick_add": "none"
+          }
+        }
+      },
+      "block_order": [
+        "tab_LAjgMz",
+        "tab_4bpETL",
+        "tab_zCATca"
+      ],
+      "settings": {
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "link_blocks_8Cyazr": {
+      "type": "link-blocks",
+      "blocks": {
+        "block_YHWGfX": {
+          "type": "block",
+          "settings": {
+            "link": "shopify://products/biorb-holly-ball-with-berries-christmas-tank-decoration",
+            "link_image": "shopify://shop_images/oy52lr0ovja_56674354-3fbe-4b47-88ab-c959d87ad430.jpg",
+            "link_title": ""
+          }
+        },
+        "block_MYnaKJ": {
+          "type": "block",
+          "settings": {
+            "link": "shopify://products/multicoloured-plastic-aquarium-plants-10cm",
+            "link_image": "shopify://shop_images/c2u1ihpnwp3_4756c797-27b2-4f6b-b21e-94800b5b2af4.jpg",
+            "link_title": ""
+          }
+        },
+        "block_7CGpp4": {
+          "type": "block",
+          "settings": {
+            "link": "shopify://products/fishmate-p14-automatic-fish-feeder-211-fis10110",
+            "link_image": "shopify://shop_images/la45eksbg0l.jpg",
+            "link_title": ""
+          }
+        },
+        "block_c8aYCK": {
+          "type": "block",
+          "settings": {
+            "link": "shopify://products/green-plastic-aquarium-plants-10cm",
+            "link_image": "shopify://shop_images/jjvgyyfqex0_d80c9402-0cc1-470e-8804-afe859364051.jpg",
+            "link_title": ""
+          }
+        },
+        "block_cnQJgG": {
+          "type": "block",
+          "settings": {
+            "link": "shopify://products/laguna-floating-round-basket-set",
+            "link_image": "shopify://shop_images/vmpzhjn2smr.jpg",
+            "link_title": ""
+          }
+        },
+        "block_MX6UiF": {
+          "type": "block",
+          "settings": {
+            "link": "shopify://products/living-world-teach-treat-toy",
+            "link_image": "shopify://shop_images/2azlsq45oud_6262b4cd-fce5-4b05-863f-30d528a86d38.jpg",
+            "link_title": ""
+          }
+        }
+      },
+      "block_order": [
+        "block_YHWGfX",
+        "block_MYnaKJ",
+        "block_7CGpp4",
+        "block_c8aYCK",
+        "block_cnQJgG",
+        "block_MX6UiF"
+      ],
+      "settings": {
+        "section_title": "Grab a Christmas Bargain!",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
     "link_blocks_e9BzjC": {
       "type": "link-blocks",
       "blocks": {
@@ -301,6 +458,16 @@
     "large_feature_blocks_KykRmr": {
       "type": "large-feature-blocks",
       "blocks": {
+        "column_Kynqwi": {
+          "type": "column",
+          "settings": {
+            "column_url": "shopify://collections/new-products",
+            "block_image": "shopify://shop_images/shutterstock_1966643347_NEW_copy.jpg",
+            "block_heading": "New In",
+            "block_content": "<p>Explore our latest arrivals and discover the newest additions to our collection.</p>",
+            "button_text": "Shop all New In"
+          }
+        },
         "column_VYcW4H": {
           "type": "column",
           "settings": {
@@ -311,22 +478,11 @@
             "button_text": "Shop Live Food"
           }
         },
-        "column_Kynqwi": {
-          "type": "column",
-          "disabled": true,
-          "settings": {
-            "column_url": "shopify://collections/new-products",
-            "block_image": "shopify://shop_images/hands-holding-up-a-new-sign.jpg",
-            "block_heading": "New In",
-            "block_content": "<p>Explore our latest arrivals and discover the newest additions to our collection.</p>",
-            "button_text": "Shop all New In"
-          }
-        },
         "column_QaQKVn": {
           "type": "column",
           "settings": {
             "column_url": "shopify://collections/clearance",
-            "block_image": "shopify://shop_images/sale-tag-online-shopping.jpg",
+            "block_image": "shopify://shop_images/shutterstock_665138536_sale_2_copy.jpg",
             "block_heading": "Up to 70% off in our Big Sale!",
             "block_content": "<p>Don't miss out on great deals! Shop our clearance items and save up to 70% on our biggest bargains.</p>",
             "button_text": "Shop the sale"
@@ -334,8 +490,8 @@
         }
       },
       "block_order": [
-        "column_VYcW4H",
         "column_Kynqwi",
+        "column_VYcW4H",
         "column_QaQKVn"
       ],
       "settings": {
@@ -632,9 +788,12 @@
   },
   "order": [
     "slideshow_9wH96k",
+    "large_feature_blocks_QKLneq",
+    "featured_products_LLWWhM",
+    "link_blocks_8Cyazr",
+    "large_feature_blocks_KykRmr",
     "link_blocks_e9BzjC",
     "ss_featured_collection_5_66Ywm3",
-    "large_feature_blocks_KykRmr",
     "featured_products_HmegyR",
     "newsletter_zMFqMk",
     "logo_blocks_iLGK48",
