@@ -1,12 +1,12 @@
 /*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "name": "t:sections.header.name",
   "type": "header",
@@ -18,7 +18,7 @@
           "type": "announcement",
           "settings": {
             "text": "Check our new Rewards Program!",
-            "link": "shopify:\/\/pages\/earning-rewards-with-aquacadabra"
+            "link": "shopify://pages/earning-rewards-with-aquacadabra"
           }
         }
       },
@@ -38,7 +38,7 @@
     "countdown-header": {
       "type": "countdown-header",
       "settings": {
-        "left_text": "<strong>Free UK Delivery<\/strong> on all orders"
+        "left_text": "<strong>Free UK Delivery</strong> on all orders"
       }
     },
     "header": {
@@ -48,7 +48,7 @@
           "type": "sub_menu",
           "settings": {
             "title": "Aquariums",
-            "item_link": "shopify:\/\/collections\/aquariums-fish-tank",
+            "item_link": "shopify://collections/aquariums",
             "submenu": "aquariums"
           }
         },
@@ -72,7 +72,7 @@
           "type": "sub_menu",
           "settings": {
             "title": "Clearance",
-            "item_link": "shopify:\/\/collections\/clearance",
+            "item_link": "shopify://collections/clearance",
             "submenu": "clearance"
           }
         },
@@ -80,7 +80,7 @@
           "type": "sub_menu",
           "settings": {
             "title": "Brands",
-            "item_link": "shopify:\/\/pages\/brands",
+            "item_link": "shopify://pages/brands",
             "submenu": "brands"
           }
         },
@@ -88,7 +88,7 @@
           "type": "sub_menu",
           "settings": {
             "title": "Blog",
-            "item_link": "shopify:\/\/blogs\/news",
+            "item_link": "shopify://blogs/news",
             "submenu": ""
           }
         }
@@ -124,35 +124,35 @@
           "type": "quicklink",
           "settings": {
             "text": "Popular Now",
-            "url": "shopify:\/\/collections\/most-popular"
+            "url": "shopify://collections/most-popular"
           }
         },
         "quicklink_Qpyrw4": {
           "type": "quicklink",
           "settings": {
             "text": "Holiday Foods",
-            "url": "shopify:\/\/collections\/holiday-foods"
+            "url": "shopify://collections/holiday-foods"
           }
         },
         "quicklink_FxGMrh": {
           "type": "quicklink",
           "settings": {
             "text": "Chillers",
-            "url": "shopify:\/\/collections\/aquarium-chillers"
+            "url": "shopify://collections/aquarium-chillers"
           }
         },
         "quicklink_gL73Ad": {
           "type": "quicklink",
           "settings": {
             "text": "Cooling Fans",
-            "url": "shopify:\/\/collections\/cooling-fans"
+            "url": "shopify://collections/cooling-fans"
           }
         },
         "quicklink_JbXbUG": {
           "type": "quicklink",
           "settings": {
             "text": "Pond Air Pumps",
-            "url": "shopify:\/\/collections\/ponds-supplies-outdoor-air-pumps"
+            "url": "shopify://collections/ponds-supplies-outdoor-air-pumps"
           }
         }
       },
@@ -163,8 +163,7 @@
         "quicklink_gL73Ad",
         "quicklink_JbXbUG"
       ],
-      "settings": {
-      }
+      "settings": {}
     },
     "usp": {
       "type": "usp",
@@ -174,7 +173,7 @@
           "settings": {
             "icon": "delivery",
             "title": "FREE UK DELIVERY",
-            "text": "<p>On all orders<\/p>",
+            "text": "<p>On all orders</p>",
             "align_items": true,
             "link": ""
           }
@@ -184,7 +183,7 @@
           "settings": {
             "icon": "reward",
             "title": "EARN REWARD POINTS",
-            "text": "<p>Every time you shop. Register at checkout<\/p>",
+            "text": "<p>Every time you shop. Register at checkout</p>",
             "align_items": true,
             "link": ""
           }
@@ -194,7 +193,7 @@
           "settings": {
             "icon": "stars",
             "title": "5 STAR RATED",
-            "text": "<p>By verified customers on Feefo<\/p>",
+            "text": "<p>By verified customers on Feefo</p>",
             "align_items": true,
             "link": ""
           }
@@ -204,7 +203,7 @@
           "settings": {
             "icon": "finance",
             "title": "Finance Options",
-            "text": "<p>Choose pay monthly or pay later<\/p>",
+            "text": "<p>Choose pay monthly or pay later</p>",
             "align_items": true,
             "link": ""
           }
@@ -214,7 +213,7 @@
           "settings": {
             "icon": "returns",
             "title": "60 Day Returns",
-            "text": "<p>Shop with confidence<\/p>",
+            "text": "<p>Shop with confidence</p>",
             "align_items": true,
             "link": ""
           }
@@ -227,8 +226,7 @@
         "column_8pVXCY",
         "column_37nQx9"
       ],
-      "settings": {
-      }
+      "settings": {}
     }
   },
   "order": [
