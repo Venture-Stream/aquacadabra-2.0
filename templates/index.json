@@ -32,10 +32,10 @@
         "slide_ewTTQR": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/shutterstock_1201088539.jpg",
-            "heading": "christmas deals",
+            "image": "shopify://shop_images/shutterstock_2261795555_cropped.jpg",
+            "heading": "January Sale",
             "text_color": "white",
-            "subheading": "<em>\"With Christmas approaching why not look at some great deals up to 70% off RRP prices\"        </em>",
+            "subheading": "<em>\"Grab some great deals up to 70% off RRP prices\"        </em>",
             "button_label": "SHOP & SAVE NOW",
             "link": "shopify://collections/black-friday-2024",
             "button_style_secondary": true,
@@ -123,7 +123,7 @@
           "type": "column",
           "settings": {
             "column_url": "shopify://products/fluval-spec-fish-tank-10lts-black-10515-900336",
-            "block_image": "shopify://shop_images/spec_xmas.jpg",
+            "block_image": "shopify://shop_images/spec_for_homepage_copy.jpg",
             "block_heading": "Fluval Spec 10L Black",
             "block_content": "<p>Special Offer: grab the Fluval Spec 10L Black, the fantastic nano aquarium for 69.99!</p>",
             "button_text": "shop now"
@@ -143,7 +143,7 @@
           "type": "column",
           "settings": {
             "column_url": "shopify://products/marina-360-aquarium-with-led-remote",
-            "block_image": "shopify://shop_images/marina_xmas.jpg",
+            "block_image": "shopify://shop_images/marina_360_for_homepage_copy.jpg",
             "block_heading": "Marina 360 Aquarium",
             "block_content": "<p>The much-loved Marina 360 Aquarium now comes with remote controlled colour-changing LEDs!</p>",
             "button_text": "shop now"
